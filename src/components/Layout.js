@@ -16,6 +16,9 @@ function Layout() {
             <Link to="/word-counter">Words</Link>
             <Link to="/case-converter">Case</Link>
             <Link to="/date-difference-calculator">Dates</Link>
+            <Link to="/random-number-generator">Random</Link>
+            <Link to="/json-formatter">JSON</Link>
+            <Link to="/color-converter">Colors</Link>
           </nav>
         </div>
       </header>

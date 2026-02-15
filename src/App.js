@@ -8,6 +8,9 @@ import BmiCalculator from './pages/BmiCalculator';
 import TipCalculator from './pages/TipCalculator';
 import CaseConverter from './pages/CaseConverter';
 import DateDifference from './pages/DateDifference';
+import RandomGenerator from './pages/RandomGenerator';
+import JsonFormatter from './pages/JsonFormatter';
+import ColorConverter from './pages/ColorConverter';
 import './App.css';
 
 function App() {
@@ -23,6 +26,9 @@ function App() {
           <Route path="tip-calculator" element={<TipCalculator />} />
           <Route path="case-converter" element={<CaseConverter />} />
           <Route path="date-difference-calculator" element={<DateDifference />} />
+          <Route path="random-number-generator" element={<RandomGenerator />} />
+          <Route path="json-formatter" element={<JsonFormatter />} />
+          <Route path="color-converter" element={<ColorConverter />} />
         </Route>
       </Routes>
     </BrowserRouter>

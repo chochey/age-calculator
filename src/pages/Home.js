@@ -37,6 +37,21 @@ const tools = [
     description: 'Find the exact time between any two dates in days, weeks, and months.',
     path: '/date-difference-calculator',
   },
+  {
+    name: 'Random Number Generator',
+    description: 'Generate random numbers in any range with or without duplicates.',
+    path: '/random-number-generator',
+  },
+  {
+    name: 'JSON Formatter & Validator',
+    description: 'Format, validate, and minify JSON data with syntax error detection.',
+    path: '/json-formatter',
+  },
+  {
+    name: 'Color Picker & Converter',
+    description: 'Pick colors and convert between HEX, RGB, and HSL formats.',
+    path: '/color-converter',
+  },
 ];
 
 function Home() {
