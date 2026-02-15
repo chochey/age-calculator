@@ -11,6 +11,11 @@ import DateDifference from './pages/DateDifference';
 import RandomGenerator from './pages/RandomGenerator';
 import JsonFormatter from './pages/JsonFormatter';
 import ColorConverter from './pages/ColorConverter';
+import PasswordGenerator from './pages/PasswordGenerator';
+import UnitConverter from './pages/UnitConverter';
+import LoanCalculator from './pages/LoanCalculator';
+import Base64Tool from './pages/Base64Tool';
+import LoremIpsum from './pages/LoremIpsum';
 import './App.css';
 
 function App() {
@@ -29,6 +34,11 @@ function App() {
           <Route path="random-number-generator" element={<RandomGenerator />} />
           <Route path="json-formatter" element={<JsonFormatter />} />
           <Route path="color-converter" element={<ColorConverter />} />
+          <Route path="password-generator" element={<PasswordGenerator />} />
+          <Route path="unit-converter" element={<UnitConverter />} />
+          <Route path="loan-calculator" element={<LoanCalculator />} />
+          <Route path="base64" element={<Base64Tool />} />
+          <Route path="lorem-ipsum" element={<LoremIpsum />} />
         </Route>
       </Routes>
     </BrowserRouter>

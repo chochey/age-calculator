@@ -19,6 +19,11 @@ function Layout() {
             <Link to="/random-number-generator">Random</Link>
             <Link to="/json-formatter">JSON</Link>
             <Link to="/color-converter">Colors</Link>
+            <Link to="/password-generator">Password</Link>
+            <Link to="/unit-converter">Units</Link>
+            <Link to="/loan-calculator">Loan</Link>
+            <Link to="/base64">Base64</Link>
+            <Link to="/lorem-ipsum">Lorem Ipsum</Link>
           </nav>
         </div>
       </header>

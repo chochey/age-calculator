@@ -44,4 +44,24 @@
     <loc>https://quickcalcs.net/color-converter</loc>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://quickcalcs.net/password-generator</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/unit-converter</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/loan-calculator</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/base64</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/lorem-ipsum</loc>
+    <priority>0.8</priority>
+  </url>
 </urlset>

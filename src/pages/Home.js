@@ -52,6 +52,31 @@ const tools = [
     description: 'Pick colors and convert between HEX, RGB, and HSL formats.',
     path: '/color-converter',
   },
+  {
+    name: 'Password Generator',
+    description: 'Generate secure, random passwords with customizable length and character types.',
+    path: '/password-generator',
+  },
+  {
+    name: 'Unit Converter',
+    description: 'Convert between units of length, weight, temperature, volume, and speed.',
+    path: '/unit-converter',
+  },
+  {
+    name: 'Loan Calculator',
+    description: 'Calculate monthly payments, total interest, and total cost of any loan.',
+    path: '/loan-calculator',
+  },
+  {
+    name: 'Base64 Encoder / Decoder',
+    description: 'Encode text to Base64 or decode Base64 strings back to plain text.',
+    path: '/base64',
+  },
+  {
+    name: 'Lorem Ipsum Generator',
+    description: 'Generate placeholder text in paragraphs, sentences, or words.',
+    path: '/lorem-ipsum',
+  },
 ];
 
 function Home() {
