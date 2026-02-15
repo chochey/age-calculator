@@ -16,6 +16,11 @@ import UnitConverter from './pages/UnitConverter';
 import LoanCalculator from './pages/LoanCalculator';
 import Base64Tool from './pages/Base64Tool';
 import LoremIpsum from './pages/LoremIpsum';
+import QrGenerator from './pages/QrGenerator';
+import CountdownTimer from './pages/CountdownTimer';
+import UrlEncoder from './pages/UrlEncoder';
+import MarkdownPreview from './pages/MarkdownPreview';
+import RegexTester from './pages/RegexTester';
 import './App.css';
 
 function App() {
@@ -39,6 +44,11 @@ function App() {
           <Route path="loan-calculator" element={<LoanCalculator />} />
           <Route path="base64" element={<Base64Tool />} />
           <Route path="lorem-ipsum" element={<LoremIpsum />} />
+          <Route path="qr-code-generator" element={<QrGenerator />} />
+          <Route path="countdown-timer" element={<CountdownTimer />} />
+          <Route path="url-encoder" element={<UrlEncoder />} />
+          <Route path="markdown-preview" element={<MarkdownPreview />} />
+          <Route path="regex-tester" element={<RegexTester />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -646,6 +646,122 @@ h1 {
   color: #fff;
 }
 
+/* QR Code */
+.qr-result {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.qr-image {
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+/* Markdown preview */
+.md-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.md-pane {
+  min-width: 0;
+}
+
+.md-preview {
+  padding: 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  background: #fff;
+  min-height: 200px;
+  line-height: 1.7;
+  overflow-wrap: break-word;
+}
+
+.md-preview h1, .md-preview h2, .md-preview h3 { margin: 0.5em 0 0.25em; }
+.md-preview code { background: #f1f5f9; padding: 0.15em 0.4em; border-radius: 4px; font-size: 0.9em; }
+.md-preview blockquote { border-left: 3px solid #4f46e5; padding-left: 0.75rem; color: #64748b; margin: 0.5em 0; }
+.md-preview hr { border: none; border-top: 1px solid #e2e8f0; margin: 1em 0; }
+.md-preview ul { padding-left: 1.25rem; }
+.md-preview a { color: #4f46e5; }
+.md-preview del { color: #94a3b8; }
+
+/* Regex tester */
+.regex-highlighted {
+  padding: 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  background: #fff;
+  font-family: 'Consolas', monospace;
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+  word-break: break-all;
+  line-height: 1.8;
+}
+
+.regex-match {
+  background: #fef08a;
+  border-radius: 2px;
+  padding: 1px 0;
+}
+
+.regex-matches {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.regex-match-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.regex-match-index {
+  font-weight: 700;
+  color: #4f46e5;
+  font-size: 0.8rem;
+}
+
+.regex-match-item code {
+  font-family: 'Consolas', monospace;
+  background: #fef08a;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+}
+
+.regex-match-pos {
+  color: #94a3b8;
+  font-size: 0.8rem;
+}
+
+.regex-match-groups {
+  color: #64748b;
+  font-size: 0.8rem;
+}
+
+/* Time input */
+.form input[type="time"] {
+  padding: 0.75rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+  background: #fff;
+}
+
+.form input[type="time"]:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
 /* Mobile adjustments */
 @media (max-width: 480px) {
   h1 { font-size: 1.5rem; }
@@ -653,4 +769,5 @@ h1 {
   .inline-form input[type="number"] { width: 80px; }
   .bmi-scale { grid-template-columns: repeat(2, 1fr); }
   .input-row { flex-direction: column; }
+  .md-layout { grid-template-columns: 1fr; }
 }

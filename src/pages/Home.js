@@ -22,6 +22,7 @@ const categories = [
       { name: 'Case Converter', description: 'Uppercase, lowercase, title case, camelCase & more.', path: '/case-converter' },
       { name: 'Color Converter', description: 'Convert between HEX, RGB & HSL formats.', path: '/color-converter' },
       { name: 'Base64 Encoder / Decoder', description: 'Encode text to Base64 or decode back to plain text.', path: '/base64' },
+      { name: 'URL Encoder / Decoder', description: 'Encode or decode URLs and query strings.', path: '/url-encoder' },
     ],
   },
   {
@@ -31,6 +32,7 @@ const categories = [
       { name: 'Password Generator', description: 'Secure random passwords with strength meter.', path: '/password-generator' },
       { name: 'Random Number Generator', description: 'Random numbers in any range, with or without duplicates.', path: '/random-number-generator' },
       { name: 'Lorem Ipsum Generator', description: 'Placeholder text in paragraphs, sentences or words.', path: '/lorem-ipsum' },
+      { name: 'QR Code Generator', description: 'Create QR codes for URLs, text & more.', path: '/qr-code-generator' },
     ],
   },
   {
@@ -40,6 +42,9 @@ const categories = [
       { name: 'Word Counter', description: 'Words, characters, sentences & reading time.', path: '/word-counter' },
       { name: 'JSON Formatter', description: 'Format, validate & minify JSON with error detection.', path: '/json-formatter' },
       { name: 'Date Difference', description: 'Exact time between two dates in days, weeks & months.', path: '/date-difference-calculator' },
+      { name: 'Markdown Preview', description: 'Write Markdown and see rendered output live.', path: '/markdown-preview' },
+      { name: 'Regex Tester', description: 'Test regex patterns with real-time highlighting.', path: '/regex-tester' },
+      { name: 'Countdown Timer', description: 'Count down to any date with live updates.', path: '/countdown-timer' },
     ],
   },
 ];
