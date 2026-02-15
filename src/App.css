@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-  max-width: 640px;
+  max-width: 720px;
   margin: 0 auto;
   padding: 2rem 1rem;
   flex: 1;
@@ -50,7 +50,9 @@ h1 {
   font-size: 0.95rem;
 }
 
-.form input[type="date"] {
+.form input[type="date"],
+.form input[type="number"],
+.form input[type="text"] {
   padding: 0.75rem 1rem;
   border: 2px solid #e2e8f0;
   border-radius: 10px;
@@ -59,7 +61,7 @@ h1 {
   background: #fff;
 }
 
-.form input[type="date"]:focus {
+.form input:focus {
   outline: none;
   border-color: #4f46e5;
 }
@@ -78,6 +80,52 @@ h1 {
 
 .form button:hover {
   background: #4338ca;
+}
+
+/* Inline form (percentage calculator) */
+.inline-form {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.inline-form input[type="number"] {
+  width: 100px;
+  flex: 0 0 auto;
+}
+
+.inline-form span {
+  font-weight: 500;
+  color: #475569;
+}
+
+.calc-section {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.calc-section h2 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: #0f172a;
+}
+
+.calc-section .form {
+  margin-bottom: 0.5rem;
+}
+
+.calc-result {
+  background: #eef2ff;
+  border: 1px solid #c7d2fe;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #4f46e5;
+  margin-top: 0.5rem;
 }
 
 /* Results */
@@ -150,6 +198,25 @@ h1 {
   margin-top: 0.25rem;
 }
 
+/* Word counter textarea */
+.word-textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  line-height: 1.6;
+  resize: vertical;
+  transition: border-color 0.2s;
+  background: #fff;
+}
+
+.word-textarea:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
 /* Error */
 .error {
   color: #dc2626;
@@ -161,7 +228,7 @@ h1 {
 .info-section {
   border-top: 1px solid #e2e8f0;
   padding-top: 2rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .info-section h2 {
@@ -198,5 +265,5 @@ h1 {
 @media (max-width: 480px) {
   h1 { font-size: 1.5rem; }
   .age-number { font-size: 2rem; }
-  .detail-grid { grid-template-columns: repeat(2, 1fr); }
+  .inline-form input[type="number"] { width: 80px; }
 }
