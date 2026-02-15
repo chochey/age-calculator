@@ -17,6 +17,26 @@ const tools = [
     description: 'Count words, characters, sentences, and estimate reading time.',
     path: '/word-counter',
   },
+  {
+    name: 'BMI Calculator',
+    description: 'Calculate your Body Mass Index and see your weight category.',
+    path: '/bmi-calculator',
+  },
+  {
+    name: 'Tip Calculator',
+    description: 'Calculate tips and split the bill between any number of people.',
+    path: '/tip-calculator',
+  },
+  {
+    name: 'Case Converter',
+    description: 'Convert text to uppercase, lowercase, title case, camelCase, and more.',
+    path: '/case-converter',
+  },
+  {
+    name: 'Date Difference Calculator',
+    description: 'Find the exact time between any two dates in days, weeks, and months.',
+    path: '/date-difference-calculator',
+  },
 ];
 
 function Home() {

@@ -4,6 +4,10 @@ import Home from './pages/Home';
 import AgeCalculator from './pages/AgeCalculator';
 import PercentageCalculator from './pages/PercentageCalculator';
 import WordCounter from './pages/WordCounter';
+import BmiCalculator from './pages/BmiCalculator';
+import TipCalculator from './pages/TipCalculator';
+import CaseConverter from './pages/CaseConverter';
+import DateDifference from './pages/DateDifference';
 import './App.css';
 
 function App() {
@@ -15,6 +19,10 @@ function App() {
           <Route path="age-calculator" element={<AgeCalculator />} />
           <Route path="percentage-calculator" element={<PercentageCalculator />} />
           <Route path="word-counter" element={<WordCounter />} />
+          <Route path="bmi-calculator" element={<BmiCalculator />} />
+          <Route path="tip-calculator" element={<TipCalculator />} />
+          <Route path="case-converter" element={<CaseConverter />} />
+          <Route path="date-difference-calculator" element={<DateDifference />} />
         </Route>
       </Routes>
     </BrowserRouter>
