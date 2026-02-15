@@ -5,6 +5,7 @@ import './Home.css';
 const categories = [
   {
     label: 'Calculators',
+    id: 'calculators',
     icon: '🔢',
     tools: [
       { name: 'Age Calculator', description: 'Exact age in years, months, days, hours & minutes.', path: '/age-calculator' },
@@ -16,6 +17,7 @@ const categories = [
   },
   {
     label: 'Converters',
+    id: 'converters',
     icon: '🔄',
     tools: [
       { name: 'Unit Converter', description: 'Length, weight, temperature, volume & speed.', path: '/unit-converter' },
@@ -27,6 +29,7 @@ const categories = [
   },
   {
     label: 'Generators',
+    id: 'generators',
     icon: '⚡',
     tools: [
       { name: 'Password Generator', description: 'Secure random passwords with strength meter.', path: '/password-generator' },
@@ -37,6 +40,7 @@ const categories = [
   },
   {
     label: 'Text & Data',
+    id: 'text-data',
     icon: '📝',
     tools: [
       { name: 'Word Counter', description: 'Words, characters, sentences & reading time.', path: '/word-counter' },
@@ -57,7 +61,7 @@ function Home() {
       <p className="subtitle">Fast, free, and easy-to-use tools for everyday calculations.</p>
 
       {categories.map((cat) => (
-        <section key={cat.label} className="tool-category">
+        <section key={cat.label} id={cat.id} className="tool-category">
           <h2 className="category-heading">{cat.icon} {cat.label}</h2>
           <div className="tools-grid">
             {cat.tools.map((tool) => (
