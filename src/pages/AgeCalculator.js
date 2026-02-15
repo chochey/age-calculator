@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Seo from '../components/Seo';
 
 function calculateAge(birthDate) {
   const now = new Date();
@@ -47,6 +48,7 @@ function AgeCalculator() {
 
   return (
     <div>
+      <Seo title="Age Calculator - Calculate Your Exact Age" description="Free online age calculator. Find your exact age in years, months, days, hours, and minutes from your date of birth." />
       <h1>Age Calculator</h1>
       <p className="subtitle">Calculate your exact age in years, months, days, and more.</p>
 

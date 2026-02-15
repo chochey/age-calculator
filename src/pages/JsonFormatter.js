@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Seo from '../components/Seo';
 
 function JsonFormatter() {
   const [input, setInput] = useState('');
@@ -45,6 +46,7 @@ function JsonFormatter() {
 
   return (
     <div>
+      <Seo title="JSON Formatter & Validator" description="Free online JSON formatter and validator. Format, beautify, minify, and validate JSON data with syntax error detection." />
       <h1>JSON Formatter & Validator</h1>
       <p className="subtitle">Format, validate, and minify JSON data instantly.</p>
 

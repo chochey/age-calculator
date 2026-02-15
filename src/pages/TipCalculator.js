@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Seo from '../components/Seo';
 
 function TipCalculator() {
   const [bill, setBill] = useState('');
@@ -15,6 +16,7 @@ function TipCalculator() {
 
   return (
     <div>
+      <Seo title="Tip Calculator - Calculate Tips & Split Bills" description="Free tip calculator. Calculate tips for any bill amount, choose tip percentage, and split the bill between any number of people." />
       <h1>Tip Calculator</h1>
       <p className="subtitle">Calculate tips and split the bill with ease.</p>
 

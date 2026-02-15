@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Seo from '../components/Seo';
 
 function toTitleCase(str) {
   return str.replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
@@ -36,6 +37,7 @@ function CaseConverter() {
 
   return (
     <div>
+      <Seo title="Case Converter - Change Text Case Online" description="Free online case converter. Convert text to uppercase, lowercase, title case, sentence case, camelCase, snake_case, and more." />
       <h1>Case Converter</h1>
       <p className="subtitle">Convert text between uppercase, lowercase, title case, and more.</p>
 

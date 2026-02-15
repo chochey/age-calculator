@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Seo from '../components/Seo';
 
 function generatePassword(length, options) {
   let chars = '';
@@ -48,6 +49,7 @@ function PasswordGenerator() {
 
   return (
     <div>
+      <Seo title="Password Generator - Secure Random Passwords" description="Free secure password generator. Create strong random passwords with customizable length, characters, and strength indicator." />
       <h1>Password Generator</h1>
       <p className="subtitle">Generate secure, random passwords instantly.</p>
 

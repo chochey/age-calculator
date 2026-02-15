@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Seo from '../components/Seo';
 
 function analyze(text) {
   const trimmed = text.trim();
@@ -23,6 +24,7 @@ function WordCounter() {
 
   return (
     <div>
+      <Seo title="Word Counter - Count Words & Characters" description="Free online word counter tool. Count words, characters, sentences, paragraphs, and estimate reading time instantly." />
       <h1>Word Counter</h1>
       <p className="subtitle">Count words, characters, sentences, and estimate reading time.</p>
 

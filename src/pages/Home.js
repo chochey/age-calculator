@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import Seo from '../components/Seo';
 import './Home.css';
 
 const categories = [
@@ -46,6 +47,7 @@ const categories = [
 function Home() {
   return (
     <div>
+      <Seo title="Free Online Calculators & Tools" description="QuickCalc offers free online calculators, converters, and generators. Age calculator, BMI calculator, unit converter, password generator, and more." />
       <h1>Free Online Calculators & Tools</h1>
       <p className="subtitle">Fast, free, and easy-to-use tools for everyday calculations.</p>
 

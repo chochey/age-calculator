@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Seo from '../components/Seo';
 
 function RandomGenerator() {
   const [min, setMin] = useState(1);
@@ -38,6 +39,7 @@ function RandomGenerator() {
 
   return (
     <div>
+      <Seo title="Random Number Generator" description="Free random number generator. Generate random numbers in any range with options for quantity and unique numbers." />
       <h1>Random Number Generator</h1>
       <p className="subtitle">Generate random numbers within any range.</p>
 

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Seo from '../components/Seo';
 
 function BmiCalculator() {
   const [unit, setUnit] = useState('imperial');
@@ -30,6 +31,7 @@ function BmiCalculator() {
 
   return (
     <div>
+      <Seo title="BMI Calculator - Body Mass Index" description="Free BMI calculator. Calculate your Body Mass Index using imperial or metric units and see your weight category." />
       <h1>BMI Calculator</h1>
       <p className="subtitle">Calculate your Body Mass Index and see what category you fall into.</p>
 

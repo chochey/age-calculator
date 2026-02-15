@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Seo from '../components/Seo';
 
 function hexToRgb(hex) {
   const h = hex.replace('#', '');
@@ -60,6 +61,7 @@ function ColorConverter() {
 
   return (
     <div>
+      <Seo title="Color Converter - HEX, RGB, HSL" description="Free color converter and picker. Convert colors between HEX, RGB, and HSL formats with a visual color picker." />
       <h1>Color Picker & Converter</h1>
       <p className="subtitle">Pick a color and convert between HEX, RGB, and HSL formats.</p>
 

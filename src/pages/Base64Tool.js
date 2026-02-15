@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Seo from '../components/Seo';
 
 function Base64Tool() {
   const [input, setInput] = useState('');
@@ -24,6 +25,7 @@ function Base64Tool() {
 
   return (
     <div>
+      <Seo title="Base64 Encoder & Decoder" description="Free online Base64 encoder and decoder. Encode text to Base64 or decode Base64 strings back to plain text instantly." />
       <h1>Base64 Encoder / Decoder</h1>
       <p className="subtitle">Encode text to Base64 or decode Base64 back to text.</p>
 

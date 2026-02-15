@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Seo from '../components/Seo';
 
 function LoanCalculator() {
   const [amount, setAmount] = useState('');
@@ -23,6 +24,7 @@ function LoanCalculator() {
 
   return (
     <div>
+      <Seo title="Loan Calculator - Monthly Payment & Interest" description="Free loan calculator. Calculate monthly payments, total interest, and total cost for mortgages, auto loans, and personal loans." />
       <h1>Loan Calculator</h1>
       <p className="subtitle">Calculate monthly payments, total interest, and loan costs.</p>
 

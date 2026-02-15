@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Seo from '../components/Seo';
 
 function PercentageCalculator() {
   const [calc1, setCalc1] = useState({ percent: '', of: '', result: '' });
@@ -37,6 +38,7 @@ function PercentageCalculator() {
 
   return (
     <div>
+      <Seo title="Percentage Calculator" description="Free online percentage calculator. Calculate percentages, percentage increases, decreases, and differences between numbers." />
       <h1>Percentage Calculator</h1>
       <p className="subtitle">Calculate percentages, increases, decreases, and differences.</p>
 

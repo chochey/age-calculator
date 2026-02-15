@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Seo from '../components/Seo';
 
 function DateDifference() {
   const [startDate, setStartDate] = useState('');
@@ -40,6 +41,7 @@ function DateDifference() {
 
   return (
     <div>
+      <Seo title="Date Difference Calculator - Days Between Dates" description="Free date difference calculator. Find the exact number of days, weeks, months, and years between any two dates." />
       <h1>Date Difference Calculator</h1>
       <p className="subtitle">Find the exact time between any two dates.</p>
 

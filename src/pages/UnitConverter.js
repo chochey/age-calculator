@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Seo from '../components/Seo';
 
 const categories = {
   Length: {
@@ -63,6 +64,7 @@ function UnitConverter() {
 
   return (
     <div>
+      <Seo title="Unit Converter - Length, Weight, Temperature & More" description="Free online unit converter. Convert between units of length, weight, temperature, volume, and speed instantly." />
       <h1>Unit Converter</h1>
       <p className="subtitle">Convert between common units of measurement.</p>
 
