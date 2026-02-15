@@ -6,7 +6,7 @@ function Layout() {
     <div className="app">
       <header className="site-header">
         <div className="header-inner">
-          <Link to="/" className="logo">QuickCalc</Link>
+          <Link to="/" className="logo">QuickCalcs</Link>
         </div>
       </header>
 
@@ -15,7 +15,7 @@ function Layout() {
       </main>
 
       <footer className="footer">
-        <p>&copy; {new Date().getFullYear()} QuickCalc. Free online tools.</p>
+        <p>&copy; {new Date().getFullYear()} QuickCalcs. Free online tools.</p>
       </footer>
     </div>
   );
