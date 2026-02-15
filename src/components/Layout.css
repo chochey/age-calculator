@@ -12,7 +12,6 @@
   padding: 0.75rem 1rem;
   display: flex;
   align-items: center;
-  gap: 1.5rem;
 }
 
 .logo {
@@ -20,43 +19,4 @@
   font-weight: 800;
   color: #4f46e5;
   text-decoration: none;
-  flex-shrink: 0;
-}
-
-.site-header nav {
-  display: flex;
-  gap: 1rem;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  mask-image: linear-gradient(to right, black calc(100% - 40px), transparent);
-  -webkit-mask-image: linear-gradient(to right, black calc(100% - 40px), transparent);
-  padding-right: 20px;
-}
-
-.site-header nav::-webkit-scrollbar {
-  display: none;
-}
-
-.site-header nav a {
-  color: #64748b;
-  text-decoration: none;
-  font-size: 0.85rem;
-  font-weight: 500;
-  transition: color 0.2s;
-  white-space: nowrap;
-}
-
-.site-header nav a:hover {
-  color: #4f46e5;
-}
-
-@media (max-width: 640px) {
-  .header-inner {
-    gap: 1rem;
-  }
-
-  .site-header nav {
-    gap: 0.75rem;
-  }
 }
