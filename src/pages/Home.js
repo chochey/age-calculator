@@ -42,6 +42,26 @@ const categories = [
     ],
   },
   {
+    label: 'Developer Tools',
+    id: 'dev-tools',
+    icon: '🛠️',
+    tools: [
+      { name: 'Diff Checker', description: 'Compare two texts and see differences highlighted.', path: '/diff-checker' },
+      { name: 'Hash Generator', description: 'Generate SHA-1, SHA-256, SHA-384 & SHA-512 hashes.', path: '/hash-generator' },
+      { name: 'JWT Decoder', description: 'Decode JSON Web Tokens to inspect header & payload.', path: '/jwt-decoder' },
+      { name: 'Chmod Calculator', description: 'Linux file permissions in numeric & symbolic notation.', path: '/chmod-calculator' },
+    ],
+  },
+  {
+    label: 'Image Tools',
+    id: 'image-tools',
+    icon: '🖼️',
+    tools: [
+      { name: 'Image Resizer', description: 'Resize images to custom dimensions. PNG, JPG & WebP.', path: '/image-resizer' },
+      { name: 'Image Compressor', description: 'Reduce image file size with adjustable quality.', path: '/image-compressor' },
+    ],
+  },
+  {
     label: 'Text & Data',
     id: 'text-data',
     icon: '📝',

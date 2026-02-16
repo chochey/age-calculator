@@ -26,6 +26,12 @@ import TimestampConverter from './pages/TimestampConverter';
 import DiscountCalculator from './pages/DiscountCalculator';
 import HtmlEntityTool from './pages/HtmlEntityTool';
 import GpaCalculator from './pages/GpaCalculator';
+import DiffChecker from './pages/DiffChecker';
+import HashGenerator from './pages/HashGenerator';
+import JwtDecoder from './pages/JwtDecoder';
+import ImageResizer from './pages/ImageResizer';
+import ImageCompressor from './pages/ImageCompressor';
+import ChmodCalculator from './pages/ChmodCalculator';
 import './App.css';
 
 function App() {
@@ -59,6 +65,12 @@ function App() {
           <Route path="discount-calculator" element={<DiscountCalculator />} />
           <Route path="html-entity-encoder" element={<HtmlEntityTool />} />
           <Route path="gpa-calculator" element={<GpaCalculator />} />
+          <Route path="diff-checker" element={<DiffChecker />} />
+          <Route path="hash-generator" element={<HashGenerator />} />
+          <Route path="jwt-decoder" element={<JwtDecoder />} />
+          <Route path="image-resizer" element={<ImageResizer />} />
+          <Route path="image-compressor" element={<ImageCompressor />} />
+          <Route path="chmod-calculator" element={<ChmodCalculator />} />
         </Route>
       </Routes>
     </BrowserRouter>

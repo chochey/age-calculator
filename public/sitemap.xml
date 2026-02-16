@@ -104,4 +104,28 @@
     <loc>https://quickcalcs.net/gpa-calculator</loc>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://quickcalcs.net/diff-checker</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/hash-generator</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/jwt-decoder</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/image-resizer</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/image-compressor</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/chmod-calculator</loc>
+    <priority>0.8</priority>
+  </url>
 </urlset>

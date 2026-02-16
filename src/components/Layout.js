@@ -25,6 +25,8 @@ function Layout() {
             <button onClick={() => scrollTo('calculators')}>Calculators</button>
             <button onClick={() => scrollTo('converters')}>Converters</button>
             <button onClick={() => scrollTo('generators')}>Generators</button>
+            <button onClick={() => scrollTo('dev-tools')}>Dev Tools</button>
+            <button onClick={() => scrollTo('image-tools')}>Image</button>
             <button onClick={() => scrollTo('text-data')}>Text & Data</button>
           </nav>
         </div>
