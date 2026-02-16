@@ -32,6 +32,12 @@ import JwtDecoder from './pages/JwtDecoder';
 import ImageResizer from './pages/ImageResizer';
 import ImageCompressor from './pages/ImageCompressor';
 import ChmodCalculator from './pages/ChmodCalculator';
+import InvoiceGenerator from './pages/InvoiceGenerator';
+import ColorPalette from './pages/ColorPalette';
+import SqlFormatter from './pages/SqlFormatter';
+import CronBuilder from './pages/CronBuilder';
+import AspectRatioCalc from './pages/AspectRatioCalc';
+import NumberBaseConverter from './pages/NumberBaseConverter';
 import './App.css';
 
 function App() {
@@ -71,6 +77,12 @@ function App() {
           <Route path="image-resizer" element={<ImageResizer />} />
           <Route path="image-compressor" element={<ImageCompressor />} />
           <Route path="chmod-calculator" element={<ChmodCalculator />} />
+          <Route path="invoice-generator" element={<InvoiceGenerator />} />
+          <Route path="color-palette-generator" element={<ColorPalette />} />
+          <Route path="sql-formatter" element={<SqlFormatter />} />
+          <Route path="cron-expression-builder" element={<CronBuilder />} />
+          <Route path="aspect-ratio-calculator" element={<AspectRatioCalc />} />
+          <Route path="number-base-converter" element={<NumberBaseConverter />} />
         </Route>
       </Routes>
     </BrowserRouter>

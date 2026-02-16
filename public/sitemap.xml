@@ -128,4 +128,28 @@
     <loc>https://quickcalcs.net/chmod-calculator</loc>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://quickcalcs.net/invoice-generator</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/color-palette-generator</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/sql-formatter</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/cron-expression-builder</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/aspect-ratio-calculator</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/number-base-converter</loc>
+    <priority>0.8</priority>
+  </url>
 </urlset>

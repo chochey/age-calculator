@@ -15,6 +15,7 @@ const categories = [
       { name: 'Loan Calculator', description: 'Monthly payments, interest & total loan cost.', path: '/loan-calculator' },
       { name: 'Discount Calculator', description: 'Sale prices, savings & final cost with tax.', path: '/discount-calculator' },
       { name: 'GPA Calculator', description: 'Grade point average from courses & credits.', path: '/gpa-calculator' },
+      { name: 'Aspect Ratio Calculator', description: 'Calculate & resize dimensions proportionally.', path: '/aspect-ratio-calculator' },
     ],
   },
   {
@@ -28,6 +29,7 @@ const categories = [
       { name: 'Base64 Encoder / Decoder', description: 'Encode text to Base64 or decode back to plain text.', path: '/base64' },
       { name: 'URL Encoder / Decoder', description: 'Encode or decode URLs and query strings.', path: '/url-encoder' },
       { name: 'HTML Entity Encoder', description: 'Encode or decode HTML entities.', path: '/html-entity-encoder' },
+      { name: 'Number Base Converter', description: 'Convert between binary, decimal, hex & octal.', path: '/number-base-converter' },
     ],
   },
   {
@@ -39,6 +41,8 @@ const categories = [
       { name: 'Random Number Generator', description: 'Random numbers in any range, with or without duplicates.', path: '/random-number-generator' },
       { name: 'Lorem Ipsum Generator', description: 'Placeholder text in paragraphs, sentences or words.', path: '/lorem-ipsum' },
       { name: 'QR Code Generator', description: 'Create QR codes for URLs, text & more.', path: '/qr-code-generator' },
+      { name: 'Invoice Generator', description: 'Create & print professional invoices. No sign-up.', path: '/invoice-generator' },
+      { name: 'Color Palette Generator', description: 'Generate harmonious color schemes from any color.', path: '/color-palette-generator' },
     ],
   },
   {
@@ -50,6 +54,8 @@ const categories = [
       { name: 'Hash Generator', description: 'Generate SHA-1, SHA-256, SHA-384 & SHA-512 hashes.', path: '/hash-generator' },
       { name: 'JWT Decoder', description: 'Decode JSON Web Tokens to inspect header & payload.', path: '/jwt-decoder' },
       { name: 'Chmod Calculator', description: 'Linux file permissions in numeric & symbolic notation.', path: '/chmod-calculator' },
+      { name: 'SQL Formatter', description: 'Format, beautify & minify SQL queries.', path: '/sql-formatter' },
+      { name: 'Cron Expression Builder', description: 'Visual cron schedule builder with descriptions.', path: '/cron-expression-builder' },
     ],
   },
   {
