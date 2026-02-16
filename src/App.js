@@ -21,6 +21,11 @@ import CountdownTimer from './pages/CountdownTimer';
 import UrlEncoder from './pages/UrlEncoder';
 import MarkdownPreview from './pages/MarkdownPreview';
 import RegexTester from './pages/RegexTester';
+import GradientGenerator from './pages/GradientGenerator';
+import TimestampConverter from './pages/TimestampConverter';
+import DiscountCalculator from './pages/DiscountCalculator';
+import HtmlEntityTool from './pages/HtmlEntityTool';
+import GpaCalculator from './pages/GpaCalculator';
 import './App.css';
 
 function App() {
@@ -49,6 +54,11 @@ function App() {
           <Route path="url-encoder" element={<UrlEncoder />} />
           <Route path="markdown-preview" element={<MarkdownPreview />} />
           <Route path="regex-tester" element={<RegexTester />} />
+          <Route path="css-gradient-generator" element={<GradientGenerator />} />
+          <Route path="timestamp-converter" element={<TimestampConverter />} />
+          <Route path="discount-calculator" element={<DiscountCalculator />} />
+          <Route path="html-entity-encoder" element={<HtmlEntityTool />} />
+          <Route path="gpa-calculator" element={<GpaCalculator />} />
         </Route>
       </Routes>
     </BrowserRouter>

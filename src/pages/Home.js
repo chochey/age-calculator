@@ -13,6 +13,8 @@ const categories = [
       { name: 'BMI Calculator', description: 'Body Mass Index with weight category.', path: '/bmi-calculator' },
       { name: 'Tip Calculator', description: 'Tips & bill splitting for any group size.', path: '/tip-calculator' },
       { name: 'Loan Calculator', description: 'Monthly payments, interest & total loan cost.', path: '/loan-calculator' },
+      { name: 'Discount Calculator', description: 'Sale prices, savings & final cost with tax.', path: '/discount-calculator' },
+      { name: 'GPA Calculator', description: 'Grade point average from courses & credits.', path: '/gpa-calculator' },
     ],
   },
   {
@@ -25,6 +27,7 @@ const categories = [
       { name: 'Color Converter', description: 'Convert between HEX, RGB & HSL formats.', path: '/color-converter' },
       { name: 'Base64 Encoder / Decoder', description: 'Encode text to Base64 or decode back to plain text.', path: '/base64' },
       { name: 'URL Encoder / Decoder', description: 'Encode or decode URLs and query strings.', path: '/url-encoder' },
+      { name: 'HTML Entity Encoder', description: 'Encode or decode HTML entities.', path: '/html-entity-encoder' },
     ],
   },
   {
@@ -49,6 +52,8 @@ const categories = [
       { name: 'Markdown Preview', description: 'Write Markdown and see rendered output live.', path: '/markdown-preview' },
       { name: 'Regex Tester', description: 'Test regex patterns with real-time highlighting.', path: '/regex-tester' },
       { name: 'Countdown Timer', description: 'Count down to any date with live updates.', path: '/countdown-timer' },
+      { name: 'Timestamp Converter', description: 'Convert Unix timestamps to dates & back.', path: '/timestamp-converter' },
+      { name: 'CSS Gradient Generator', description: 'Create gradients & copy the CSS code.', path: '/css-gradient-generator' },
     ],
   },
 ];
