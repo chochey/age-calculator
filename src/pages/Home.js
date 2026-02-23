@@ -16,6 +16,8 @@ const categories = [
       { name: 'Discount Calculator', description: 'Sale prices, savings & final cost with tax.', path: '/discount-calculator' },
       { name: 'GPA Calculator', description: 'Grade point average from courses & credits.', path: '/gpa-calculator' },
       { name: 'Aspect Ratio Calculator', description: 'Calculate & resize dimensions proportionally.', path: '/aspect-ratio-calculator' },
+      { name: 'Salary Calculator', description: 'Convert between annual, monthly, weekly & hourly pay.', path: '/salary-calculator' },
+      { name: 'Electricity Cost Calculator', description: 'Estimate appliance running costs per day, month & year.', path: '/electricity-cost-calculator' },
     ],
   },
   {
@@ -30,6 +32,7 @@ const categories = [
       { name: 'URL Encoder / Decoder', description: 'Encode or decode URLs and query strings.', path: '/url-encoder' },
       { name: 'HTML Entity Encoder', description: 'Encode or decode HTML entities.', path: '/html-entity-encoder' },
       { name: 'Number Base Converter', description: 'Convert between binary, decimal, hex & octal.', path: '/number-base-converter' },
+      { name: 'Scientific Notation Converter', description: 'Convert numbers to & from scientific notation.', path: '/scientific-notation-converter' },
     ],
   },
   {
@@ -56,6 +59,7 @@ const categories = [
       { name: 'Chmod Calculator', description: 'Linux file permissions in numeric & symbolic notation.', path: '/chmod-calculator' },
       { name: 'SQL Formatter', description: 'Format, beautify & minify SQL queries.', path: '/sql-formatter' },
       { name: 'Cron Expression Builder', description: 'Visual cron schedule builder with descriptions.', path: '/cron-expression-builder' },
+      { name: 'Box Shadow Generator', description: 'Create CSS box shadows visually & copy the code.', path: '/box-shadow-generator' },
     ],
   },
   {
@@ -80,6 +84,8 @@ const categories = [
       { name: 'Countdown Timer', description: 'Count down to any date with live updates.', path: '/countdown-timer' },
       { name: 'Timestamp Converter', description: 'Convert Unix timestamps to dates & back.', path: '/timestamp-converter' },
       { name: 'CSS Gradient Generator', description: 'Create gradients & copy the CSS code.', path: '/css-gradient-generator' },
+      { name: 'Stopwatch', description: 'Precise stopwatch with lap timing & splits.', path: '/stopwatch' },
+      { name: 'Character Map', description: 'Browse & copy special characters, symbols & emoji.', path: '/character-map' },
     ],
   },
 ];

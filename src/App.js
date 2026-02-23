@@ -38,6 +38,12 @@ import SqlFormatter from './pages/SqlFormatter';
 import CronBuilder from './pages/CronBuilder';
 import AspectRatioCalc from './pages/AspectRatioCalc';
 import NumberBaseConverter from './pages/NumberBaseConverter';
+import SalaryCalculator from './pages/SalaryCalculator';
+import BoxShadowGenerator from './pages/BoxShadowGenerator';
+import ElectricityCostCalc from './pages/ElectricityCostCalc';
+import Stopwatch from './pages/Stopwatch';
+import ScientificNotation from './pages/ScientificNotation';
+import CharacterMap from './pages/CharacterMap';
 import './App.css';
 
 function App() {
@@ -83,6 +89,12 @@ function App() {
           <Route path="cron-expression-builder" element={<CronBuilder />} />
           <Route path="aspect-ratio-calculator" element={<AspectRatioCalc />} />
           <Route path="number-base-converter" element={<NumberBaseConverter />} />
+          <Route path="salary-calculator" element={<SalaryCalculator />} />
+          <Route path="box-shadow-generator" element={<BoxShadowGenerator />} />
+          <Route path="electricity-cost-calculator" element={<ElectricityCostCalc />} />
+          <Route path="stopwatch" element={<Stopwatch />} />
+          <Route path="scientific-notation-converter" element={<ScientificNotation />} />
+          <Route path="character-map" element={<CharacterMap />} />
         </Route>
       </Routes>
     </BrowserRouter>

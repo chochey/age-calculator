@@ -152,4 +152,28 @@
     <loc>https://quickcalcs.net/number-base-converter</loc>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://quickcalcs.net/salary-calculator</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/box-shadow-generator</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/electricity-cost-calculator</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/stopwatch</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/scientific-notation-converter</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/character-map</loc>
+    <priority>0.8</priority>
+  </url>
 </urlset>
