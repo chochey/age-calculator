@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function Base64Tool() {
   const [input, setInput] = useState('');
@@ -71,6 +72,7 @@ function Base64Tool() {
           <li>Data URIs in web development</li>
         </ul>
       </section>
+      <RelatedTools current="/base64" />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function SalaryCalculator() {
   const [amount, setAmount] = useState('');
@@ -124,6 +125,7 @@ function SalaryCalculator() {
           <li><strong>$100,000/year</strong> = $48.08/hour (40 hrs/week)</li>
         </ul>
       </section>
+      <RelatedTools current="/salary-calculator" />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function calculateAge(birthDate) {
   const now = new Date();
@@ -121,6 +122,7 @@ function AgeCalculator() {
           <li>See fun statistics about your life in hours and minutes</li>
         </ul>
       </section>
+      <RelatedTools current="/age-calculator" />
     </div>
   );
 }

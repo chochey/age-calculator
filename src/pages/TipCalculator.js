@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function TipCalculator() {
   const [bill, setBill] = useState('');
@@ -81,6 +82,7 @@ function TipCalculator() {
           <li><strong>25%+</strong> — Exceptional service</li>
         </ul>
       </section>
+      <RelatedTools current="/tip-calculator" />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function convert(value, fromBase) {
   const decimal = parseInt(value, fromBase);
@@ -92,6 +93,7 @@ function NumberBaseConverter() {
           <li><strong>128</strong> = 10000000 (binary) = 200 (octal) = 80 (hex)</li>
         </ul>
       </section>
+      <RelatedTools current="/number-base-converter" />
     </div>
   );
 }

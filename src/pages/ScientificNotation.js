@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function toScientific(num) {
   if (num === 0) return { coefficient: '0', exponent: 0, notation: '0', eNotation: '0e+0' };
@@ -127,6 +128,7 @@ function ScientificNotation() {
           <li><strong>Earth's mass:</strong> 5,972,000,000,000,000,000,000,000 kg = 5.972 x 10^24</li>
         </ul>
       </section>
+      <RelatedTools current="/scientific-notation-converter" />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 async function hashText(text, algo) {
   const encoded = new TextEncoder().encode(text);
@@ -74,6 +75,7 @@ function HashGenerator() {
           <li><strong>SHA-512</strong> — 512-bit hash, strongest option available here</li>
         </ul>
       </section>
+      <RelatedTools current="/hash-generator" />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function parseMarkdown(md) {
   let html = md
@@ -94,6 +95,7 @@ function MarkdownPreview() {
           <li><strong>Horizontal rule</strong> — ---</li>
         </ul>
       </section>
+      <RelatedTools current="/markdown-preview" />
     </div>
   );
 }

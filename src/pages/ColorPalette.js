@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function hexToHsl(hex) {
   let r = parseInt(hex.slice(1, 3), 16) / 255;
@@ -108,6 +109,7 @@ function ColorPalette() {
           <li><strong>Monochromatic</strong> — Same hue at different saturation levels.</li>
         </ul>
       </section>
+      <RelatedTools current="/color-palette-generator" />
     </div>
   );
 }

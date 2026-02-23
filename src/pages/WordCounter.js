@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function analyze(text) {
   const trimmed = text.trim();
@@ -75,6 +76,7 @@ function WordCounter() {
           <li>Track writing progress</li>
         </ul>
       </section>
+      <RelatedTools current="/word-counter" />
     </div>
   );
 }

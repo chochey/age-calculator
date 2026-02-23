@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function toTitleCase(str) {
   return str.replace(/\w\S*/g, (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
@@ -85,6 +86,7 @@ function CaseConverter() {
           <li><strong>kebab-case</strong> — Common in URLs and CSS class names</li>
         </ul>
       </section>
+      <RelatedTools current="/case-converter" />
     </div>
   );
 }

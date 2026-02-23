@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function encodeEntities(str) {
   return str.replace(/[&<>"']/g, (m) => {
@@ -81,6 +82,7 @@ function HtmlEntityTool() {
           <li><strong>&amp;#39;</strong> → ' (single quote)</li>
         </ul>
       </section>
+      <RelatedTools current="/html-entity-encoder" />
     </div>
   );
 }

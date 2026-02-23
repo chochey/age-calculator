@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 const categories = {
   Length: {
@@ -114,6 +115,7 @@ function UnitConverter() {
           <li><strong>Speed</strong> — m/s, km/h, mph, knots</li>
         </ul>
       </section>
+      <RelatedTools current="/unit-converter" />
     </div>
   );
 }

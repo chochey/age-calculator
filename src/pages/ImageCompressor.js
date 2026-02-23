@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function formatBytes(bytes) {
   if (bytes < 1024) return bytes + ' B';
@@ -119,6 +120,7 @@ function ImageCompressor() {
           <li><strong>WebP format:</strong> Try WebP for 25-35% smaller files vs JPEG at the same quality</li>
         </ul>
       </section>
+      <RelatedTools current="/image-compressor" />
     </div>
   );
 }

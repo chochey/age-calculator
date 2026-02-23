@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 const charGroups = [
   {
@@ -124,6 +125,7 @@ function CharacterMap() {
           <li><strong>Fractions</strong> — Common fraction characters</li>
         </ul>
       </section>
+      <RelatedTools current="/character-map" />
     </div>
   );
 }

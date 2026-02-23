@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function PercentageCalculator() {
   const [calc1, setCalc1] = useState({ percent: '', of: '', result: '' });
@@ -104,6 +105,7 @@ function PercentageCalculator() {
           <li>Calculate grade percentages</li>
         </ul>
       </section>
+      <RelatedTools current="/percentage-calculator" />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 const perms = ['read', 'write', 'execute'];
 const permValues = { read: 4, write: 2, execute: 1 };
@@ -108,6 +109,7 @@ function ChmodCalculator() {
           <li><strong>777</strong> (rwxrwxrwx) — Full access for everyone. Avoid on production servers.</li>
         </ul>
       </section>
+      <RelatedTools current="/chmod-calculator" />
     </div>
   );
 }

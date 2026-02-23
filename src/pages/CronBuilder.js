@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 const fields = [
   { label: 'Minute', range: '0-59', options: Array.from({ length: 60 }, (_, i) => i) },
@@ -122,6 +123,7 @@ function CronBuilder() {
           <li><strong>/</strong> — step (e.g., */5 for every 5 minutes)</li>
         </ul>
       </section>
+      <RelatedTools current="/cron-expression-builder" />
     </div>
   );
 }

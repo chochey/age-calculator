@@ -1,5 +1,6 @@
 import { useState, useRef, useCallback } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function formatTime(ms) {
   const hours = Math.floor(ms / 3600000);
@@ -97,6 +98,7 @@ function Stopwatch() {
           <li>Pause and resume without losing time</li>
         </ul>
       </section>
+      <RelatedTools current="/stopwatch" />
     </div>
   );
 }

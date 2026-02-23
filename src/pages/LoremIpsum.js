@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 const words = ['lorem','ipsum','dolor','sit','amet','consectetur','adipiscing','elit','sed','do','eiusmod','tempor','incididunt','ut','labore','et','dolore','magna','aliqua','enim','ad','minim','veniam','quis','nostrud','exercitation','ullamco','laboris','nisi','aliquip','ex','ea','commodo','consequat','duis','aute','irure','in','reprehenderit','voluptate','velit','esse','cillum','fugiat','nulla','pariatur','excepteur','sint','occaecat','cupidatat','non','proident','sunt','culpa','qui','officia','deserunt','mollit','anim','id','est','laborum','porta','nibh','venenatis','cras','semper','auctor','neque','vitae','pellentesque','dignissim','suspendisse','interdum','posuere','faucibus','ornare','massa','eget','nunc','lobortis','mattis','aliquam','fringilla','purus','lacinia','leo','integer','feugiat','scelerisque','varius','morbi','blandit','cursus','risus','ultrices','gravida','dictum','fusce','placerat','orci'];
 
@@ -88,6 +89,7 @@ function LoremIpsum() {
           <li>Testing font sizes and line spacing</li>
         </ul>
       </section>
+      <RelatedTools current="/lorem-ipsum" />
     </div>
   );
 }

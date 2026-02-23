@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function InvoiceGenerator() {
   const [from, setFrom] = useState({ name: '', email: '', address: '' });
@@ -184,6 +185,7 @@ function InvoiceGenerator() {
           <li>Save as PDF via browser print dialog (Ctrl+P / Cmd+P)</li>
         </ul>
       </section>
+      <RelatedTools current="/invoice-generator" />
     </div>
   );
 }

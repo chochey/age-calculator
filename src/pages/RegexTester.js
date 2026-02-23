@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function escapeHtml(str) {
   return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -106,6 +107,7 @@ function RegexTester() {
           <li><strong>IP Address</strong> — \d&#123;1,3&#125;\.\d&#123;1,3&#125;\.\d&#123;1,3&#125;\.\d&#123;1,3&#125;</li>
         </ul>
       </section>
+      <RelatedTools current="/regex-tester" />
     </div>
   );
 }

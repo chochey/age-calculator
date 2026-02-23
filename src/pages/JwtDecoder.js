@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function decodeJwt(token) {
   const parts = token.trim().split('.');
@@ -92,6 +93,7 @@ function JwtDecoder() {
         <h2>Is This Secure?</h2>
         <p>Yes — this tool runs entirely in your browser. Your token is never sent to any server. However, remember that JWTs are only encoded, not encrypted — anyone can read the payload. The signature only verifies the token hasn't been tampered with.</p>
       </section>
+      <RelatedTools current="/jwt-decoder" />
     </div>
   );
 }

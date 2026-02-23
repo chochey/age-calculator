@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function ElectricityCostCalc() {
   const [watts, setWatts] = useState('');
@@ -108,6 +109,7 @@ function ElectricityCostCalc() {
           <li>Run washing machines and dishwashers with full loads</li>
         </ul>
       </section>
+      <RelatedTools current="/electricity-cost-calculator" />
     </div>
   );
 }

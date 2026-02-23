@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function BoxShadowGenerator() {
   const [shadows, setShadows] = useState([
@@ -134,6 +135,7 @@ function BoxShadowGenerator() {
           <li>Use RGBA colors for transparency control</li>
         </ul>
       </section>
+      <RelatedTools current="/box-shadow-generator" />
     </div>
   );
 }

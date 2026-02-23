@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function computeDiff(a, b) {
   const linesA = a.split('\n');
@@ -111,6 +112,7 @@ function DiffChecker() {
           <li><strong>Text comparison</strong> — find changes in any two text blocks</li>
         </ul>
       </section>
+      <RelatedTools current="/diff-checker" />
     </div>
   );
 }

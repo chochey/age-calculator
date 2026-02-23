@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function ImageResizer() {
   const [image, setImage] = useState(null);
@@ -119,6 +120,7 @@ function ImageResizer() {
         <h2>Privacy</h2>
         <p>Your images are processed entirely in your browser using the Canvas API. Nothing is uploaded to any server.</p>
       </section>
+      <RelatedTools current="/image-resizer" />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function hexToRgb(hex) {
   const h = hex.replace('#', '');
@@ -130,6 +131,7 @@ function ColorConverter() {
           <li><strong>HSL</strong> — Hue, Saturation, Lightness, intuitive for color adjustments</li>
         </ul>
       </section>
+      <RelatedTools current="/color-converter" />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function CountdownTimer() {
   const [targetDate, setTargetDate] = useState('');
@@ -98,6 +99,7 @@ function CountdownTimer() {
           <li>Vacation and travel dates</li>
         </ul>
       </section>
+      <RelatedTools current="/countdown-timer" />
     </div>
   );
 }

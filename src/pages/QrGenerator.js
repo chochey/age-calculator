@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function QrGenerator() {
   const [text, setText] = useState('');
@@ -55,6 +56,7 @@ function QrGenerator() {
           <li>Digital business cards and contact info</li>
         </ul>
       </section>
+      <RelatedTools current="/qr-code-generator" />
     </div>
   );
 }

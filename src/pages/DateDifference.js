@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function DateDifference() {
   const [startDate, setStartDate] = useState('');
@@ -101,6 +102,7 @@ function DateDifference() {
           <li>Determine age at a specific date</li>
         </ul>
       </section>
+      <RelatedTools current="/date-difference-calculator" />
     </div>
   );
 }

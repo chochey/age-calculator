@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function UrlEncoder() {
   const [input, setInput] = useState('');
@@ -76,6 +77,7 @@ function UrlEncoder() {
           <li>Fixing broken links with special characters</li>
         </ul>
       </section>
+      <RelatedTools current="/url-encoder" />
     </div>
   );
 }

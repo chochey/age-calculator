@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function LoanCalculator() {
   const [amount, setAmount] = useState('');
@@ -86,6 +87,7 @@ function LoanCalculator() {
           <li><strong>Student Loan</strong> — Typically 10-25 years at 3-8%</li>
         </ul>
       </section>
+      <RelatedTools current="/loan-calculator" />
     </div>
   );
 }

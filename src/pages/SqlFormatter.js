@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 const keywords = ['SELECT', 'FROM', 'WHERE', 'AND', 'OR', 'ORDER BY', 'GROUP BY', 'HAVING',
   'INSERT INTO', 'VALUES', 'UPDATE', 'SET', 'DELETE FROM', 'CREATE TABLE', 'ALTER TABLE',
@@ -118,6 +119,7 @@ function SqlFormatter() {
         <h2>Supported SQL</h2>
         <p>Works with standard SQL syntax including SELECT, INSERT, UPDATE, DELETE, CREATE TABLE, and JOIN queries. Supports MySQL, PostgreSQL, SQLite, and SQL Server syntax.</p>
       </section>
+      <RelatedTools current="/sql-formatter" />
     </div>
   );
 }

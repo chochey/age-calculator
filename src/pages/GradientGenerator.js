@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function GradientGenerator() {
   const [color1, setColor1] = useState('#4f46e5');
@@ -77,6 +78,7 @@ function GradientGenerator() {
           <li><strong>Radial</strong> — Colors radiate outward from a center point</li>
         </ul>
       </section>
+      <RelatedTools current="/css-gradient-generator" />
     </div>
   );
 }

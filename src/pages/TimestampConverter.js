@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function TimestampConverter() {
   const [timestamp, setTimestamp] = useState('');
@@ -120,6 +121,7 @@ function TimestampConverter() {
           <li>Comparing dates across time zones</li>
         </ul>
       </section>
+      <RelatedTools current="/timestamp-converter" />
     </div>
   );
 }

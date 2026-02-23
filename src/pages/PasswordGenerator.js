@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function generatePassword(length, options) {
   let chars = '';
@@ -106,6 +107,7 @@ function PasswordGenerator() {
           <li>Use a password manager to store them securely</li>
         </ul>
       </section>
+      <RelatedTools current="/password-generator" />
     </div>
   );
 }

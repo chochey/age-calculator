@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function gcd(a, b) { return b === 0 ? a : gcd(b, a % b); }
 
@@ -122,6 +123,7 @@ function AspectRatioCalc() {
           <li><strong>4:3</strong> — iPad, classic presentations</li>
         </ul>
       </section>
+      <RelatedTools current="/aspect-ratio-calculator" />
     </div>
   );
 }

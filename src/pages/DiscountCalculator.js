@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function DiscountCalculator() {
   const [price, setPrice] = useState('');
@@ -86,6 +87,7 @@ function DiscountCalculator() {
           <li><strong>75% off $200</strong> — Save $150, pay $50</li>
         </ul>
       </section>
+      <RelatedTools current="/discount-calculator" />
     </div>
   );
 }

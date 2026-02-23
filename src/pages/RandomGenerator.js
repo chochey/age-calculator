@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function RandomGenerator() {
   const [min, setMin] = useState(1);
@@ -91,6 +92,7 @@ function RandomGenerator() {
           <li>Create random PINs or codes</li>
         </ul>
       </section>
+      <RelatedTools current="/random-number-generator" />
     </div>
   );
 }

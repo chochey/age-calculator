@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function BmiCalculator() {
   const [unit, setUnit] = useState('imperial');
@@ -100,6 +101,7 @@ function BmiCalculator() {
           <li><strong>Obese:</strong> BMI 30 or greater</li>
         </ul>
       </section>
+      <RelatedTools current="/bmi-calculator" />
     </div>
   );
 }

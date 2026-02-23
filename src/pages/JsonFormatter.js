@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Seo from '../components/Seo';
+import RelatedTools from '../components/RelatedTools';
 
 function JsonFormatter() {
   const [input, setInput] = useState('');
@@ -111,6 +112,7 @@ function JsonFormatter() {
           <li>Copy formatted output to clipboard</li>
         </ul>
       </section>
+      <RelatedTools current="/json-formatter" />
     </div>
   );
 }
