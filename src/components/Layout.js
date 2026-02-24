@@ -20,7 +20,7 @@ function Layout() {
     <div className="app">
       <header className="site-header">
         <div className="header-inner">
-          <Link to="/" className="logo">QuickCalcs</Link>
+          <Link to="/" className="logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>QuickCalcs</Link>
           <nav className="header-nav">
             <button onClick={() => scrollTo('calculators')}>Calculators</button>
             <button onClick={() => scrollTo('converters')}>Converters</button>

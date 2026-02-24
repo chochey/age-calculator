@@ -44,6 +44,12 @@ import ElectricityCostCalc from './pages/ElectricityCostCalc';
 import Stopwatch from './pages/Stopwatch';
 import ScientificNotation from './pages/ScientificNotation';
 import CharacterMap from './pages/CharacterMap';
+import MortgageCalculator from './pages/MortgageCalculator';
+import CompoundInterestCalc from './pages/CompoundInterestCalc';
+import CalorieCalculator from './pages/CalorieCalculator';
+import TimeZoneConverter from './pages/TimeZoneConverter';
+import JsonToCsv from './pages/JsonToCsv';
+import TextToBinary from './pages/TextToBinary';
 import './App.css';
 
 function App() {
@@ -95,6 +101,12 @@ function App() {
           <Route path="stopwatch" element={<Stopwatch />} />
           <Route path="scientific-notation-converter" element={<ScientificNotation />} />
           <Route path="character-map" element={<CharacterMap />} />
+          <Route path="mortgage-calculator" element={<MortgageCalculator />} />
+          <Route path="compound-interest-calculator" element={<CompoundInterestCalc />} />
+          <Route path="calorie-calculator" element={<CalorieCalculator />} />
+          <Route path="time-zone-converter" element={<TimeZoneConverter />} />
+          <Route path="json-to-csv" element={<JsonToCsv />} />
+          <Route path="text-to-binary" element={<TextToBinary />} />
         </Route>
       </Routes>
     </BrowserRouter>

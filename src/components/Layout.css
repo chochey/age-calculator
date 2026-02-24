@@ -7,11 +7,17 @@
 }
 
 .header-inner {
-  max-width: 960px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 1rem 1rem;
   display: flex;
   align-items: center;
+}
+
+@media (min-width: 900px) {
+  .header-inner {
+    padding: 1rem 3rem;
+  }
 }
 
 .logo {

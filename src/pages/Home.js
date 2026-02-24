@@ -18,6 +18,9 @@ const categories = [
       { name: 'Aspect Ratio Calculator', description: 'Calculate & resize dimensions proportionally.', path: '/aspect-ratio-calculator' },
       { name: 'Salary Calculator', description: 'Convert between annual, monthly, weekly & hourly pay.', path: '/salary-calculator' },
       { name: 'Electricity Cost Calculator', description: 'Estimate appliance running costs per day, month & year.', path: '/electricity-cost-calculator' },
+      { name: 'Mortgage Calculator', description: 'Monthly payments, total interest & amortization schedule.', path: '/mortgage-calculator' },
+      { name: 'Compound Interest Calculator', description: 'See how savings & investments grow over time.', path: '/compound-interest-calculator' },
+      { name: 'Calorie Calculator', description: 'Daily calorie needs based on age, gender & activity.', path: '/calorie-calculator' },
     ],
   },
   {
@@ -33,6 +36,8 @@ const categories = [
       { name: 'HTML Entity Encoder', description: 'Encode or decode HTML entities.', path: '/html-entity-encoder' },
       { name: 'Number Base Converter', description: 'Convert between binary, decimal, hex & octal.', path: '/number-base-converter' },
       { name: 'Scientific Notation Converter', description: 'Convert numbers to & from scientific notation.', path: '/scientific-notation-converter' },
+      { name: 'Time Zone Converter', description: 'Convert times between any time zones worldwide.', path: '/time-zone-converter' },
+      { name: 'Text to Binary Converter', description: 'Convert text to binary, hex, octal & decimal.', path: '/text-to-binary' },
     ],
   },
   {
@@ -60,6 +65,7 @@ const categories = [
       { name: 'SQL Formatter', description: 'Format, beautify & minify SQL queries.', path: '/sql-formatter' },
       { name: 'Cron Expression Builder', description: 'Visual cron schedule builder with descriptions.', path: '/cron-expression-builder' },
       { name: 'Box Shadow Generator', description: 'Create CSS box shadows visually & copy the code.', path: '/box-shadow-generator' },
+      { name: 'JSON to CSV Converter', description: 'Convert JSON data to CSV format & download.', path: '/json-to-csv' },
     ],
   },
   {

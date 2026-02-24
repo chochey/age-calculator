@@ -44,6 +44,12 @@ const allTools = {
   '/css-gradient-generator': 'CSS Gradient Generator',
   '/stopwatch': 'Stopwatch',
   '/character-map': 'Character Map',
+  '/mortgage-calculator': 'Mortgage Calculator',
+  '/compound-interest-calculator': 'Compound Interest Calculator',
+  '/calorie-calculator': 'Calorie Calculator',
+  '/time-zone-converter': 'Time Zone Converter',
+  '/json-to-csv': 'JSON to CSV Converter',
+  '/text-to-binary': 'Text to Binary Converter',
 };
 
 const related = {
@@ -90,6 +96,12 @@ const related = {
   '/css-gradient-generator': ['/box-shadow-generator', '/color-palette-generator', '/color-converter'],
   '/stopwatch': ['/countdown-timer', '/date-difference-calculator', '/timestamp-converter'],
   '/character-map': ['/case-converter', '/html-entity-encoder', '/word-counter'],
+  '/mortgage-calculator': ['/loan-calculator', '/compound-interest-calculator', '/salary-calculator'],
+  '/compound-interest-calculator': ['/mortgage-calculator', '/loan-calculator', '/salary-calculator'],
+  '/calorie-calculator': ['/bmi-calculator', '/unit-converter', '/age-calculator'],
+  '/time-zone-converter': ['/timestamp-converter', '/date-difference-calculator', '/countdown-timer'],
+  '/json-to-csv': ['/json-formatter', '/sql-formatter', '/diff-checker'],
+  '/text-to-binary': ['/number-base-converter', '/base64', '/hash-generator'],
 };
 
 function RelatedTools({ current }) {
