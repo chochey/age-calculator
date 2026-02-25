@@ -37,6 +37,10 @@ function Layout() {
       </main>
 
       <footer className="footer">
+        <div className="footer-links">
+          <Link to="/privacy">Privacy Policy</Link>
+          <Link to="/terms">Terms of Service</Link>
+        </div>
         <p>&copy; {new Date().getFullYear()} QuickCalcs. Free online tools.</p>
       </footer>
     </div>

@@ -56,6 +56,8 @@ import HexToRgb from './pages/HexToRgb';
 import CsvToJson from './pages/CsvToJson';
 import IpLookup from './pages/IpLookup';
 import RomanNumeralConverter from './pages/RomanNumeralConverter';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
 import './App.css';
 
 function App() {
@@ -119,6 +121,8 @@ function App() {
           <Route path="csv-to-json" element={<CsvToJson />} />
           <Route path="ip-lookup" element={<IpLookup />} />
           <Route path="roman-numeral-converter" element={<RomanNumeralConverter />} />
+          <Route path="privacy" element={<PrivacyPolicy />} />
+          <Route path="terms" element={<TermsOfService />} />
         </Route>
       </Routes>
     </BrowserRouter>

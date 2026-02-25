@@ -224,4 +224,12 @@
     <loc>https://quickcalcs.net/roman-numeral-converter</loc>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://quickcalcs.net/privacy</loc>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/terms</loc>
+    <priority>0.3</priority>
+  </url>
 </urlset>
