@@ -56,6 +56,12 @@ import HexToRgb from './pages/HexToRgb';
 import CsvToJson from './pages/CsvToJson';
 import IpLookup from './pages/IpLookup';
 import RomanNumeralConverter from './pages/RomanNumeralConverter';
+import TypingSpeedTest from './pages/TypingSpeedTest';
+import PomodoroTimer from './pages/PomodoroTimer';
+import PaceCalculator from './pages/PaceCalculator';
+import GradeCalculator from './pages/GradeCalculator';
+import SubnetCalculator from './pages/SubnetCalculator';
+import SavingsGoalCalc from './pages/SavingsGoalCalc';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import './App.css';
@@ -121,6 +127,12 @@ function App() {
           <Route path="csv-to-json" element={<CsvToJson />} />
           <Route path="ip-lookup" element={<IpLookup />} />
           <Route path="roman-numeral-converter" element={<RomanNumeralConverter />} />
+          <Route path="typing-speed-test" element={<TypingSpeedTest />} />
+          <Route path="pomodoro-timer" element={<PomodoroTimer />} />
+          <Route path="pace-calculator" element={<PaceCalculator />} />
+          <Route path="grade-calculator" element={<GradeCalculator />} />
+          <Route path="subnet-calculator" element={<SubnetCalculator />} />
+          <Route path="savings-goal-calculator" element={<SavingsGoalCalc />} />
           <Route path="privacy" element={<PrivacyPolicy />} />
           <Route path="terms" element={<TermsOfService />} />
         </Route>

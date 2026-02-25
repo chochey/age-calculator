@@ -23,6 +23,9 @@ const categories = [
       { name: 'Calorie Calculator', description: 'Daily calorie needs based on age, gender & activity.', path: '/calorie-calculator' },
       { name: 'Fuel Cost Calculator', description: 'Estimate gas costs for any trip distance.', path: '/fuel-cost-calculator' },
       { name: 'BMR Calculator', description: 'Basal metabolic rate with two equations.', path: '/bmr-calculator' },
+      { name: 'Pace Calculator', description: 'Running pace, time & distance calculator.', path: '/pace-calculator' },
+      { name: 'Grade Calculator', description: 'Weighted grades & final exam score needed.', path: '/grade-calculator' },
+      { name: 'Savings Goal Calculator', description: 'Monthly savings needed to reach your goal.', path: '/savings-goal-calculator' },
     ],
   },
   {
@@ -72,6 +75,7 @@ const categories = [
       { name: 'JSON to CSV Converter', description: 'Convert JSON data to CSV format & download.', path: '/json-to-csv' },
       { name: 'CSV to JSON Converter', description: 'Convert CSV data to JSON format & download.', path: '/csv-to-json' },
       { name: 'IP Address Lookup', description: 'Find your public IP address instantly.', path: '/ip-lookup' },
+      { name: 'Subnet Calculator', description: 'Network address, subnet mask & host range.', path: '/subnet-calculator' },
     ],
   },
   {
@@ -98,6 +102,8 @@ const categories = [
       { name: 'CSS Gradient Generator', description: 'Create gradients & copy the CSS code.', path: '/css-gradient-generator' },
       { name: 'Stopwatch', description: 'Precise stopwatch with lap timing & splits.', path: '/stopwatch' },
       { name: 'Character Map', description: 'Browse & copy special characters, symbols & emoji.', path: '/character-map' },
+      { name: 'Typing Speed Test', description: 'Test your WPM typing speed & accuracy.', path: '/typing-speed-test' },
+      { name: 'Pomodoro Timer', description: 'Productivity timer with work & break intervals.', path: '/pomodoro-timer' },
     ],
   },
 ];

@@ -225,6 +225,30 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://quickcalcs.net/typing-speed-test</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/pomodoro-timer</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/pace-calculator</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/grade-calculator</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/subnet-calculator</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/savings-goal-calculator</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://quickcalcs.net/privacy</loc>
     <priority>0.3</priority>
   </url>

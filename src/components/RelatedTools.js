@@ -56,6 +56,12 @@ const allTools = {
   '/csv-to-json': 'CSV to JSON Converter',
   '/ip-lookup': 'IP Address Lookup',
   '/roman-numeral-converter': 'Roman Numeral Converter',
+  '/typing-speed-test': 'Typing Speed Test',
+  '/pomodoro-timer': 'Pomodoro Timer',
+  '/pace-calculator': 'Pace Calculator',
+  '/grade-calculator': 'Grade Calculator',
+  '/subnet-calculator': 'Subnet Calculator',
+  '/savings-goal-calculator': 'Savings Goal Calculator',
 };
 
 const related = {
@@ -114,6 +120,12 @@ const related = {
   '/csv-to-json': ['/json-to-csv', '/json-formatter', '/sql-formatter'],
   '/ip-lookup': ['/hash-generator', '/password-generator', '/url-encoder'],
   '/roman-numeral-converter': ['/number-base-converter', '/scientific-notation-converter', '/text-to-binary'],
+  '/typing-speed-test': ['/word-counter', '/pomodoro-timer', '/stopwatch'],
+  '/pomodoro-timer': ['/stopwatch', '/countdown-timer', '/typing-speed-test'],
+  '/pace-calculator': ['/bmi-calculator', '/calorie-calculator', '/unit-converter'],
+  '/grade-calculator': ['/gpa-calculator', '/percentage-calculator', '/savings-goal-calculator'],
+  '/subnet-calculator': ['/ip-lookup', '/number-base-converter', '/chmod-calculator'],
+  '/savings-goal-calculator': ['/compound-interest-calculator', '/mortgage-calculator', '/salary-calculator'],
 };
 
 function RelatedTools({ current }) {
