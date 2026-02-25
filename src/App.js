@@ -68,6 +68,14 @@ import DiceRoller from './pages/DiceRoller';
 import AreaCalculator from './pages/AreaCalculator';
 import PxToRemConverter from './pages/PxToRemConverter';
 import TextRepeater from './pages/TextRepeater';
+import ProportionCalculator from './pages/ProportionCalculator';
+import FlashcardMaker from './pages/FlashcardMaker';
+import MetaTagGenerator from './pages/MetaTagGenerator';
+import WhitespaceRemover from './pages/WhitespaceRemover';
+import ColorBlindnessSimulator from './pages/ColorBlindnessSimulator';
+import FrequencyCounter from './pages/FrequencyCounter';
+import ProfitMarginCalc from './pages/ProfitMarginCalc';
+import ScreenResolution from './pages/ScreenResolution';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import './App.css';
@@ -145,6 +153,14 @@ function App() {
           <Route path="area-calculator" element={<AreaCalculator />} />
           <Route path="px-to-rem" element={<PxToRemConverter />} />
           <Route path="text-repeater" element={<TextRepeater />} />
+          <Route path="proportion-calculator" element={<ProportionCalculator />} />
+          <Route path="flashcard-maker" element={<FlashcardMaker />} />
+          <Route path="meta-tag-generator" element={<MetaTagGenerator />} />
+          <Route path="whitespace-remover" element={<WhitespaceRemover />} />
+          <Route path="color-blindness-simulator" element={<ColorBlindnessSimulator />} />
+          <Route path="frequency-counter" element={<FrequencyCounter />} />
+          <Route path="profit-margin-calculator" element={<ProfitMarginCalc />} />
+          <Route path="screen-resolution" element={<ScreenResolution />} />
           <Route path="privacy" element={<PrivacyPolicy />} />
           <Route path="terms" element={<TermsOfService />} />
         </Route>

@@ -68,6 +68,14 @@ const allTools = {
   '/area-calculator': 'Area Calculator',
   '/px-to-rem': 'PX to REM Converter',
   '/text-repeater': 'Text Repeater',
+  '/proportion-calculator': 'Proportion Calculator',
+  '/flashcard-maker': 'Flashcard Maker',
+  '/meta-tag-generator': 'Meta Tag Generator',
+  '/whitespace-remover': 'Whitespace Remover',
+  '/color-blindness-simulator': 'Color Blindness Simulator',
+  '/frequency-counter': 'Frequency Counter',
+  '/profit-margin-calculator': 'Profit Margin Calculator',
+  '/screen-resolution': 'Screen Resolution Checker',
 };
 
 const related = {
@@ -138,6 +146,14 @@ const related = {
   '/area-calculator': ['/unit-converter', '/aspect-ratio-calculator', '/percentage-calculator'],
   '/px-to-rem': ['/unit-converter', '/hex-to-rgb', '/css-gradient-generator'],
   '/text-repeater': ['/word-counter', '/lorem-ipsum', '/case-converter'],
+  '/proportion-calculator': ['/percentage-calculator', '/unit-converter', '/average-calculator'],
+  '/flashcard-maker': ['/typing-speed-test', '/word-counter', '/pomodoro-timer'],
+  '/meta-tag-generator': ['/word-counter', '/json-formatter', '/url-encoder'],
+  '/whitespace-remover': ['/case-converter', '/word-counter', '/text-repeater'],
+  '/color-blindness-simulator': ['/color-converter', '/color-palette-generator', '/hex-to-rgb'],
+  '/frequency-counter': ['/word-counter', '/case-converter', '/character-map'],
+  '/profit-margin-calculator': ['/percentage-calculator', '/discount-calculator', '/salary-calculator'],
+  '/screen-resolution': ['/aspect-ratio-calculator', '/image-resizer', '/px-to-rem'],
 };
 
 function RelatedTools({ current }) {

@@ -29,6 +29,8 @@ const categories = [
       { name: 'Savings Goal Calculator', description: 'Monthly savings needed to reach your goal.', path: '/savings-goal-calculator' },
       { name: 'Average Calculator', description: 'Mean, median, mode, range & more.', path: '/average-calculator' },
       { name: 'Area Calculator', description: 'Area & perimeter for rectangles, circles, triangles & more.', path: '/area-calculator' },
+      { name: 'Proportion Calculator', description: 'Solve proportions & find the missing value.', path: '/proportion-calculator' },
+      { name: 'Profit Margin Calculator', description: 'Margin, markup & revenue from cost and price.', path: '/profit-margin-calculator' },
     ],
   },
   {
@@ -80,6 +82,9 @@ const categories = [
       { name: 'CSV to JSON Converter', description: 'Convert CSV data to JSON format & download.', path: '/csv-to-json' },
       { name: 'IP Address Lookup', description: 'Find your public IP address instantly.', path: '/ip-lookup' },
       { name: 'Subnet Calculator', description: 'Network address, subnet mask & host range.', path: '/subnet-calculator' },
+      { name: 'Meta Tag Generator', description: 'Generate SEO meta tags with Google preview.', path: '/meta-tag-generator' },
+      { name: 'Screen Resolution Checker', description: 'Live screen size, DPR & viewport info.', path: '/screen-resolution' },
+      { name: 'Color Blindness Simulator', description: 'Simulate color vision deficiencies on any color.', path: '/color-blindness-simulator' },
     ],
   },
   {
@@ -111,6 +116,9 @@ const categories = [
       { name: 'Text Repeater', description: 'Repeat any text multiple times with separators.', path: '/text-repeater' },
       { name: 'Coin Flip', description: 'Flip a virtual coin with history & statistics.', path: '/coin-flip' },
       { name: 'Dice Roller', description: 'Roll any dice — d4, d6, d8, d10, d12, d20 & d100.', path: '/dice-roller' },
+      { name: 'Flashcard Maker', description: 'Create & study flashcards with keyboard shortcuts.', path: '/flashcard-maker' },
+      { name: 'Whitespace Remover', description: 'Clean extra spaces, tabs & blank lines from text.', path: '/whitespace-remover' },
+      { name: 'Frequency Counter', description: 'Count word & character frequency with export.', path: '/frequency-counter' },
     ],
   },
 ];

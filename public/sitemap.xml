@@ -273,6 +273,38 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://quickcalcs.net/proportion-calculator</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/flashcard-maker</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/meta-tag-generator</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/whitespace-remover</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/color-blindness-simulator</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/frequency-counter</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/profit-margin-calculator</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/screen-resolution</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://quickcalcs.net/privacy</loc>
     <priority>0.3</priority>
   </url>
