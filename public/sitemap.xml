@@ -249,6 +249,30 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://quickcalcs.net/average-calculator</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/coin-flip</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/dice-roller</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/area-calculator</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/px-to-rem</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/text-repeater</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://quickcalcs.net/privacy</loc>
     <priority>0.3</priority>
   </url>

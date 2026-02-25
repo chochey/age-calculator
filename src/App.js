@@ -62,6 +62,12 @@ import PaceCalculator from './pages/PaceCalculator';
 import GradeCalculator from './pages/GradeCalculator';
 import SubnetCalculator from './pages/SubnetCalculator';
 import SavingsGoalCalc from './pages/SavingsGoalCalc';
+import AverageCalculator from './pages/AverageCalculator';
+import CoinFlip from './pages/CoinFlip';
+import DiceRoller from './pages/DiceRoller';
+import AreaCalculator from './pages/AreaCalculator';
+import PxToRemConverter from './pages/PxToRemConverter';
+import TextRepeater from './pages/TextRepeater';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import './App.css';
@@ -133,6 +139,12 @@ function App() {
           <Route path="grade-calculator" element={<GradeCalculator />} />
           <Route path="subnet-calculator" element={<SubnetCalculator />} />
           <Route path="savings-goal-calculator" element={<SavingsGoalCalc />} />
+          <Route path="average-calculator" element={<AverageCalculator />} />
+          <Route path="coin-flip" element={<CoinFlip />} />
+          <Route path="dice-roller" element={<DiceRoller />} />
+          <Route path="area-calculator" element={<AreaCalculator />} />
+          <Route path="px-to-rem" element={<PxToRemConverter />} />
+          <Route path="text-repeater" element={<TextRepeater />} />
           <Route path="privacy" element={<PrivacyPolicy />} />
           <Route path="terms" element={<TermsOfService />} />
         </Route>

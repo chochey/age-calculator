@@ -62,6 +62,12 @@ const allTools = {
   '/grade-calculator': 'Grade Calculator',
   '/subnet-calculator': 'Subnet Calculator',
   '/savings-goal-calculator': 'Savings Goal Calculator',
+  '/average-calculator': 'Average Calculator',
+  '/coin-flip': 'Coin Flip',
+  '/dice-roller': 'Dice Roller',
+  '/area-calculator': 'Area Calculator',
+  '/px-to-rem': 'PX to REM Converter',
+  '/text-repeater': 'Text Repeater',
 };
 
 const related = {
@@ -126,6 +132,12 @@ const related = {
   '/grade-calculator': ['/gpa-calculator', '/percentage-calculator', '/savings-goal-calculator'],
   '/subnet-calculator': ['/ip-lookup', '/number-base-converter', '/chmod-calculator'],
   '/savings-goal-calculator': ['/compound-interest-calculator', '/mortgage-calculator', '/salary-calculator'],
+  '/average-calculator': ['/grade-calculator', '/percentage-calculator', '/gpa-calculator'],
+  '/coin-flip': ['/dice-roller', '/random-number-generator', '/password-generator'],
+  '/dice-roller': ['/coin-flip', '/random-number-generator', '/password-generator'],
+  '/area-calculator': ['/unit-converter', '/aspect-ratio-calculator', '/percentage-calculator'],
+  '/px-to-rem': ['/unit-converter', '/hex-to-rgb', '/css-gradient-generator'],
+  '/text-repeater': ['/word-counter', '/lorem-ipsum', '/case-converter'],
 };
 
 function RelatedTools({ current }) {

@@ -27,6 +27,8 @@ const categories = [
       { name: 'Pace Calculator', description: 'Running pace, time & distance calculator.', path: '/pace-calculator' },
       { name: 'Grade Calculator', description: 'Weighted grades & final exam score needed.', path: '/grade-calculator' },
       { name: 'Savings Goal Calculator', description: 'Monthly savings needed to reach your goal.', path: '/savings-goal-calculator' },
+      { name: 'Average Calculator', description: 'Mean, median, mode, range & more.', path: '/average-calculator' },
+      { name: 'Area Calculator', description: 'Area & perimeter for rectangles, circles, triangles & more.', path: '/area-calculator' },
     ],
   },
   {
@@ -46,6 +48,7 @@ const categories = [
       { name: 'Text to Binary Converter', description: 'Convert text to binary, hex, octal & decimal.', path: '/text-to-binary' },
       { name: 'HEX to RGB Converter', description: 'Convert hex color codes to RGB & HSL.', path: '/hex-to-rgb' },
       { name: 'Roman Numeral Converter', description: 'Convert numbers to & from Roman numerals.', path: '/roman-numeral-converter' },
+      { name: 'PX to REM Converter', description: 'Convert between px, rem & em CSS units.', path: '/px-to-rem' },
     ],
   },
   {
@@ -105,6 +108,9 @@ const categories = [
       { name: 'Character Map', description: 'Browse & copy special characters, symbols & emoji.', path: '/character-map' },
       { name: 'Typing Speed Test', description: 'Test your WPM typing speed & accuracy.', path: '/typing-speed-test' },
       { name: 'Pomodoro Timer', description: 'Productivity timer with work & break intervals.', path: '/pomodoro-timer' },
+      { name: 'Text Repeater', description: 'Repeat any text multiple times with separators.', path: '/text-repeater' },
+      { name: 'Coin Flip', description: 'Flip a virtual coin with history & statistics.', path: '/coin-flip' },
+      { name: 'Dice Roller', description: 'Roll any dice — d4, d6, d8, d10, d12, d20 & d100.', path: '/dice-roller' },
     ],
   },
 ];
