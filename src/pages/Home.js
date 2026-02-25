@@ -21,6 +21,8 @@ const categories = [
       { name: 'Mortgage Calculator', description: 'Monthly payments, total interest & amortization schedule.', path: '/mortgage-calculator' },
       { name: 'Compound Interest Calculator', description: 'See how savings & investments grow over time.', path: '/compound-interest-calculator' },
       { name: 'Calorie Calculator', description: 'Daily calorie needs based on age, gender & activity.', path: '/calorie-calculator' },
+      { name: 'Fuel Cost Calculator', description: 'Estimate gas costs for any trip distance.', path: '/fuel-cost-calculator' },
+      { name: 'BMR Calculator', description: 'Basal metabolic rate with two equations.', path: '/bmr-calculator' },
     ],
   },
   {
@@ -38,6 +40,8 @@ const categories = [
       { name: 'Scientific Notation Converter', description: 'Convert numbers to & from scientific notation.', path: '/scientific-notation-converter' },
       { name: 'Time Zone Converter', description: 'Convert times between any time zones worldwide.', path: '/time-zone-converter' },
       { name: 'Text to Binary Converter', description: 'Convert text to binary, hex, octal & decimal.', path: '/text-to-binary' },
+      { name: 'HEX to RGB Converter', description: 'Convert hex color codes to RGB & HSL.', path: '/hex-to-rgb' },
+      { name: 'Roman Numeral Converter', description: 'Convert numbers to & from Roman numerals.', path: '/roman-numeral-converter' },
     ],
   },
   {
@@ -66,6 +70,8 @@ const categories = [
       { name: 'Cron Expression Builder', description: 'Visual cron schedule builder with descriptions.', path: '/cron-expression-builder' },
       { name: 'Box Shadow Generator', description: 'Create CSS box shadows visually & copy the code.', path: '/box-shadow-generator' },
       { name: 'JSON to CSV Converter', description: 'Convert JSON data to CSV format & download.', path: '/json-to-csv' },
+      { name: 'CSV to JSON Converter', description: 'Convert CSV data to JSON format & download.', path: '/csv-to-json' },
+      { name: 'IP Address Lookup', description: 'Find your public IP address instantly.', path: '/ip-lookup' },
     ],
   },
   {

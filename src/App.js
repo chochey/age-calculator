@@ -50,6 +50,12 @@ import CalorieCalculator from './pages/CalorieCalculator';
 import TimeZoneConverter from './pages/TimeZoneConverter';
 import JsonToCsv from './pages/JsonToCsv';
 import TextToBinary from './pages/TextToBinary';
+import FuelCostCalculator from './pages/FuelCostCalculator';
+import BmrCalculator from './pages/BmrCalculator';
+import HexToRgb from './pages/HexToRgb';
+import CsvToJson from './pages/CsvToJson';
+import IpLookup from './pages/IpLookup';
+import RomanNumeralConverter from './pages/RomanNumeralConverter';
 import './App.css';
 
 function App() {
@@ -107,6 +113,12 @@ function App() {
           <Route path="time-zone-converter" element={<TimeZoneConverter />} />
           <Route path="json-to-csv" element={<JsonToCsv />} />
           <Route path="text-to-binary" element={<TextToBinary />} />
+          <Route path="fuel-cost-calculator" element={<FuelCostCalculator />} />
+          <Route path="bmr-calculator" element={<BmrCalculator />} />
+          <Route path="hex-to-rgb" element={<HexToRgb />} />
+          <Route path="csv-to-json" element={<CsvToJson />} />
+          <Route path="ip-lookup" element={<IpLookup />} />
+          <Route path="roman-numeral-converter" element={<RomanNumeralConverter />} />
         </Route>
       </Routes>
     </BrowserRouter>

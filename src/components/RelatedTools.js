@@ -50,6 +50,12 @@ const allTools = {
   '/time-zone-converter': 'Time Zone Converter',
   '/json-to-csv': 'JSON to CSV Converter',
   '/text-to-binary': 'Text to Binary Converter',
+  '/fuel-cost-calculator': 'Fuel Cost Calculator',
+  '/bmr-calculator': 'BMR Calculator',
+  '/hex-to-rgb': 'HEX to RGB Converter',
+  '/csv-to-json': 'CSV to JSON Converter',
+  '/ip-lookup': 'IP Address Lookup',
+  '/roman-numeral-converter': 'Roman Numeral Converter',
 };
 
 const related = {
@@ -102,6 +108,12 @@ const related = {
   '/time-zone-converter': ['/timestamp-converter', '/date-difference-calculator', '/countdown-timer'],
   '/json-to-csv': ['/json-formatter', '/sql-formatter', '/diff-checker'],
   '/text-to-binary': ['/number-base-converter', '/base64', '/hash-generator'],
+  '/fuel-cost-calculator': ['/electricity-cost-calculator', '/unit-converter', '/salary-calculator'],
+  '/bmr-calculator': ['/calorie-calculator', '/bmi-calculator', '/unit-converter'],
+  '/hex-to-rgb': ['/color-converter', '/color-palette-generator', '/css-gradient-generator'],
+  '/csv-to-json': ['/json-to-csv', '/json-formatter', '/sql-formatter'],
+  '/ip-lookup': ['/hash-generator', '/password-generator', '/url-encoder'],
+  '/roman-numeral-converter': ['/number-base-converter', '/scientific-notation-converter', '/text-to-binary'],
 };
 
 function RelatedTools({ current }) {
