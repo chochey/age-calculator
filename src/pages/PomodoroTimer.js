@@ -53,6 +53,7 @@ function PomodoroTimer() {
 
   const intervalRef = useRef(null);
   const endTimeRef = useRef(null);
+  const timeLeftRef = useRef(timeLeft);
 
   const getDurationForSession = useCallback((type) => {
     switch (type) {
@@ -96,12 +97,16 @@ function PomodoroTimer() {
   }, [sessionType, workSessionsBeforeLong, clearTimer, workDuration, shortBreakDuration, longBreakDuration]);
 
   useEffect(() => {
+    timeLeftRef.current = timeLeft;
+  }, [timeLeft]);
+
+  useEffect(() => {
     if (!running) {
       clearTimer();
       return;
     }
 
-    endTimeRef.current = Date.now() + timeLeft * 1000;
+    endTimeRef.current = Date.now() + timeLeftRef.current * 1000;
 
     intervalRef.current = setInterval(() => {
       const remaining = Math.round((endTimeRef.current - Date.now()) / 1000);
