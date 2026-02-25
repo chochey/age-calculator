@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Seo from '../components/Seo';
 import './Home.css';
@@ -109,17 +110,37 @@ const categories = [
 ];
 
 function Home() {
+  const [query, setQuery] = useState('');
+  const q = query.toLowerCase().trim();
+
+  const allTools = q
+    ? categories.flatMap((cat) =>
+        cat.tools.filter(
+          (t) => t.name.toLowerCase().includes(q) || t.description.toLowerCase().includes(q)
+        )
+      )
+    : null;
+
   return (
     <div>
       <Seo title="Free Online Calculators & Tools" description="QuickCalc offers free online calculators, converters, and generators. Age calculator, BMI calculator, unit converter, password generator, and more." />
       <h1>Free Online Calculators & Tools</h1>
       <p className="subtitle">Fast, free, and easy-to-use tools for everyday calculations.</p>
 
-      {categories.map((cat) => (
-        <section key={cat.label} id={cat.id} className="tool-category">
-          <h2 className="category-heading">{cat.icon} {cat.label}</h2>
+      <div className="search-wrapper">
+        <input
+          type="text"
+          className="search-bar"
+          placeholder="Search tools..."
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
+      </div>
+
+      {allTools ? (
+        allTools.length > 0 ? (
           <div className="tools-grid">
-            {cat.tools.map((tool) => (
+            {allTools.map((tool) => (
               <Link to={tool.path} key={tool.path} className="tool-card">
                 <h3>{tool.name}</h3>
                 <p>{tool.description}</p>
@@ -127,8 +148,25 @@ function Home() {
               </Link>
             ))}
           </div>
-        </section>
-      ))}
+        ) : (
+          <p className="no-results">No tools found for "{query}"</p>
+        )
+      ) : (
+        categories.map((cat) => (
+          <section key={cat.label} id={cat.id} className="tool-category">
+            <h2 className="category-heading">{cat.icon} {cat.label}</h2>
+            <div className="tools-grid">
+              {cat.tools.map((tool) => (
+                <Link to={tool.path} key={tool.path} className="tool-card">
+                  <h3>{tool.name}</h3>
+                  <p>{tool.description}</p>
+                  <span className="tool-link">Use tool &rarr;</span>
+                </Link>
+              ))}
+            </div>
+          </section>
+        ))
+      )}
     </div>
   );
 }
