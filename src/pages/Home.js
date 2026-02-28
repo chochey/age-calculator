@@ -31,6 +31,10 @@ const categories = [
       { name: 'Area Calculator', description: 'Area & perimeter for rectangles, circles, triangles & more.', path: '/area-calculator' },
       { name: 'Proportion Calculator', description: 'Solve proportions & find the missing value.', path: '/proportion-calculator' },
       { name: 'Profit Margin Calculator', description: 'Margin, markup & revenue from cost and price.', path: '/profit-margin-calculator' },
+      { name: 'Body Fat Calculator', description: 'Body fat percentage using the U.S. Navy method.', path: '/body-fat-calculator' },
+      { name: 'Inflation Calculator', description: 'See how money value changes over time with inflation.', path: '/inflation-calculator' },
+      { name: 'Sleep Calculator', description: 'Find ideal bedtimes & wake times based on sleep cycles.', path: '/sleep-calculator' },
+      { name: 'Unit Price Calculator', description: 'Compare product prices to find the best deal.', path: '/unit-price-calculator' },
     ],
   },
   {
@@ -119,6 +123,8 @@ const categories = [
       { name: 'Flashcard Maker', description: 'Create & study flashcards with keyboard shortcuts.', path: '/flashcard-maker' },
       { name: 'Whitespace Remover', description: 'Clean extra spaces, tabs & blank lines from text.', path: '/whitespace-remover' },
       { name: 'Frequency Counter', description: 'Count word & character frequency with export.', path: '/frequency-counter' },
+      { name: 'Readability Checker', description: 'Flesch-Kincaid & other readability scores for any text.', path: '/readability-checker' },
+      { name: 'Date Calculator', description: 'Add or subtract days from any date & count business days.', path: '/date-calculator' },
     ],
   },
 ];

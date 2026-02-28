@@ -76,6 +76,12 @@ import ColorBlindnessSimulator from './pages/ColorBlindnessSimulator';
 import FrequencyCounter from './pages/FrequencyCounter';
 import ProfitMarginCalc from './pages/ProfitMarginCalc';
 import ScreenResolution from './pages/ScreenResolution';
+import BodyFatCalculator from './pages/BodyFatCalculator';
+import InflationCalculator from './pages/InflationCalculator';
+import SleepCalculator from './pages/SleepCalculator';
+import ReadabilityChecker from './pages/ReadabilityChecker';
+import UnitPriceCalculator from './pages/UnitPriceCalculator';
+import DateCalculator from './pages/DateCalculator';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import './App.css';
@@ -161,6 +167,12 @@ function App() {
           <Route path="frequency-counter" element={<FrequencyCounter />} />
           <Route path="profit-margin-calculator" element={<ProfitMarginCalc />} />
           <Route path="screen-resolution" element={<ScreenResolution />} />
+          <Route path="body-fat-calculator" element={<BodyFatCalculator />} />
+          <Route path="inflation-calculator" element={<InflationCalculator />} />
+          <Route path="sleep-calculator" element={<SleepCalculator />} />
+          <Route path="readability-checker" element={<ReadabilityChecker />} />
+          <Route path="unit-price-calculator" element={<UnitPriceCalculator />} />
+          <Route path="date-calculator" element={<DateCalculator />} />
           <Route path="privacy" element={<PrivacyPolicy />} />
           <Route path="terms" element={<TermsOfService />} />
         </Route>

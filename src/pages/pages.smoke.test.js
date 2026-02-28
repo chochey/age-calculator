@@ -77,6 +77,12 @@ import ColorBlindnessSimulator from './ColorBlindnessSimulator';
 import FrequencyCounter from './FrequencyCounter';
 import ProfitMarginCalc from './ProfitMarginCalc';
 import ScreenResolution from './ScreenResolution';
+import BodyFatCalculator from './BodyFatCalculator';
+import InflationCalculator from './InflationCalculator';
+import SleepCalculator from './SleepCalculator';
+import ReadabilityChecker from './ReadabilityChecker';
+import UnitPriceCalculator from './UnitPriceCalculator';
+import DateCalculator from './DateCalculator';
 import PrivacyPolicy from './PrivacyPolicy';
 import TermsOfService from './TermsOfService';
 
@@ -157,6 +163,12 @@ const pages = [
   { name: 'FrequencyCounter', Component: FrequencyCounter, heading: /frequency counter/i },
   { name: 'ProfitMarginCalc', Component: ProfitMarginCalc, heading: /profit margin calculator/i },
   { name: 'ScreenResolution', Component: ScreenResolution, heading: /screen resolution checker/i },
+  { name: 'BodyFatCalculator', Component: BodyFatCalculator, heading: /body fat calculator/i },
+  { name: 'InflationCalculator', Component: InflationCalculator, heading: /inflation calculator/i },
+  { name: 'SleepCalculator', Component: SleepCalculator, heading: /sleep calculator/i },
+  { name: 'ReadabilityChecker', Component: ReadabilityChecker, heading: /readability score checker/i },
+  { name: 'UnitPriceCalculator', Component: UnitPriceCalculator, heading: /unit price calculator/i },
+  { name: 'DateCalculator', Component: DateCalculator, heading: /date calculator/i },
   { name: 'PrivacyPolicy', Component: PrivacyPolicy, heading: /privacy policy/i },
   { name: 'TermsOfService', Component: TermsOfService, heading: /terms of service/i },
 ];

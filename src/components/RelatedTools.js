@@ -76,6 +76,12 @@ const allTools = {
   '/frequency-counter': 'Frequency Counter',
   '/profit-margin-calculator': 'Profit Margin Calculator',
   '/screen-resolution': 'Screen Resolution Checker',
+  '/body-fat-calculator': 'Body Fat Calculator',
+  '/inflation-calculator': 'Inflation Calculator',
+  '/sleep-calculator': 'Sleep Calculator',
+  '/readability-checker': 'Readability Checker',
+  '/unit-price-calculator': 'Unit Price Calculator',
+  '/date-calculator': 'Date Calculator',
 };
 
 const related = {
@@ -154,6 +160,12 @@ const related = {
   '/frequency-counter': ['/word-counter', '/case-converter', '/character-map'],
   '/profit-margin-calculator': ['/percentage-calculator', '/discount-calculator', '/salary-calculator'],
   '/screen-resolution': ['/aspect-ratio-calculator', '/image-resizer', '/px-to-rem'],
+  '/body-fat-calculator': ['/bmi-calculator', '/bmr-calculator', '/calorie-calculator'],
+  '/inflation-calculator': ['/compound-interest-calculator', '/savings-goal-calculator', '/salary-calculator'],
+  '/sleep-calculator': ['/pomodoro-timer', '/countdown-timer', '/age-calculator'],
+  '/readability-checker': ['/word-counter', '/frequency-counter', '/case-converter'],
+  '/unit-price-calculator': ['/discount-calculator', '/percentage-calculator', '/profit-margin-calculator'],
+  '/date-calculator': ['/date-difference-calculator', '/age-calculator', '/countdown-timer'],
 };
 
 function RelatedTools({ current }) {
