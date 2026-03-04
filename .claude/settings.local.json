@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"console.log\\(JSON.parse\\(require\\(''fs''\\).readFileSync\\(''c:/Users/Blue/Desktop/Repos/age-calculator/package.json'',''utf8''\\)\\).scripts\\)\")",
+      "Bash(node -e \"const pkg = JSON.parse\\(require\\(''fs''\\).readFileSync\\(''c:/Users/Blue/Desktop/Repos/age-calculator/package.json'',''utf8''\\)\\); console.log\\(JSON.stringify\\(pkg.jest, null, 2\\)\\)\")",
+      "Bash(npx react-scripts test --watchAll=false --verbose src/components/Layout.test.js src/components/Seo.test.js src/components/RelatedTools.test.js)",
+      "Bash(node -e \"console.log\\(require\\(''react-router-dom/package.json''\\).version\\)\")",
+      "Bash(npx react-scripts test --watchAll=false --verbose src/App.test.js)",
+      "Bash(node -e \"const p = require\\(''c:/Users/Blue/Desktop/Repos/age-calculator/node_modules/react-router-dom/package.json''\\); console.log\\(JSON.stringify\\({main: p.main, module: p.module, exports: p.exports}, null, 2\\)\\)\")",
+      "Bash(node -e \"const p = require\\(''c:/Users/Blue/Desktop/Repos/age-calculator/node_modules/react-router/package.json''\\); console.log\\(JSON.stringify\\({main: p.main, module: p.module, version: p.version}, null, 2\\)\\)\")",
+      "Bash(node -e \"const p = require\\(''c:/Users/Blue/Desktop/Repos/age-calculator/node_modules/react-router/package.json''\\); console.log\\(JSON.stringify\\(p.exports, null, 2\\)\\)\")",
+      "Bash(npx react-scripts test --watchAll=false --verbose src/App.test.js src/pages/pages.smoke.test.js)",
+      "Bash(npx react-scripts test --watchAll=false --verbose src/components/Layout.test.js src/components/Seo.test.js src/components/RelatedTools.test.js src/App.test.js)",
+      "Bash(npx react-scripts test --watchAll=false --testPathPattern=\"src/pages/AgeCalculator.test.js\")",
+      "Bash(npx react-scripts test --watchAll=false --testPathPattern=\"src/pages/WordCounter.test.js\")",
+      "Bash(node -e \"console.log\\(require\\(''@testing-library/user-event/package.json''\\).version\\)\")",
+      "Bash(npm ls @testing-library/user-event)",
+      "Bash(npx react-scripts test --watchAll=false --testPathPattern=\"BmiCalculator.test\")",
+      "Bash(npm install --save-dev @testing-library/user-event@14)",
+      "Bash(npx react-scripts test --watchAll=false --testPathPattern=\"PercentageCalculator.test\")",
+      "Bash(node -e \"const ue = require\\(''@testing-library/user-event''\\); console.log\\(typeof ue.default, typeof ue.setup, Object.keys\\(ue\\)\\)\")",
+      "Bash(node -e \"const ue = require\\(''@testing-library/user-event''\\); console.log\\(typeof ue.default.setup, Object.keys\\(ue.default\\)\\)\")",
+      "Bash(npx react-scripts test --watchAll=false --testPathPattern=\"AgeCalculator.test\")",
+      "Bash(node -e \"const ue = require\\(''@testing-library/user-event''\\); console.log\\(''default type:'', typeof ue.default\\); console.log\\(''default.default:'', typeof ue.default?.default\\); console.log\\(''default.setup:'', typeof ue.default?.setup\\); console.log\\(''ue.setup:'', typeof ue.setup\\)\")",
+      "Bash(node -e \"const m = require\\(''@testing-library/user-event''\\); console.log\\(''keys:'', Object.keys\\(m\\)\\); console.log\\(''__esModule:'', m.__esModule\\)\")",
+      "Bash(npx react-scripts test --watchAll=false --clearCache)",
+      "Bash(npx react-scripts test --watchAll=false --testPathPattern=\"BmiCalculator.test\" --no-cache)",
+      "Bash(node -e \"console.log\\(\\(22.9551\\).toFixed\\(1\\)\\); console.log\\(\\(\\(160 / \\(70*70\\)\\) * 703\\).toFixed\\(1\\)\\)\")",
+      "Bash(npm install)",
+      "Bash(npx react-scripts test --watchAll=false)",
+      "Bash(npx react-scripts test --testPathPattern=\"pages.smoke\" --watchAll=false)",
+      "Bash(npx react-scripts test --coverage --watchAll=false)",
+      "Bash(git status -u)",
+      "Bash(git add package.json package-lock.json src/setupTests.js src/App.test.js src/test-utils.js src/pages/pages.smoke.test.js src/pages/AgeCalculator.test.js src/pages/WordCounter.test.js src/pages/BmiCalculator.test.js src/pages/PercentageCalculator.test.js src/components/Layout.test.js src/components/Seo.test.js src/components/RelatedTools.test.js docs/plans/2026-02-26-testing-setup.md)",
+      "Bash(git commit:*)",
+      "Bash(git add src/pages/BodyFatCalculator.js src/pages/InflationCalculator.js src/pages/SleepCalculator.js src/pages/ReadabilityChecker.js src/pages/UnitPriceCalculator.js src/pages/DateCalculator.js src/App.js src/pages/Home.js src/components/RelatedTools.js src/pages/pages.smoke.test.js)"
+    ]
+  }
+}
