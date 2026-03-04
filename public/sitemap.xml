@@ -2,314 +2,422 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://quickcalcs.net/</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/age-calculator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/percentage-calculator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/word-counter</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/bmi-calculator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/tip-calculator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/case-converter</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/date-difference-calculator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/random-number-generator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/json-formatter</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/color-converter</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/password-generator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/unit-converter</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/loan-calculator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/base64</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/lorem-ipsum</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/qr-code-generator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/countdown-timer</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/url-encoder</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/markdown-preview</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/regex-tester</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/css-gradient-generator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/timestamp-converter</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/discount-calculator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/html-entity-encoder</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/gpa-calculator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/diff-checker</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/hash-generator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/jwt-decoder</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/image-resizer</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/image-compressor</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/chmod-calculator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/invoice-generator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/color-palette-generator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/sql-formatter</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/cron-expression-builder</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/aspect-ratio-calculator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/number-base-converter</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/salary-calculator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/box-shadow-generator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/electricity-cost-calculator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/stopwatch</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/scientific-notation-converter</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/character-map</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/mortgage-calculator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/compound-interest-calculator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/calorie-calculator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/time-zone-converter</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/json-to-csv</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/text-to-binary</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/fuel-cost-calculator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/bmr-calculator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/hex-to-rgb</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/csv-to-json</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/ip-lookup</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/roman-numeral-converter</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/typing-speed-test</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/pomodoro-timer</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/pace-calculator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/grade-calculator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/subnet-calculator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/savings-goal-calculator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/average-calculator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/coin-flip</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/dice-roller</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/area-calculator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/px-to-rem</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/text-repeater</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/proportion-calculator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/flashcard-maker</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/meta-tag-generator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/whitespace-remover</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/color-blindness-simulator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/frequency-counter</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/profit-margin-calculator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/screen-resolution</loc>
+    <lastmod>2026-02-28</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/body-fat-calculator</loc>
+    <lastmod>2026-02-28</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/inflation-calculator</loc>
+    <lastmod>2026-02-28</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/sleep-calculator</loc>
+    <lastmod>2026-02-28</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/readability-checker</loc>
+    <lastmod>2026-02-28</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/unit-price-calculator</loc>
+    <lastmod>2026-02-28</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://quickcalcs.net/date-calculator</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/privacy</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://quickcalcs.net/terms</loc>
+    <lastmod>2026-02-28</lastmod>
     <priority>0.3</priority>
   </url>
 </urlset>

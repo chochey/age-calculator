@@ -31,22 +31,19 @@ function BodyFatCalculator() {
   const calculate = (e) => {
     e.preventDefault();
 
-    let neckVal, waistVal, hipVal, heightVal, weightVal;
+    let neckVal, waistVal, hipVal, heightVal;
 
     if (unit === 'imperial') {
       neckVal = parseFloat(neck);
       waistVal = parseFloat(waist);
       hipVal = parseFloat(hip);
       heightVal = parseFloat(height);
-      weightVal = parseFloat(weight);
     } else {
       // Convert cm to inches for the formula
       neckVal = parseFloat(neck) / 2.54;
       waistVal = parseFloat(waist) / 2.54;
       hipVal = parseFloat(hip) / 2.54;
       heightVal = parseFloat(height) / 2.54;
-      // Convert kg to lbs for lean/fat mass
-      weightVal = parseFloat(weight);
     }
 
     if (!neckVal || neckVal <= 0 || !waistVal || waistVal <= 0 || !heightVal || heightVal <= 0) {
