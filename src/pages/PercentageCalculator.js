@@ -93,17 +93,30 @@ function PercentageCalculator() {
       </div>
 
       <section className="info-section">
-        <h2>How to Calculate Percentages</h2>
-        <p>A percentage is a number expressed as a fraction of 100. To find X% of Y, multiply Y by X/100. For example, 25% of 200 = 200 × 0.25 = 50. Use the calculators above for quick results without manual math.</p>
+        <h2>How to Use This Percentage Calculator</h2>
+        <p>This page provides four different percentage calculators to cover the most common scenarios. To find what a percentage of a number is, use the first calculator by entering the percentage and the base number. To find what percentage one number is of another, use the second calculator. The third calculator determines the percentage change between two values, which is useful for tracking price changes or performance metrics. The fourth calculator shows the result of increasing or decreasing a number by a given percentage. Simply fill in the fields for the calculation you need and click "Calculate" to get your answer instantly.</p>
 
-        <h2>Common Percentage Uses</h2>
+        <h2>Understanding the Formulas</h2>
+        <p>Each calculator uses a slightly different formula. <strong>X% of Y</strong> is computed as Y multiplied by (X / 100). For example, 15% of 200 equals 200 x 0.15 = 30. To find <strong>what percent X is of Y</strong>, divide X by Y and multiply by 100. So 45 out of 200 equals (45 / 200) x 100 = 22.5%. <strong>Percentage change</strong> uses the formula ((new value - old value) / |old value|) x 100. If a stock goes from $50 to $65, the change is ((65 - 50) / 50) x 100 = +30%. For <strong>increase/decrease</strong>, the formula is value +/- (value x percent / 100).</p>
+
+        <h2>Practical Applications</h2>
         <ul>
-          <li>Calculate tips at restaurants</li>
-          <li>Figure out discounts and sale prices</li>
-          <li>Determine tax amounts</li>
-          <li>Track investment gains or losses</li>
-          <li>Calculate grade percentages</li>
+          <li>Calculating a restaurant tip -- find 18% or 20% of your bill total in seconds</li>
+          <li>Determining sale prices -- if an item is 35% off, quickly see what you will actually pay</li>
+          <li>Figuring out tax amounts on purchases before checkout</li>
+          <li>Tracking investment portfolio gains or losses over specific time periods</li>
+          <li>Computing grade percentages from raw scores on tests and assignments</li>
         </ul>
+
+        <h2>Frequently Asked Questions</h2>
+        <h3>How do I calculate a percentage increase between two numbers?</h3>
+        <p>Use the "Percentage Change" calculator on this page. Enter the original value in the "From" field and the new value in the "To" field, then click Calculate. The formula is ((new - old) / |old|) x 100. A positive result means an increase, and a negative result means a decrease.</p>
+
+        <h3>What is the difference between percentage and percentage points?</h3>
+        <p>A percentage describes a ratio out of 100, while percentage points measure the arithmetic difference between two percentages. If an interest rate moves from 3% to 5%, that is a 2 percentage point increase, but it represents a 66.7% increase in relative terms. This distinction matters in finance, statistics, and reporting.</p>
+
+        <h3>Can I use this calculator for compound percentage changes?</h3>
+        <p>Each calculation on this page handles a single percentage operation. If you need to apply multiple successive percentage changes (such as two consecutive years of 10% growth), you would calculate each step individually. For compound growth over many periods, consider using our Compound Interest Calculator, which is specifically designed for that purpose.</p>
       </section>
       <RelatedTools current="/percentage-calculator" />
     </div>

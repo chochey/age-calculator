@@ -72,19 +72,37 @@ function CaseConverter() {
       )}
 
       <section className="info-section">
-        <h2>About Case Conversion</h2>
-        <p>Quickly convert text between different cases. Useful for formatting titles, converting variable names between coding conventions, or fixing text that was accidentally typed in the wrong case.</p>
+        <h2>How to Use This Case Converter</h2>
+        <ol>
+          <li>Type or paste your text into the input area. It can be a single word, a sentence, a full paragraph, or a variable name you want to reformat.</li>
+          <li>Click one of the eight conversion buttons to transform your text. For example, clicking "UPPERCASE" converts "hello world" to "HELLO WORLD", while clicking "camelCase" converts it to "helloWorld".</li>
+          <li>The converted result appears below the buttons. Click "Copy" to copy it to your clipboard.</li>
+          <li>To try a different conversion, simply click another button. The tool always converts from your original input, so you can compare different formats without re-entering your text.</li>
+        </ol>
+
+        <h2>Understanding Text Case Formats</h2>
+        <p>Text case refers to the pattern of uppercase and lowercase letters in a string. Different contexts call for different conventions. In everyday writing, sentence case and title case are the standards for readability. In programming, variable naming conventions vary by language and framework. JavaScript and Java developers typically use camelCase for variables and functions, while Python developers prefer snake_case. CSS class names and URL slugs often use kebab-case because hyphens are URL-safe and readable. This tool handles all these transformations instantly, saving you from manual retyping or writing one-off conversion scripts. The conversions work by analyzing word boundaries, splitting your text into individual tokens, and reassembling them according to the rules of each format.</p>
 
         <h2>Available Conversions</h2>
         <ul>
-          <li><strong>UPPERCASE</strong> — All letters capitalized</li>
-          <li><strong>lowercase</strong> — All letters lowercase</li>
-          <li><strong>Title Case</strong> — First letter of each word capitalized</li>
-          <li><strong>Sentence case</strong> — First letter of each sentence capitalized</li>
-          <li><strong>camelCase</strong> — Common in JavaScript variable names</li>
-          <li><strong>snake_case</strong> — Common in Python and database columns</li>
-          <li><strong>kebab-case</strong> — Common in URLs and CSS class names</li>
+          <li><strong>UPPERCASE</strong> — Every letter is capitalized. Useful for acronyms, constants, and emphasis.</li>
+          <li><strong>lowercase</strong> — Every letter is lowercased. Useful as a starting point for further transformations.</li>
+          <li><strong>Title Case</strong> — The first letter of every word is capitalized. Standard for headings, book titles, and proper nouns.</li>
+          <li><strong>Sentence case</strong> — Only the first letter after a sentence-ending punctuation mark is capitalized. Natural for body text and paragraphs.</li>
+          <li><strong>camelCase</strong> — Words are joined with no separator and each word after the first is capitalized. The standard for JavaScript, TypeScript, and Java variables.</li>
+          <li><strong>snake_case</strong> — Words are joined with underscores and all letters are lowercase. Standard in Python, Ruby, and SQL column names.</li>
+          <li><strong>kebab-case</strong> — Words are joined with hyphens and all letters are lowercase. Used for CSS classes, URL slugs, and CLI flags.</li>
+          <li><strong>aLtErNaTiNg CaSe</strong> — Letters alternate between lowercase and uppercase. A playful format often used in memes and informal communication.</li>
         </ul>
+
+        <h3>Does the converter handle multiple sentences correctly?</h3>
+        <p>Yes. The sentence case conversion detects sentence boundaries using punctuation marks (periods, exclamation marks, and question marks) and capitalizes the first letter following each one. For multi-sentence input, each sentence will begin with a capital letter while the rest remains lowercase.</p>
+
+        <h3>How does camelCase handle special characters and numbers?</h3>
+        <p>The camelCase converter strips non-alphanumeric characters and treats them as word boundaries. For example, "user-first-name" becomes "userFirstName" and "item_count_2" becomes "itemCount2". Numbers are kept in place but do not trigger capitalization of the following letter.</p>
+
+        <h3>Can I convert programming variable names between formats?</h3>
+        <p>Absolutely. This is one of the most common use cases. Paste a camelCase variable like "getUserProfile" and click "snake_case" to get "get_user_profile", or click "kebab-case" to get "get-user-profile". This is especially handy when migrating code between languages with different naming conventions.</p>
       </section>
       <RelatedTools current="/case-converter" />
     </div>

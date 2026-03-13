@@ -269,65 +269,35 @@ function AreaCalculator() {
 
       <RelatedTools current="/area-calculator" />
 
-      <div className="info-section">
-        <h2>Area Formulas</h2>
+      <section className="info-section">
+        <h2>How to Use the Area Calculator</h2>
         <p>
-          Area is the measure of the two-dimensional space enclosed within a shape. Understanding
-          area formulas is fundamental in geometry, construction, landscaping, and many other fields.
+          Pick a shape from the buttons at the top -- rectangle, circle, triangle, trapezoid, ellipse, or parallelogram. Select your measurement unit (cm, m, in, or ft), then type the required dimensions into the input fields. Results appear instantly as you type, showing both the area and the perimeter (or circumference for circles). For triangles, trapezoids, and parallelograms, the side fields marked with an asterisk are optional; filling them in enables the perimeter calculation as well. The active formula is always displayed above the inputs for quick reference.
         </p>
 
-        <h2>Rectangle</h2>
+        <h2>Formulas and a Worked Example</h2>
         <p>
-          The area of a rectangle is found by multiplying its length by its width: <strong>A = l {'\u00D7'} w</strong>.
-          The perimeter is the sum of all sides: <strong>P = 2(l + w)</strong>. Rectangles are one of
-          the most common shapes encountered in everyday life, from rooms and screens to books and tiles.
+          Each shape has its own formula. A <strong>rectangle</strong> uses A = length x width. A <strong>circle</strong> uses A = {'\u03C0'}r{'\u00B2'}. A <strong>triangle</strong> uses A = {'\u00BD'} x base x height. A <strong>trapezoid</strong> uses A = {'\u00BD'}(a + b) x height. An <strong>ellipse</strong> uses A = {'\u03C0'} x a x b. A <strong>parallelogram</strong> uses A = base x height.
+        </p>
+        <p>
+          <strong>Worked example (circle):</strong> If a circular garden has a radius of 4 meters, its area is {'\u03C0'} x 4{'\u00B2'} = {'\u03C0'} x 16 = <strong>50.27 m{'\u00B2'}</strong>, and its circumference is 2 x {'\u03C0'} x 4 = <strong>25.13 m</strong>. Knowing the area helps you order the correct amount of mulch or sod, while the circumference tells you how much edging material you need.
         </p>
 
-        <h2>Circle</h2>
+        <h3>When should I use this calculator instead of doing the math by hand?</h3>
         <p>
-          A circle's area is calculated using <strong>A = {'\u03C0'}r{'\u00B2'}</strong>, where r is the radius.
-          The circumference (perimeter) is <strong>C = 2{'\u03C0'}r</strong>. The constant {'\u03C0'} (pi)
-          is approximately 3.14159. Circles appear in wheels, pipes, clocks, and countless engineering applications.
+          Any time you need a quick, error-free answer. Common real-world situations include estimating flooring or tile for a room (rectangle), figuring out the coverage area of a sprinkler (circle), calculating the sail area of a triangular boat sail (triangle), or sizing a driveway apron (trapezoid). The calculator handles the arithmetic instantly and lets you switch units without manual conversion.
         </p>
 
-        <h2>Triangle</h2>
+        <h3>How do I find the area of an irregular shape?</h3>
         <p>
-          The most common triangle area formula is <strong>A = {'\u00BD'} {'\u00D7'} base {'\u00D7'} height</strong>.
-          The perimeter is the sum of all three sides. For triangles where you know all three sides, you
-          can also use Heron's formula. Triangles are fundamental in structural engineering and trigonometry.
+          Break the irregular shape into simpler shapes whose areas you can calculate individually -- for example, a house floor plan might be split into two rectangles and a triangle. Calculate each part separately and add the results together. If curves are involved, approximate them with circles or ellipses. For very complex shapes, graph paper or digital tools that use pixel counting can provide an estimate.
         </p>
 
-        <h2>Trapezoid</h2>
+        <h3>What is the difference between area and perimeter?</h3>
         <p>
-          A trapezoid (trapezium in British English) has one pair of parallel sides. Its area
-          is <strong>A = {'\u00BD'}(a + b) {'\u00D7'} h</strong>, where a and b are the parallel bases
-          and h is the height. The perimeter is the sum of all four sides.
+          Area measures the two-dimensional space inside a shape and is expressed in square units (cm{'\u00B2'}, m{'\u00B2'}, ft{'\u00B2'}). Perimeter measures the total length of the boundary around the shape and is expressed in linear units (cm, m, ft). For example, a 5 m x 3 m rectangle has an area of 15 m{'\u00B2'} but a perimeter of 16 m. Both measurements are essential in construction, landscaping, and design.
         </p>
-
-        <h2>Ellipse</h2>
-        <p>
-          An ellipse is an elongated circle with two semi-axes. Its area
-          is <strong>A = {'\u03C0'} {'\u00D7'} a {'\u00D7'} b</strong>, where a and b are the semi-major
-          and semi-minor axes. The perimeter of an ellipse has no simple closed-form expression;
-          Ramanujan's approximation is commonly used for accurate estimates.
-        </p>
-
-        <h2>Parallelogram</h2>
-        <p>
-          A parallelogram has two pairs of parallel sides. Its area is <strong>A = base {'\u00D7'} height</strong>,
-          where the height is the perpendicular distance between the base and the opposite side.
-          The perimeter is <strong>P = 2(base + side)</strong>.
-        </p>
-
-        <h2>How to Use This Calculator</h2>
-        <ul>
-          <li>Select a shape using the buttons at the top.</li>
-          <li>Choose your preferred measurement unit (cm, m, in, or ft).</li>
-          <li>Enter the required dimensions. Results update in real time as you type.</li>
-          <li>For shapes with optional side fields (triangle, trapezoid, parallelogram), fill those in to also calculate the perimeter.</li>
-          <li>The formula used for each shape is shown above the input fields for reference.</li>
-        </ul>
-      </div>
+      </section>
     </div>
   );
 }

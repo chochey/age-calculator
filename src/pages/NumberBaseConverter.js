@@ -78,20 +78,33 @@ function NumberBaseConverter() {
       )}
 
       <section className="info-section">
-        <h2>Number Systems</h2>
-        <ul>
-          <li><strong>Binary (Base 2)</strong> — Uses 0 and 1. Fundamental to computing.</li>
-          <li><strong>Octal (Base 8)</strong> — Uses 0-7. Used in Unix file permissions.</li>
-          <li><strong>Decimal (Base 10)</strong> — Uses 0-9. Everyday number system.</li>
-          <li><strong>Hexadecimal (Base 16)</strong> — Uses 0-9 and A-F. Used in colors, memory addresses.</li>
-        </ul>
+        <h2>How to Use the Number Base Converter</h2>
+        <p>
+          Select the base of the number you are entering -- Decimal (10), Binary (2), Octal (8), or Hexadecimal (16) -- using the toggle buttons at the top. Type your number in the input field and all four conversions appear instantly below. Each result has a "Copy" button so you can paste the value directly into your code, documentation, or calculator. To convert a different number, simply clear the field and type a new one; to switch the input base, click a different toggle.
+        </p>
 
-        <h2>Quick Reference</h2>
-        <ul>
-          <li><strong>255</strong> = 11111111 (binary) = 377 (octal) = FF (hex)</li>
-          <li><strong>42</strong> = 101010 (binary) = 52 (octal) = 2A (hex)</li>
-          <li><strong>128</strong> = 10000000 (binary) = 200 (octal) = 80 (hex)</li>
-        </ul>
+        <h2>How Base Conversion Works</h2>
+        <p>
+          Every number system is positional -- each digit's value depends on its position. In decimal, the number 255 means 2x10{'\u00B2'} + 5x10{'\u00B9'} + 5x10{'\u2070'} = 200 + 50 + 5. To convert decimal 255 to binary, you repeatedly divide by 2 and record the remainders: 255/2 = 127 r1, 127/2 = 63 r1, 63/2 = 31 r1, and so on until you reach 0. Reading the remainders bottom-to-top gives <strong>11111111</strong>. For hexadecimal, divide by 16: 255/16 = 15 r15. Since 15 in hex is represented by F, decimal 255 = <strong>FF</strong> in hex.
+        </p>
+        <p>
+          <strong>Worked example:</strong> Convert binary 10110 to decimal. From right to left the place values are 1, 2, 4, 8, 16. The bits are 0, 1, 1, 0, 1, so the sum is 0 + 2 + 4 + 0 + 16 = <strong>22 decimal</strong>. In octal that is <strong>26</strong>, and in hex it is <strong>16</strong>.
+        </p>
+
+        <h3>Why do programmers use hexadecimal instead of binary?</h3>
+        <p>
+          Binary strings get long quickly -- the number 255 requires eight binary digits (11111111) but only two hex digits (FF). Because 16 is a power of 2, each hex digit maps exactly to four binary bits, making conversion between the two trivial. This compactness is why hex is the standard for representing memory addresses, color codes (e.g., #FF5733), MAC addresses, and byte values in debugging tools.
+        </p>
+
+        <h3>Where is octal (base 8) still used today?</h3>
+        <p>
+          Octal is most commonly seen in Unix and Linux file permissions. The permission string rwxr-xr-- translates to the octal number 754, where each digit represents the read, write, and execute rights for the owner, group, and others. Octal was also historically popular in early computing systems that used 12-bit or 36-bit words, where grouping bits in threes (matching octal digits) was more natural than grouping in fours.
+        </p>
+
+        <h3>Can I convert numbers larger than 255?</h3>
+        <p>
+          Absolutely. This converter handles any non-negative integer supported by JavaScript, which means values up to 2^53 - 1 (9,007,199,254,740,991) will convert accurately across all four bases. Simply type a larger number and the tool produces the correct binary, octal, decimal, and hex representations instantly.
+        </p>
       </section>
       <RelatedTools current="/number-base-converter" />
     </div>

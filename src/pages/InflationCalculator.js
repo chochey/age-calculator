@@ -226,47 +226,57 @@ function InflationCalculator() {
       )}
 
       <section className="info-section">
-        <h2>What Is Inflation?</h2>
+        <h2>How to Use This Inflation Calculator</h2>
         <p>
-          Inflation is the rate at which the general level of prices for goods and services rises over time,
-          eroding the purchasing power of money. When inflation rises, every dollar you have buys a smaller
-          percentage of a good or service. Central banks attempt to limit inflation and avoid deflation to keep
-          the economy running smoothly.
+          Enter a dollar amount you want to evaluate, then choose a start year and an end year to define your time period.
+          Select a preset inflation rate or click "Custom" to enter your own. Press "Calculate Inflation" to see the
+          equivalent future value of your money, its reduced purchasing power, the cumulative inflation percentage, and a
+          detailed year-by-year breakdown table. This tool helps you understand how rising prices erode the real value of
+          savings, salaries, and investments over time.
         </p>
 
-        <h2>Understanding the Consumer Price Index (CPI)</h2>
+        <h2>The Inflation Formula with a Worked Example</h2>
         <p>
-          The Consumer Price Index (CPI) is the most widely used measure of inflation. It tracks the average
-          change in prices paid by consumers for a basket of goods and services over time, including food,
-          housing, transportation, medical care, and education. The U.S. Bureau of Labor Statistics publishes
-          the CPI monthly. Historically, U.S. inflation has averaged around 3% per year, though it can vary
-          significantly from year to year.
+          The core formula is: <strong>Future Value = Present Value x (1 + r)^n</strong>, where r is the annual inflation
+          rate as a decimal and n is the number of years. For example, suppose you want to know what $1,000 from the year
+          2000 would be equivalent to in 2026 at 3% annual inflation. The calculation is $1,000 x (1.03)^26 =
+          <strong> $2,156.59</strong>. That means goods that cost $1,000 in 2000 would cost about $2,156.59 in 2026.
+          Conversely, $1,000 in 2026 only buys what <strong>$463.69</strong> would have bought in 2000. The Rule of 72
+          offers a quick shortcut: divide 72 by the inflation rate to estimate how many years it takes for prices to
+          double. At 3%, prices roughly double every 24 years.
         </p>
-
-        <h2>How Inflation Affects Purchasing Power</h2>
-        <p>
-          Purchasing power refers to the quantity of goods or services that one unit of money can buy. As
-          inflation increases, purchasing power decreases. For example, if inflation averages 3% per year,
-          something that costs $100 today would cost about $134.39 in 10 years. Conversely, $100 in 10 years
-          would only have the buying power of about $74.41 in today's dollars. This is why it is crucial to
-          invest and grow your savings at a rate that outpaces inflation.
-        </p>
-
-        <h2>Key Formulas</h2>
-        <ul>
-          <li><strong>Adjusted Value:</strong> Future Value = Present Value x (1 + r)^n, where r is the annual inflation rate and n is the number of years</li>
-          <li><strong>Purchasing Power:</strong> Real Value = Nominal Value / (1 + r)^n</li>
-          <li><strong>Rule of 72:</strong> Divide 72 by the inflation rate to estimate how many years it takes for prices to double</li>
-        </ul>
 
         <h2>Tips for Protecting Against Inflation</h2>
         <ul>
           <li><strong>Invest in equities</strong> -- stocks have historically outpaced inflation over long periods</li>
-          <li><strong>Consider TIPS</strong> -- Treasury Inflation-Protected Securities adjust their principal based on CPI changes</li>
-          <li><strong>Diversify assets</strong> -- real estate, commodities, and international investments can provide inflation hedges</li>
-          <li><strong>Avoid holding too much cash</strong> -- money in low-interest savings accounts loses value to inflation over time</li>
+          <li><strong>Consider TIPS</strong> -- Treasury Inflation-Protected Securities adjust principal based on CPI changes</li>
+          <li><strong>Diversify assets</strong> -- real estate, commodities, and international investments can serve as inflation hedges</li>
           <li><strong>Negotiate salary increases</strong> -- ensure your income keeps pace with or exceeds inflation each year</li>
         </ul>
+
+        <h3>What is the Consumer Price Index (CPI)?</h3>
+        <p>
+          The CPI is the most widely used measure of inflation in the United States. Published monthly by the Bureau of
+          Labor Statistics, it tracks the average change in prices paid by consumers for a basket of goods and services
+          including food, housing, transportation, medical care, and education. Historically, U.S. CPI inflation has
+          averaged around 3% per year, though individual years can vary significantly.
+        </p>
+
+        <h3>What is the difference between nominal and real value?</h3>
+        <p>
+          Nominal value is the face value of money without adjusting for inflation. Real value accounts for changes in
+          purchasing power. If you earned $50,000 in 2010 and $55,000 in 2020, your nominal income grew by 10%. But if
+          cumulative inflation over that decade was 19%, your real income actually declined. This calculator helps you
+          convert between nominal and real values so you can make accurate financial comparisons across different years.
+        </p>
+
+        <h3>Why does this calculator use a fixed annual rate instead of actual historical rates?</h3>
+        <p>
+          Actual inflation fluctuates from year to year, so using a single average rate produces an estimate rather than
+          an exact historical figure. The preset options of 2%, 3%, 5%, and 7% cover a broad range of scenarios, from
+          low-inflation periods to high-inflation environments. For the most precise historical comparison, you can enter
+          a custom rate based on published CPI data for your specific time period.
+        </p>
       </section>
       <RelatedTools current="/inflation-calculator" />
     </div>

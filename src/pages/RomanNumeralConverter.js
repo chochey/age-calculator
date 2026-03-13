@@ -203,41 +203,32 @@ function RomanNumeralConverter() {
 
       <section className="info-section">
         <h2>How to Use the Roman Numeral Converter</h2>
-        <p>Select your conversion direction using the toggle buttons above. In "Number to Roman" mode, enter any whole number between 1 and 3,999 to see its Roman numeral equivalent. In "Roman to Number" mode, type a Roman numeral string to see its decimal value. The conversion happens instantly as you type.</p>
+        <p>
+          Select your conversion direction with the toggle at the top. In "Number to Roman" mode, type any whole number from 1 to 3,999 and the Roman numeral equivalent appears instantly. In "Roman to Number" mode, type a Roman numeral string (such as MMXXVI) to see its decimal value. You can also click any cell in the reference table below to load that value into the converter. Use the "Copy Result" button to paste the output into documents, presentations, or messages.
+        </p>
 
-        <h2>Roman Numeral Rules</h2>
-        <p>Roman numerals use seven basic symbols: <strong>I</strong> (1), <strong>V</strong> (5), <strong>X</strong> (10), <strong>L</strong> (50), <strong>C</strong> (100), <strong>D</strong> (500), and <strong>M</strong> (1000). Numbers are formed by combining these symbols according to specific rules:</p>
-        <ul>
-          <li>Symbols are generally written from largest to smallest, left to right, and their values are added together.</li>
-          <li>A smaller symbol before a larger one means subtraction: <strong>IV</strong> = 4, <strong>IX</strong> = 9, <strong>XL</strong> = 40, <strong>XC</strong> = 90, <strong>CD</strong> = 400, <strong>CM</strong> = 900.</li>
-          <li>A symbol may be repeated up to three times consecutively (e.g., III = 3, XXX = 30).</li>
-          <li>V, L, and D are never repeated.</li>
-        </ul>
+        <h2>How Roman Numeral Conversion Works</h2>
+        <p>
+          Roman numerals use seven symbols: I (1), V (5), X (10), L (50), C (100), D (500), and M (1000). To form a number, list symbols from largest to smallest and add their values. When a smaller symbol appears directly before a larger one, subtract instead of add -- this is called subtractive notation.
+        </p>
+        <p>
+          <strong>Worked example:</strong> Convert the number 1,994 to Roman numerals. Start with the largest symbol that fits: M = 1000, leaving 994. CM = 900 (1000 - 100), leaving 94. XC = 90 (100 - 10), leaving 4. IV = 4 (5 - 1), leaving 0. Concatenate the pieces: <strong>MCMXCIV</strong>. To verify, read it back: M (1000) + CM (900) + XC (90) + IV (4) = 1,994.
+        </p>
 
-        <h2>Why Does It Stop at 3,999?</h2>
-        <p>The standard Roman numeral system using the seven basic symbols (I, V, X, L, C, D, M) can only represent numbers up to 3,999 (MMMCMXCIX). Numbers 4,000 and above historically used a vinculum (an overline) to multiply a numeral by 1,000, but this notation is not commonly supported in modern digital text.</p>
+        <h3>Why does the converter only go up to 3,999?</h3>
+        <p>
+          The standard seven-symbol Roman numeral system maxes out at MMMCMXCIX (3,999). Historically, numbers 4,000 and above were written by placing a bar (called a vinculum) over a numeral to multiply it by 1,000 -- for example, a V with a bar meant 5,000. Modern digital text does not natively support this overline notation, so most converters and reference materials stick to the 1-3,999 range where the output is unambiguous and universally readable.
+        </p>
 
-        <h2>Common Roman Numerals</h2>
-        <ul>
-          <li><strong>2024</strong> = MMXXIV</li>
-          <li><strong>2025</strong> = MMXXV</li>
-          <li><strong>2026</strong> = MMXXVI</li>
-          <li><strong>1999</strong> = MCMXCIX</li>
-          <li><strong>1776</strong> = MDCCLXXVI</li>
-          <li><strong>100</strong> = C</li>
-          <li><strong>50</strong> = L</li>
-          <li><strong>14</strong> = XIV</li>
-        </ul>
+        <h3>What are the subtractive notation rules?</h3>
+        <p>
+          Only certain subtractive pairs are valid: IV (4), IX (9), XL (40), XC (90), CD (400), and CM (900). You cannot subtract a symbol from one more than ten times its value -- for instance, IC is not a valid way to write 99; the correct form is XCIX (90 + 9). Additionally, only powers of ten (I, X, C) can be used as the subtractive element, never V, L, or D. The converter validates input against these rules and rejects malformed strings.
+        </p>
 
-        <h2>Where Are Roman Numerals Used Today?</h2>
-        <ul>
-          <li>Clock and watch faces</li>
-          <li>Super Bowl numbering (e.g., Super Bowl LVIII)</li>
-          <li>Movie sequel numbering and copyright dates</li>
-          <li>Chapter and volume numbering in books</li>
-          <li>Outlines and formal document sections</li>
-          <li>Monarch names (e.g., King Charles III)</li>
-        </ul>
+        <h3>Where are Roman numerals still used in everyday life?</h3>
+        <p>
+          Roman numerals remain surprisingly common. Clock and watch faces use them for hour markers. The Super Bowl is numbered with Roman numerals (Super Bowl LIX, for instance). Movie sequels and copyright dates in film credits are often displayed in Roman numerals. Books use them for preface page numbers and chapter headings. Monarchs and popes append them to their names (e.g., King Charles III, Pope John Paul II). Outlines in formal documents and legal filings also rely on Roman numeral ordering.
+        </p>
       </section>
       <RelatedTools current="/roman-numeral-converter" />
     </div>

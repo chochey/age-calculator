@@ -90,16 +90,29 @@ function BmiCalculator() {
       )}
 
       <section className="info-section">
-        <h2>What is BMI?</h2>
-        <p>Body Mass Index (BMI) is a simple measure using your height and weight to estimate whether you're underweight, normal weight, overweight, or obese. It's calculated by dividing weight (kg) by height (m) squared. While BMI doesn't measure body fat directly, it's a useful screening tool.</p>
+        <h2>How to Use This BMI Calculator</h2>
+        <p>Start by selecting your preferred unit system -- Imperial (pounds and feet/inches) or Metric (kilograms and centimeters). If you choose Imperial, enter your height in feet and inches along with your weight in pounds. For Metric, enter your height in centimeters and your weight in kilograms. Click "Calculate BMI" to see your Body Mass Index score and which weight category you fall into. The color-coded result makes it easy to see where you stand at a glance, with a reference scale displayed below your score.</p>
 
-        <h2>BMI Categories</h2>
+        <h2>Understanding the BMI Formula</h2>
+        <p>The BMI formula in metric units is: <strong>BMI = weight (kg) / [height (m)]^2</strong>. For Imperial units, the formula becomes: <strong>BMI = [weight (lb) / height (in)^2] x 703</strong>. For example, if you weigh 160 pounds and stand 5 feet 10 inches tall (70 inches), your BMI would be (160 / 4900) x 703 = 22.9, placing you in the "Normal weight" category. The multiplication factor of 703 converts the Imperial measurement to match the metric-based BMI scale.</p>
+
+        <h2>Practical Applications</h2>
         <ul>
-          <li><strong>Underweight:</strong> BMI less than 18.5</li>
-          <li><strong>Normal weight:</strong> BMI 18.5 to 24.9</li>
-          <li><strong>Overweight:</strong> BMI 25 to 29.9</li>
-          <li><strong>Obese:</strong> BMI 30 or greater</li>
+          <li>Screening tool used by doctors during routine health checkups to flag potential weight-related health risks</li>
+          <li>Tracking your weight category over time as part of a fitness or nutrition plan</li>
+          <li>Meeting health requirements for military service, athletic programs, or insurance assessments</li>
+          <li>Setting realistic weight goals by calculating what weight range corresponds to a normal BMI for your height</li>
         </ul>
+
+        <h2>Frequently Asked Questions</h2>
+        <h3>Is BMI accurate for athletes and muscular people?</h3>
+        <p>BMI does not distinguish between muscle mass and fat mass. Athletes, bodybuilders, and people with high muscle density may receive an "Overweight" or "Obese" BMI score even though their body fat percentage is low. In these cases, additional measurements like waist circumference, body fat percentage, or a DEXA scan provide a more complete picture of health.</p>
+
+        <h3>What BMI range is considered healthy?</h3>
+        <p>A BMI between 18.5 and 24.9 is classified as "Normal weight" and is generally associated with lower risk of weight-related diseases. Below 18.5 is considered "Underweight," 25 to 29.9 is "Overweight," and 30 or above is "Obese." These ranges were established by the World Health Organization and are used globally as a screening guideline.</p>
+
+        <h3>Does BMI apply the same way to all ages?</h3>
+        <p>This calculator is designed for adults aged 20 and older. For children and teenagers, BMI is interpreted differently using age- and sex-specific percentile charts because body composition changes significantly during growth. Pediatricians use CDC growth charts to assess whether a child's BMI is appropriate for their developmental stage.</p>
       </section>
       <RelatedTools current="/bmi-calculator" />
     </div>

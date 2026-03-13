@@ -176,31 +176,59 @@ function FuelCostCalculator() {
       )}
 
       <section className="info-section">
-        <h2>How to Calculate Fuel Cost</h2>
+        <h2>How to Use This Fuel Cost Calculator</h2>
         <p>
-          Fuel cost depends on three factors: the distance you plan to travel, your vehicle's fuel efficiency,
-          and the current price of fuel. In imperial units, the formula is:
-          <strong> Total Cost = (Distance / MPG) x Price per Gallon</strong>.
-          In metric units, it is: <strong>Total Cost = (Distance / 100) x (L/100km) x Price per Liter</strong>.
+          Start by choosing between Imperial (miles, MPG, gallons) and Metric (km, L/100km, liters) units using the
+          toggle at the top. Enter the total distance of your trip, your vehicle's fuel efficiency rating, and the
+          current price you pay per gallon or liter. Click "Calculate Fuel Cost" to see the total fuel needed, the
+          total trip cost, and the cost per mile or kilometer. A handy comparison table also shows estimated costs for
+          common trip distances using your vehicle and fuel price inputs.
         </p>
 
-        <h2>Tips to Improve Fuel Efficiency</h2>
+        <h2>The Fuel Cost Formula with a Worked Example</h2>
+        <p>
+          For imperial units the formula is: <strong>Total Cost = (Distance / MPG) x Price per Gallon</strong>.
+          Suppose you are planning a 350-mile road trip in a car that gets 28 MPG, and gas costs $3.45 per gallon.
+          First, calculate fuel needed: 350 / 28 = <strong>12.50 gallons</strong>. Then multiply by the price:
+          12.50 x $3.45 = <strong>$43.13 total fuel cost</strong>. Your cost per mile is $43.13 / 350 =
+          <strong> $0.123 per mile</strong>. For metric users, the formula is:
+          <strong> Total Cost = (Distance / 100) x (L/100km) x Price per Liter</strong>. A 500 km trip at 7.5 L/100km
+          with fuel at $1.55/liter would cost (500 / 100) x 7.5 x $1.55 = <strong>$58.13</strong>.
+        </p>
+
+        <h2>Tips to Reduce Your Fuel Costs</h2>
         <ul>
-          <li><strong>Maintain steady speed:</strong> Use cruise control on highways to avoid unnecessary acceleration</li>
-          <li><strong>Check tire pressure:</strong> Under-inflated tires increase rolling resistance and fuel consumption</li>
-          <li><strong>Reduce weight:</strong> Remove unnecessary heavy items from your vehicle</li>
-          <li><strong>Avoid idling:</strong> Turn off your engine if you expect to wait more than 60 seconds</li>
-          <li><strong>Plan your route:</strong> Shorter routes with fewer stops save fuel compared to longer routes</li>
+          <li><strong>Maintain steady speed</strong> -- use cruise control on highways to minimize unnecessary acceleration and braking.</li>
+          <li><strong>Check tire pressure monthly</strong> -- under-inflated tires increase rolling resistance and can lower MPG by 3%.</li>
+          <li><strong>Remove excess weight</strong> -- every 100 pounds of unnecessary cargo reduces fuel economy by about 1-2%.</li>
+          <li><strong>Avoid extended idling</strong> -- turn off your engine if you will be stopped for more than 60 seconds.</li>
+          <li><strong>Compare gas prices</strong> -- apps like GasBuddy can help you find the cheapest fuel along your route.</li>
         </ul>
 
-        <h2>Average Fuel Efficiency by Vehicle Type</h2>
-        <ul>
-          <li><strong>Compact car:</strong> 30-40 MPG (5.9-7.8 L/100km)</li>
-          <li><strong>Midsize sedan:</strong> 25-35 MPG (6.7-9.4 L/100km)</li>
-          <li><strong>SUV:</strong> 20-28 MPG (8.4-11.8 L/100km)</li>
-          <li><strong>Pickup truck:</strong> 15-25 MPG (9.4-15.7 L/100km)</li>
-          <li><strong>Hybrid:</strong> 45-60 MPG (3.9-5.2 L/100km)</li>
-        </ul>
+        <h3>How do I find my vehicle's actual MPG?</h3>
+        <p>
+          The most accurate method is to fill your tank completely, reset your trip odometer, drive normally until you
+          need fuel again, then divide the miles driven by the gallons it takes to refill. The EPA rating on your
+          vehicle's window sticker is a useful starting point, but real-world mileage varies based on driving habits,
+          terrain, weather, and vehicle maintenance. Repeating the fill-up test over several tanks gives you a reliable
+          average.
+        </p>
+
+        <h3>Does driving speed affect fuel cost?</h3>
+        <p>
+          Yes, significantly. Most vehicles reach peak fuel efficiency between 45 and 65 mph. Above 65 mph,
+          aerodynamic drag increases rapidly and fuel economy drops. The U.S. Department of Energy estimates that
+          every 5 mph you drive over 50 mph is roughly equivalent to paying an additional $0.20-$0.30 per gallon
+          for gas. Slowing down on the highway is one of the easiest ways to cut trip costs.
+        </p>
+
+        <h3>How do I convert between MPG and L/100km?</h3>
+        <p>
+          The conversion formula is: <strong>L/100km = 235.215 / MPG</strong>, and conversely,
+          <strong> MPG = 235.215 / (L/100km)</strong>. For example, a vehicle rated at 30 MPG uses about
+          235.215 / 30 = 7.84 L/100km. A car rated at 6 L/100km achieves 235.215 / 6 = 39.2 MPG. Keep in mind
+          that lower L/100km numbers indicate better efficiency, while higher MPG numbers indicate better efficiency.
+        </p>
       </section>
       <RelatedTools current="/fuel-cost-calculator" />
     </div>

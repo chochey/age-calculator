@@ -259,35 +259,30 @@ function HexToRgb() {
       </div>
 
       <section className="info-section">
-        <h2>About HEX and RGB Color Codes</h2>
-        <p>
-          HEX and RGB are two common ways to represent colors in web development and design. HEX codes use a
-          six-character hexadecimal format (e.g., #4F46E5), while RGB uses three decimal values from 0 to 255
-          representing the red, green, and blue channels. Both formats can express the same 16.7 million colors.
-        </p>
+        <h2>How to Use the HEX to RGB Converter</h2>
+        <p>Start by selecting the conversion direction using the toggle at the top. In "HEX to RGB" mode, type or paste a hex color code like #4F46E5 into the input field. The converter instantly displays the corresponding RGB values, HSL breakdown, and a live color preview. In "RGB to HEX" mode, adjust the Red, Green, and Blue sliders or type values from 0 to 255 into the number fields. The tool calculates the HEX equivalent in real time. Click "Copy" next to any output value to copy it to your clipboard for use in CSS, JavaScript, or your preferred design application.</p>
 
-        <h2>How HEX to RGB Conversion Works</h2>
-        <p>
-          A HEX color code like #4F46E5 is split into three pairs: 4F (red), 46 (green), and E5 (blue).
-          Each pair is converted from hexadecimal (base 16) to decimal (base 10). So #4F46E5 becomes
-          R: 79, G: 70, B: 229. Three-digit shorthand codes like #F0A expand to #FF00AA by doubling each digit.
-        </p>
+        <h2>How the Conversion Works</h2>
+        <p>A HEX color code is a six-character string where each pair of characters represents one color channel in base-16 notation. For example, #4F46E5 breaks down as 4F (red), 46 (green), and E5 (blue). Converting each pair from hexadecimal to decimal gives R: 79, G: 70, B: 229, which is the RGB representation. Three-digit shorthand codes like #F0A are expanded by doubling each digit to produce #FF00AA. The reverse process -- converting RGB to HEX -- takes each decimal channel value, converts it to a two-digit hexadecimal string, and concatenates them with a leading hash symbol.</p>
 
-        <h2>What Is HSL?</h2>
-        <p>
-          HSL stands for Hue, Saturation, and Lightness. Hue is the color angle on a 360-degree wheel (0 = red,
-          120 = green, 240 = blue). Saturation is the intensity of the color (0% = gray, 100% = full color).
-          Lightness controls brightness (0% = black, 50% = pure color, 100% = white). HSL is often preferred
-          for adjusting colors because the parameters are more intuitive than RGB.
-        </p>
+        <p>This tool also calculates HSL (Hue, Saturation, Lightness) from the RGB values. Hue is expressed as a degree on the 360-degree color wheel (0 is red, 120 is green, 240 is blue). Saturation measures color intensity from 0% (gray) to 100% (fully vivid). Lightness ranges from 0% (black) through 50% (pure color) to 100% (white). For #4F46E5, the HSL result is approximately hsl(243, 76%, 59%), indicating a vibrant blue-violet.</p>
 
-        <h2>Common Color Formats in CSS</h2>
+        <h2>Common CSS Color Formats</h2>
         <ul>
-          <li><strong>HEX:</strong> #FF5733 -- most common in web development</li>
-          <li><strong>RGB:</strong> rgb(255, 87, 51) -- used in CSS and JavaScript</li>
-          <li><strong>HSL:</strong> hsl(11, 100%, 60%) -- intuitive for adjustments</li>
-          <li><strong>RGBA/HSLA:</strong> Same as above but with an alpha (transparency) channel</li>
+          <li><strong>HEX:</strong> #FF5733 -- the most compact notation, widely used in stylesheets and design tools.</li>
+          <li><strong>RGB:</strong> rgb(255, 87, 51) -- decimal channel values, useful for dynamic color manipulation in JavaScript.</li>
+          <li><strong>HSL:</strong> hsl(11, 100%, 60%) -- separates hue from intensity and brightness, making it intuitive for creating tints, shades, and color variations.</li>
+          <li><strong>RGBA / HSLA:</strong> rgb(255, 87, 51, 0.5) or hsl(11, 100%, 60%, 0.5) -- adds an alpha channel for transparency, essential for overlays and semi-transparent UI elements.</li>
         </ul>
+
+        <h3>How do I convert a HEX color to RGB manually?</h3>
+        <p>Split the six-digit HEX code into three pairs. Convert each pair from base-16 to base-10. For instance, #FF5733 becomes FF = 255, 57 = 87, 33 = 51, yielding rgb(255, 87, 51). For three-digit shorthand codes, double each digit first: #F53 becomes #FF5533, then convert each pair the same way.</p>
+
+        <h3>Why do designers use HSL over HEX or RGB?</h3>
+        <p>HSL separates a color into three intuitive properties. If you want a darker shade, reduce the lightness value. If you want a pastel version, lower the saturation. With HEX or RGB, achieving the same result requires recalculating all three channel values. This makes HSL especially valuable when building design systems with consistent color scales.</p>
+
+        <h3>Are there colors that HEX can represent but RGB cannot?</h3>
+        <p>No. HEX and RGB are two different notations for the exact same color space. Both cover the full sRGB gamut of 16,777,216 colors (256 x 256 x 256). Every HEX code has a one-to-one RGB equivalent, and vice versa. The choice between them is purely a matter of syntax preference and context.</p>
       </section>
       <RelatedTools current="/hex-to-rgb" />
     </div>

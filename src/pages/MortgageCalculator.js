@@ -243,35 +243,31 @@ function MortgageCalculator() {
       )}
 
       <section className="info-section">
-        <h2>How Mortgage Payments Are Calculated</h2>
-        <p>
-          This calculator uses the standard amortization formula: <strong>M = P[r(1+r)^n] / [(1+r)^n - 1]</strong>, where M is the monthly payment,
-          P is the loan principal (home price minus down payment), r is the monthly interest rate (annual rate divided by 12), and n is the total
-          number of monthly payments. The result gives you the fixed monthly principal and interest (P&I) payment.
-        </p>
+        <h2>How to Use This Mortgage Calculator</h2>
+        <p>Enter the home price, your down payment (as a percentage or dollar amount), select your desired loan term (15, 20, or 30 years), and enter the annual interest rate. Click "Calculate Mortgage" to see your monthly principal and interest payment, total interest over the life of the loan, and a complete yearly amortization schedule. You can toggle between entering your down payment as a percentage or fixed dollar amount -- the calculator automatically converts between the two as you type. Try different combinations of down payment and loan term to find the scenario that best fits your budget.</p>
+
+        <h2>Understanding the Amortization Formula</h2>
+        <p>This calculator uses the standard amortization formula: <strong>M = P[r(1+r)^n] / [(1+r)^n - 1]</strong>, where M is the monthly payment, P is the loan principal (home price minus down payment), r is the monthly interest rate (annual rate divided by 12), and n is the total number of monthly payments. For example, a $350,000 home with 20% down ($70,000) at 6.5% interest over 30 years yields a loan amount of $280,000, a monthly rate of 0.005417, and 360 payments, resulting in a monthly payment of approximately $1,770. The total cost over 30 years would be about $637,200, meaning you pay $357,200 in interest alone.</p>
 
         <h2>Understanding Your Amortization Schedule</h2>
-        <p>
-          An amortization schedule shows how each payment is split between principal and interest over the life of the loan. In the early years,
-          most of your payment goes toward interest. As the loan matures, a larger portion goes toward reducing the principal balance.
-          The yearly breakdown table above summarizes this progression so you can see exactly how your equity builds over time.
-        </p>
+        <p>An amortization schedule shows how each payment is split between principal and interest over the life of the loan. In the early years, the majority of your payment goes toward interest. As the loan matures, a larger portion goes toward reducing the principal balance. The yearly breakdown table above summarizes this progression so you can see exactly how your equity builds over time and when the crossover point occurs where you begin paying more principal than interest each year.</p>
 
         <h2>Comparing Loan Terms: 15 vs 20 vs 30 Years</h2>
         <ul>
-          <li><strong>30-year mortgage</strong> — Lowest monthly payment but the most total interest paid over the life of the loan. Most popular option for first-time buyers.</li>
-          <li><strong>20-year mortgage</strong> — A middle ground with moderately higher payments and significant interest savings compared to 30 years.</li>
-          <li><strong>15-year mortgage</strong> — Highest monthly payment but dramatically less total interest. Great for those who can afford the higher payment and want to build equity faster.</li>
+          <li><strong>30-year mortgage</strong> -- Lowest monthly payment but the most total interest paid over the life of the loan. Most popular option for first-time buyers who need manageable payments.</li>
+          <li><strong>20-year mortgage</strong> -- A middle ground with moderately higher payments and significant interest savings compared to 30 years.</li>
+          <li><strong>15-year mortgage</strong> -- Highest monthly payment but dramatically less total interest. Ideal for those who can afford the higher payment and want to build equity faster.</li>
         </ul>
 
-        <h2>Tips for Getting the Best Mortgage Rate</h2>
-        <ul>
-          <li>Maintain a credit score above 740 for the best rates</li>
-          <li>Make a down payment of at least 20% to avoid PMI (Private Mortgage Insurance)</li>
-          <li>Compare offers from multiple lenders, including banks, credit unions, and online lenders</li>
-          <li>Consider buying discount points to lower your rate if you plan to stay long-term</li>
-          <li>Lock in your rate when you find a favorable offer, as rates can change daily</li>
-        </ul>
+        <h2>Frequently Asked Questions</h2>
+        <h3>Does this calculator include property taxes and insurance?</h3>
+        <p>This calculator shows principal and interest (P&I) only. Your actual monthly housing payment will also include property taxes, homeowner's insurance, and possibly PMI (Private Mortgage Insurance) if your down payment is less than 20%. As a rough estimate, add 1-2% of the home price annually for taxes and insurance combined, divided by 12 for the monthly amount.</p>
+
+        <h3>How much should I put down on a house?</h3>
+        <p>A 20% down payment is the traditional benchmark because it eliminates the need for PMI, which typically costs 0.5-1% of the loan amount per year. However, many loan programs allow down payments as low as 3-5%. A larger down payment reduces your loan amount, lowers your monthly payment, and saves you significant interest over the life of the loan.</p>
+
+        <h3>How does my interest rate affect the total cost of my mortgage?</h3>
+        <p>Even small differences in interest rate have a dramatic impact over 15 or 30 years. On a $300,000 loan over 30 years, the difference between 6% and 7% adds roughly $72,000 in total interest. This is why shopping for the best rate, improving your credit score, and considering discount points can save tens of thousands of dollars over the life of your mortgage.</p>
       </section>
       <RelatedTools current="/mortgage-calculator" />
     </div>

@@ -114,11 +114,35 @@ function ImageResizer() {
       )}
 
       <section className="info-section">
-        <h2>How to Resize an Image</h2>
-        <p>Upload any image (PNG, JPG, GIF, WebP), set your desired width and height, then click Resize. Enable "Keep aspect ratio" to prevent stretching. Download the result in PNG, JPG, or WebP format.</p>
+        <h2>How to Use the Image Resizer</h2>
+        <p>Click "Choose an image" to upload a file from your device. The tool accepts all common image formats including PNG, JPG, GIF, and WebP. Once loaded, the original dimensions are displayed and the width and height fields are pre-filled with the current pixel values. Enter your desired width or height. If "Keep aspect ratio" is checked (the default), changing one dimension automatically calculates the other to prevent stretching or squishing. Uncheck it if you need specific non-proportional dimensions. Select your output format -- PNG for lossless quality, JPG for smaller photo files, or WebP for the best balance of quality and size. Click "Resize" to process the image, preview the result, and click "Download" to save it.</p>
 
-        <h2>Privacy</h2>
-        <p>Your images are processed entirely in your browser using the Canvas API. Nothing is uploaded to any server.</p>
+        <h2>How Browser-Based Image Resizing Works</h2>
+        <p>This tool uses the HTML5 Canvas API to resize images entirely within your browser. When you click "Resize," the uploaded image is drawn onto an invisible canvas element at your specified dimensions. The browser's rendering engine handles the pixel interpolation -- scaling the original image data up or down to fit the target size. The canvas content is then exported as a data URL in your chosen format (PNG, JPG, or WebP) at 92% quality for lossy formats. Because everything runs locally, your images are never uploaded to any server, and the tool works offline after the page has loaded.</p>
+
+        <h2>Choosing the Right Dimensions</h2>
+        <ul>
+          <li><strong>Social media profile pictures:</strong> Most platforms recommend 400x400 to 800x800 pixels for profile images. Instagram posts work best at 1080x1080, while Facebook cover photos use 820x312.</li>
+          <li><strong>Website thumbnails:</strong> Common thumbnail sizes range from 150x150 to 300x300 pixels. For blog post featured images, 1200x630 pixels is a widely used standard that also works well for social sharing previews.</li>
+          <li><strong>Email attachments:</strong> Resize large photos down to 1024 pixels on the longest side to keep email file sizes manageable without sacrificing too much visual quality.</li>
+          <li><strong>Printing:</strong> For high-quality prints, aim for at least 300 pixels per inch (PPI). A 4x6 inch print needs a minimum of 1200x1800 pixels.</li>
+        </ul>
+
+        <h2>Output Format Guide</h2>
+        <ul>
+          <li><strong>PNG</strong> -- Lossless compression that preserves every pixel. Best for graphics, logos, screenshots, and images with text or sharp edges. Produces larger files than JPG or WebP.</li>
+          <li><strong>JPG</strong> -- Lossy compression optimized for photographs. Produces much smaller files than PNG at the cost of some fine detail. The standard choice for web photos and email attachments.</li>
+          <li><strong>WebP</strong> -- A modern format that offers both lossy and lossless compression with smaller file sizes than JPG and PNG. Supported by all modern browsers. The best option for web performance.</li>
+        </ul>
+
+        <h3>Will resizing an image reduce its file size?</h3>
+        <p>Yes, in most cases. Reducing an image's dimensions decreases the number of pixels that need to be stored, which directly reduces file size. For example, scaling a 4000x3000 photo down to 1200x900 can reduce a 5 MB JPG to under 500 KB. Switching to a more efficient format like WebP during the resize can save even more space.</p>
+
+        <h3>What does "Keep aspect ratio" mean?</h3>
+        <p>Aspect ratio is the proportional relationship between an image's width and height. A 1920x1080 image has a 16:9 aspect ratio. When "Keep aspect ratio" is enabled, changing the width automatically adjusts the height (and vice versa) to maintain this proportion. This prevents the image from appearing stretched or squished. Disable it only when you specifically need non-proportional dimensions, such as cropping a landscape photo into a square.</p>
+
+        <h3>Is there a limit to how large I can make an image?</h3>
+        <p>You can scale an image up to any dimensions, but enlarging a small image will not add detail -- the browser interpolates (guesses) new pixel values between existing ones, which can make the image appear blurry or soft. For best results, only scale images down or keep them close to their original size. If you need a larger version of an image, start with the highest-resolution original available.</p>
       </section>
       <RelatedTools current="/image-resizer" />
     </div>

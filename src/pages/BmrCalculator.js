@@ -257,45 +257,33 @@ function BmrCalculator() {
       )}
 
       <section className="info-section">
-        <h2>What Is Basal Metabolic Rate (BMR)?</h2>
+        <h2>How to Use the BMR Calculator</h2>
         <p>
-          Basal Metabolic Rate (BMR) is the number of calories your body requires to perform essential life-sustaining
-          functions at complete rest. These include breathing, blood circulation, cell production, nutrient processing,
-          and temperature regulation. BMR typically accounts for 60-75% of your total daily calorie expenditure.
+          Getting your BMR result takes just a few steps. First, choose your preferred unit system -- imperial (pounds and feet) or metric (kilograms and centimeters). Next, enter your age, select your gender, and fill in your height and weight. Click "Calculate BMR" to see your results. The calculator returns two BMR estimates side by side -- one from the Harris-Benedict equation and one from the Mifflin-St Jeor equation -- along with a full TDEE table showing estimated daily calories for five different activity levels, from sedentary office work to intense daily training.
         </p>
 
-        <h2>Harris-Benedict vs Mifflin-St Jeor</h2>
+        <h2>The Formulas Behind the Numbers</h2>
         <p>
-          This calculator uses two of the most widely recognized BMR equations. The <strong>Harris-Benedict equation</strong>,
-          originally developed in 1919 and revised in 1984, was the standard for decades. The <strong>Mifflin-St Jeor equation</strong>,
-          published in 1990, is considered more accurate for modern populations and is recommended by the Academy of Nutrition
-          and Dietetics. Both equations use weight, height, age, and gender as inputs but apply different coefficients.
+          Both equations estimate the calories your body burns at complete rest. The <strong>Mifflin-St Jeor equation</strong> for men is BMR = (10 x weight in kg) + (6.25 x height in cm) - (5 x age) + 5, and for women it replaces the +5 with -161. The <strong>Harris-Benedict equation</strong> (revised 1984) uses different coefficients: for men, BMR = 88.362 + (13.397 x weight) + (4.799 x height) - (5.677 x age).
+        </p>
+        <p>
+          <strong>Worked example:</strong> A 30-year-old male who weighs 80 kg and stands 178 cm tall would calculate Mifflin-St Jeor BMR as (10 x 80) + (6.25 x 178) - (5 x 30) + 5 = 800 + 1112.5 - 150 + 5 = <strong>1,768 calories per day</strong>. Multiply that by an activity factor of 1.55 (moderately active) to get a TDEE of roughly 2,740 calories. The Academy of Nutrition and Dietetics generally recommends the Mifflin-St Jeor equation as the more accurate option for today's populations.
         </p>
 
-        <h2>Harris-Benedict Equation (Revised)</h2>
-        <ul>
-          <li><strong>Men:</strong> BMR = 88.362 + (13.397 x weight in kg) + (4.799 x height in cm) - (5.677 x age)</li>
-          <li><strong>Women:</strong> BMR = 447.593 + (9.247 x weight in kg) + (3.098 x height in cm) - (4.330 x age)</li>
-        </ul>
-
-        <h2>Mifflin-St Jeor Equation</h2>
-        <ul>
-          <li><strong>Men:</strong> BMR = (10 x weight in kg) + (6.25 x height in cm) - (5 x age) + 5</li>
-          <li><strong>Women:</strong> BMR = (10 x weight in kg) + (6.25 x height in cm) - (5 x age) - 161</li>
-        </ul>
-
-        <h2>Understanding Activity Levels (TDEE)</h2>
+        <h3>What is the difference between BMR and TDEE?</h3>
         <p>
-          To estimate your Total Daily Energy Expenditure (TDEE), your BMR is multiplied by an activity factor.
-          Choose the level that best matches your typical week:
+          BMR (Basal Metabolic Rate) is the calorie cost of keeping your body alive at total rest -- breathing, pumping blood, and maintaining body temperature. It typically accounts for 60 to 75 percent of your daily burn. TDEE (Total Daily Energy Expenditure) adds the calories you use through physical activity and digestion on top of your BMR. When planning a diet, TDEE is the number that matters because it represents your actual daily calorie needs.
         </p>
-        <ul>
-          <li><strong>Sedentary (x1.2):</strong> Little or no exercise, desk job</li>
-          <li><strong>Lightly Active (x1.375):</strong> Light exercise or sports 1-3 days per week</li>
-          <li><strong>Moderately Active (x1.55):</strong> Moderate exercise or sports 3-5 days per week</li>
-          <li><strong>Very Active (x1.725):</strong> Hard exercise or sports 6-7 days per week</li>
-          <li><strong>Extra Active (x1.9):</strong> Very hard exercise, physical job, or training twice a day</li>
-        </ul>
+
+        <h3>Which BMR equation is more accurate?</h3>
+        <p>
+          Research published in the Journal of the American Dietetic Association found that the Mifflin-St Jeor equation predicted resting metabolic rate within 10 percent of measured values more often than the Harris-Benedict equation. That said, both are estimates. Individual factors like muscle mass, genetics, and hormonal balance can shift your real BMR above or below the calculated figure, so treat these numbers as a strong starting point rather than an absolute answer.
+        </p>
+
+        <h3>How often should I recalculate my BMR?</h3>
+        <p>
+          Recalculate whenever your body composition changes noticeably -- after gaining or losing 10 or more pounds, after a birthday that moves you into a new decade, or if your activity level shifts significantly. Because the formulas factor in weight, height, and age, keeping the inputs current ensures your calorie targets stay relevant. Many nutritionists recommend re-checking every two to three months during an active weight-loss or muscle-building phase.
+        </p>
       </section>
       <RelatedTools current="/bmr-calculator" />
     </div>

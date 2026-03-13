@@ -231,28 +231,20 @@ function CsvToJson() {
 
       <section className="info-section">
         <h2>How to Use the CSV to JSON Converter</h2>
-        <p>Paste your CSV data into the input area and click "Convert". The first row of your CSV is automatically detected as column headers and used as JSON property names. Each subsequent row becomes a JSON object in the resulting array. You can copy the output to your clipboard or download it as a .json file.</p>
+        <p>Paste your CSV data into the input area or click "Load Sample" to try a pre-filled example. Click "Convert" and the tool parses the first row as column headers, then turns every subsequent row into a JSON object whose keys match those headers. The output appears as a prettily formatted JSON array that you can copy to your clipboard or download directly as a <code>.json</code> file. A small counter above the output tells you exactly how many rows and columns were processed.</p>
 
-        <h2>Quoted Fields and Special Characters</h2>
-        <p>This converter correctly handles quoted fields that contain commas, newlines, or double quotes. For example, a field like <code>"Chicago, IL"</code> will be parsed as a single value rather than being split at the comma. Double quotes inside quoted fields can be escaped by doubling them: <code>"She said ""hello"""</code>.</p>
+        <h2>Parsing Rules and Type Detection</h2>
+        <p>The converter follows RFC 4180 conventions for CSV parsing. Quoted fields that contain commas, newlines, or double-quote characters are handled correctly. For instance, a value like <code>"San Francisco, CA"</code> is treated as a single field rather than being split at the comma. Escaped quotes inside a quoted field use the doubled-quote convention: <code>"She said ""hello"""</code> becomes <code>She said "hello"</code> in the JSON output. Duplicate header names are rejected with a clear error message to prevent ambiguous data.</p>
+        <p>Values are automatically cast to their most appropriate JSON type. Pure numeric strings become JSON numbers, the literals <code>true</code> and <code>false</code> become booleans, and <code>null</code> is preserved as a JSON null. Everything else remains a string. This means the resulting JSON is well-typed and ready to be consumed by an API, database import script, or front-end application without additional processing.</p>
 
-        <h2>Automatic Type Detection</h2>
-        <p>Numeric values are automatically converted to JSON numbers, <code>true</code> and <code>false</code> become booleans, and <code>null</code> is preserved as a JSON null value. All other values remain as strings. This ensures the resulting JSON is well-typed and ready for use in applications.</p>
+        <h3>What is the difference between CSV and JSON formats?</h3>
+        <p>CSV (Comma-Separated Values) stores data as plain-text rows and columns, making it easy to open in spreadsheet software like Excel or Google Sheets. JSON (JavaScript Object Notation) represents data as nested key-value pairs and arrays, making it the standard format for web APIs and modern applications. CSV is flat and compact but cannot express hierarchical relationships, while JSON supports nesting and mixed types. Converting from CSV to JSON is a common step when migrating spreadsheet data into a web application or preparing payloads for a REST API.</p>
 
-        <h2>What is CSV?</h2>
-        <p>CSV (Comma-Separated Values) is a simple, widely-used file format for storing tabular data. Each row is on a separate line, and columns are separated by commas. CSV files are commonly exported from spreadsheet software like Microsoft Excel, Google Sheets, and databases.</p>
+        <h3>Can I convert a CSV file with thousands of rows?</h3>
+        <p>Yes. The converter processes data entirely in your browser using JavaScript, so there is no file-size limit imposed by a server. Performance depends on your device's memory and processing power, but modern browsers handle tens of thousands of rows without issue. For extremely large datasets (hundreds of thousands of rows), you may experience a brief delay while the JSON string is generated and rendered in the output area. In those cases, using the "Download .json" button is faster than copying to the clipboard.</p>
 
-        <h2>What is JSON?</h2>
-        <p>JSON (JavaScript Object Notation) is a lightweight data interchange format that is easy for humans to read and write, and easy for machines to parse and generate. JSON is the dominant format for APIs and web applications, making CSV-to-JSON conversion a common need for developers and data analysts.</p>
-
-        <h2>Common Use Cases</h2>
-        <ul>
-          <li>Converting spreadsheet exports to API-compatible JSON format</li>
-          <li>Preparing data for import into web applications or databases</li>
-          <li>Transforming CSV log files into structured JSON for analysis</li>
-          <li>Converting data between systems that use different formats</li>
-          <li>Creating JSON fixture data from CSV spreadsheets for testing</li>
-        </ul>
+        <h3>Is my CSV data sent to a server for conversion?</h3>
+        <p>No. Every step of the parsing and conversion happens locally in your browser. Your data never leaves your device, which makes this tool safe for proprietary datasets, personally identifiable information, financial records, or any other sensitive content. When you close or refresh the page, the data is discarded entirely.</p>
       </section>
       <RelatedTools current="/csv-to-json" />
     </div>

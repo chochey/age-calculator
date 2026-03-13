@@ -334,41 +334,59 @@ function SavingsGoalCalc() {
 
       <RelatedTools current="/savings-goal-calculator" />
 
-      <div className="info-section">
-        <h2>About This Tool</h2>
+      <section className="info-section">
+        <h2>How to Use This Savings Goal Calculator</h2>
         <p>
-          The Savings Goal Calculator helps you determine exactly how much money you need to set aside each month
-          to reach a specific financial target. Whether you are saving for a down payment on a house, building an
-          emergency fund, or planning a major purchase, this tool factors in your current savings, time frame,
-          and expected interest rate to create a realistic savings plan.
+          Enter your target savings goal, any money you have already saved, and the time frame you are working with
+          (in years or months). Optionally, add an expected annual interest rate if your savings will earn returns in
+          a high-yield account or investment. Click "Calculate Savings Plan" to see exactly how much you need to save
+          each month, plus a detailed breakdown of contributions and interest earned over time. You can toggle between
+          monthly and yearly views to see how your balance grows.
         </p>
 
-        <h2>How the Calculation Works</h2>
+        <h2>The Savings Formula with a Worked Example</h2>
         <p>
-          This calculator uses the future value of an annuity formula to determine the required monthly contribution.
-          It accounts for compound interest on both your existing savings and your ongoing monthly deposits. The formula
-          calculates the present value of your goal, subtracts the future value of your current savings (grown at the
-          expected rate), and then solves for the monthly payment needed to fill the gap.
+          This calculator uses the future value of an annuity formula:
+          <strong> PMT = (Goal - FV of Current Savings) / [((1 + r)^n - 1) / r]</strong>, where r is the monthly
+          interest rate and n is the total number of months. For example, say you want to save $20,000 for a car down
+          payment in 3 years. You already have $2,000 saved and expect 5% annual interest. The monthly rate is 0.05/12 =
+          0.004167. Your $2,000 grows to $2,000 x (1.004167)^36 = <strong>$2,323.23</strong> over 36 months. The remaining
+          gap is $20,000 - $2,323.23 = $17,676.77. The annuity factor is ((1.004167)^36 - 1) / 0.004167 = 38.75.
+          So PMT = $17,676.77 / 38.75 = <strong>$456.17 per month</strong>. Over 3 years you contribute $16,422.12 and
+          earn $1,577.88 in interest to reach your $20,000 goal.
         </p>
 
-        <h2>Tips for Reaching Your Savings Goal</h2>
+        <h2>Tips for Reaching Your Goal Faster</h2>
         <ul>
-          <li><strong>Start early</strong> -- the more time you have, the less you need to save each month thanks to compound interest.</li>
-          <li><strong>Automate your savings</strong> -- set up automatic transfers on payday so you save before you spend.</li>
-          <li><strong>Use a high-yield savings account</strong> -- even a few extra percentage points of interest can make a meaningful difference over time.</li>
-          <li><strong>Review and adjust</strong> -- revisit your plan periodically and increase contributions when possible.</li>
-          <li><strong>Reduce expenses</strong> -- cutting small recurring costs can free up surprising amounts for savings.</li>
+          <li><strong>Automate transfers</strong> -- set up automatic deposits on payday so you save before you spend.</li>
+          <li><strong>Use a high-yield account</strong> -- even a few extra percentage points of interest compound meaningfully over time.</li>
+          <li><strong>Increase contributions</strong> -- redirect raises, bonuses, or tax refunds toward your goal.</li>
+          <li><strong>Cut recurring costs</strong> -- canceling unused subscriptions can free up $50-100+ per month.</li>
         </ul>
 
-        <h2>Common Savings Goals</h2>
-        <ul>
-          <li><strong>Emergency fund</strong> -- typically 3 to 6 months of living expenses</li>
-          <li><strong>Home down payment</strong> -- usually 10% to 20% of the home price</li>
-          <li><strong>Vacation fund</strong> -- set a target amount and timeline for your next trip</li>
-          <li><strong>New car</strong> -- save for a larger down payment to reduce loan costs</li>
-          <li><strong>Education</strong> -- plan ahead for tuition and related expenses</li>
-        </ul>
-      </div>
+        <h3>What interest rate should I use?</h3>
+        <p>
+          For a standard high-yield savings account, rates typically range from 4% to 5% APY. If you plan to invest in
+          a diversified index fund, historical average returns are around 7-10% annually, though returns are not
+          guaranteed and can fluctuate. For conservative planning, use a rate at the lower end of your expected range.
+          If your money is in a regular checking account earning near 0%, enter 0% to see the pure savings required.
+        </p>
+
+        <h3>Does this calculator account for taxes on interest?</h3>
+        <p>
+          This tool shows gross interest earned before taxes. Interest income from savings accounts is generally taxable
+          as ordinary income. If you are in the 22% federal tax bracket, for instance, $500 in annual interest would net
+          you about $390 after taxes. For tax-advantaged savings, consider using a Roth IRA or 529 plan where earnings
+          can grow tax-free for qualifying purposes.
+        </p>
+
+        <h3>What if I miss a monthly contribution?</h3>
+        <p>
+          Missing a payment means you will need to increase future contributions to stay on track, or extend your
+          timeline. The sooner you make up a missed deposit, the less impact it has because you lose less compounding
+          time. Revisit this calculator periodically to adjust your plan if your income or expenses change.
+        </p>
+      </section>
     </div>
   );
 }

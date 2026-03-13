@@ -137,31 +137,21 @@ function IpLookup() {
       </div>
 
       <section className="info-section">
-        <h2>What Is an IP Address?</h2>
-        <p>An IP (Internet Protocol) address is a unique numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. It serves two main purposes: identifying the host or network interface, and providing the location of the host in the network for routing purposes.</p>
+        <h2>How to Use the IP Lookup Tool</h2>
+        <p>Click "Find My IP" to instantly discover the public IP address your device is using to reach the internet. The tool makes a quick call to a lightweight API that returns your address, then displays it along with its type (IPv4 or IPv6) and whether it falls within a private or public range. You can copy the result with one click. If you want to inspect a specific address instead, enter it in the "Look Up a Specific IP" field below and click "Look Up." The tool validates the format and identifies the address type and private-range status without sending the address to any third-party geolocation service.</p>
 
-        <h2>IPv4 vs IPv6</h2>
-        <p><strong>IPv4</strong> addresses are 32-bit numbers typically written as four decimal octets separated by periods (e.g., <code>192.168.1.1</code>). IPv4 supports approximately 4.3 billion unique addresses, which has proven insufficient for the growing number of internet-connected devices.</p>
-        <p><strong>IPv6</strong> addresses are 128-bit numbers written as eight groups of four hexadecimal digits separated by colons (e.g., <code>2001:0db8:85a3:0000:0000:8a2e:0370:7334</code>). IPv6 provides a virtually unlimited address space, supporting approximately 340 undecillion unique addresses.</p>
+        <h2>How IP Addresses Work</h2>
+        <p>An IP (Internet Protocol) address is a numeric identifier assigned to every device on a network that uses the Internet Protocol. It serves two purposes: identifying the host interface and providing a location for routing packets across interconnected networks. <strong>IPv4</strong> addresses are 32-bit numbers written as four decimal octets separated by periods, like <code>192.168.1.1</code>, supporting roughly 4.3 billion unique addresses. <strong>IPv6</strong> addresses expand to 128 bits written as eight groups of four hexadecimal digits separated by colons, such as <code>2001:0db8:85a3::8a2e:0370:7334</code>, providing a virtually inexhaustible address space.</p>
+        <p>Your internet service provider assigns a <strong>public IP</strong> to your router, and this is the address websites and online services see when you connect. Inside your home or office network, your router assigns <strong>private IPs</strong> from reserved ranges defined by RFC 1918: <code>10.0.0.0/8</code> for large networks, <code>172.16.0.0/12</code> for medium networks, and <code>192.168.0.0/16</code> for typical home networks. Network Address Translation (NAT) maps these private addresses to the single public IP when traffic leaves your local network.</p>
 
-        <h2>Public vs Private IP Addresses</h2>
-        <p><strong>Public IP addresses</strong> are globally unique and routable on the internet. Your ISP assigns a public IP to your router, which is the address visible to websites and online services. This is the address shown when you click "Find My IP" above.</p>
-        <p><strong>Private IP addresses</strong> are used within local networks and are not directly accessible from the internet. Common private ranges include:</p>
-        <ul>
-          <li><code>10.0.0.0</code> to <code>10.255.255.255</code> (10.0.0.0/8) - Large networks</li>
-          <li><code>172.16.0.0</code> to <code>172.31.255.255</code> (172.16.0.0/12) - Medium networks</li>
-          <li><code>192.168.0.0</code> to <code>192.168.255.255</code> (192.168.0.0/16) - Home networks</li>
-        </ul>
+        <h3>Why would I need to know my public IP address?</h3>
+        <p>Knowing your public IP is essential for several common tasks: setting up port forwarding or remote desktop access, configuring firewall and security group rules that whitelist your address, verifying that a VPN connection is active and routing traffic through the expected server, troubleshooting connectivity issues with your ISP, and hosting game servers or other peer-to-peer services that require external clients to connect to your network. It is also useful for confirming whether your ISP has assigned a static or dynamic address.</p>
 
-        <h2>Why Would I Need to Know My IP Address?</h2>
-        <ul>
-          <li>Troubleshooting network connectivity issues</li>
-          <li>Setting up remote access to your home network</li>
-          <li>Configuring firewalls and security rules</li>
-          <li>Verifying VPN connections are working correctly</li>
-          <li>Setting up game servers or other hosted services</li>
-          <li>Checking if your ISP has assigned a new IP address</li>
-        </ul>
+        <h3>What is the difference between a public and a private IP address?</h3>
+        <p>A public IP address is globally unique and routable across the internet, meaning any device on the internet can potentially send packets to it. A private IP address is used only within a local area network and is not routable on the public internet. Multiple organizations can reuse the same private ranges without conflict because routers do not forward private-range traffic beyond the local network boundary. When a device with a private IP needs to reach the internet, NAT on the router translates the private source address to the router's public IP before sending the packet out.</p>
+
+        <h3>How can I tell if my IP address is IPv4 or IPv6?</h3>
+        <p>IPv4 addresses are easy to recognize: four groups of decimal numbers from 0 to 255, separated by dots, like <code>8.8.8.8</code>. IPv6 addresses are longer and use hexadecimal digits separated by colons, such as <code>2607:f8b0:4004:0800::200e</code>. When you click "Find My IP," this tool automatically detects which protocol version your connection used and labels the result accordingly. Most modern networks support both protocols through a mechanism called dual stack, where your device receives both an IPv4 and an IPv6 address, and the operating system chooses which to use based on availability and preference settings.</p>
       </section>
       <RelatedTools current="/ip-lookup" />
     </div>

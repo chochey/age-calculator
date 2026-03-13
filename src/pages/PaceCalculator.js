@@ -395,45 +395,32 @@ function PaceCalculator() {
 
       <RelatedTools current="/pace-calculator" />
 
-      <div className="info-section">
-        <h2>About This Tool</h2>
-        <p>
-          The Pace Calculator helps runners and joggers figure out their running pace, finish time, or distance covered.
-          Whether you are training for a 5K or preparing for a marathon, this tool gives you instant results in both
-          imperial and metric units.
-        </p>
-
+      <section className="info-section">
         <h2>How to Use the Pace Calculator</h2>
-        <ul>
-          <li><strong>Calculate Pace:</strong> Enter your distance and total time to find out how fast you ran per mile or per kilometer.</li>
-          <li><strong>Calculate Time:</strong> Enter your distance and target pace to find out how long your run will take.</li>
-          <li><strong>Calculate Distance:</strong> Enter your time and pace to see how far you ran or will run.</li>
-        </ul>
-
-        <h2>Common Race Distances</h2>
-        <ul>
-          <li><strong>5K:</strong> 3.11 miles / 5 kilometers -- a popular beginner race distance</li>
-          <li><strong>10K:</strong> 6.21 miles / 10 kilometers -- a step up that tests endurance</li>
-          <li><strong>Half Marathon:</strong> 13.11 miles / 21.1 kilometers -- a challenging distance for intermediate runners</li>
-          <li><strong>Marathon:</strong> 26.22 miles / 42.2 kilometers -- the classic long-distance race</li>
-        </ul>
-
-        <h2>Pace vs. Speed</h2>
         <p>
-          Pace is measured in minutes per mile (or per kilometer), telling you how long it takes to cover one unit of distance.
-          Speed is measured in miles per hour (or km/h), telling you how many units of distance you cover in one hour.
-          They are inversely related: a faster pace means a higher speed. For example, an 8:00 min/mile pace equals 7.5 mph.
+          Choose one of three modes at the top. In "Calculate Pace" mode, enter your distance and total time to find out how fast you ran per mile and per kilometer. In "Calculate Time" mode, enter your distance and target pace to see how long your run will take. In "Calculate Distance" mode, enter your time and pace to discover how far you covered. You can also tap the 5K, 10K, Half Marathon, or Marathon preset buttons to auto-fill common race distances. Results appear instantly in both imperial and metric units, along with estimated finish times for all four standard race distances at your current pace.
         </p>
 
-        <h2>Tips for Improving Your Pace</h2>
-        <ul>
-          <li><strong>Interval training:</strong> Alternate between high-intensity bursts and recovery periods to build speed.</li>
-          <li><strong>Long runs:</strong> Build endurance with weekly long runs at a comfortable pace.</li>
-          <li><strong>Tempo runs:</strong> Run at a comfortably hard pace to improve your lactate threshold.</li>
-          <li><strong>Consistency:</strong> Stick to a regular training schedule to see steady improvement over time.</li>
-          <li><strong>Rest and recovery:</strong> Allow your body to recover between hard workouts to prevent injury.</li>
-        </ul>
-      </div>
+        <h2>The Pace Formula with a Worked Example</h2>
+        <p>
+          Pace is calculated by dividing total time by distance. If you run 5 kilometers in 25 minutes and 0 seconds, your pace is 25 minutes / 5 km = <strong>5:00 per kilometer</strong>. Converting to miles, 5 km equals 3.107 miles, so your pace per mile is 25 / 3.107 = <strong>8:03 per mile</strong>, and your speed is 3.107 miles / (25/60) hours = <strong>7.46 mph</strong>. The calculator also projects that same pace across race distances -- at 5:00/km you would finish a 10K in about 50:00, a half marathon in roughly 1:45:29, and a full marathon in approximately 3:30:57.
+        </p>
+
+        <h3>What is a good running pace for beginners?</h3>
+        <p>
+          Most beginning runners average between 10:00 and 13:00 minutes per mile (6:15 to 8:05 per kilometer). The key is to find a conversational pace -- one where you can speak in full sentences without gasping. As your cardiovascular fitness improves over weeks of consistent training, your natural pace will quicken. Focusing on time on your feet rather than speed is the most effective strategy for new runners.
+        </p>
+
+        <h3>How do I convert pace to speed?</h3>
+        <p>
+          Pace and speed are inversely related. To convert a pace in minutes per mile to speed in miles per hour, divide 60 by the pace. For example, a 9:00 min/mile pace equals 60 / 9 = 6.67 mph. For metric, divide 60 by your min/km pace to get km/h. An 8:00 min/mile pace converts to approximately 4:58 min/km, or about 12.07 km/h.
+        </p>
+
+        <h3>Should I train at race pace or slower?</h3>
+        <p>
+          Most of your weekly mileage -- roughly 80 percent -- should be at an easy, conversational pace. This builds aerobic endurance without accumulating excessive fatigue. The remaining 20 percent can include tempo runs at or near race pace and interval sessions slightly faster than race pace. This approach, often called the 80/20 rule, is supported by research showing it reduces injury risk while steadily improving performance.
+        </p>
+      </section>
     </div>
   );
 }

@@ -383,41 +383,32 @@ function DiceRoller() {
       <RelatedTools current="/dice-roller" />
 
       <div className="info-section">
-        <h2>About This Tool</h2>
-        <p>
-          The Dice Roller is a free online tool designed for tabletop gaming, Dungeons & Dragons (D&D),
-          Pathfinder, and other RPGs. Roll any standard polyhedral dice -- d4, d6, d8, d10, d12, d20,
-          and d100 (percentile dice) -- with full control over the number of dice, modifiers, and special
-          rules like "drop lowest."
-        </p>
+        <h2>How to Use the Dice Roller</h2>
+        <p>Start by selecting a dice type from the row of buttons at the top -- d4, d6, d8, d10, d12, d20, or d100. Then set how many dice to roll (1 through 20) and an optional positive or negative modifier. If you want to discard the lowest die in a multi-dice roll, check the "Drop lowest die" box. Click the Roll button to generate your results instantly. Each roll displays the individual die values with color-coded icons, the calculated total, and a breakdown showing how the final number was derived. When rolling multiple dice, you also see statistics for the lowest roll, highest roll, average, and raw sum.</p>
+        <p>For quick access to common setups, use the preset buttons: "2d6" for standard board-game rolls, "1d20" for a single D&D check, "3d8+5" for a typical damage roll with a modifier, and "4d6 drop lowest" for the classic ability score generation method. The roll history panel keeps your last 10 results so you can review past rolls during a game session.</p>
+
+        <h2>How the Dice Roller Works</h2>
+        <p>Each die is simulated by generating a random integer between 1 and the number of sides using JavaScript's Math.random() function. For a d20, that means each face has an equal 1-in-20 (5%) chance of appearing. When "drop lowest" is enabled, the tool identifies the die with the smallest value, visually strikes it through, and excludes it from the total. The modifier is then added to (or subtracted from) the sum of the kept dice to produce the final result. Roll history entries record the dice type, individual values, total, and timestamp so you have a clear audit trail for your game.</p>
 
         <h2>Supported Dice Types</h2>
         <ul>
-          <li><strong>d4</strong> -- Tetrahedron. Used for small damage dice (daggers, magic missile).</li>
-          <li><strong>d6</strong> -- Standard cube. The most common die, used for ability scores (4d6 drop lowest), damage, and countless board games.</li>
-          <li><strong>d8</strong> -- Octahedron. Common for weapon damage (longsword, rapier) and healing spells.</li>
-          <li><strong>d10</strong> -- Pentagonal trapezohedron. Used for damage and as part of percentile rolls.</li>
-          <li><strong>d12</strong> -- Dodecahedron. Used for greataxe damage and barbarian hit dice.</li>
-          <li><strong>d20</strong> -- Icosahedron. The iconic D&D die for attack rolls, saving throws, and ability checks.</li>
-          <li><strong>d100</strong> -- Percentile die. Used for random tables, wild magic surges, and percentile-based checks.</li>
+          <li><strong>d4</strong> -- Tetrahedron, used for dagger damage and magic missile in D&D.</li>
+          <li><strong>d6</strong> -- Standard cube, the most common die for board games and ability score generation (4d6 drop lowest).</li>
+          <li><strong>d8</strong> -- Octahedron, common for longsword damage and healing spells.</li>
+          <li><strong>d10</strong> -- Pentagonal trapezohedron, used for damage dice and as part of percentile rolls.</li>
+          <li><strong>d12</strong> -- Dodecahedron, used for greataxe damage and barbarian hit dice.</li>
+          <li><strong>d20</strong> -- Icosahedron, the iconic D&D die for attack rolls, saving throws, and ability checks.</li>
+          <li><strong>d100</strong> -- Percentile die, used for random encounter tables and wild magic surges.</li>
         </ul>
 
-        <h2>How It Works</h2>
-        <p>
-          Select your dice type, choose how many to roll (1-20), and optionally add a positive or negative
-          modifier. Click Roll to generate cryptographically random results. Each roll shows individual die
-          values, the calculated total, and statistics for multi-dice rolls. The "drop lowest" option is
-          perfect for D&D 5e ability score generation (4d6 drop lowest).
-        </p>
+        <h3>How do I generate D&D 5e ability scores with this tool?</h3>
+        <p>Select d6, set the number of dice to 4, check "Drop lowest die," and set the modifier to 0. Click Roll six times, once for each ability score. Each roll gives you the sum of the three highest dice out of four, which is the standard method described in the D&D 5e Player's Handbook. Results typically range from 3 to 18, with an average around 12.2, producing slightly above-average characters compared to a flat 3d6 method.</p>
 
-        <h2>Common Uses</h2>
-        <ul>
-          <li>Dungeons & Dragons character creation and gameplay</li>
-          <li>Pathfinder, GURPS, Shadowrun, and other tabletop RPGs</li>
-          <li>Board games that require polyhedral dice</li>
-          <li>Probability demonstrations and math education</li>
-          <li>Quick decision making and random selection</li>
-        </ul>
+        <h3>What is the average result for each dice type?</h3>
+        <p>The average roll for any fair die is (minimum + maximum) / 2. For a d4 that is 2.5, for a d6 it is 3.5, d8 is 4.5, d10 is 5.5, d12 is 6.5, d20 is 10.5, and d100 is 50.5. When rolling multiple dice, multiply the single-die average by the number of dice and add your modifier. For example, 2d6+3 has an average of 3.5 + 3.5 + 3 = 10.</p>
+
+        <h3>Can I use this for games other than Dungeons and Dragons?</h3>
+        <p>Absolutely. The dice roller supports all standard polyhedral dice used across tabletop RPGs including Pathfinder, Shadowrun, GURPS, Call of Cthulhu, and Warhammer. The d6 is also the standard die for board games like Monopoly, Risk, and Settlers of Catan. The d100 (percentile die) is useful for any system with percentage-based skill checks. And because you can adjust the dice count, modifier, and drop-lowest setting, virtually any dice notation can be replicated.</p>
       </div>
     </div>
   );

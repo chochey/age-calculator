@@ -244,59 +244,32 @@ function BodyFatCalculator() {
       )}
 
       <section className="info-section">
-        <h2>What Is the U.S. Navy Body Fat Method?</h2>
+        <h2>How to Use the Body Fat Calculator</h2>
         <p>
-          The U.S. Navy body fat method is a formula developed by the United States Navy to estimate body fat percentage
-          using simple circumference measurements. It was created as a practical field method for assessing the body
-          composition of military personnel without requiring specialized equipment like calipers or DEXA scans. The
-          method uses measurements of the neck, waist (and hips for women) along with height to calculate an estimate
-          of body fat percentage.
+          Start by selecting your unit system -- imperial (inches and pounds) or metric (centimeters and kilograms). Choose your gender, then enter your height, weight, neck circumference, and waist circumference. Women also need to provide a hip measurement. All circumference measurements should be taken with a flexible, non-elastic tape measure pulled snug against the skin without compressing it. Measure your neck just below the Adam's apple, your waist at the navel (men) or the narrowest point (women), and your hips at the widest point. Click "Calculate Body Fat" to see your estimated body fat percentage, category, and lean-versus-fat mass breakdown.
         </p>
 
-        <h2>U.S. Navy Body Fat Formulas</h2>
-        <ul>
-          <li><strong>Men:</strong> Body Fat % = 86.010 x log10(waist - neck) - 70.041 x log10(height) + 36.76</li>
-          <li><strong>Women:</strong> Body Fat % = 163.205 x log10(waist + hip - neck) - 97.684 x log10(height) - 78.387</li>
-        </ul>
-        <p>All measurements should be taken in inches. This calculator automatically converts centimeters to inches when using metric units.</p>
-
-        <h2>Body Fat Categories (Male)</h2>
-        <ul>
-          <li><strong>Essential Fat:</strong> Less than 6% -- minimum amount needed for basic health</li>
-          <li><strong>Athletes:</strong> 6-13% -- typical for competitive athletes</li>
-          <li><strong>Fitness:</strong> 14-17% -- lean and fit appearance</li>
-          <li><strong>Average:</strong> 18-24% -- acceptable, typical range for healthy adults</li>
-          <li><strong>Obese:</strong> 25% and above -- elevated health risks</li>
-        </ul>
-
-        <h2>Body Fat Categories (Female)</h2>
-        <ul>
-          <li><strong>Essential Fat:</strong> Less than 14% -- minimum amount needed for basic health</li>
-          <li><strong>Athletes:</strong> 14-20% -- typical for competitive athletes</li>
-          <li><strong>Fitness:</strong> 21-24% -- lean and fit appearance</li>
-          <li><strong>Average:</strong> 25-31% -- acceptable, typical range for healthy adults</li>
-          <li><strong>Obese:</strong> 32% and above -- elevated health risks</li>
-        </ul>
-
-        <h2>How to Take Measurements</h2>
-        <ul>
-          <li><strong>Neck:</strong> Measure just below the larynx (Adam's apple), with the tape sloping slightly downward at the front</li>
-          <li><strong>Waist:</strong> For men, measure at the navel. For women, measure at the narrowest point of the waist</li>
-          <li><strong>Hip (women only):</strong> Measure at the widest point of the hips and buttocks</li>
-          <li><strong>Height:</strong> Stand straight against a wall without shoes</li>
-        </ul>
+        <h2>The U.S. Navy Formula Explained</h2>
         <p>
-          Use a flexible, non-elastic tape measure. Pull the tape snug but do not compress the skin. Take each
-          measurement two or three times and use the average for the most accurate result.
+          The U.S. Navy developed this circumference-based method so that military personnel could estimate body composition in the field without specialized lab equipment. The formula for men is Body Fat % = 86.010 x log10(waist - neck) - 70.041 x log10(height) + 36.76, with all values in inches. For women, the formula is Body Fat % = 163.205 x log10(waist + hip - neck) - 97.684 x log10(height) - 78.387.
+        </p>
+        <p>
+          <strong>Worked example (male):</strong> A man with a 34-inch waist, 15-inch neck, and 70-inch height would calculate 86.010 x log10(34 - 15) - 70.041 x log10(70) + 36.76 = 86.010 x 1.2788 - 70.041 x 1.8451 + 36.76 = 109.99 - 129.24 + 36.76 = <strong>17.5% body fat</strong>, placing him in the Fitness category. If he weighs 180 pounds, his fat mass would be about 31.5 lbs and lean mass about 148.5 lbs.
         </p>
 
-        <h2>Limitations</h2>
+        <h3>How accurate is the U.S. Navy body fat method?</h3>
         <p>
-          The U.S. Navy method provides a reasonable estimate but has limitations. It may be less accurate for
-          individuals with unusual body proportions, very muscular individuals, or those at extreme ends of the
-          body fat spectrum. For a more precise measurement, consider methods such as DEXA scanning, hydrostatic
-          weighing, or air displacement plethysmography (Bod Pod). This calculator is intended for informational
-          purposes and should not replace professional medical advice.
+          Studies comparing the Navy method to DEXA scans show it is generally accurate within 3 to 4 percentage points for most people. It works best for individuals with average body proportions. The method can overestimate body fat in very muscular people and underestimate it in those carrying visceral fat without large waist measurements. For the most reliable reading, take each circumference measurement two or three times and use the average.
+        </p>
+
+        <h3>What body fat percentage is considered healthy?</h3>
+        <p>
+          Healthy ranges differ by gender. For men, the fitness range is roughly 14 to 17 percent, while the average healthy range extends to about 24 percent. For women, fitness sits around 21 to 24 percent and a healthy average reaches about 31 percent. Body fat below the essential level -- under 6 percent for men or under 14 percent for women -- can impair hormonal function, immune response, and organ protection.
+        </p>
+
+        <h3>How is this different from BMI?</h3>
+        <p>
+          BMI uses only height and weight, so it cannot distinguish between muscle and fat. A muscular athlete and an overweight sedentary person of the same height and weight will have identical BMI values but very different body fat percentages. The Navy method accounts for body shape through circumference measurements, giving a more meaningful picture of body composition. For the best overall assessment, use body fat percentage alongside BMI rather than relying on either metric alone.
         </p>
       </section>
       <RelatedTools current="/body-fat-calculator" />

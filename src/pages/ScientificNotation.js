@@ -118,15 +118,33 @@ function ScientificNotation() {
       )}
 
       <section className="info-section">
-        <h2>What is Scientific Notation?</h2>
-        <p>Scientific notation expresses numbers as a coefficient between 1 and 10 multiplied by a power of 10. For example, 299,792,458 becomes 2.99792458 x 10^8. It's used to handle very large or very small numbers efficiently.</p>
+        <h2>How to Use the Scientific Notation Converter</h2>
+        <p>
+          Choose a direction using the toggle at the top. In "To Scientific" mode, type any decimal number -- however large or small -- and the converter instantly shows the scientific notation, e-notation, coefficient, and exponent. In "From Scientific" mode, enter a coefficient and a power of 10 to see the full decimal value. Click the "Copy" button next to any result to copy it to your clipboard for use in documents, spreadsheets, or code.
+        </p>
 
-        <h2>Examples</h2>
-        <ul>
-          <li><strong>Speed of light:</strong> 299,792,458 = 2.99792458 x 10^8</li>
-          <li><strong>Planck's constant:</strong> 0.000000000000000000000000000000000663 = 6.63 x 10^-34</li>
-          <li><strong>Earth's mass:</strong> 5,972,000,000,000,000,000,000,000 kg = 5.972 x 10^24</li>
-        </ul>
+        <h2>What Is Scientific Notation and How Does It Work?</h2>
+        <p>
+          Scientific notation expresses a number as a coefficient between 1 and 10 multiplied by a power of 10. The general form is a x 10^n, where 1 {"<="} a {"<"} 10 and n is an integer. Positive exponents represent large numbers, while negative exponents represent small numbers.
+        </p>
+        <p>
+          <strong>Worked example:</strong> The number 0.00047 is converted by moving the decimal point four places to the right until it sits after the first non-zero digit, giving a coefficient of 4.7. Because you moved the decimal right (the original number is less than 1), the exponent is negative: 0.00047 = <strong>4.7 x 10^-4</strong>. In e-notation, that is written as 4.7e-4. Going the other direction, 3.2 x 10^6 means moving the decimal 6 places to the right: <strong>3,200,000</strong>.
+        </p>
+
+        <h3>Why is scientific notation useful?</h3>
+        <p>
+          It makes extremely large and extremely small numbers practical to read, compare, and compute with. Writing out all 24 digits of the Earth's mass (5.972 x 10^24 kg) every time would be unwieldy and error-prone. Scientific notation also makes multiplication and division simpler -- you multiply the coefficients and add (or subtract) the exponents. For instance, (3 x 10^4) x (2 x 10^3) = 6 x 10^7.
+        </p>
+
+        <h3>What is the difference between scientific notation and e-notation?</h3>
+        <p>
+          They represent the same value in different formats. Scientific notation is the traditional written form -- for example, 2.998 x 10^8. E-notation replaces "x 10^" with the letter "e" or "E" -- the same number becomes 2.998e+8. E-notation is widely used in programming languages (Python, JavaScript, C++), calculators, and spreadsheets because it can be typed on a standard keyboard without superscripts.
+        </p>
+
+        <h3>How do I convert a number to scientific notation by hand?</h3>
+        <p>
+          Move the decimal point until only one non-zero digit remains to its left. Count how many places you moved it -- that count becomes the exponent. If you moved the decimal to the left (the original number is large), the exponent is positive. If you moved it to the right (the original number is small), the exponent is negative. For example, 86,400 becomes 8.64 x 10^4 because the decimal moved 4 places left.
+        </p>
       </section>
       <RelatedTools current="/scientific-notation-converter" />
     </div>

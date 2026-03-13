@@ -88,16 +88,20 @@ function CountdownTimer() {
       )}
 
       <section className="info-section">
-        <h2>How It Works</h2>
-        <p>Enter a target date and optional time, then hit start. The countdown updates every second, showing the exact days, hours, minutes, and seconds remaining until your event.</p>
+        <h2>How to Use the Countdown Timer</h2>
+        <p>Setting up a countdown takes just a few seconds. Start by entering an optional event name -- for example, "Summer Vacation" or "Product Launch" -- so you can remember what you are counting down to. Next, pick a target date from the date picker. If you need precision down to the minute, set a target time as well (the default is midnight). Finally, click "Start Countdown." The timer immediately begins ticking, displaying the remaining days, hours, minutes, and seconds in real time. When the clock hits zero, the display switches to "Time's up!" so you know the moment has arrived.</p>
 
-        <h2>Popular Countdowns</h2>
-        <ul>
-          <li>Birthdays and anniversaries</li>
-          <li>Holidays (New Year, Christmas, etc.)</li>
-          <li>Product launches and deadlines</li>
-          <li>Vacation and travel dates</li>
-        </ul>
+        <h2>How the Countdown Timer Works</h2>
+        <p>Once you press "Start Countdown," the tool combines your chosen date and time into a single target timestamp. Every second, it calculates the difference between that target and the current moment in milliseconds, then breaks that difference into days, hours, minutes, and seconds for a clean, human-readable display. The timer runs entirely in your browser using a JavaScript interval, so it works even without an internet connection after the page loads. If the target date and time have already passed when you click start, the timer immediately shows "Time's up!" rather than displaying negative values.</p>
+
+        <h3>Can I count down to a specific time of day, not just a date?</h3>
+        <p>Yes. The time field lets you pick any hour and minute combination. For instance, if a webinar starts at 3:30 PM on April 10, set the date to April 10 and the time to 15:30. The countdown will tick all the way down to that exact minute and second. If you leave the time field at the default 00:00, the countdown targets midnight at the start of the selected day.</p>
+
+        <h3>Does the countdown keep running if I leave the page?</h3>
+        <p>The timer interval stops if you navigate away or close the tab, since it runs inside your browser session. However, if you return to the page and restart the countdown with the same target date, it will recalculate from the current moment and display the correct remaining time. For long-term countdowns like a holiday or birthday months away, simply revisit the page and re-enter your target date to see an up-to-date countdown.</p>
+
+        <h3>What are some popular events people count down to?</h3>
+        <p>Common countdowns include New Year's Eve, birthdays, wedding dates, graduations, vacation departures, product launches, Black Friday sales, and project deadlines. Teachers use countdowns for the last day of school, expectant parents count down to a due date, and event planners track days until a conference or concert. Any future moment that matters to you is a great candidate for a countdown timer.</p>
       </section>
       <RelatedTools current="/countdown-timer" />
     </div>

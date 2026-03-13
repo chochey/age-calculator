@@ -110,15 +110,31 @@ function ImageCompressor() {
       )}
 
       <section className="info-section">
-        <h2>How Image Compression Works</h2>
-        <p>This tool uses lossy compression to reduce file size. Lower quality settings produce smaller files but may introduce visible artifacts. JPEG is best for photos, while WebP offers better compression ratios for the same quality.</p>
+        <h2>How to Use the Image Compressor</h2>
+        <p>Click "Choose an image" to upload any image file from your device -- PNG, JPG, GIF, WebP, and other common formats are all supported. Once the image loads, adjust the quality slider to control compression intensity. A quality of 100% preserves maximum detail, while lower values produce smaller files with some loss of sharpness. Choose your output format: JPEG is the most widely compatible format for photographs, while WebP offers significantly better compression at the same visual quality. Click "Compress" to process the image. The results panel displays the original file size, compressed file size, and the percentage reduction. Review the compressed preview to confirm the quality is acceptable, then click "Download" to save the compressed image to your device.</p>
 
-        <h2>Tips</h2>
+        <h2>How Lossy Image Compression Works</h2>
+        <p>This tool uses lossy compression, which selectively discards image data that the human eye is least likely to notice. When you set quality to 75%, the encoder analyzes the image and removes fine details, subtle color variations, and high-frequency patterns that contribute to file size but have minimal impact on perceived quality. The image is drawn onto an HTML5 Canvas element and then exported using the browser's built-in encoding engine at your chosen quality level. Because all processing happens in your browser using the Canvas API, your images are never uploaded to any server -- they remain completely private.</p>
+
+        <h2>Choosing the Right Quality Setting</h2>
         <ul>
-          <li><strong>Photos:</strong> 70-80% quality usually gives great results with significant savings</li>
-          <li><strong>Web images:</strong> 60-70% is often acceptable for faster page loads</li>
-          <li><strong>WebP format:</strong> Try WebP for 25-35% smaller files vs JPEG at the same quality</li>
+          <li><strong>90-100% quality:</strong> Minimal visible difference from the original. File size reduction is modest (10-30%). Best for high-quality prints or portfolio images where every detail matters.</li>
+          <li><strong>70-85% quality:</strong> The sweet spot for most uses. Photos look sharp to the naked eye with file sizes reduced by 40-70%. Recommended for blog posts, product images, and general web use.</li>
+          <li><strong>50-65% quality:</strong> Noticeable softening in detailed areas but still acceptable for thumbnails, social media posts, and email attachments where speed matters more than pixel-perfect clarity.</li>
+          <li><strong>Below 50% quality:</strong> Significant quality loss with visible compression artifacts (blockiness, color banding). Use only when file size is the top priority, such as low-bandwidth environments or bulk image processing.</li>
         </ul>
+
+        <h2>JPEG vs. WebP</h2>
+        <p>JPEG has been the standard photo format for decades and is supported by every browser, email client, and image viewer. WebP is a modern format developed by Google that delivers 25-35% smaller files than JPEG at comparable visual quality. If your target platform supports WebP (all modern browsers do), it is the better choice for web performance. For maximum compatibility with older systems and email clients, stick with JPEG.</p>
+
+        <h3>Is my image uploaded to a server?</h3>
+        <p>No. All compression happens entirely in your browser using the HTML5 Canvas API. Your image data never leaves your device. This means the tool works even without an internet connection (after the page has loaded) and your files remain completely private.</p>
+
+        <h3>Why is my compressed file sometimes larger than the original?</h3>
+        <p>This can happen when the original image is already heavily compressed or is a small, simple image. Re-encoding at a high quality setting (90-100%) may add encoding overhead that exceeds the original file size. If you see a size increase, try lowering the quality slider or switching to WebP format, which is more efficient at high quality levels.</p>
+
+        <h3>What is the maximum image size I can compress?</h3>
+        <p>There is no fixed file size limit, but very large images (over 30-50 megapixels) may cause the browser to slow down or run out of memory, since the entire image must be loaded into a Canvas element. For most practical purposes -- web photos, social media images, and document scans -- the tool handles files of any reasonable size without issues.</p>
       </section>
       <RelatedTools current="/image-compressor" />
     </div>

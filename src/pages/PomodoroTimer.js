@@ -369,33 +369,24 @@ function PomodoroTimer() {
       <RelatedTools current="/pomodoro-timer" />
 
       <div className="info-section">
+        <h2>How to Use the Pomodoro Timer</h2>
+        <p>Getting started is simple. The timer defaults to a 25-minute work session, which is the classic Pomodoro interval. Press "Start" to begin your focused work period. A circular progress ring fills as time passes, giving you a visual sense of how much is left. When the session ends, an audio alert plays and the timer automatically switches to a short break (5 minutes by default). After every four work sessions, you earn a longer break of 15 minutes. Use the "Skip" button to jump to the next session early, "Reset" to restart the current session, or "Reset All" to clear everything and begin a fresh cycle.</p>
+        <p>You can customize all three durations in the Timer Settings section at the bottom. For example, some people prefer 50-minute work blocks with 10-minute breaks. The session-progress dots show how many work intervals you have completed toward the next long break, and the completed Pomodoros counter tracks your total output for the day.</p>
+
         <h2>What Is the Pomodoro Technique?</h2>
-        <p>
-          The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. It uses a timer to break work into focused intervals, traditionally 25 minutes in length, separated by short breaks. Each interval is known as a "pomodoro," the Italian word for tomato, named after the tomato-shaped kitchen timer Cirillo used as a university student.
-        </p>
+        <p>The Pomodoro Technique is a time management method created by Francesco Cirillo in the late 1980s. The name comes from the Italian word for tomato, after the tomato-shaped kitchen timer Cirillo used as a university student. The method structures work into focused intervals (traditionally 25 minutes) separated by short breaks, creating a rhythm that helps sustain concentration. After four consecutive work intervals, a longer break provides deeper recovery. Research in cognitive psychology supports the idea that periodic rest improves sustained attention and reduces the mental fatigue that leads to procrastination.</p>
 
-        <h2>How It Works</h2>
-        <ul>
-          <li>Choose a task you want to work on.</li>
-          <li>Set the timer for 25 minutes (one pomodoro) and work with full focus.</li>
-          <li>When the timer rings, take a 5-minute short break.</li>
-          <li>After completing 4 pomodoros, take a longer 15-minute break.</li>
-          <li>Repeat the cycle throughout your work session.</li>
-        </ul>
+        <h2>How the Timer Works Behind the Scenes</h2>
+        <p>When you press "Start," the timer records an end-time timestamp and checks the remaining seconds four times per second. This timestamp-based approach means the countdown stays accurate even if your browser briefly throttles the interval -- it always compares against real clock time rather than counting ticks. When the remaining time reaches zero, the tool plays a short audio beep sequence using the Web Audio API, advances to the next session type (short break, long break, or work), and pauses so you can begin the next phase when you are ready.</p>
 
-        <h2>Benefits of the Pomodoro Technique</h2>
-        <p>
-          The Pomodoro Technique helps reduce mental fatigue, minimize distractions, and maintain a sustainable pace of work. By breaking tasks into manageable intervals, you build a rhythm that keeps you productive without burning out. Tracking completed pomodoros also gives you a tangible sense of progress and helps you estimate how long tasks take over time.
-        </p>
+        <h3>Can I change the work and break durations?</h3>
+        <p>Yes. Scroll to the "Timer Settings" section below the timer to adjust the work duration (1 to 120 minutes), short break duration, and long break duration. Changes take effect immediately when the timer is paused. For deep-focus tasks like writing or programming, many users prefer 45- or 50-minute work blocks paired with 10-minute breaks. For lighter tasks or study sessions, the classic 25/5 split works well.</p>
 
-        <h2>Tips for Getting the Most Out of This Timer</h2>
-        <ul>
-          <li>During a work session, avoid checking email, social media, or messages.</li>
-          <li>If a distraction pops up, write it down and return to it during your break.</li>
-          <li>Customize the durations to match your personal focus capacity.</li>
-          <li>Use short breaks to stretch, hydrate, or rest your eyes.</li>
-          <li>Use long breaks for a walk, a snack, or stepping away from your desk.</li>
-        </ul>
+        <h3>What happens after four work sessions?</h3>
+        <p>The Pomodoro Technique recommends a longer break after every four work intervals. This timer tracks your progress with visual dots -- once all four are filled, the next break is automatically set to the long break duration (15 minutes by default). After the long break, the cycle resets and you start a new set of four. This pattern prevents the gradual decline in focus that occurs when people try to power through hours of uninterrupted work.</p>
+
+        <h3>Will the timer alert me when a session ends?</h3>
+        <p>Yes. The timer plays an audio notification using your browser's Web Audio API when each session completes. You will hear a sequence of short beeps to get your attention. Make sure your device volume is turned up and that your browser allows audio playback. The timer also visually indicates the transition by changing the session type label and resetting the progress ring, so you will notice even if your sound is off.</p>
       </div>
     </div>
   );

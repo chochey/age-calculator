@@ -240,35 +240,45 @@ function ReadabilityChecker() {
       )}
 
       <section className="info-section">
-        <h2>About the Readability Score Checker</h2>
-        <p>This tool analyzes your text using five established readability formulas to determine how easy or difficult it is to read. Simply paste your text above and get instant scores with grade-level interpretations.</p>
+        <h2>How to Use the Readability Score Checker</h2>
+        <p>Paste or type your text into the input area above. The tool analyzes your content in real time and displays results as soon as you begin typing. You will see an overall readability rating (Easy, Moderate, or Difficult), basic text statistics (word count, sentence count, average words per sentence, and average syllables per word), and five individual readability scores, each with a corresponding U.S. grade-level interpretation. Use these scores to gauge whether your writing matches your target audience. For example, if you are writing consumer-facing web copy, aim for a Flesch Reading Ease score between 60 and 70, which corresponds to an 8th-9th grade reading level that is comfortable for most adults.</p>
 
         <h2>Readability Formulas Explained</h2>
+        <p>Each formula approaches readability measurement from a slightly different angle, which is why this tool includes all five. Comparing multiple scores gives you a more reliable picture than relying on any single metric.</p>
         <ul>
-          <li><strong>Flesch Reading Ease</strong> — Scores from 0 to 100 where higher means easier. Based on sentence length and syllable count. A score of 60-70 is considered standard for most audiences.</li>
-          <li><strong>Flesch-Kincaid Grade Level</strong> — Translates the Flesch score into a U.S. school grade level. A score of 8.0 means an 8th grader can understand the text.</li>
-          <li><strong>Gunning Fog Index</strong> — Estimates the years of formal education needed to understand the text on first reading. It emphasizes complex words (3+ syllables).</li>
-          <li><strong>Coleman-Liau Index</strong> — Unlike other formulas, this uses character counts instead of syllables, making it more reliable for computer-based analysis.</li>
-          <li><strong>SMOG Index</strong> — Stands for Simple Measure of Gobbledygook. It estimates the grade level by counting polysyllabic words (3+ syllables) and is considered one of the most accurate formulas.</li>
+          <li><strong>Flesch Reading Ease</strong> -- Produces a score from 0 to 100, where higher scores indicate easier text. The formula weighs average sentence length and average syllables per word. A newspaper article typically scores 60-70. Hemingway's fiction scores around 80-90. Academic papers often fall below 30.</li>
+          <li><strong>Flesch-Kincaid Grade Level</strong> -- Uses the same inputs as Flesch Reading Ease but outputs a U.S. school grade level. A score of 8.0 means an average 8th grader should be able to comprehend the text. Most business writing targets grades 7-10.</li>
+          <li><strong>Gunning Fog Index</strong> -- Estimates the years of formal education required to understand text on first reading. It places special emphasis on "complex words" -- those with three or more syllables. A Fog Index above 12 suggests the text may be too dense for a general audience.</li>
+          <li><strong>Coleman-Liau Index</strong> -- Uniquely relies on letter and sentence counts rather than syllable counts, which makes it more consistent for computer-based analysis. It outputs a grade level and tends to correlate well with the other formulas on well-structured prose.</li>
+          <li><strong>SMOG Index</strong> -- Stands for "Simple Measure of Gobbledygook." It calculates grade level based on the number of polysyllabic words (3+ syllables) per 30 sentences. Researchers consider SMOG one of the most accurate readability measures, especially for health and educational content.</li>
         </ul>
 
-        <h2>Understanding Reading Levels</h2>
+        <h2>Reading Level Guide</h2>
         <ul>
-          <li><strong>Grade 5 and below</strong> — Very easy. Suitable for a wide general audience and children.</li>
-          <li><strong>Grade 6-8</strong> — Standard. Appropriate for most consumer content, newspapers, and everyday writing.</li>
-          <li><strong>Grade 9-12</strong> — Somewhat difficult. Suitable for high school students and informed adults.</li>
-          <li><strong>Grade 13-16</strong> — Difficult. College-level writing found in academic papers and professional journals.</li>
-          <li><strong>Grade 17+</strong> — Very difficult. Graduate-level material requiring specialized knowledge.</li>
+          <li><strong>Grade 5 and below</strong> -- Very easy. Understood by almost everyone, including children. Ideal for public signage, safety instructions, and the broadest possible audience.</li>
+          <li><strong>Grade 6-8</strong> -- Standard. The target range for newspapers, consumer websites, marketing copy, and most non-fiction books intended for general readers.</li>
+          <li><strong>Grade 9-12</strong> -- Moderately difficult. Appropriate for high school students, informed adults, and professional communications such as business reports.</li>
+          <li><strong>Grade 13-16</strong> -- Difficult. College-level complexity found in academic papers, legal documents, and technical manuals.</li>
+          <li><strong>Grade 17+</strong> -- Very difficult. Graduate and post-graduate level. Typically seen in specialized research papers, medical literature, and legal statutes.</li>
         </ul>
 
         <h2>Tips for Improving Readability</h2>
         <ul>
-          <li>Use shorter sentences to reduce complexity</li>
-          <li>Choose simpler words when possible (e.g., "use" instead of "utilize")</li>
-          <li>Break up long paragraphs into smaller ones</li>
-          <li>Avoid jargon unless writing for a specialized audience</li>
-          <li>Aim for a Flesch Reading Ease score of 60-70 for general audiences</li>
+          <li>Keep sentences under 20 words on average. Long, complex sentences are the single biggest contributor to high difficulty scores.</li>
+          <li>Choose common words over formal alternatives -- "use" instead of "utilize," "help" instead of "facilitate," "start" instead of "commence."</li>
+          <li>Break long paragraphs into shorter ones. A paragraph of 3-5 sentences is easier to scan than a 10-sentence wall of text.</li>
+          <li>Use active voice instead of passive voice. "The team completed the project" reads more clearly than "The project was completed by the team."</li>
+          <li>Limit jargon and technical terms unless you are writing for a specialized audience that expects them.</li>
         </ul>
+
+        <h3>What readability score should I aim for?</h3>
+        <p>For general web content, marketing material, and consumer communications, aim for a Flesch Reading Ease score between 60 and 70 (roughly 8th-9th grade level). This range is readable by the vast majority of adults. If you are writing for a technical or academic audience, a score in the 30-50 range may be appropriate, but always consider whether simpler phrasing could convey the same information.</p>
+
+        <h3>Why do my five readability scores differ from each other?</h3>
+        <p>Each formula measures different aspects of text complexity. Flesch and Flesch-Kincaid focus on sentence length and syllable count. Gunning Fog emphasizes multi-syllable words specifically. Coleman-Liau uses character counts rather than syllables. SMOG is calibrated to polysyllabic word frequency. Minor differences between scores are normal. If all five scores agree that your text is at a certain grade level, you can be confident in that assessment.</p>
+
+        <h3>Does a lower readability score mean my writing is bad?</h3>
+        <p>Not necessarily. Readability scores measure complexity, not quality. Academic papers, legal contracts, and technical documentation are expected to have higher grade levels because their subject matter demands precision and specialized vocabulary. The key is to match your writing level to your intended audience. What matters is that your readers can understand your message without unnecessary difficulty.</p>
       </section>
       <RelatedTools current="/readability-checker" />
     </div>

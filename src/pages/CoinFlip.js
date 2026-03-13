@@ -242,36 +242,21 @@ function CoinFlip() {
       <RelatedTools current="/coin-flip" />
 
       <div className="info-section">
-        <h2>About This Tool</h2>
-        <p>
-          This free online coin flipper simulates a fair coin toss using random number generation.
-          Each flip has an equal 50/50 chance of landing on heads or tails, just like a real coin.
-          Use it to make quick decisions, settle disputes, or test probability concepts.
-        </p>
+        <h2>How to Use the Coin Flipper</h2>
+        <p>Using this virtual coin flip tool is straightforward. Choose how many coins you want to flip at once by selecting from the options at the top: 1 coin for a classic heads-or-tails decision, or 2, 5, 10, or even 100 coins for batch flips. Then press the "Flip Coin" button (or "Flip X Coins" for multi-flip). A brief animation plays while the result is generated, and the outcome appears on screen as a gold coin for heads or a silver coin for tails. For multi-flips, you see a summary showing how many landed heads and how many landed tails, with each individual result displayed as a small coin icon.</p>
+        <p>The tool tracks your flip history, keeping the last 20 results visible in a row of coin icons below the statistics panel. The statistics section tallies your total flips, heads count with percentage, tails count with percentage, and which side is currently leading. Press "Reset" at any time to clear the history and start fresh.</p>
 
-        <h2>How It Works</h2>
-        <p>
-          Click the "Flip Coin" button to simulate a single coin toss. Choose the multi-flip option
-          to flip 2, 5, 10, or even 100 coins at once. The tool tracks your flip history (up to the
-          last 20 flips) and calculates running statistics including total flips, heads and tails
-          counts, and their respective percentages.
-        </p>
+        <h2>How the Coin Flip Works</h2>
+        <p>Each coin flip is determined by generating a random number between 0 and 1 using JavaScript's Math.random() function. If the number falls below 0.5, the result is heads; otherwise, it is tails. This gives each side an equal 50% probability on every individual flip, matching the theoretical fairness of an ideal physical coin. When you flip multiple coins at once, each coin is generated independently, so the results follow a binomial distribution -- flipping 100 coins will typically produce a result close to 50 heads and 50 tails, though individual batches may vary due to natural randomness.</p>
 
-        <h2>Common Uses</h2>
-        <ul>
-          <li>Making quick binary decisions</li>
-          <li>Settling friendly disagreements</li>
-          <li>Teaching probability and statistics</li>
-          <li>Randomizing choices in games</li>
-          <li>Demonstrating the law of large numbers with multi-flip</li>
-        </ul>
+        <h3>Is the virtual coin flip truly fair and random?</h3>
+        <p>Yes. Each flip uses a pseudorandom number generator that provides a uniform distribution between 0 and 1, giving heads and tails equal probability. Unlike a real coin, which can be slightly biased by weight distribution, edge shape, or flipping technique, a virtual flip has no physical variables to introduce bias. Over a large sample, you will see the heads-to-tails ratio converge toward 50/50, which you can verify yourself by flipping 100 coins repeatedly and watching the percentages.</p>
 
-        <h2>Is It Fair?</h2>
-        <p>
-          Yes. This coin flipper uses JavaScript's Math.random() to generate each result, giving
-          a near-perfect 50/50 probability for heads or tails. Over a large number of flips, you
-          should see the percentages converge close to 50% for each side.
-        </p>
+        <h3>What is the law of large numbers and how can I see it here?</h3>
+        <p>The law of large numbers states that as you repeat a random experiment more times, the observed results will get closer to the expected theoretical probability. In this tool, you can witness it by flipping 100 coins multiple times and observing that the heads percentage hovers near 50%. A single flip of 10 coins might show 7 heads (70%), but a batch of 100 coins will almost always land between 40% and 60% heads. The running statistics panel makes this convergence visible in real time.</p>
+
+        <h3>Can I use this for making real decisions?</h3>
+        <p>Absolutely. A virtual coin flip is just as valid as a physical one for settling binary choices -- picking a restaurant, deciding who goes first in a game, or choosing between two options when you are genuinely undecided. Psychologists have even noted that the moment a coin is in the air, many people realize which outcome they are hoping for, making the coin flip a useful tool for clarifying your own preferences even before the result lands.</p>
       </div>
 
       {/* Inline keyframes for coin spin animation */}

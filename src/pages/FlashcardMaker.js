@@ -293,34 +293,24 @@ function FlashcardMaker() {
       <RelatedTools current="/flashcard-maker" />
 
       <div className="info-section">
-        <h2>About This Tool</h2>
-        <p>
-          The Flashcard Maker lets you create, study, and review flashcards entirely in your browser.
-          No account or sign-up required. Your cards stay private in your current session.
-        </p>
+        <h2>How to Use the Flashcard Maker</h2>
+        <p>Creating flashcards is fast and requires no account. In the Create tab, type a question or term on the "Front" field and the corresponding answer or definition on the "Back" field. Click "+ Add Card" to add more cards to your deck -- there is no limit. To remove a card, click the X button next to it. Once your deck is ready, choose "Study in Order" to go through the cards sequentially, or "Shuffle &amp; Study" to randomize the order for a more challenging review. During study mode, click the card (or press the Space bar) to flip between the question and answer sides. Use the arrow keys or the Prev/Next buttons to move through the deck. A progress panel at the top shows which card you are on, how many you have seen, and how many remain.</p>
+        <p>To save your work, click "Export JSON" to copy the entire deck to your clipboard in JSON format. You can paste this into a text file, a note-taking app, or share it with classmates. To reload a saved deck, paste the JSON into the import text area and click "Import." The cards will populate instantly, ready for editing or studying.</p>
 
-        <h2>How to Use</h2>
-        <ul>
-          <li><strong>Create cards</strong> by typing a question on the front and an answer on the back. Add as many as you need.</li>
-          <li><strong>Study in order</strong> or <strong>shuffle</strong> the deck for randomized review.</li>
-          <li><strong>Flip cards</strong> by clicking them or pressing Space. Use arrow keys or the Prev/Next buttons to navigate.</li>
-          <li><strong>Track progress</strong> with the cards-seen and remaining counters at the top of study mode.</li>
-          <li><strong>Export</strong> your cards as JSON to save or share, and <strong>import</strong> them later by pasting the JSON back.</li>
-        </ul>
-
-        <h2>Keyboard Shortcuts</h2>
-        <ul>
-          <li><strong>Space</strong> — Flip the current card</li>
-          <li><strong>Right Arrow / Down Arrow</strong> — Next card</li>
-          <li><strong>Left Arrow / Up Arrow</strong> — Previous card</li>
-        </ul>
+        <h2>How the Flashcard Maker Works</h2>
+        <p>The tool stores your flashcard deck as an array of front/back pairs within your browser session. When you enter study mode, the deck is either kept in creation order or shuffled using the Fisher-Yates algorithm for an unbiased random arrangement. Flipping a card simply toggles between displaying the front text and the back text -- there is no network request or server involved, so the experience is instantaneous and fully private. The cards-seen counter uses a JavaScript Set to track which card indices you have visited, ensuring each card is counted only once even if you navigate back and forth. Export converts the card array to formatted JSON, and import parses pasted JSON back into the same structure.</p>
 
         <h2>Tips for Effective Flashcard Study</h2>
-        <p>
-          Keep questions short and focused on a single concept. Use active recall by trying to answer
-          before flipping. Shuffle the deck regularly so you don't rely on card order. Review cards you
-          struggle with more frequently to strengthen memory retention.
-        </p>
+        <p>Research in cognitive science shows that active recall -- trying to answer from memory before seeing the answer -- is one of the most effective study techniques. When you see the question side, pause and mentally formulate your answer before flipping. Shuffle the deck regularly so you do not rely on card order as a memory cue. Space your study sessions over multiple days rather than cramming in one sitting; this "spaced repetition" approach dramatically improves long-term retention. Keep each card focused on a single concept or fact so that your brain forms clear, distinct associations.</p>
+
+        <h3>Are my flashcards saved if I close the browser?</h3>
+        <p>Cards are stored in your current browser session only. If you close the tab or refresh the page, the deck will be reset to empty. To preserve your cards, use the "Export JSON" button to copy the deck to your clipboard before leaving, then paste the JSON into a file or note for safekeeping. When you return, paste it into the import field and click "Import" to restore your full deck in seconds.</p>
+
+        <h3>Can I share my flashcard deck with someone else?</h3>
+        <p>Yes. Click "Export JSON" to copy your deck as a JSON string. Send that string to a friend via email, messaging, or a shared document. They can visit this page, paste the JSON into the import field, and click "Import" to load your exact deck. This makes it easy for study groups to share vocabulary lists, exam review sets, or training material without needing any accounts or cloud storage.</p>
+
+        <h3>What keyboard shortcuts are available during study mode?</h3>
+        <p>Press Space to flip the current card between question and answer. Press the Right Arrow or Down Arrow to advance to the next card, and the Left Arrow or Up Arrow to go back to the previous card. These shortcuts work as long as your cursor is not focused inside a text input or textarea, making it easy to navigate the entire deck hands-free from your keyboard.</p>
       </div>
     </div>
   );

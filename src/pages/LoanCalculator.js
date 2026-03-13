@@ -76,16 +76,29 @@ function LoanCalculator() {
       )}
 
       <section className="info-section">
-        <h2>How Loan Payments Are Calculated</h2>
-        <p>This calculator uses the standard amortization formula to determine your monthly payment. Enter your loan amount, annual interest rate, and loan term to see your monthly payment, total interest paid, and the total cost of the loan over its lifetime.</p>
+        <h2>How to Use This Loan Calculator</h2>
+        <p>Enter three pieces of information to calculate your loan payments: the total loan amount in dollars, the annual interest rate as a percentage, and the loan term in years. Click "Calculate" to see your fixed monthly payment, the total interest you will pay over the life of the loan, the total cost (principal plus interest), and the interest-to-principal ratio. This ratio is especially useful for understanding how much extra you pay beyond the borrowed amount. Try adjusting the interest rate or term to compare different scenarios and find the most affordable option.</p>
 
-        <h2>Common Loan Types</h2>
+        <h2>Understanding the Amortization Formula</h2>
+        <p>This calculator uses the standard amortization formula: <strong>M = P[r(1+r)^n] / [(1+r)^n - 1]</strong>, where M is the monthly payment, P is the principal (loan amount), r is the monthly interest rate (annual rate divided by 12), and n is the total number of payments (years times 12). For example, a $20,000 auto loan at 6% interest for 5 years gives a monthly rate of 0.005 and 60 total payments, resulting in a monthly payment of approximately $386.66. Over the life of that loan, you would pay $3,199 in interest, making the total cost $23,199.</p>
+
+        <h2>Practical Applications</h2>
         <ul>
-          <li><strong>Mortgage</strong> — Typically 15 or 30 years at 5-8%</li>
-          <li><strong>Auto Loan</strong> — Typically 3-7 years at 4-10%</li>
-          <li><strong>Personal Loan</strong> — Typically 1-5 years at 6-36%</li>
-          <li><strong>Student Loan</strong> — Typically 10-25 years at 3-8%</li>
+          <li>Estimating monthly payments on a car loan before visiting the dealership so you know your budget</li>
+          <li>Comparing personal loan offers from different lenders by entering each one's rate and term</li>
+          <li>Planning student loan repayment by seeing how much interest accumulates over 10, 15, or 25 years</li>
+          <li>Determining whether a shorter loan term with higher monthly payments saves enough interest to be worthwhile</li>
         </ul>
+
+        <h2>Frequently Asked Questions</h2>
+        <h3>How does the loan term affect total interest paid?</h3>
+        <p>A longer loan term means lower monthly payments but significantly more total interest. For example, a $25,000 loan at 7% costs about $11,207 in interest over 10 years versus $5,579 over 5 years. The shorter term has higher monthly payments ($495 vs. $290), but you save over $5,600 in interest. Always weigh monthly affordability against total cost.</p>
+
+        <h3>What is the difference between interest rate and APR?</h3>
+        <p>The interest rate is the base cost of borrowing money, while APR (Annual Percentage Rate) includes the interest rate plus additional fees such as origination fees, closing costs, and discount points. APR gives you a more complete picture of the true cost of a loan. This calculator uses the interest rate; check your lender's APR disclosure for the full cost comparison.</p>
+
+        <h3>Should I pay off my loan early?</h3>
+        <p>Paying off a loan early can save you a substantial amount in interest, since interest accrues on the remaining balance. However, some lenders charge prepayment penalties, so check your loan agreement first. If there is no penalty, making extra payments toward the principal -- even small ones -- can shorten your loan term and reduce total interest significantly.</p>
       </section>
       <RelatedTools current="/loan-calculator" />
     </div>

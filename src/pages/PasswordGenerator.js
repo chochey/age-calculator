@@ -96,16 +96,35 @@ function PasswordGenerator() {
       )}
 
       <section className="info-section">
-        <h2>Why Use a Password Generator?</h2>
-        <p>Strong, unique passwords are your first line of defense against hackers. This generator uses cryptographically secure randomness to create passwords that are virtually impossible to guess or crack through brute force.</p>
+        <h2>How to Use This Password Generator</h2>
+        <ol>
+          <li>Use the slider to set your desired password length. A minimum of 12 characters is recommended, though 16 or more is ideal for sensitive accounts.</li>
+          <li>Select the character types you want to include: uppercase letters (A-Z), lowercase letters (a-z), numbers (0-9), and special symbols (!@#$%). The more variety you enable, the stronger your password will be.</li>
+          <li>Click "Generate Password" to create a random password instantly.</li>
+          <li>Review the strength indicator bar, which rates your password as Weak, Medium, or Strong based on its length and character diversity.</li>
+          <li>Click "Copy" to copy the password to your clipboard and paste it wherever you need it.</li>
+        </ol>
+
+        <h2>How the Generator Works</h2>
+        <p>This tool uses the Web Crypto API (crypto.getRandomValues) to produce cryptographically secure random numbers. Unlike Math.random(), which relies on a pseudo-random number generator and can be predictable, the Web Crypto API draws entropy from your operating system's secure random source. Each character in the password is selected independently from the pool of allowed characters, ensuring uniform distribution and maximum unpredictability. The strength meter evaluates your password based on length thresholds (8, 12, and 16 characters) and whether it includes a mix of uppercase, lowercase, digits, and symbols. A password rated "Strong" would take billions of years to crack with current brute-force methods.</p>
 
         <h2>Tips for Strong Passwords</h2>
         <ul>
-          <li>Use at least 12 characters (16+ is ideal)</li>
-          <li>Include uppercase, lowercase, numbers, and symbols</li>
-          <li>Never reuse passwords across different sites</li>
-          <li>Use a password manager to store them securely</li>
+          <li>Use at least 16 characters for critical accounts like email and banking</li>
+          <li>Enable all four character types for maximum entropy</li>
+          <li>Never reuse passwords across different websites or services</li>
+          <li>Store generated passwords in a reputable password manager rather than writing them down</li>
+          <li>Change passwords immediately if a service you use reports a data breach</li>
         </ul>
+
+        <h3>Is this password generator safe to use?</h3>
+        <p>Yes. The entire password generation process happens locally in your browser using the Web Crypto API. No passwords are transmitted over the internet, stored on a server, or logged in any way. You can even use this tool while offline.</p>
+
+        <h3>How long should my password be?</h3>
+        <p>For most online accounts, 16 characters is a strong baseline. For high-security needs such as master passwords or encryption keys, consider 20 characters or more. Each additional character exponentially increases the time required for a brute-force attack.</p>
+
+        <h3>Why should I avoid reusing passwords?</h3>
+        <p>When one service is compromised in a data breach, attackers try those leaked credentials on other sites, a technique called credential stuffing. Using a unique password for every account ensures that a single breach cannot cascade across your digital life.</p>
       </section>
       <RelatedTools current="/password-generator" />
     </div>

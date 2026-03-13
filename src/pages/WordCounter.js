@@ -65,16 +65,34 @@ function WordCounter() {
       />
 
       <section className="info-section">
-        <h2>How the Word Counter Works</h2>
-        <p>Simply type or paste your text into the box above. The tool instantly counts words, characters (with and without spaces), sentences, and paragraphs. Reading time is estimated at 200 words per minute, which is the average adult reading speed.</p>
+        <h2>How to Use This Word Counter</h2>
+        <ol>
+          <li>Type directly into the text area or paste text from any source such as a document, email, or webpage.</li>
+          <li>The statistics update instantly as you type. The six counters above the text area show words, characters (total), characters (excluding spaces), sentences, paragraphs, and estimated reading time.</li>
+          <li>Use the word count to verify you meet minimum or maximum length requirements for essays, articles, or social media posts.</li>
+          <li>Use the reading time estimate to gauge how long it will take your audience to read your content.</li>
+        </ol>
 
-        <h2>Common Uses</h2>
+        <h2>How the Counting Works</h2>
+        <p>This tool analyzes your text using several distinct methods for each metric. Words are counted by splitting the text on whitespace boundaries, so any sequence of non-space characters counts as one word. This matches how word processors like Microsoft Word and Google Docs count words. Character count includes every character you have typed, including spaces, punctuation, and line breaks. The "characters without spaces" count strips all whitespace to give you the pure text length, which is useful for platforms like Twitter/X where spaces may or may not count toward limits. Sentences are detected by counting terminal punctuation marks (periods, exclamation points, and question marks). Paragraphs are identified by looking for blocks of text separated by one or more blank lines. The reading time estimate divides your total word count by 200 words per minute, which is the widely accepted average silent reading speed for adult English speakers. Content with technical vocabulary or dense formatting may take longer to read in practice.</p>
+
+        <h2>Common Uses for Word Counting</h2>
         <ul>
-          <li>Check essay or assignment word counts</li>
-          <li>Stay within social media character limits</li>
-          <li>Estimate reading time for blog posts</li>
-          <li>Track writing progress</li>
+          <li>Meeting academic requirements such as 500-word essays or 3,000-word research papers</li>
+          <li>Staying within character limits for platforms like Twitter/X (280 characters), LinkedIn posts (3,000 characters), or meta descriptions (155 characters)</li>
+          <li>Estimating reading time before publishing blog posts or newsletters</li>
+          <li>Tracking daily writing progress toward a word count goal</li>
+          <li>Checking article length for SEO guidelines that recommend specific word counts for ranking</li>
         </ul>
+
+        <h3>How accurate is the reading time estimate?</h3>
+        <p>The estimate assumes a reading speed of 200 words per minute, which is the average for adult English readers consuming non-technical content. Technical writing, academic papers, or text in a second language may take 30-50% longer to read. Conversely, casual or familiar content may be read faster. Treat the estimate as a helpful approximation rather than an exact measurement.</p>
+
+        <h3>Does the counter handle different languages?</h3>
+        <p>Yes, the word counter works with any language that uses spaces to separate words, including English, Spanish, French, German, and most European languages. For languages like Chinese, Japanese, or Thai that do not use spaces between words, the counter will treat the entire text as fewer, longer "words" since it relies on whitespace for word boundaries.</p>
+
+        <h3>Why is my character count different from what I see in Word or Google Docs?</h3>
+        <p>Minor differences can occur because different tools handle line breaks and special characters differently. Some word processors count a line break as two characters (carriage return plus line feed), while browsers typically count it as one. The "characters without spaces" metric strips all whitespace types, giving you a consistent count regardless of formatting.</p>
       </section>
       <RelatedTools current="/word-counter" />
     </div>

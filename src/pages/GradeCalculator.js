@@ -278,40 +278,35 @@ function GradeCalculator() {
 
       <RelatedTools current="/grade-calculator" />
 
-      <div className="info-section">
-        <h2>About This Tool</h2>
+      <section className="info-section">
+        <h2>How to Use the Grade Calculator</h2>
         <p>
-          The Grade Calculator helps you compute your weighted class grade by combining
-          individual assignment scores with their respective weights. Whether you have
-          homework, quizzes, midterms, and finals each worth a different percentage of your
-          total grade, this tool handles the math for you.
+          Enter each assignment or category in its own row. Type an optional name (e.g., "Midterm"), then enter the grade you received as a percentage and the weight that category carries toward your final grade. Click "+ Add Row" for more entries or the X button to remove one. The calculator computes your weighted average and letter grade in real time. Below the grade table, the "What Grade Do I Need?" section shows the minimum score you must earn on remaining work to hit any target grade, plus quick-target cards for an A, B, and C.
         </p>
 
-        <h2>How Weighted Grades Work</h2>
+        <h2>The Weighted Average Formula with a Worked Example</h2>
         <p>
-          A weighted grade is calculated by multiplying each assignment's score by its weight,
-          summing those products, and dividing by the total weight. For example, if your midterm
-          (worth 30%) was a 90% and your final (worth 40%) was an 85%, the weighted average for
-          those two would be: (90 x 30 + 85 x 40) / (30 + 40) = 87.14%.
+          Weighted Average = (sum of each grade x its weight) / (sum of all weights). Each weight represents the percentage of your final grade that the assignment or category is worth, and the weights should total 100 percent for a complete course.
+        </p>
+        <p>
+          <strong>Worked example:</strong> Homework is worth 20% and you scored 95. The midterm is worth 30% and you scored 88. The final is worth 50% and you scored 82. Weighted average = (95 x 20 + 88 x 30 + 82 x 50) / (20 + 30 + 50) = (1900 + 2640 + 4100) / 100 = <strong>86.40%</strong>, which earns a letter grade of <strong>B</strong>. If you had only entered homework and the midterm before taking the final, the tool would have told you that you needed a certain score on the remaining 50% to reach your target.
         </p>
 
-        <h2>What Grade Do I Need on My Final?</h2>
+        <h3>How does the "What Grade Do I Need?" feature work?</h3>
         <p>
-          Use the "What Grade Do I Need?" section to determine the minimum score required
-          on remaining assignments to reach your target grade. Enter your current grades and
-          weights, and the calculator will show what you need on the remaining portion of
-          your course weight to achieve an A, B, or C, or any custom target you set.
+          It takes your current weighted sum and remaining weight and solves for the unknown score. The formula is Needed Score = (Target x 100 - Current Weighted Sum) / Remaining Weight. For example, if your current weighted sum from 60% of course weight is 5,340 points and you want a 90% overall, you need (90 x 100 - 5340) / 40 = 3660 / 40 = 91.5% on the remaining 40%. If the needed score exceeds 100%, the tool tells you that target is no longer achievable.
         </p>
 
-        <h2>Letter Grade Scale</h2>
-        <ul>
-          <li><strong>A+ </strong> = 97 - 100% | <strong>A</strong> = 93 - 96% | <strong>A-</strong> = 90 - 92%</li>
-          <li><strong>B+ </strong> = 87 - 89% | <strong>B</strong> = 83 - 86% | <strong>B-</strong> = 80 - 82%</li>
-          <li><strong>C+ </strong> = 77 - 79% | <strong>C</strong> = 73 - 76% | <strong>C-</strong> = 70 - 72%</li>
-          <li><strong>D+ </strong> = 67 - 69% | <strong>D</strong> = 63 - 66% | <strong>D-</strong> = 60 - 62%</li>
-          <li><strong>F</strong> = Below 60%</li>
-        </ul>
-      </div>
+        <h3>What if my weights do not add up to 100%?</h3>
+        <p>
+          The calculator still works -- it divides by whatever the total weight actually is, so you get an accurate average for the categories you have entered. However, if the total exceeds 100%, a warning appears because that likely means a data entry error. For the "What Grade Do I Need?" section to be meaningful, the remaining weight should reflect the actual percentage of your grade that has not yet been determined.
+        </p>
+
+        <h3>Does extra credit affect weighted grades?</h3>
+        <p>
+          If your teacher awards extra credit as additional points on an existing assignment, simply enter the boosted score for that assignment (e.g., 105 instead of 100). If extra credit is a separate category with its own weight, add it as a new row. The calculator supports grades above 100%, so extra credit is handled naturally. Keep in mind that the letter grade scale shown is based on the standard thresholds and does not cap at 100%.
+        </p>
+      </section>
     </div>
   );
 }

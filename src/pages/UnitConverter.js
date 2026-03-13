@@ -103,17 +103,29 @@ function UnitConverter() {
       )}
 
       <section className="info-section">
-        <h2>About Unit Conversion</h2>
-        <p>Convert between common units of length, weight, temperature, volume, and speed. Select a category, choose your units, enter a value, and see the result instantly.</p>
+        <h2>How to Use the Unit Converter</h2>
+        <p>Start by choosing a measurement category from the buttons at the top: Length, Weight, Temperature, Volume, or Speed. The "From" and "To" dropdowns update automatically to show the units available in that category. Select the unit you are converting from, the unit you are converting to, and type a numeric value. The converted result appears instantly below the form as you type, with no need to click a button. For example, selecting Length, choosing "Miles" as the source and "Kilometers" as the target, and entering 26.2 immediately shows 42.164928 Kilometers -- the distance of a marathon.</p>
 
-        <h2>Supported Categories</h2>
+        <h2>How the Converter Works</h2>
+        <p>For length, weight, volume, and speed, each unit has a fixed conversion factor to a base unit (meters for length, kilograms for weight, liters for volume, and meters per second for speed). The tool multiplies your input by the source unit's base factor and then divides by the target unit's base factor, producing an accurate conversion in a single step. Temperature is handled separately because the relationship between Celsius, Fahrenheit, and Kelvin involves offsets rather than simple ratios. The converter first translates the input to Celsius, then converts from Celsius to the target scale using the standard formulas: F = C x 9/5 + 32 and K = C + 273.15.</p>
+
+        <h2>Supported Categories and Units</h2>
         <ul>
-          <li><strong>Length</strong> — Meters, km, miles, feet, inches, cm, yards</li>
-          <li><strong>Weight</strong> — Kilograms, grams, pounds, ounces, tons</li>
-          <li><strong>Temperature</strong> — Celsius, Fahrenheit, Kelvin</li>
-          <li><strong>Volume</strong> — Liters, ml, gallons, quarts, cups, fl oz</li>
-          <li><strong>Speed</strong> — m/s, km/h, mph, knots</li>
+          <li><strong>Length</strong> -- Meters, Kilometers, Miles, Feet, Inches, Centimeters, and Yards. Useful for travel distances, room dimensions, and athletic measurements.</li>
+          <li><strong>Weight</strong> -- Kilograms, Grams, Pounds, Ounces, Milligrams, and Tons. Covers everything from cooking recipes to shipping packages.</li>
+          <li><strong>Temperature</strong> -- Celsius, Fahrenheit, and Kelvin. Essential for weather, cooking, and scientific applications.</li>
+          <li><strong>Volume</strong> -- Liters, Milliliters, Gallons, Quarts, Cups, and Fluid Ounces. Perfect for cooking conversions and liquid measurements.</li>
+          <li><strong>Speed</strong> -- Meters per second, Kilometers per hour, Miles per hour, and Knots. Handy for comparing vehicle speeds, running paces, or nautical navigation.</li>
         </ul>
+
+        <h3>How do I convert temperature between Fahrenheit and Celsius?</h3>
+        <p>Select the Temperature category, choose Fahrenheit as the "From" unit and Celsius as the "To" unit (or vice versa), and enter a value. For instance, entering 72 Fahrenheit returns 22.222222 Celsius, which is a comfortable room temperature. The formula used is Celsius = (Fahrenheit - 32) x 5/9. For the reverse, Fahrenheit = Celsius x 9/5 + 32. A quick reference: 0 C equals 32 F (freezing point of water) and 100 C equals 212 F (boiling point).</p>
+
+        <h3>Are the conversion factors accurate for scientific use?</h3>
+        <p>Yes. The tool uses standard internationally recognized conversion factors. For example, 1 mile equals exactly 1,609.344 meters, 1 pound equals 0.453592 kilograms, and 1 gallon (US) equals 3.78541 liters. Results are displayed with up to six decimal places for precision. While this level of accuracy is more than sufficient for everyday use, engineering, and most scientific applications, extremely high-precision work may require additional significant figures beyond what a browser-based tool provides.</p>
+
+        <h3>Can I convert between metric and imperial units?</h3>
+        <p>Absolutely -- that is one of the primary purposes of this tool. The Length category lets you convert between metric units (meters, kilometers, centimeters) and imperial units (miles, feet, inches, yards). The Weight category covers kilograms and grams alongside pounds and ounces. The Volume category bridges liters and milliliters with gallons, quarts, cups, and fluid ounces. Simply pick one metric unit and one imperial unit, enter a value, and the result appears instantly.</p>
       </section>
       <RelatedTools current="/unit-converter" />
     </div>

@@ -70,17 +70,21 @@ function HtmlEntityTool() {
       )}
 
       <section className="info-section">
-        <h2>What are HTML Entities?</h2>
-        <p>HTML entities are special codes used to display reserved characters in HTML. For example, &lt; represents the less-than sign (&lt;) and &amp; represents the ampersand (&amp;). Encoding prevents browsers from interpreting text as HTML code.</p>
+        <h2>How to Use the HTML Entity Encoder / Decoder</h2>
+        <p>Select the mode you need using the toggle at the top: "Encode" converts special characters in your text into their corresponding HTML entity codes, while "Decode" reverses the process, turning entity codes back into readable characters. Paste or type your content into the text area and click the action button. The result appears below, ready to copy with a single click. This is useful any time you need to safely embed user-generated content in HTML, prepare text for display in a web page, or recover the original characters from an entity-encoded string.</p>
 
-        <h2>Common Entities</h2>
-        <ul>
-          <li><strong>&amp;amp;</strong> → &amp; (ampersand)</li>
-          <li><strong>&amp;lt;</strong> → &lt; (less than)</li>
-          <li><strong>&amp;gt;</strong> → &gt; (greater than)</li>
-          <li><strong>&amp;quot;</strong> → " (double quote)</li>
-          <li><strong>&amp;#39;</strong> → ' (single quote)</li>
-        </ul>
+        <h2>What Are HTML Entities and Why Do They Matter?</h2>
+        <p>HTML reserves certain characters for its own syntax. The angle brackets <code>&lt;</code> and <code>&gt;</code> define tags, the ampersand <code>&amp;</code> begins entity references, and double quotes <code>"</code> delimit attribute values. If these characters appear literally in page content, browsers may misinterpret them as markup, breaking the page layout or, worse, creating a cross-site scripting (XSS) vulnerability. HTML entities solve this problem by replacing each reserved character with a named or numeric code that the browser renders as the original character without treating it as markup.</p>
+        <p>For example, writing <code>&amp;lt;</code> in your HTML source displays the less-than sign on screen. The five most commonly encoded characters and their entities are: <code>&amp;amp;</code> for the ampersand, <code>&amp;lt;</code> for less-than, <code>&amp;gt;</code> for greater-than, <code>&amp;quot;</code> for the double quote, and <code>&amp;#39;</code> for the single quote (apostrophe). Beyond these, HTML defines hundreds of named entities for symbols like <code>&amp;copy;</code> (copyright), <code>&amp;euro;</code> (euro sign), and <code>&amp;mdash;</code> (em dash).</p>
+
+        <h3>When should I encode HTML entities?</h3>
+        <p>You should encode entities whenever you insert dynamic or user-supplied text into an HTML document. This includes rendering database content on a web page, displaying form input back to the user, embedding text inside HTML attributes, and generating HTML email templates. Encoding prevents the browser from treating the text as active markup, which is the primary defense against reflected and stored XSS attacks. Most server-side frameworks and templating engines perform this encoding automatically, but it is essential to verify that encoding is applied consistently, especially when building raw HTML strings manually.</p>
+
+        <h3>What is the difference between named and numeric HTML entities?</h3>
+        <p>Named entities use a human-readable label, like <code>&amp;amp;</code> or <code>&amp;copy;</code>, and are easier to recognize at a glance. Numeric entities use either a decimal code (<code>&amp;#38;</code>) or a hexadecimal code (<code>&amp;#x26;</code>) and can represent any Unicode character, even those without a named entity. Named entities are limited to the set defined in the HTML specification, while numeric entities can encode the full range of Unicode code points. In practice, named entities are preferred for common characters because of their readability, and numeric entities are used for less common symbols.</p>
+
+        <h3>Does this tool handle all Unicode characters?</h3>
+        <p>The encoder targets the five characters that are syntactically significant in HTML: ampersand, less-than, greater-than, double quote, and single quote. These are the characters that cause parsing issues and security vulnerabilities when left unencoded. The decoder, on the other hand, can handle any valid HTML entity, including named entities, decimal numeric entities, and hexadecimal numeric entities, by leveraging the browser's built-in HTML parser. This means you can decode exotic entities like <code>&amp;hearts;</code> or <code>&amp;#8364;</code> just as easily as the common five.</p>
       </section>
       <RelatedTools current="/html-entity-encoder" />
     </div>

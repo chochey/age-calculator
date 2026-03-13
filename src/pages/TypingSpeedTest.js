@@ -278,36 +278,23 @@ function TypingSpeedTest() {
       <RelatedTools current="/typing-speed-test" />
 
       <div className="info-section">
-        <h2>About This Tool</h2>
-        <p>
-          This free typing speed test measures how fast and accurately you can type. Your words per minute (WPM) score is calculated using the standard method where one word equals five characters. The test begins automatically when you start typing and tracks your progress in real time.
-        </p>
-        <p>
-          The test displays both Gross WPM (total words typed per minute) and Net WPM (adjusted for errors). Net WPM gives you a more accurate picture of your effective typing speed since it accounts for mistakes you make along the way.
-        </p>
+        <h2>How to Use the Typing Speed Test</h2>
+        <p>A random paragraph appears on screen when the page loads. Click into the text area below the paragraph and begin typing the passage exactly as shown -- the timer starts automatically on your very first keystroke. As you type, each character is highlighted green for correct or red for incorrect, giving you instant visual feedback so you can adjust your technique in real time. A live stats bar above the paragraph tracks your current WPM, accuracy percentage, elapsed time, and character progress. Once you type every character in the passage, the test ends and a full results screen appears with your final scores. Click "Try Again" to get a fresh random paragraph and test yourself again.</p>
 
-        <h2>How It Works</h2>
-        <p>
-          A random paragraph is displayed on screen. Simply start typing the text exactly as shown. The timer begins on your first keystroke. As you type, each character is highlighted green for correct or red for incorrect, so you get instant visual feedback. Once you type all the characters, the test ends and your complete results are shown.
-        </p>
+        <h2>How the Typing Test Works</h2>
+        <p>The test selects one paragraph at random from a curated set of passages covering topics like nature, technology, cooking, and space exploration. Your words per minute (WPM) score uses the standard definition where one "word" equals five characters, including spaces and punctuation. The tool calculates two WPM figures: Gross WPM is the total number of five-character words you typed divided by the elapsed minutes, while Net WPM subtracts incorrect characters from that count. Net WPM is the more meaningful metric because it reflects your effective speed after accounting for mistakes. Accuracy is simply the percentage of characters you typed correctly out of all characters attempted.</p>
 
-        <h2>Understanding Your Results</h2>
-        <ul>
-          <li><strong>Net WPM</strong> - Your effective typing speed after accounting for errors. This is the most meaningful metric.</li>
-          <li><strong>Gross WPM</strong> - Total raw typing speed before error adjustments.</li>
-          <li><strong>Accuracy</strong> - The percentage of characters you typed correctly.</li>
-          <li><strong>Time Elapsed</strong> - How long it took you to complete the passage.</li>
-        </ul>
+        <h2>Understanding Your Speed Rating</h2>
+        <p>After completing the test, you receive a speed rating based on your Net WPM. Under 20 WPM is beginner level, typical for people who are learning to touch-type. Most casual computer users fall between 20 and 40 WPM. Office workers and frequent typists usually land between 40 and 60 WPM. Scores above 60 WPM are considered fast, 80 to 100 WPM is professional-grade, and anything above 100 WPM puts you in expert territory. Competitive typists often exceed 120 WPM, with world records surpassing 200 WPM on sustained passages.</p>
 
-        <h2>Average Typing Speeds</h2>
-        <ul>
-          <li><strong>Beginner:</strong> Under 20 WPM</li>
-          <li><strong>Average:</strong> 20 to 40 WPM</li>
-          <li><strong>Above Average:</strong> 40 to 60 WPM</li>
-          <li><strong>Fast:</strong> 60 to 80 WPM</li>
-          <li><strong>Professional:</strong> 80 to 100 WPM</li>
-          <li><strong>Expert:</strong> Over 100 WPM</li>
-        </ul>
+        <h3>What is the difference between Gross WPM and Net WPM?</h3>
+        <p>Gross WPM measures raw typing speed without penalizing errors -- it counts every character you typed regardless of correctness. Net WPM adjusts for mistakes by subtracting incorrect characters before dividing by elapsed time. If you type quickly but make many errors, your Gross WPM will be high while your Net WPM will be significantly lower. Net WPM is the industry-standard metric used by employers and typing certification programs because it reflects how fast you produce accurate text.</p>
+
+        <h3>How can I improve my typing speed?</h3>
+        <p>Focus on accuracy first -- speed follows naturally once your fingers learn correct key positions. Practice touch typing (typing without looking at the keyboard) by memorizing the home row keys and building outward. Take this test regularly to track progress, aiming to increase your WPM by 5 to 10 points each week. Short, focused practice sessions of 10 to 15 minutes daily are more effective than occasional marathon sessions. Also pay attention to which keys cause the most errors and drill those specific combinations.</p>
+
+        <h3>Why does a new random paragraph load each time?</h3>
+        <p>The test draws from a pool of varied paragraphs to prevent memorization. If you practiced the same text repeatedly, your score would reflect familiarity with that specific passage rather than your true general typing ability. Random selection ensures each attempt tests genuine typing skill across different vocabulary, sentence structures, and word lengths, giving you a more honest and comparable WPM measurement over time.</p>
       </div>
     </div>
   );

@@ -124,16 +124,28 @@ function BoxShadowGenerator() {
       </div>
 
       <section className="info-section">
-        <h2>CSS Box Shadow Syntax</h2>
-        <p>The box-shadow property accepts: <code>x-offset y-offset blur spread color</code>. Add <code>inset</code> for inner shadows. Multiple shadows are separated by commas.</p>
+        <h2>How to Use the Box Shadow Generator</h2>
+        <p>Start by adjusting the sliders for your first shadow layer. The X and Y sliders control the horizontal and vertical offset of the shadow, while Blur sets how soft the edges appear and Spread controls how far the shadow extends beyond the box. Use the color picker to set the shadow color -- semi-transparent blacks like #00000040 produce natural-looking results. To create more complex depth effects, click "+ Add Shadow" to layer multiple shadows on the same element. You can also toggle the "Inset" checkbox to create inner shadows. Customize the box color, background color, and border radius to match your design. When your shadow looks right, click "Copy" to grab the generated CSS code.</p>
 
-        <h2>Tips</h2>
+        <h2>Understanding CSS Box Shadow Syntax</h2>
+        <p>The CSS <code>box-shadow</code> property follows this pattern: <code>x-offset y-offset blur-radius spread-radius color</code>. For example, <code>box-shadow: 4px 4px 10px 0px #00000040</code> creates a shadow offset 4 pixels to the right and 4 pixels down, with a 10-pixel blur and no spread, using a semi-transparent black. Adding the <code>inset</code> keyword at the beginning moves the shadow inside the element, which is useful for simulating pressed buttons or recessed input fields. You can combine multiple shadow values separated by commas to build layered lighting effects.</p>
+
+        <h2>Design Techniques with Box Shadows</h2>
         <ul>
-          <li>Use subtle shadows (low blur, low opacity) for flat design</li>
-          <li>Layer multiple shadows for depth and realism</li>
-          <li>Inset shadows work great for input fields and pressed buttons</li>
-          <li>Use RGBA colors for transparency control</li>
+          <li><strong>Subtle elevation:</strong> Use small offsets (1-3px), moderate blur (6-12px), and low-opacity colors for clean, modern card designs. Example: <code>0px 2px 8px 0px #0000001a</code>.</li>
+          <li><strong>Layered depth:</strong> Combine two or three shadows at different blur levels to mimic realistic lighting. A tight, dark shadow paired with a wide, light one creates convincing depth.</li>
+          <li><strong>Inset effects:</strong> Apply inset shadows to input fields, toggles, or containers to give them a recessed appearance. Example: <code>inset 0px 2px 4px 0px #00000020</code>.</li>
+          <li><strong>Colored glows:</strong> Use a matching brand color with a large blur radius and no offset to create a glowing halo effect around buttons or badges.</li>
         </ul>
+
+        <h3>What do the X-offset and Y-offset values control?</h3>
+        <p>The X-offset moves the shadow horizontally (positive values go right, negative values go left) and the Y-offset moves it vertically (positive goes down, negative goes up). Setting both to 0 creates a shadow that is evenly distributed around the element, which works well for glow effects. Typical card shadows use a Y-offset of 2-6 pixels with an X-offset of 0 to simulate overhead lighting.</p>
+
+        <h3>How do blur and spread differ?</h3>
+        <p>Blur controls the softness of the shadow edges. A blur of 0 produces a hard, sharp-edged shadow, while higher values create a gradual fade. Spread controls the size of the shadow relative to the element. Positive spread values make the shadow larger than the box, while negative values shrink it. Combining a small positive blur with a negative spread is a popular technique for creating tight, subtle drop shadows.</p>
+
+        <h3>Can I use multiple box shadows on one element?</h3>
+        <p>Yes. CSS allows you to stack as many box shadows as you need by separating each shadow definition with a comma. Layering multiple shadows at different offsets, blur levels, and opacities is the key to achieving realistic material-design-style elevation. This generator supports adding and removing shadow layers so you can experiment with multi-shadow effects visually before copying the final CSS.</p>
       </section>
       <RelatedTools current="/box-shadow-generator" />
     </div>

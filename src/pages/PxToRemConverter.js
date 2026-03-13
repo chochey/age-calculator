@@ -277,44 +277,23 @@ function PxToRemConverter() {
       <RelatedTools current="/px-to-rem" />
 
       <div className="info-section">
-        <h2>About REM Units</h2>
-        <p>
-          REM stands for "root em" and is a relative CSS unit based on the root element's font size (the
-          <code style={{ background: '#f1f5f9', padding: '0.15em 0.4em', borderRadius: '4px', fontSize: '0.9em' }}>&lt;html&gt;</code> element).
-          By default, most browsers set the root font size to 16px, so 1rem equals 16px.
-          Unlike em units, which are relative to the parent element's font size, rem always references the root,
-          making it more predictable and easier to manage across complex layouts.
-        </p>
+        <h2>How to Use the PX to REM Converter</h2>
+        <p>Start by confirming or adjusting the base font size at the top of the form (the default is 16px, which matches the browser default for most users). Use the toggle to choose your conversion direction: "PX to REM" or "REM to PX." Enter a value in the editable field, and the converted result appears instantly in the read-only field beside it. Below the converter you will find copyable outputs for the PX value, the REM value, the EM equivalent, and a ready-to-paste CSS declaration. The Quick Reference Table at the bottom lists common pixel sizes and their REM/EM equivalents; click any row to populate the converter automatically.</p>
 
-        <h2>PX vs REM vs EM</h2>
-        <ul>
-          <li><strong>PX (Pixels):</strong> An absolute unit. 16px is always 16px regardless of context. Simple to use but does not scale with user preferences.</li>
-          <li><strong>REM (Root EM):</strong> A relative unit tied to the root font size. If the root is 16px, 1rem = 16px. Scales globally when the user changes browser font size settings.</li>
-          <li><strong>EM:</strong> A relative unit tied to the parent element's font size. 1em = the parent's font size. Can compound when nested, making it harder to predict.</li>
-        </ul>
+        <h2>Understanding PX, REM, and EM Units in CSS</h2>
+        <p><strong>Pixels (px)</strong> are an absolute CSS unit. A value of 16px always renders at 16 device pixels regardless of context, which makes pixel values straightforward but rigid. They do not respond to a user who changes their browser's default font size for accessibility reasons.</p>
+        <p><strong>REM (root em)</strong> is a relative unit tied to the font size of the root <code>&lt;html&gt;</code> element. When the root is set to the browser default of 16px, 1rem equals 16px. If a user or a stylesheet changes the root font size, every rem-based measurement scales proportionally. This single point of reference makes rem predictable even in deeply nested components.</p>
+        <p><strong>EM</strong> is also a relative unit, but it references the font size of the element's immediate parent rather than the root. This means em values compound when elements are nested: a 1.5em font inside a 1.5em parent yields an effective size of 2.25 times the base. This compounding behavior makes em harder to manage in complex layouts, which is why rem is generally preferred for spacing and typography in modern CSS.</p>
+        <p>The conversion formula is simple: <strong>rem = px / base</strong>. With a 16px base, 24px becomes 1.5rem. To reverse the calculation, multiply: <strong>px = rem * base</strong>. If your project sets the root font size to 10px for easier math (the "62.5% trick"), update the base value in this converter to see accurate results.</p>
 
-        <h2>Why Use REM?</h2>
-        <p>
-          Using rem units improves accessibility by respecting users' browser font size preferences.
-          If a user increases their default font size from 16px to 20px, all rem-based measurements scale proportionally.
-          This is especially important for responsive design, ensuring text, spacing, and layout adapt to user needs.
-          The rem unit also avoids the compounding problem of em units in nested elements.
-        </p>
+        <h3>Why should I use REM instead of pixels in my CSS?</h3>
+        <p>Using rem units improves accessibility because they respect the user's browser font-size preference. If a visually impaired user increases their default font size from 16px to 24px, all rem-based text, margins, and padding scale up accordingly, keeping the layout proportional and readable. Pixel values ignore this preference entirely, forcing the user to zoom the entire page instead. The Web Content Accessibility Guidelines (WCAG) recommend using relative units for text sizing to support this kind of user customization.</p>
 
-        <h2>How to Convert PX to REM</h2>
-        <p>
-          The formula is straightforward: <strong>rem = px / base font size</strong>. With a default base of 16px,
-          24px becomes 24 / 16 = 1.5rem. To convert back, multiply: <strong>px = rem * base font size</strong>,
-          so 1.5rem * 16 = 24px. If your project uses a different base font size (e.g., 10px for easier math),
-          adjust the base value in this converter accordingly.
-        </p>
+        <h3>What is the 62.5% base font-size trick?</h3>
+        <p>Some developers set <code>html {"{"} font-size: 62.5%; {"}"}</code> in their stylesheet, which reduces the root font size from 16px to 10px. With a 10px base, the math becomes trivial: 1rem = 10px, 1.4rem = 14px, 1.6rem = 16px, and so on. This can speed up development and reduce conversion errors. The rest of the page is then styled in rem units, and the body font size is typically reset to <code>1.6rem</code> (16px) so that default text remains a comfortable reading size. If you use this pattern, set the base font size in this converter to 10 for accurate results.</p>
 
-        <h2>Common Conversion Values</h2>
-        <p>
-          At a 16px base: 12px = 0.75rem, 14px = 0.875rem, 16px = 1rem, 18px = 1.125rem, 20px = 1.25rem,
-          24px = 1.5rem, 32px = 2rem, 48px = 3rem, and 64px = 4rem. These are commonly used for font sizes,
-          margins, padding, and other spacing properties in CSS.
-        </p>
+        <h3>When should I use EM instead of REM?</h3>
+        <p>EM is useful when you intentionally want a measurement to scale relative to the component's own font size rather than the global root. A common example is padding on a button: setting <code>padding: 0.5em 1em</code> means the padding automatically increases if the button text is made larger, keeping the proportions balanced. Icon sizes inside text and typographic details like letter-spacing also benefit from em because they should stay proportional to the surrounding text. For everything else, including page-level spacing, grid dimensions, and media query breakpoints, rem is the safer choice because it avoids compounding.</p>
       </div>
     </div>
   );

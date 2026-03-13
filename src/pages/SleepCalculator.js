@@ -187,72 +187,33 @@ function SleepCalculator() {
       )}
 
       <section className="info-section">
-        <h2>How Sleep Cycles Work</h2>
+        <h2>How to Use the Sleep Calculator</h2>
         <p>
-          Sleep is not a single, uniform state. Throughout the night, your body cycles through distinct
-          stages of sleep in roughly 90-minute intervals. Each complete cycle includes both NREM
-          (Non-Rapid Eye Movement) and REM (Rapid Eye Movement) sleep. Waking up at the end of a
-          complete cycle -- rather than in the middle of one -- helps you feel more rested and alert,
-          even if your total sleep time is slightly less.
+          Choose one of two modes using the toggle at the top. In "I want to wake up at..." mode, enter your desired alarm time and the calculator works backward to suggest ideal bedtimes. In "I want to go to bed at..." mode, enter the time you plan to fall asleep and it shows optimal wake-up times. Select the hour, minute, and AM/PM, then click "Calculate Sleep Times." You will see four options ranging from three to six complete sleep cycles, with five and six cycles marked as recommended for adults.
         </p>
 
-        <h2>The Stages of Sleep</h2>
-        <ul>
-          <li>
-            <strong>Stage 1 (NREM - Light Sleep):</strong> The transition from wakefulness to sleep.
-            This stage lasts only a few minutes. Your muscles relax, and your heart rate and breathing
-            begin to slow.
-          </li>
-          <li>
-            <strong>Stage 2 (NREM - Light Sleep):</strong> Your body temperature drops and brain waves
-            slow down with occasional bursts of activity called sleep spindles. This stage makes up about
-            50% of total sleep time.
-          </li>
-          <li>
-            <strong>Stage 3 (NREM - Deep Sleep):</strong> Also called slow-wave sleep, this is the most
-            restorative stage. Your body repairs tissues, builds bone and muscle, and strengthens the immune
-            system. It is very difficult to wake someone from this stage, and doing so often results in
-            grogginess.
-          </li>
-          <li>
-            <strong>REM Sleep:</strong> This stage is when most dreaming occurs. Your brain is highly
-            active, processing memories and emotions. Your eyes move rapidly, but your muscles are
-            temporarily paralyzed. REM periods get longer as the night progresses, with the longest
-            occurring in the final cycles.
-          </li>
-        </ul>
-
-        <h2>Why 90 Minutes?</h2>
+        <h2>The 90-Minute Sleep Cycle Method</h2>
         <p>
-          A complete sleep cycle -- progressing through all NREM stages and one REM period -- takes
-          approximately 90 minutes. The exact duration varies between individuals (typically 80 to 120
-          minutes), but 90 minutes is a well-established average used in sleep science. By timing your
-          sleep in multiples of 90 minutes plus about 15 minutes to fall asleep, you increase the
-          chance of waking during light sleep rather than deep sleep.
+          During a normal night, your brain cycles through four distinct stages -- two stages of light sleep, one stage of deep restorative sleep, and one stage of REM (dream) sleep -- in roughly 90-minute intervals. The calculator also adds 15 minutes to account for the average time it takes to fall asleep, giving you a realistic target rather than an idealized one.
+        </p>
+        <p>
+          <strong>Worked example:</strong> If you need to wake up at 7:00 AM, the calculator subtracts 15 minutes (falling asleep) plus multiples of 90 minutes. Six cycles: 7:00 AM minus 9 hours 15 minutes = <strong>9:45 PM</strong>. Five cycles: 7:00 AM minus 7 hours 45 minutes = <strong>11:15 PM</strong>. Waking at the end of a complete cycle -- during light sleep rather than deep sleep -- is what makes you feel alert instead of groggy, even if the total sleep time is slightly shorter.
         </p>
 
-        <h2>Recommended Sleep by Age</h2>
-        <ul>
-          <li><strong>Newborns (0-3 months):</strong> 14-17 hours</li>
-          <li><strong>Infants (4-11 months):</strong> 12-15 hours</li>
-          <li><strong>Toddlers (1-2 years):</strong> 11-14 hours</li>
-          <li><strong>Preschoolers (3-5 years):</strong> 10-13 hours</li>
-          <li><strong>School-age children (6-13 years):</strong> 9-11 hours</li>
-          <li><strong>Teenagers (14-17 years):</strong> 8-10 hours</li>
-          <li><strong>Young adults (18-25 years):</strong> 7-9 hours</li>
-          <li><strong>Adults (26-64 years):</strong> 7-9 hours</li>
-          <li><strong>Older adults (65+ years):</strong> 7-8 hours</li>
-        </ul>
+        <h3>Why do I feel tired after sleeping 8 hours?</h3>
+        <p>
+          Eight hours does not divide evenly into 90-minute cycles. Five cycles total 7.5 hours and six cycles total 9 hours, but 8 hours lands in the middle of a cycle during deep sleep. Waking from deep sleep triggers sleep inertia -- the heavy, foggy feeling that can last 15 to 30 minutes. By aligning your sleep time with complete cycles (for example, 7.5 or 9 hours plus the time to fall asleep), you are far more likely to wake during light sleep and feel refreshed.
+        </p>
 
-        <h2>Tips for Better Sleep</h2>
-        <ul>
-          <li><strong>Consistent schedule:</strong> Go to bed and wake up at the same time every day, including weekends.</li>
-          <li><strong>Limit blue light:</strong> Avoid screens for at least 30-60 minutes before bedtime, as blue light suppresses melatonin production.</li>
-          <li><strong>Cool environment:</strong> Keep your bedroom between 60-67 degrees Fahrenheit (15-19 degrees Celsius) for optimal sleep.</li>
-          <li><strong>Avoid caffeine late in the day:</strong> Caffeine has a half-life of about 5-6 hours and can significantly disrupt sleep quality.</li>
-          <li><strong>Wind-down routine:</strong> Develop a relaxing pre-sleep routine such as reading, stretching, or meditation.</li>
-          <li><strong>Limit naps:</strong> If you must nap, keep it under 20-30 minutes and avoid napping after 3 PM.</li>
-        </ul>
+        <h3>How much sleep do adults actually need?</h3>
+        <p>
+          The National Sleep Foundation recommends 7 to 9 hours per night for adults aged 18 to 64, and 7 to 8 hours for those 65 and older. That translates to five or six full 90-minute cycles. Individual needs vary based on genetics, activity level, and overall health, but consistently sleeping fewer than six hours is associated with increased risks of obesity, heart disease, and impaired cognitive performance.
+        </p>
+
+        <h3>Does the 15-minute fall-asleep estimate apply to everyone?</h3>
+        <p>
+          Fifteen minutes is a well-established clinical average for healthy adults, but your actual time may differ. If you regularly fall asleep in under five minutes, it could be a sign of sleep deprivation. If it takes 30 minutes or more, consider adjusting the calculation mentally or improving your sleep hygiene -- keeping the room dark and cool, avoiding screens before bed, and following a consistent wind-down routine all help reduce the time it takes to drift off.
+        </p>
       </section>
 
       <RelatedTools current="/sleep-calculator" />

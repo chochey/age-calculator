@@ -250,42 +250,33 @@ function CalorieCalculator() {
       )}
 
       <section className="info-section">
-        <h2>What Is the Mifflin-St Jeor Equation?</h2>
+        <h2>How to Use the Calorie Calculator</h2>
         <p>
-          The Mifflin-St Jeor equation is considered one of the most accurate formulas for estimating Basal Metabolic Rate (BMR).
-          Developed in 1990, it calculates the number of calories your body needs at complete rest to maintain basic life functions
-          like breathing, circulation, and cell production. The formulas are:
-        </p>
-        <ul>
-          <li><strong>Men:</strong> BMR = (10 x weight in kg) + (6.25 x height in cm) - (5 x age) + 5</li>
-          <li><strong>Women:</strong> BMR = (10 x weight in kg) + (6.25 x height in cm) - (5 x age) - 161</li>
-        </ul>
-
-        <h2>Understanding BMR vs TDEE</h2>
-        <p>
-          <strong>BMR (Basal Metabolic Rate)</strong> is the number of calories your body burns at complete rest. It represents the minimum
-          energy needed to keep your body functioning. <strong>TDEE (Total Daily Energy Expenditure)</strong> is your BMR multiplied by an
-          activity factor that accounts for your daily physical activity. TDEE represents the total number of calories you burn in a day
-          and is the number you should use for planning your diet.
+          Select imperial or metric units, then enter your age, gender, height, and weight. Choose the activity level that best describes your typical week -- from sedentary desk work to intense daily training. Press "Calculate Calories" and the tool returns your BMR (calories at rest), your TDEE (total daily burn), and goal-based calorie targets for losing weight, maintaining weight, or gaining weight. A 500-calorie daily deficit produces roughly one pound of fat loss per week, while a 1,000-calorie deficit doubles that rate.
         </p>
 
-        <h2>Activity Level Multipliers</h2>
-        <ul>
-          <li><strong>Sedentary (x1.2):</strong> Little or no exercise, desk job</li>
-          <li><strong>Lightly Active (x1.375):</strong> Light exercise or sports 1-3 days per week</li>
-          <li><strong>Moderately Active (x1.55):</strong> Moderate exercise or sports 3-5 days per week</li>
-          <li><strong>Very Active (x1.725):</strong> Hard exercise or sports 6-7 days per week</li>
-          <li><strong>Extra Active (x1.9):</strong> Very hard exercise, physical job, or training twice a day</li>
-        </ul>
+        <h2>The Mifflin-St Jeor Formula and a Worked Example</h2>
+        <p>
+          This calculator uses the Mifflin-St Jeor equation, widely regarded as the most accurate BMR formula for modern populations. For men the formula is BMR = (10 x weight in kg) + (6.25 x height in cm) - (5 x age) + 5, and for women it is the same but ending with -161 instead of +5.
+        </p>
+        <p>
+          <strong>Example:</strong> A 28-year-old woman who weighs 65 kg and is 165 cm tall would compute BMR = (10 x 65) + (6.25 x 165) - (5 x 28) - 161 = 650 + 1031.25 - 140 - 161 = <strong>1,380 calories/day</strong>. If she exercises moderately three to five days per week (multiplier 1.55), her TDEE comes to about 2,139 calories. Eating 1,639 calories daily (a 500-calorie deficit) would put her on track to lose about one pound per week.
+        </p>
 
-        <h2>Calorie Counting Tips</h2>
-        <ul>
-          <li>Use a food tracking app to log your meals for more accurate calorie counting</li>
-          <li>Weigh and measure food portions rather than estimating by eye</li>
-          <li>Focus on nutrient-dense foods that keep you full longer (protein, fiber, healthy fats)</li>
-          <li>Adjust your calorie target every 10-15 pounds of weight change, as your TDEE changes with your weight</li>
-          <li>Remember that these are estimates -- individual metabolism can vary by 5-10%</li>
-        </ul>
+        <h3>How many calories should I eat to lose weight?</h3>
+        <p>
+          A safe starting point for most people is to subtract 500 calories from your TDEE, which yields roughly one pound of weight loss per week. Going beyond a 1,000-calorie deficit is generally not recommended without medical supervision. It is also important not to eat below 1,200 calories per day for women or 1,500 for men, as dropping too low can slow your metabolism, cause muscle loss, and lead to nutrient deficiencies.
+        </p>
+
+        <h3>Does my calorie need change as I lose weight?</h3>
+        <p>
+          Yes. As your body weight decreases, your BMR decreases too because there is less tissue to maintain. For every 10 to 15 pounds you lose, recalculate your TDEE and adjust your calorie intake accordingly. Failing to do this is one of the most common reasons weight-loss plateaus occur. Strength training can help by preserving lean muscle mass, which keeps your metabolic rate higher.
+        </p>
+
+        <h3>What is the difference between calories and macronutrients?</h3>
+        <p>
+          Calories measure the energy in food, while macronutrients -- protein, carbohydrates, and fat -- are the sources of those calories. Protein and carbohydrates each provide 4 calories per gram, while fat provides 9 calories per gram. Two diets with the same calorie count can have very different effects on hunger, energy, and body composition depending on their macronutrient balance. For most people, a moderate split of roughly 30 percent protein, 40 percent carbohydrates, and 30 percent fat is a practical starting framework.
+        </p>
       </section>
       <RelatedTools current="/calorie-calculator" />
     </div>

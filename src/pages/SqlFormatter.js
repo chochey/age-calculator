@@ -108,16 +108,21 @@ function SqlFormatter() {
       )}
 
       <section className="info-section">
-        <h2>SQL Formatting Rules</h2>
-        <ul>
-          <li>SQL keywords are uppercased (SELECT, FROM, WHERE, etc.)</li>
-          <li>Major clauses start on new lines</li>
-          <li>AND/OR conditions are indented on separate lines</li>
-          <li>JOINs are placed on their own lines</li>
-        </ul>
+        <h2>How to Use the SQL Formatter</h2>
+        <p>Paste your raw SQL query into the text area and click "Format" to beautify it with proper indentation, uppercased keywords, and each major clause on its own line. If you need a compact version for embedding in application code or logging, click "Minify" instead to collapse all whitespace into a single line. Once the formatted or minified result appears, click "Copy" to send it to your clipboard. The tool processes everything locally in your browser, so your queries are never sent to any server.</p>
 
-        <h2>Supported SQL</h2>
-        <p>Works with standard SQL syntax including SELECT, INSERT, UPDATE, DELETE, CREATE TABLE, and JOIN queries. Supports MySQL, PostgreSQL, SQLite, and SQL Server syntax.</p>
+        <h2>What the Formatter Does</h2>
+        <p>The formatter applies a consistent set of style rules to make SQL easier to read and review. All recognized SQL keywords, including SELECT, FROM, WHERE, JOIN, ORDER BY, GROUP BY, HAVING, UNION, and more, are converted to uppercase. Major clauses begin on new lines so the logical structure of the query is visible at a glance. JOIN clauses (INNER, LEFT, RIGHT, FULL, CROSS) each get their own line, and AND/OR conditions within WHERE or HAVING clauses are indented on separate lines. For example, a messy one-liner like <code>select id,name from users inner join orders on users.id=orders.user_id where status='active' and amount&gt;100 order by name</code> becomes a neatly structured multi-line query that is much easier to debug and share during code reviews.</p>
+        <p>The minifier does the opposite: it strips all extra whitespace and newlines to produce the shortest possible single-line query. This is useful when you need to embed SQL in log output, pass it as a URL parameter, or store it in a configuration file where readability is less important than compactness.</p>
+
+        <h3>Which SQL dialects does this formatter support?</h3>
+        <p>The formatter works with standard SQL syntax shared across MySQL, PostgreSQL, SQLite, SQL Server, and Oracle. It recognizes common statements such as SELECT, INSERT INTO, UPDATE, DELETE FROM, and CREATE TABLE, along with all standard JOIN types and clauses like LIMIT, OFFSET, DISTINCT, CASE/WHEN, UNION, and UNION ALL. Because it targets widely shared keywords, the formatter handles the vast majority of queries regardless of which database engine you use. Dialect-specific extensions (for example, PostgreSQL's RETURNING clause or MySQL's ON DUPLICATE KEY UPDATE) will pass through without being altered.</p>
+
+        <h3>Does formatting change how my SQL query runs?</h3>
+        <p>No. SQL formatting is purely cosmetic. Database engines ignore extra whitespace and line breaks when parsing a query, so a formatted query and its minified equivalent produce identical execution plans and return the same results. Formatting only affects human readability. It is safe to format any query before running it, and you can minify it again afterward without any impact on behavior.</p>
+
+        <h3>Why should I format SQL queries before a code review?</h3>
+        <p>Consistently formatted SQL makes it significantly easier for teammates to spot logic errors, missing join conditions, or incorrect filter clauses. When every clause starts on its own line and keywords are uppercased, reviewers can scan the query structure quickly without mentally parsing a dense block of text. Many engineering teams enforce SQL formatting rules in their style guides for the same reason they enforce code formatting: it reduces cognitive load, speeds up reviews, and lowers the chance of bugs slipping through.</p>
       </section>
       <RelatedTools current="/sql-formatter" />
     </div>

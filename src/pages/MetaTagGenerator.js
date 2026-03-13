@@ -333,44 +333,22 @@ function MetaTagGenerator() {
       <RelatedTools current="/meta-tag-generator" />
 
       <section className="info-section">
-        <h2>About Meta Tags</h2>
-        <p>
-          Meta tags are snippets of HTML code that provide metadata about a web page. They don't appear on the
-          page itself but are read by search engines and social media platforms to understand your content. Properly
-          configured meta tags can significantly improve your SEO rankings and click-through rates.
-        </p>
+        <h2>How to Use the Meta Tag Generator</h2>
+        <p>Fill in the fields in the "Basic Meta Tags" section to define your page title (under 60 characters recommended), meta description (under 160 characters), keywords, author, canonical URL, and robots directives. Then optionally customize the Open Graph section for Facebook and LinkedIn sharing, and the Twitter Card section for how links appear on Twitter/X. As you type, the Google Search Preview panel shows a live mockup of how your page might look in search results, and the generated HTML code updates in real time at the bottom. When you are finished, click "Copy All Tags" to copy the entire block of meta tags and paste them into the <code>&lt;head&gt;</code> of your HTML document.</p>
 
-        <h2>Essential Meta Tags for SEO</h2>
-        <ul>
-          <li><strong>Title tag</strong> — The most important on-page SEO element. Keep it under 60 characters for best display in search results.</li>
-          <li><strong>Meta description</strong> — A summary shown in search results. Keep it under 160 characters to avoid truncation.</li>
-          <li><strong>Canonical URL</strong> — Tells search engines the preferred version of a page to prevent duplicate content issues.</li>
-          <li><strong>Robots meta tag</strong> — Controls whether search engines should index the page and follow its links.</li>
-        </ul>
+        <h2>Why Meta Tags Matter for SEO and Social Sharing</h2>
+        <p>Meta tags are invisible HTML elements in your page's <code>&lt;head&gt;</code> that tell search engines and social platforms what your page is about. The <strong>title tag</strong> is the single most important on-page SEO signal: it appears as the clickable headline in Google results and in browser tabs. The <strong>meta description</strong> does not directly affect rankings but serves as ad copy beneath the title in search results, making it critical for click-through rate. A well-written description can be the difference between a user choosing your link over a competitor's.</p>
+        <p>The <strong>canonical URL</strong> tag prevents duplicate content penalties when the same page is accessible at multiple URLs (for instance, with and without a trailing slash or with query parameters). The <strong>robots meta tag</strong> controls whether search engines should index the page and follow outbound links, giving you fine-grained control over your site's crawlability.</p>
+        <p><strong>Open Graph</strong> tags (og:title, og:description, og:image, og:type) determine how your content previews on Facebook, LinkedIn, WhatsApp, Slack, and other platforms that support the Open Graph protocol. <strong>Twitter Card</strong> tags serve the same purpose on Twitter/X, with the <code>summary_large_image</code> type being the most popular because its large image preview drives higher engagement than the smaller summary card.</p>
 
-        <h2>Open Graph Tags</h2>
-        <p>
-          Open Graph (OG) tags control how your content appears when shared on Facebook, LinkedIn, and other
-          social platforms. The og:title, og:description, and og:image tags are the most important for generating
-          attractive social media previews.
-        </p>
+        <h3>What is the ideal length for a title tag and meta description?</h3>
+        <p>Google typically displays the first 50 to 60 characters of a title tag in search results. Titles longer than 60 characters risk being truncated with an ellipsis, which can cut off important keywords or your brand name. For meta descriptions, Google shows roughly 150 to 160 characters on desktop and slightly less on mobile. Writing within these limits ensures your full message is visible. Place your primary keyword near the beginning of the title, and write the description as a compelling call to action that motivates searchers to click.</p>
 
-        <h2>Twitter Card Tags</h2>
-        <p>
-          Twitter Card tags define how your content is displayed when shared on Twitter/X. The <code>summary_large_image</code> card
-          type is the most popular choice as it displays a large image preview above the title and description,
-          which tends to drive higher engagement.
-        </p>
+        <h3>What is a canonical URL and when should I use one?</h3>
+        <p>A canonical URL tells search engines which version of a page is the "official" one when the same content is accessible through multiple URLs. For example, <code>https://example.com/page</code>, <code>https://example.com/page/</code>, and <code>https://example.com/page?ref=newsletter</code> might all serve identical content. Without a canonical tag, search engines may treat these as separate pages and split ranking signals among them, diluting your SEO. Adding <code>&lt;link rel="canonical" href="https://example.com/page"&gt;</code> consolidates all signals onto the preferred URL.</p>
 
-        <h2>Best Practices</h2>
-        <ul>
-          <li>Write unique titles and descriptions for every page</li>
-          <li>Include your primary keyword near the beginning of the title</li>
-          <li>Make descriptions compelling — they serve as ad copy in search results</li>
-          <li>Use high-quality images (at least 1200x630px) for Open Graph and Twitter Cards</li>
-          <li>Always set a canonical URL to avoid duplicate content penalties</li>
-          <li>Test your tags with Facebook Sharing Debugger and Twitter Card Validator</li>
-        </ul>
+        <h3>Do I need both Open Graph and Twitter Card tags?</h3>
+        <p>If you only set Open Graph tags, Twitter/X will fall back to using them for card previews, so technically you can get by with just OG tags. However, adding dedicated Twitter Card tags gives you finer control over how your content appears specifically on that platform. For instance, you might want a shorter title or a different description optimized for Twitter's audience. The <code>twitter:card</code> meta tag also lets you choose card formats (summary, summary_large_image, player, app) that do not have direct OG equivalents. For best results across all platforms, set both.</p>
       </section>
     </div>
   );

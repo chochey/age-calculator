@@ -257,21 +257,21 @@ function DateCalculator() {
       )}
 
       <section className="info-section">
-        <h2>About the Date Calculator</h2>
-        <p>This date calculator lets you add or subtract any number of days from a given date, or find the exact number of days between two dates. It provides both calendar days and business days (excluding weekends) to help with project planning and scheduling.</p>
+        <h2>How to Use the Date Calculator</h2>
+        <p>This tool offers two modes to handle all your date arithmetic needs. To add or subtract days from a date, select the "Add / Subtract Days" tab, pick a start date, enter the number of days, choose whether to add or subtract, and click "Calculate Date." For example, if you need to know what date falls 90 days after January 15, simply enter that start date, type 90, select "Add," and the calculator instantly returns the result along with the day of the week and business day count. You can also use the quick-select buttons (+7, +30, +90, +365) to jump ahead from today with a single click.</p>
+        <p>To find the gap between two dates, switch to the "Days Between Dates" tab. Enter any two dates and the calculator shows the total calendar days, weeks and remaining days, months and remaining days, business days (Monday through Friday), and weekend days. This is especially useful for tracking project timelines or figuring out how many working days fall within a given period.</p>
 
-        <h2>Business Days vs. Calendar Days</h2>
-        <p>Calendar days include every day between two dates, while business days exclude Saturdays and Sundays. Business day calculations are essential for project deadlines, shipping estimates, and work scheduling. Note that this calculator does not account for public holidays, which vary by country and region.</p>
+        <h2>How the Date Calculator Works</h2>
+        <p>The add/subtract mode starts with your chosen date and shifts it forward or backward by the specified number of calendar days. It then determines the resulting day of the week, the ISO week number within that year, and counts every Monday-through-Friday day in the range to give you a business day total. The days-between mode calculates the absolute difference in milliseconds, converts that to days, and separately walks through each day to tally business days and weekend days. Both modes automatically handle month-length differences and leap years, so results like "February 28 + 3 days" correctly land on March 3 in a non-leap year or March 2 in a leap year.</p>
 
-        <h2>Common Use Cases</h2>
-        <ul>
-          <li>Find a deadline date by adding days to a start date</li>
-          <li>Calculate delivery dates for shipping and logistics</li>
-          <li>Determine due dates for projects and assignments</li>
-          <li>Count working days for payroll and scheduling</li>
-          <li>Plan events by finding dates a specific number of days in the future</li>
-          <li>Calculate contract expiration or renewal dates</li>
-        </ul>
+        <h3>Can I calculate business days between two dates?</h3>
+        <p>Yes. When you use the "Days Between Dates" mode, the results include a dedicated business days count that excludes Saturdays and Sundays, along with a separate weekend day count. Keep in mind that public holidays are not factored in because they vary by country and region, so you may need to subtract those manually for precise payroll or legal deadline calculations.</p>
+
+        <h3>Does the calculator account for leap years?</h3>
+        <p>Absolutely. The calculator relies on JavaScript's native Date object, which correctly handles leap years. Adding 365 days from March 1, 2024 lands on March 1, 2025, while adding 366 days lands on March 2, 2025, because 2024 is a leap year with an extra February 29.</p>
+
+        <h3>What is the difference between calendar days and business days?</h3>
+        <p>Calendar days include every single day in a range, weekends and holidays alike. Business days include only Monday through Friday, which is the standard workweek in most countries. For example, a span of 14 calendar days typically contains 10 business days. Business day counts are critical for shipping estimates, legal filing deadlines, payroll periods, and project scheduling where work only happens on weekdays.</p>
       </section>
       <RelatedTools current="/date-calculator" />
     </div>

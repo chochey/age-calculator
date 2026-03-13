@@ -87,16 +87,21 @@ function Stopwatch() {
       )}
 
       <section className="info-section">
-        <h2>How to Use</h2>
-        <p>Click Start to begin timing. Use the Lap button to record split times while the stopwatch keeps running. Stop to pause, Resume to continue, or Reset to start over.</p>
+        <h2>How to Use the Online Stopwatch</h2>
+        <p>Click the green "Start" button to begin timing. The display updates in real time, showing minutes, seconds, and centiseconds (hundredths of a second). While the stopwatch is running, press "Lap" to record a split time without stopping the clock -- the lap list appears below with each lap's split duration and cumulative total. Press "Stop" to pause the timer at any point; the button then changes to "Resume" so you can continue from exactly where you left off. When you are finished, press "Reset" to clear the elapsed time and all recorded laps.</p>
+        <p>As an example, a runner doing 400-meter repeats on a track could start the stopwatch at the beginning of the first interval, tap "Lap" each time they cross the finish line, and review all split times afterward. The tool highlights the fastest lap in green and the slowest lap in red, making it easy to identify your best and worst efforts at a glance.</p>
 
-        <h2>Features</h2>
-        <ul>
-          <li>Centisecond (1/100s) precision</li>
-          <li>Unlimited lap recording with split times</li>
-          <li>Best lap highlighted in green, worst in red</li>
-          <li>Pause and resume without losing time</li>
-        </ul>
+        <h2>How the Stopwatch Works</h2>
+        <p>The stopwatch records the starting timestamp using JavaScript's Date.now() and runs a high-frequency interval that calculates elapsed milliseconds by subtracting the start time from the current time. This approach ensures accuracy even if the browser briefly pauses the interval, because the elapsed time is always derived from real clock differences rather than accumulated tick counts. When you pause and resume, the tool adjusts the reference timestamp so that paused time is excluded. Lap splits are calculated by subtracting the cumulative time of all previous laps from the current elapsed total.</p>
+
+        <h3>How accurate is this online stopwatch?</h3>
+        <p>The stopwatch displays centisecond precision (1/100th of a second) and uses timestamp-based calculation rather than simple interval counting. This makes it accurate to within a few milliseconds on modern browsers and devices. While it is not a replacement for professional sports timing equipment with hardware triggers, it is more than sufficient for workouts, cooking, classroom activities, and everyday timing tasks.</p>
+
+        <h3>Can I record multiple laps and compare them?</h3>
+        <p>Yes. You can record as many laps as you need by pressing the "Lap" button while the stopwatch is running. Each lap entry shows both the individual split time (the duration of that single lap) and the cumulative total time. When you have recorded at least two laps, the fastest split is highlighted in green and the slowest in red, so you can instantly see which interval was your strongest and which needs improvement.</p>
+
+        <h3>What happens if I accidentally close the browser tab?</h3>
+        <p>Because the stopwatch runs entirely within your browser session, closing the tab or navigating away will lose the current timer and lap data. If you need to preserve your results, take a screenshot or manually note your times before leaving the page. For timed sessions that must survive page reloads, consider using the Countdown Timer or Pomodoro Timer tools instead, which are designed for longer duration tracking.</p>
       </section>
       <RelatedTools current="/stopwatch" />
     </div>

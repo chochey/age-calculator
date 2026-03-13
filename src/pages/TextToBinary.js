@@ -200,27 +200,27 @@ function TextToBinary() {
 
       <section className="info-section">
         <h2>How to Use the Text to Binary Converter</h2>
-        <p>Select "Text to Binary" mode to convert any text string into its binary representation, along with hexadecimal, octal, and decimal (ASCII) formats. Select "Binary to Text" mode to convert space-separated binary bytes back into readable text.</p>
+        <p>Choose your conversion direction using the toggle at the top. In "Text to Binary" mode, type or paste any text into the input area and click "Convert to Binary." The tool produces the binary representation along with hexadecimal, octal, and decimal (ASCII) equivalents for every character. For example, entering "Hi" produces binary 01001000 01101001, hex 48 69, octal 110 151, and decimal 72 105. In "Binary to Text" mode, paste a series of space-separated 8-bit binary bytes (e.g., 01001000 01100101 01101100 01101100 01101111) and click "Convert to Text" to decode them back into readable characters -- in this case, "Hello." Click "Copy" next to any output row to copy that specific format to your clipboard.</p>
 
-        <h2>What is Binary?</h2>
-        <p>Binary is a base-2 numeral system that uses only two digits: 0 and 1. Computers store and process all data in binary form. Each character in a text string is represented by a sequence of 8 binary digits (bits), known as a byte. For example, the letter "A" is represented as 01000001 in binary (ASCII value 65).</p>
+        <h2>How Binary Encoding Works</h2>
+        <p>Every character you type on a keyboard is stored internally as a number defined by the ASCII (American Standard Code for Information Interchange) table. The letter "A" has an ASCII value of 65, which is 01000001 in binary. The letter "a" is 97, or 01100001. A space character is 32 (00100000), and the digit "0" is 48 (00110000). This converter takes each character in your input string, looks up its ASCII code, and converts that code into the selected number base. Binary uses base-2 (digits 0 and 1), hexadecimal uses base-16 (digits 0-9 and A-F), octal uses base-8 (digits 0-7), and decimal uses the standard base-10 number system.</p>
 
-        <h2>Number Representations</h2>
+        <h2>Number System Reference</h2>
         <ul>
-          <li><strong>Binary (Base-2)</strong> — Uses digits 0 and 1. Each ASCII character is 8 bits (1 byte).</li>
-          <li><strong>Hexadecimal (Base-16)</strong> — Uses digits 0-9 and letters A-F. Compact representation of binary data, commonly used in programming and color codes.</li>
-          <li><strong>Octal (Base-8)</strong> — Uses digits 0-7. Historically used in computing, still seen in Unix file permissions.</li>
-          <li><strong>Decimal (Base-10)</strong> — Standard number system. Shows the ASCII code value for each character.</li>
+          <li><strong>Binary (Base-2)</strong> -- The fundamental language of computers. Each character occupies 8 bits (1 byte). The word "Cat" becomes 01000011 01100001 01110100.</li>
+          <li><strong>Hexadecimal (Base-16)</strong> -- A compact representation where each byte is expressed as two hex digits. "Cat" becomes 43 61 74. Hex is widely used in programming, memory addresses, and HTML color codes.</li>
+          <li><strong>Octal (Base-8)</strong> -- Each byte is expressed using digits 0-7. "Cat" becomes 103 141 164. Octal was historically important in early computing and is still used in Unix file permission notation (e.g., chmod 755).</li>
+          <li><strong>Decimal (Base-10)</strong> -- The standard number system used in everyday life. Shows the raw ASCII code for each character: "Cat" becomes 67 97 116.</li>
         </ul>
 
-        <h2>Common Use Cases</h2>
-        <ul>
-          <li>Understanding how text is stored in computer memory</li>
-          <li>Debugging data encoding issues in software</li>
-          <li>Learning about number systems and ASCII encoding</li>
-          <li>Converting data for low-level programming tasks</li>
-          <li>Educational exercises in computer science</li>
-        </ul>
+        <h3>What characters does this converter support?</h3>
+        <p>This tool converts standard ASCII characters (codes 0-127), which include all English letters (uppercase and lowercase), digits 0-9, punctuation marks, and common symbols. Extended characters beyond basic ASCII may not convert correctly since the tool processes single-byte character codes using JavaScript's charCodeAt method.</p>
+
+        <h3>How do I convert binary back to text?</h3>
+        <p>Switch to "Binary to Text" mode using the toggle button. Paste your binary data as space-separated 8-bit groups (for example, 01001000 01100101 01101100 01101100 01101111). Click "Convert to Text" and the tool will parse each byte, convert it from binary to its decimal ASCII value, and map it to the corresponding character. The decoded text appears in the output area along with hex, octal, and decimal equivalents.</p>
+
+        <h3>Why are there spaces between the binary bytes in the output?</h3>
+        <p>Spaces are used to separate individual bytes for readability. Without spaces, a long binary string like 0100100001101001 would be very difficult to parse visually. Each group of 8 digits represents one character. When converting binary back to text, the tool uses these spaces to identify where one character ends and the next begins.</p>
       </section>
       <RelatedTools current="/text-to-binary" />
     </div>

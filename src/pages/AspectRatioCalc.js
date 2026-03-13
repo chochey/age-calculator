@@ -112,16 +112,29 @@ function AspectRatioCalc() {
       </div>
 
       <section className="info-section">
-        <h2>What is Aspect Ratio?</h2>
-        <p>Aspect ratio is the proportional relationship between width and height. A 16:9 ratio means for every 16 units of width, there are 9 units of height. It's essential for video production, photography, web design, and screen resolution specifications.</p>
+        <h2>How to Use This Aspect Ratio Calculator</h2>
+        <p>Enter the width and height of your image, video, or screen in the input fields at the top. The calculator instantly displays the simplified aspect ratio, the decimal ratio, and the total pixel count. To resize your dimensions while preserving the same proportions, choose whether you want to enter a new width or new height, then type your desired value -- the calculator automatically computes the other dimension. You can also click any of the common aspect ratio presets below to quickly apply standard ratios like 16:9 or 4:3 to your current width.</p>
 
-        <h2>Common Uses</h2>
+        <h2>Understanding the Calculation Method</h2>
+        <p>The aspect ratio is found by dividing both the width and height by their greatest common divisor (GCD). For example, a resolution of 1920 x 1080 has a GCD of 120, so dividing both values gives 16:9. When resizing, the calculator maintains the ratio by using the formula: <strong>new height = new width x (original height / original width)</strong>. So if you have a 16:9 image and enter a new width of 1280, the new height would be 1280 x (9/16) = 720, giving you a perfect 1280 x 720 resolution.</p>
+
+        <h2>Practical Applications</h2>
         <ul>
-          <li><strong>16:9</strong> — YouTube, HDTV, most monitors</li>
-          <li><strong>9:16</strong> — TikTok, Instagram Stories, Reels</li>
-          <li><strong>1:1</strong> — Instagram posts, profile pictures</li>
-          <li><strong>4:3</strong> — iPad, classic presentations</li>
+          <li>Resizing video footage for different platforms -- converting a 16:9 YouTube video to 9:16 for TikTok or Instagram Reels</li>
+          <li>Preparing images for print at specific dimensions while maintaining their original proportions</li>
+          <li>Designing responsive website layouts where elements must scale proportionally across screen sizes</li>
+          <li>Choosing the right monitor or TV by understanding how aspect ratio affects viewing experience for gaming, movies, or productivity</li>
         </ul>
+
+        <h2>Frequently Asked Questions</h2>
+        <h3>What aspect ratio should I use for YouTube videos?</h3>
+        <p>YouTube's standard player uses 16:9, so resolutions like 1920x1080 (1080p), 2560x1440 (1440p), and 3840x2160 (4K) are ideal. If you upload a video in a different ratio, YouTube will add black bars (letterboxing or pillarboxing) to fit the player. For YouTube Shorts, use 9:16 vertical video at 1080x1920.</p>
+
+        <h3>How do I find the aspect ratio of my monitor?</h3>
+        <p>Enter your monitor's native resolution into the width and height fields. Common results include 16:9 for standard widescreen monitors (1920x1080, 2560x1440), 16:10 for productivity monitors (1920x1200, 2560x1600), and 21:9 for ultrawide displays (2560x1080, 3440x1440). The calculator simplifies any resolution to its base ratio automatically.</p>
+
+        <h3>What is the difference between aspect ratio and resolution?</h3>
+        <p>Resolution refers to the exact number of pixels in width and height (such as 1920x1080), while aspect ratio is the simplified proportional relationship between those dimensions (16:9). Two different resolutions can share the same aspect ratio -- for instance, 1280x720, 1920x1080, and 3840x2160 are all 16:9. Resolution determines image quality and sharpness, while aspect ratio determines the shape of the frame.</p>
       </section>
       <RelatedTools current="/aspect-ratio-calculator" />
     </div>

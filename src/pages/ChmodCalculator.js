@@ -98,16 +98,22 @@ function ChmodCalculator() {
       </div>
 
       <section className="info-section">
-        <h2>Understanding Chmod</h2>
-        <p>Linux file permissions control who can read, write, and execute files. Each file has three permission groups: owner, group, and others. The chmod command sets these permissions using either numeric (octal) or symbolic notation.</p>
+        <h2>How to Use the Chmod Calculator</h2>
+        <p>Start by toggling the checkboxes for read, write, and execute under each role (owner, group, and others). The numeric octal code and the symbolic string update instantly as you click. If you already have a three-digit permission number, type it into the input field below the grid and click "Apply" to see the corresponding checkboxes light up. Once you have the permissions you need, copy the ready-made <code>chmod</code> command displayed at the bottom and paste it into your terminal.</p>
 
-        <h2>Common Permissions</h2>
-        <ul>
-          <li><strong>755</strong> (rwxr-xr-x) — Owner: full, others: read & execute. Standard for directories and scripts.</li>
-          <li><strong>644</strong> (rw-r--r--) — Owner: read & write, others: read only. Standard for files.</li>
-          <li><strong>700</strong> (rwx------) — Owner only, no access for group or others. Private files.</li>
-          <li><strong>777</strong> (rwxrwxrwx) — Full access for everyone. Avoid on production servers.</li>
-        </ul>
+        <h2>How Linux File Permissions Work</h2>
+        <p>Every file and directory on a Linux or Unix system carries a set of permission bits that determine who can interact with it and how. Permissions are divided into three roles: the <strong>owner</strong> (the user who created the file), the <strong>group</strong> (users who share a group assignment), and <strong>others</strong> (everyone else). Each role can be granted three abilities: <strong>read</strong> (view the contents or list a directory), <strong>write</strong> (modify or delete), and <strong>execute</strong> (run a file as a program or enter a directory).</p>
+        <p>In numeric notation, each ability has a value: read is 4, write is 2, and execute is 1. The values are summed per role to produce a single octal digit. For example, read plus write equals 6, and read plus execute equals 5. A full permission set is expressed as three digits, one for each role. The permission <code>755</code> translates to <code>rwxr-xr-x</code>, giving the owner full access while the group and others can read and execute but not modify the file.</p>
+        <p>Common configurations include <code>644</code> for regular files (owner reads and writes, everyone else only reads), <code>755</code> for executable scripts and directories, <code>700</code> for private files that only the owner should access, and <code>600</code> for sensitive files like SSH private keys. Setting <code>777</code> grants full access to everyone and should be avoided in production environments because it introduces serious security risks.</p>
+
+        <h3>What is the difference between numeric and symbolic chmod notation?</h3>
+        <p>Numeric (octal) notation uses three digits such as <code>chmod 644 file.txt</code>, where each digit represents the combined permissions for owner, group, and others. Symbolic notation uses letters and operators, like <code>chmod u+x script.sh</code>, where <code>u</code> stands for user (owner), <code>g</code> for group, <code>o</code> for others, and <code>a</code> for all. The <code>+</code> operator adds a permission, <code>-</code> removes one, and <code>=</code> sets it exactly. Numeric notation sets all permissions at once, while symbolic notation is useful for adding or removing a single permission without affecting the rest.</p>
+
+        <h3>Why should I avoid using chmod 777?</h3>
+        <p>Setting permissions to <code>777</code> means every user on the system can read, write, and execute the file. On a shared or public-facing server this is a major security vulnerability because any process or user, including compromised ones, can modify or replace the file. Web servers configured with <code>777</code> on application files are a common target for attackers who inject malicious code. Instead, grant only the minimum permissions necessary, typically <code>755</code> for directories and scripts and <code>644</code> for static files.</p>
+
+        <h3>How do file permissions apply to directories in Linux?</h3>
+        <p>For directories, the three permission bits have slightly different meanings than for regular files. Read permission allows listing the contents of the directory. Write permission allows creating, renaming, or deleting files within it. Execute permission allows entering the directory with <code>cd</code> and accessing files inside it. A directory set to <code>755</code> lets anyone browse and enter it, but only the owner can add or remove files. Without execute permission on a directory, users cannot access any files inside it even if those files have open permissions.</p>
       </section>
       <RelatedTools current="/chmod-calculator" />
     </div>

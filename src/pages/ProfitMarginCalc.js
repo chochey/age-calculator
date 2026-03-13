@@ -196,41 +196,58 @@ function ProfitMarginCalc() {
       </section>
 
       <section className="info-section">
-        <h2>Margin vs Markup</h2>
+        <h2>How to Use This Profit Margin Calculator</h2>
         <p>
-          Profit margin and markup are both ways to express the relationship between cost and profit, but
-          they use different bases. <strong>Profit margin</strong> is the percentage of <em>revenue</em> that
-          is profit, while <strong>markup</strong> is the percentage of <em>cost</em> that is added on top as
-          profit. For example, if you buy a product for $50 and sell it for $80, the profit is $30. The
-          margin is 37.5% (30/80) and the markup is 60% (30/50). Margin is always lower than markup for
-          the same transaction.
+          Choose one of three calculation modes at the top: Calculate Margin (from cost and revenue), Calculate Revenue
+          (from cost and desired margin), or Calculate Cost (from revenue and margin). Enter the values you know and
+          click "Calculate." The tool instantly displays your profit in dollars, profit margin percentage, markup
+          percentage, cost, and revenue. If you are setting prices for a new product, use the Revenue mode to find
+          exactly what to charge. If you are evaluating a supplier quote, use the Margin mode to see your profitability.
         </p>
 
-        <h2>Why Margin Matters</h2>
+        <h2>The Profit Margin Formula with a Worked Example</h2>
         <p>
-          Profit margin is one of the most important metrics for any business. It tells you how much of
-          every dollar in revenue actually becomes profit. A higher margin means more efficient operations
-          and greater pricing power. Investors, lenders, and analysts all look at profit margins to
-          evaluate business health.
+          The key formulas are: <strong>Profit = Revenue - Cost</strong>,
+          <strong> Profit Margin = (Profit / Revenue) x 100</strong>, and
+          <strong> Markup = (Profit / Cost) x 100</strong>. For example, suppose you purchase inventory for $42.00
+          per unit and sell it for $70.00. Your profit is $70.00 - $42.00 = <strong>$28.00</strong>. The profit margin
+          is ($28.00 / $70.00) x 100 = <strong>40.00%</strong>. The markup is ($28.00 / $42.00) x 100 = <strong>66.67%</strong>.
+          Notice that margin and markup describe the same dollar profit but expressed as a percentage of different
+          bases -- revenue for margin, cost for markup. Margin is always the smaller number of the two.
         </p>
 
-        <h2>Common Margin Benchmarks</h2>
+        <h2>Common Industry Margin Benchmarks</h2>
         <ul>
-          <li><strong>Retail:</strong> 2-5% net margin (20-50% gross margin on products)</li>
+          <li><strong>Retail:</strong> 2-5% net margin, 20-50% gross margin on individual products</li>
           <li><strong>Restaurants:</strong> 3-9% net margin</li>
-          <li><strong>Software / SaaS:</strong> 20-40% net margin (70-90% gross margin)</li>
+          <li><strong>Software / SaaS:</strong> 70-90% gross margin, 20-40% net margin</li>
           <li><strong>Manufacturing:</strong> 5-10% net margin</li>
           <li><strong>Consulting / Services:</strong> 15-25% net margin</li>
         </ul>
 
-        <h2>Quick Margin-to-Markup Conversions</h2>
-        <ul>
-          <li><strong>10% margin</strong> = 11.1% markup</li>
-          <li><strong>20% margin</strong> = 25% markup</li>
-          <li><strong>25% margin</strong> = 33.3% markup</li>
-          <li><strong>33.3% margin</strong> = 50% markup</li>
-          <li><strong>50% margin</strong> = 100% markup</li>
-        </ul>
+        <h3>What is the difference between profit margin and markup?</h3>
+        <p>
+          Profit margin expresses profit as a share of revenue (the selling price), while markup expresses profit as a
+          share of cost (what you paid). They always refer to the same dollar amount of profit but yield different
+          percentages. A 50% margin means half of your revenue is profit, while a 50% markup means you added half the
+          cost on top. Converting between them: Margin = Markup / (1 + Markup), and Markup = Margin / (1 - Margin).
+        </p>
+
+        <h3>What is a good profit margin for a small business?</h3>
+        <p>
+          It depends heavily on the industry. A net profit margin of 10% is generally considered healthy for most small
+          businesses, while 20% or more is considered strong. Service-based businesses typically enjoy higher margins
+          than product-based ones because they carry less inventory and lower cost of goods sold. The most important
+          thing is to track your margin consistently over time and compare it to industry averages.
+        </p>
+
+        <h3>How can I improve my profit margin?</h3>
+        <p>
+          There are two levers: increase revenue or decrease costs. On the revenue side, consider raising prices,
+          upselling complementary products, or targeting higher-value customers. On the cost side, negotiate better
+          supplier terms, reduce waste, streamline operations, or switch to more cost-effective materials. Even small
+          improvements in margin compound significantly as sales volume grows.
+        </p>
       </section>
 
       <RelatedTools current="/profit-margin-calculator" />

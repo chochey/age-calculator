@@ -245,54 +245,55 @@ function UnitPriceCalculator() {
       )}
 
       <section className="info-section">
-        <h2>What Is Unit Pricing?</h2>
+        <h2>How to Use This Unit Price Calculator</h2>
         <p>
-          Unit pricing is the cost of a product expressed per standard unit of measurement (such as
-          per ounce, per pound, or per liter). It allows you to compare products of different sizes
-          and brands on an equal basis, so you can see which option truly gives you the most value
-          for your money.
+          Enter the name, total price, quantity, and unit of measurement for at least two products you want to compare.
+          You can add up to four products at once. Click "Calculate" and the tool instantly computes the cost per unit
+          for each item, highlights the best deal in green, and shows exactly how much extra you would spend by choosing
+          a more expensive option. This is perfect for comparing different sizes of the same product or different brands
+          on the grocery shelf.
         </p>
 
-        <h2>How Stores Use Unit Pricing</h2>
+        <h2>The Unit Price Formula with a Worked Example</h2>
         <p>
-          Many grocery stores are required by law to display unit prices on shelf labels. However,
-          these labels can be easy to miss, may use different units for similar products, or may not
-          be displayed at all for sale items. A unit price calculator helps you quickly compare
-          options without hunting for small print or doing mental math in the aisle.
+          The formula is: <strong>Unit Price = Total Price / Quantity</strong>. Suppose you are choosing between two
+          bottles of olive oil. Brand A costs $8.49 for 16.9 oz, and Brand B costs $12.99 for 33.8 oz. Brand A's unit
+          price is $8.49 / 16.9 = <strong>$0.5024 per oz</strong>. Brand B's unit price is $12.99 / 33.8 =
+          <strong> $0.3843 per oz</strong>. Brand B costs $0.1181 less per ounce, saving you about <strong>$1.99</strong>
+          over the equivalent 16.9 oz that Brand A contains. Even though Brand B has a higher sticker price, it
+          delivers significantly more value per unit.
         </p>
 
-        <h2>Tips for Smart Shopping</h2>
+        <h2>Tips for Smart Shopping with Unit Prices</h2>
         <ul>
-          <li>
-            <strong>Bigger is not always cheaper.</strong> While bulk sizes often have a lower unit
-            price, this is not always the case. Stores sometimes price medium-sized packages more
-            competitively, so always check the unit price.
-          </li>
-          <li>
-            <strong>Compare across brands.</strong> Store brands and generics frequently have the
-            same ingredients as name brands at a significantly lower unit price.
-          </li>
-          <li>
-            <strong>Watch for sale traps.</strong> A product on "sale" might still have a higher
-            unit price than a competing product at its regular price. Use unit pricing to verify
-            real savings.
-          </li>
-          <li>
-            <strong>Consider shelf life.</strong> A lower unit price only saves money if you can
-            use the product before it expires. Buying in bulk is wasteful if food goes bad.
-          </li>
-          <li>
-            <strong>Use consistent units.</strong> Make sure you are comparing the same unit type
-            (weight vs. volume vs. count) for an accurate comparison.
-          </li>
+          <li><strong>Bigger is not always cheaper</strong> -- stores sometimes price medium packages more competitively than bulk sizes.</li>
+          <li><strong>Compare across brands</strong> -- store brands often match name-brand quality at a much lower unit price.</li>
+          <li><strong>Watch for sale traps</strong> -- a "sale" item may still cost more per unit than a competitor at regular price.</li>
+          <li><strong>Consider shelf life</strong> -- a lower unit price only saves money if you use the product before it expires.</li>
         </ul>
 
-        <h2>How to Calculate Unit Price</h2>
+        <h3>Why do stores display unit prices differently for similar products?</h3>
         <p>
-          The formula is simple: <strong>Unit Price = Total Price / Quantity</strong>. For example,
-          if a 32 oz bottle of juice costs $3.99, the unit price is $3.99 / 32 = $0.1247 per oz.
-          Compare this to a 64 oz bottle at $6.49, which has a unit price of $6.49 / 64 = $0.1014
-          per oz -- the larger bottle is the better deal in this case.
+          Stores sometimes list one product's unit price per ounce and a comparable product's price per pound or per
+          count, making direct comparison difficult. This can be accidental due to how the manufacturer reports package
+          size, or it can be a deliberate merchandising choice. A unit price calculator eliminates this problem by
+          letting you compare any products using the same unit of measurement side by side.
+        </p>
+
+        <h3>Is the bulk size always the best value?</h3>
+        <p>
+          Not always. While warehouse clubs and large packages often offer lower unit prices, there are frequent
+          exceptions. Grocery stores sometimes run promotions on smaller sizes that temporarily beat the bulk price.
+          Additionally, buying more than you can use before the expiration date means the excess goes to waste, which
+          effectively increases your real cost per usable unit.
+        </p>
+
+        <h3>Can I compare products with different units (e.g., ounces vs. liters)?</h3>
+        <p>
+          For an accurate comparison, you should use the same unit of measurement for all products. If one item is sold
+          by weight and another by volume, you would need to convert them to a common unit first. For reference, 1 liter
+          is approximately 33.81 fluid ounces, and 1 pound equals 16 ounces. Enter the converted quantities into this
+          calculator using matching units to get a reliable comparison.
         </p>
       </section>
 

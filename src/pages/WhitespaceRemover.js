@@ -145,26 +145,29 @@ function WhitespaceRemover() {
       <RelatedTools current="/whitespace-remover" />
 
       <section className="info-section">
-        <h2>About This Tool</h2>
-        <p>The Whitespace Remover cleans up messy text by stripping unnecessary spaces, blank lines, and other whitespace characters. It processes everything in real time directly in your browser -- nothing is sent to a server.</p>
+        <h2>How to Use the Whitespace Remover</h2>
+        <p>Paste or type your text into the input area at the top of the page. The tool processes your text in real time as you type, with the cleaned result appearing in the output area below. Use the checkboxes to control exactly which types of whitespace are removed. "Remove leading/trailing whitespace" strips spaces from the very start and end of your entire text. "Remove extra spaces" collapses multiple consecutive spaces into a single one. "Remove blank lines" eliminates empty lines. "Remove all line breaks" merges everything into a single continuous block. "Trim each line" strips whitespace from the beginning and end of every individual line. You can enable multiple options at once. The character count display shows the original length, cleaned length, and exact number of characters removed. Click "Copy" to copy the cleaned output to your clipboard.</p>
 
-        <h2>Available Options</h2>
+        <h2>How the Whitespace Cleaning Works</h2>
+        <p>The tool applies your selected cleaning operations in a specific order to produce predictable results. First, if "Trim each line" is enabled, every line is individually stripped of leading and trailing spaces and tabs. Next, the overall text edges are trimmed if that option is active. Then, extra spaces within lines are collapsed using a regular expression that matches consecutive non-newline whitespace and replaces it with a single space. Blank line removal targets sequences of two or more newline characters (with optional whitespace between them) and reduces them to a single newline. Finally, line break removal replaces all newlines with spaces and cleans up any resulting double spaces. All processing happens locally in your browser -- no data is ever sent to a server.</p>
+
+        <h2>Cleaning Options Explained</h2>
         <ul>
-          <li><strong>Remove leading/trailing whitespace</strong> -- Strips spaces and tabs from the very beginning and end of the entire text.</li>
-          <li><strong>Remove extra spaces</strong> -- Collapses runs of multiple spaces into a single space, while preserving line breaks.</li>
-          <li><strong>Remove blank lines</strong> -- Eliminates empty lines that contain only whitespace.</li>
-          <li><strong>Remove all line breaks</strong> -- Merges every line into one continuous block of text.</li>
-          <li><strong>Trim each line</strong> -- Removes leading and trailing whitespace from every individual line.</li>
+          <li><strong>Remove leading/trailing whitespace</strong> -- Equivalent to the "trim" function in most programming languages. Strips all spaces, tabs, and newlines from the very beginning and end of the entire text block.</li>
+          <li><strong>Remove extra spaces</strong> -- Collapses runs of two or more consecutive spaces (or tabs) into a single space character, while leaving line breaks intact. For example, "hello&nbsp;&nbsp;&nbsp;world" becomes "hello world".</li>
+          <li><strong>Remove blank lines</strong> -- Detects lines that are completely empty or contain only whitespace and removes them. A paragraph with three blank lines between sentences is reduced to have just one line break between them.</li>
+          <li><strong>Remove all line breaks</strong> -- Joins every line into one unbroken paragraph. Useful when text copied from a PDF or email has unwanted hard line breaks mid-sentence.</li>
+          <li><strong>Trim each line</strong> -- Processes every line independently, removing any leading indentation and trailing spaces. Particularly useful for cleaning up code snippets or log file entries with inconsistent indentation.</li>
         </ul>
 
-        <h2>Common Uses</h2>
-        <ul>
-          <li>Cleaning up text copied from PDFs, emails, or web pages</li>
-          <li>Normalizing code indentation and formatting</li>
-          <li>Preparing text for data import or processing</li>
-          <li>Removing accidental double spaces from documents</li>
-          <li>Stripping trailing whitespace from source code</li>
-        </ul>
+        <h3>Why does text copied from PDFs have so much extra whitespace?</h3>
+        <p>PDF files store text in positioned blocks rather than as a continuous flow. When you copy text from a PDF, the operating system reconstructs the reading order and often inserts extra spaces, line breaks, and blank lines where the original layout had column breaks or page boundaries. This tool quickly normalizes that copied text back into clean, readable content.</p>
+
+        <h3>Will this tool change the content of my text?</h3>
+        <p>No. The whitespace remover only modifies space characters, tab characters, and line breaks. It never alters letters, numbers, punctuation, or any other visible content. Your words and sentences remain exactly as written -- only the invisible formatting between them is cleaned up.</p>
+
+        <h3>Can I use this tool to clean up source code?</h3>
+        <p>Yes, with some care. The "Trim each line" option is excellent for stripping trailing whitespace from code, which is a common linting rule in many projects. However, be cautious with "Remove extra spaces" on code that relies on specific indentation (like Python) or alignment. For most other languages, using "Trim each line" combined with "Remove blank lines" produces clean, consistent code formatting.</p>
       </section>
     </div>
   );

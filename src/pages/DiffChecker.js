@@ -101,16 +101,21 @@ function DiffChecker() {
       )}
 
       <section className="info-section">
-        <h2>How the Diff Checker Works</h2>
-        <p>Paste two versions of text and click Compare. The tool highlights lines that were added (green), removed (red), or unchanged. It works great for comparing code, configuration files, or any text content.</p>
+        <h2>How to Use the Diff Checker</h2>
+        <p>Paste the original version of your text into the left panel labeled "Original" and the modified version into the right panel labeled "Modified." Click the "Compare" button and the tool performs a line-by-line comparison, displaying the results below with color-coded highlighting. Lines that exist only in the modified text appear in green with a <code>+</code> prefix, lines removed from the original appear in red with a <code>-</code> prefix, and unchanged lines are shown without highlighting. A summary bar at the top reports the total counts of added, removed, and unchanged lines so you can gauge the scope of the changes at a glance.</p>
 
-        <h2>Use Cases</h2>
-        <ul>
-          <li><strong>Code reviews</strong> — compare two versions of a file</li>
-          <li><strong>Document editing</strong> — see what changed between drafts</li>
-          <li><strong>Config files</strong> — spot differences in server configs</li>
-          <li><strong>Text comparison</strong> — find changes in any two text blocks</li>
-        </ul>
+        <h2>How Line-by-Line Diffing Works</h2>
+        <p>This diff checker splits both inputs on newline characters and walks through the two arrays in parallel, comparing each line at the same index. When lines match, they are marked as equal. When they differ, the original line is flagged as removed and the modified line is flagged as added. This approach is fast and intuitive for detecting edits in structured content where line positions remain roughly stable, such as source code, configuration files, CSV data, or prose with one sentence per line.</p>
+        <p>For example, if line 5 of your original file reads <code>color: blue;</code> and you changed it to <code>color: red;</code> in the modified version, the diff output will show a red line removing <code>color: blue;</code> followed by a green line adding <code>color: red;</code>. If you inserted a completely new line, every subsequent line shifts down by one position, making the insertion and all following changes visible.</p>
+
+        <h3>What types of content can I compare with this tool?</h3>
+        <p>You can compare any plain-text content. Common uses include comparing two versions of source code (JavaScript, Python, HTML, CSS, SQL, and more), reviewing changes between configuration files (YAML, JSON, TOML, .env files), checking differences between database migration scripts, proofreading document drafts side by side, and verifying that a search-and-replace operation changed only what you intended. The tool treats input as raw text, so it works regardless of the language or format.</p>
+
+        <h3>Does this diff checker send my data to a server?</h3>
+        <p>No. The entire comparison runs locally in your browser using client-side JavaScript. Your text is never transmitted over the network, which makes it safe to compare sensitive content like private API keys in configuration files, proprietary source code, internal documentation, or personal notes. Once you close the page, the data is gone.</p>
+
+        <h3>How is this different from git diff?</h3>
+        <p>The <code>git diff</code> command uses a longest-common-subsequence algorithm (typically the Myers algorithm) to compute the minimal edit distance between two files, which produces highly optimized diffs. This browser-based tool uses a simpler positional comparison that is faster to run and easier to read for quick checks. It is ideal when you do not have a Git repository set up or when you want to compare two arbitrary text snippets, such as API responses, log output, or pasted content, without touching the command line.</p>
       </section>
       <RelatedTools current="/diff-checker" />
     </div>

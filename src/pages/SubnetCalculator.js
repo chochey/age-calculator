@@ -281,29 +281,22 @@ function SubnetCalculator() {
       <RelatedTools current="/subnet-calculator" />
 
       <div className="info-section">
-        <h2>About Subnetting</h2>
-        <p>Subnetting is the practice of dividing a network into two or more smaller networks called subnets. It improves network performance, security, and simplifies management by reducing broadcast domains and organizing devices into logical groups.</p>
+        <h2>How to Use the Subnet Calculator</h2>
+        <p>Enter any valid IPv4 address in the IP Address field and select a CIDR prefix length from the dropdown. Click "Calculate" and the tool instantly returns the network address, broadcast address, first and last usable host, subnet mask in both dotted-decimal and binary notation, the wildcard mask, and total versus usable host counts. You can also click any row in the Quick CIDR Reference table below to apply that prefix length to your current IP address and see updated results immediately.</p>
 
-        <h2>Understanding CIDR Notation</h2>
-        <p>CIDR (Classless Inter-Domain Routing) notation combines an IP address with a prefix length, written as <code>192.168.1.0/24</code>. The prefix length (the number after the slash) indicates how many bits of the address are used for the network portion. The remaining bits identify individual hosts within the subnet.</p>
+        <h2>Understanding CIDR Notation and Subnetting</h2>
+        <p>CIDR (Classless Inter-Domain Routing) notation pairs an IP address with a prefix length written after a slash, such as <code>192.168.1.0/24</code>. The prefix length indicates how many of the 32 bits in an IPv4 address belong to the network portion. The remaining bits identify individual hosts. A /24 prefix means 24 network bits and 8 host bits, yielding 256 total addresses (254 usable after subtracting the network and broadcast addresses).</p>
+        <p>Subnetting divides a larger network into smaller, more manageable segments called subnets. This reduces the size of broadcast domains, improves security by isolating traffic between departments or services, and makes IP address allocation more efficient. For example, splitting a /24 network into four /26 subnets gives each segment 62 usable addresses, which may be a better fit for smaller office floors or VLANs than a single flat network.</p>
+        <p>The <strong>subnet mask</strong> uses contiguous 1-bits for the network portion and 0-bits for the host portion (e.g., <code>255.255.255.0</code> for /24). The <strong>wildcard mask</strong> is its bitwise inverse (<code>0.0.0.255</code>) and is used in Cisco ACLs and OSPF configurations. The <strong>network address</strong> is the first address in the range with all host bits set to 0, and the <strong>broadcast address</strong> is the last with all host bits set to 1.</p>
 
-        <h2>Subnet Mask vs Wildcard Mask</h2>
-        <p>A <strong>subnet mask</strong> uses 1-bits to represent the network portion and 0-bits for the host portion (e.g., <code>255.255.255.0</code>). A <strong>wildcard mask</strong> is the inverse: 0-bits for the network and 1-bits for hosts (e.g., <code>0.0.0.255</code>). Wildcard masks are commonly used in access control lists (ACLs) on Cisco routers and OSPF configurations.</p>
+        <h3>What is the difference between /24, /16, and /8 subnets?</h3>
+        <p>These prefixes represent increasingly large networks. A /24 subnet has a mask of <code>255.255.255.0</code> and provides 254 usable host addresses, suitable for a small office or a single VLAN. A /16 subnet uses <code>255.255.0.0</code> and offers 65,534 usable hosts, commonly seen in medium-to-large campus networks. A /8 subnet with <code>255.0.0.0</code> supports over 16 million hosts and corresponds to the entire <code>10.0.0.0/8</code> private range used in large enterprise and cloud environments. Choosing the right prefix size prevents wasted addresses and keeps broadcast traffic under control.</p>
 
-        <h2>Key Subnet Concepts</h2>
-        <ul>
-          <li><strong>Network Address</strong> -- The first address in a subnet, used to identify the network itself. All host bits are set to 0.</li>
-          <li><strong>Broadcast Address</strong> -- The last address in a subnet, used to send data to all hosts on the network. All host bits are set to 1.</li>
-          <li><strong>Usable Hosts</strong> -- Total addresses minus 2 (network and broadcast), except for /31 and /32 subnets which are special cases.</li>
-          <li><strong>/31 Subnets</strong> -- Per RFC 3021, /31 subnets are used for point-to-point links and provide 2 usable addresses with no broadcast address.</li>
-        </ul>
+        <h3>What are private IP address ranges and when should I use them?</h3>
+        <p>RFC 1918 reserves three address blocks for private use: <code>10.0.0.0/8</code>, <code>172.16.0.0/12</code>, and <code>192.168.0.0/16</code>. These addresses are not routable on the public internet, so they can be used freely inside local networks without coordination with an ISP. Home routers typically assign addresses from the <code>192.168.x.x</code> range, while enterprises often use <code>10.x.x.x</code> for its larger address space. Devices on private networks reach the internet through Network Address Translation (NAT), which maps private addresses to a shared public IP.</p>
 
-        <h2>Common Private IP Ranges</h2>
-        <ul>
-          <li><code>10.0.0.0/8</code> -- 16,777,214 hosts (Class A private range)</li>
-          <li><code>172.16.0.0/12</code> -- 1,048,574 hosts (Class B private range)</li>
-          <li><code>192.168.0.0/16</code> -- 65,534 hosts (Class C private range)</li>
-        </ul>
+        <h3>What is a /31 subnet and why is it used for point-to-point links?</h3>
+        <p>A /31 subnet contains exactly two addresses with no network or broadcast address, as defined in RFC 3021. This makes it ideal for point-to-point connections between two routers where only two IP addresses are needed. Before /31 support, engineers used /30 subnets for the same purpose, but that wastes two of the four addresses on network and broadcast. Using /31 subnets conserves IP space, which is especially valuable in large service-provider networks with thousands of router-to-router links.</p>
       </div>
     </div>
   );

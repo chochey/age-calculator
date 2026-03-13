@@ -231,26 +231,23 @@ function ScreenResolution() {
       </div>
 
       <section className="info-section">
-        <h2>About Screen Resolution</h2>
-        <p>Screen resolution refers to the number of pixels displayed on your screen, expressed as width by height (e.g., 1920 x 1080). A higher resolution means more pixels are packed into the display, resulting in sharper text and images. Understanding your screen resolution helps when designing websites, choosing wallpapers, or selecting the right display settings.</p>
+        <h2>How to Use the Screen Resolution Checker</h2>
+        <p>There is nothing to configure -- simply visit this page and your screen information is detected automatically. The tool reads your display properties through standard browser APIs and shows your screen resolution in CSS pixels, the browser viewport size, device pixel ratio, physical pixel resolution, available screen area, aspect ratios, color depth, orientation, and device type classification. All values update in real time when you resize your browser window or rotate a mobile device, so you can test different configurations without reloading the page. Use the "Copy All Info" button to copy every measurement to your clipboard in a formatted text block, making it easy to paste into a bug report, design document, or support ticket.</p>
+
+        <h2>How the Screen Resolution Checker Works</h2>
+        <p>The tool queries the browser's window.screen object for the total screen dimensions, available screen area (excluding OS taskbars), color depth, and pixel depth. It reads window.innerWidth and window.innerHeight for the browser viewport size, and window.devicePixelRatio for the DPR. Physical pixel resolution is calculated by multiplying CSS dimensions by the device pixel ratio. Aspect ratios are derived by dividing both dimensions by their greatest common divisor. The device type classification uses viewport width breakpoints: under 768px for mobile, 768 to 1023px for tablet, and 1024px and above for desktop. A resize event listener ensures everything stays current as you adjust your browser.</p>
 
         <h2>CSS Pixels vs Physical Pixels</h2>
-        <p>Modern devices often have a Device Pixel Ratio (DPR) greater than 1, meaning multiple physical hardware pixels are used to render a single CSS pixel. For example, a device with a 1920 x 1080 CSS resolution and a DPR of 2 actually has a physical resolution of 3840 x 2160. This produces sharper, more detailed graphics on high-DPI or Retina displays.</p>
+        <p>Modern displays, especially Apple Retina screens and high-DPI Windows laptops, use a Device Pixel Ratio (DPR) greater than 1. This means multiple physical hardware pixels render each CSS pixel. For example, a MacBook with a 1440 x 900 CSS resolution and a DPR of 2 actually has 2880 x 1800 physical pixels, producing crisper text and images. Understanding this distinction matters when preparing images for the web -- serving a 2x resolution asset ensures it looks sharp on high-DPI screens rather than appearing blurry.</p>
 
-        <h2>Viewport vs Screen Resolution</h2>
-        <p>Your screen resolution is the total pixel count of your monitor, while the browser viewport is the visible area within your browser window. The viewport can be smaller than your screen resolution due to browser toolbars, the operating system taskbar, and window sizing. Web developers use viewport dimensions to create responsive layouts that adapt to different screen sizes.</p>
+        <h3>What is the difference between screen resolution and viewport size?</h3>
+        <p>Screen resolution is the total pixel area of your entire monitor, while the browser viewport is the visible content area inside your browser window after subtracting the address bar, bookmarks bar, tab bar, and any OS-level taskbar. On a 1920 x 1080 screen, your viewport might be 1920 x 937 in a maximized Chrome window because the browser chrome and Windows taskbar consume the remaining pixels. Web developers target viewport dimensions when building responsive layouts because that is the actual space available for rendering page content.</p>
 
-        <h2>What Are Common Screen Resolutions?</h2>
-        <ul>
-          <li><strong>1920 x 1080 (Full HD / 1080p)</strong> -- The most widely used desktop monitor resolution</li>
-          <li><strong>2560 x 1440 (QHD / 1440p)</strong> -- Popular for gaming monitors and productivity displays</li>
-          <li><strong>3840 x 2160 (4K UHD)</strong> -- High-end monitors and modern TVs</li>
-          <li><strong>1366 x 768</strong> -- Common on budget laptops and older notebooks</li>
-          <li><strong>2560 x 1600</strong> -- Standard for many modern 13-inch and 14-inch laptops</li>
-        </ul>
+        <h3>Why does my screen resolution look different from my monitor's advertised specs?</h3>
+        <p>Operating systems often apply display scaling to make text and UI elements more readable on high-resolution screens. A 4K monitor (3840 x 2160 physical pixels) set to 150% scaling reports a CSS resolution of 2560 x 1440 to the browser, with a device pixel ratio of 1.5. The physical pixels are still all in use -- they render more detail per CSS pixel -- but the reported CSS resolution is lower. Check the "Physical Pixels" value on this page to see the actual hardware resolution of your display.</p>
 
-        <h2>Mobile, Tablet, or Desktop?</h2>
-        <p>Device type classification is based on the browser viewport width. Viewports under 768px are typically mobile phones, 768px to 1023px are tablets, and 1024px and above are desktops. These breakpoints are commonly used in responsive web design to deliver optimal layouts for each device category.</p>
+        <h3>How can I use this information for web design or development?</h3>
+        <p>Knowing common viewport sizes helps you set responsive CSS breakpoints that serve appropriate layouts to each device. The DPR tells you whether to provide 2x or 3x image assets for sharp rendering. The aspect ratio informs video and image cropping decisions. If you are filing a bug report for a web application, copying all the screen info from this page gives the development team everything they need to reproduce layout issues on a matching display configuration.</p>
       </section>
 
       <RelatedTools current="/screen-resolution" />

@@ -326,37 +326,33 @@ function ProportionCalculator() {
       </div>
 
       <section className="info-section">
-        <h2>About Proportions</h2>
+        <h2>How to Use the Proportion Calculator</h2>
         <p>
-          A proportion is a statement that two ratios are equal. Written as a/b = c/d, it means that the
-          relationship between a and b is the same as the relationship between c and d. Proportions are
-          fundamental in mathematics, appearing in geometry, physics, cooking, map scales, and everyday
-          problem-solving.
+          Enter three of the four values in the proportion a/b = c/d and leave the fourth field blank. Click "Solve Proportion" and the calculator instantly finds the missing value using cross multiplication. If you fill in all four fields, the tool checks whether the proportion is valid. You can also click any of the preset examples below the form to load a common proportion and see it solved immediately. The result section displays the full proportion statement, simplified ratios on both sides, and a step-by-step solution showing the cross-multiplication work.
         </p>
 
-        <h2>How to Solve a Proportion</h2>
+        <h2>The Cross-Multiplication Method with a Worked Example</h2>
         <p>
-          To find a missing value in a proportion a/b = c/d, use cross multiplication: a &times; d = b &times; c.
-          Then isolate the unknown variable. For example, if a/b = c/d and you need to find c,
-          then c = (a &times; d) / b.
+          Every proportion a/b = c/d can be solved by cross multiplying: a x d = b x c. To isolate any one variable, rearrange the equation. For example, to solve for c, use c = (a x d) / b.
+        </p>
+        <p>
+          <strong>Worked example:</strong> Suppose a recipe that serves 4 people calls for 6 cups of flour, and you want to serve 10 people. Set up the proportion 6/4 = x/10. Cross multiply: 6 x 10 = 4 x x, giving 60 = 4x, so x = 60 / 4 = <strong>15 cups of flour</strong>. The simplified ratio on both sides is 3:2, confirming the proportion holds. This same technique works for unit conversions, map scales, and any situation where two ratios must remain equal.
         </p>
 
-        <h2>Simplifying Ratios</h2>
+        <h3>What is the difference between a ratio and a proportion?</h3>
         <p>
-          A ratio can be simplified by dividing both terms by their greatest common divisor (GCD).
-          For example, 8:12 simplifies to 2:3 because GCD(8, 12) = 4.
-          Simplified ratios make it easier to compare and understand relationships between quantities.
+          A ratio compares two quantities, such as 3:5, and simply describes how they relate to each other. A proportion is a statement that two ratios are equal, such as 3/5 = 6/10. While every proportion contains ratios, not every pair of ratios forms a valid proportion. You can verify a proportion by cross multiplying -- if the products are equal (3 x 10 = 5 x 6 = 30), the proportion is valid.
         </p>
 
-        <h2>Real-World Uses of Proportions</h2>
-        <ul>
-          <li>Scaling recipes up or down in cooking</li>
-          <li>Converting units of measurement</li>
-          <li>Reading maps and architectural plans</li>
-          <li>Calculating discounts and sale prices</li>
-          <li>Mixing paint colors or chemical solutions</li>
-          <li>Resizing images while maintaining aspect ratios</li>
-        </ul>
+        <h3>Can proportions involve decimals or fractions?</h3>
+        <p>
+          Yes. The cross-multiplication method works with any real numbers, including decimals and fractions. For instance, 0.5/1.5 = 2/6 is valid because 0.5 x 6 = 3 and 1.5 x 2 = 3. This calculator accepts any numeric input, including negative numbers and long decimals, and rounds the solved value to up to six decimal places for precision.
+        </p>
+
+        <h3>Where are proportions used in everyday life?</h3>
+        <p>
+          Proportions appear more often than most people realize. Cooks scale recipes by setting up a proportion between servings and ingredient amounts. Travelers convert currencies using an exchange-rate proportion. Architects and engineers use scale drawings where every dimension on paper is proportional to the real structure. Pharmacists calculate drug dosages based on patient weight using proportional relationships. Even resizing a photo without distortion relies on keeping the width-to-height ratio proportional.
+        </p>
       </section>
 
       <RelatedTools current="/proportion-calculator" />

@@ -141,25 +141,35 @@ function TextRepeater() {
       )}
 
       <section className="info-section">
-        <h2>About This Tool</h2>
-        <p>The Text Repeater lets you duplicate any text a specified number of times. Whether you need to generate repeated strings for testing, fill a document with placeholder content, or create patterns, this tool handles it instantly in your browser.</p>
+        <h2>How to Use the Text Repeater</h2>
+        <p>Type or paste the text you want to duplicate into the input box at the top. Set the number of repetitions using the "Repeat Count" field -- you can repeat text anywhere from 1 to 10,000 times. Choose a separator to control how each repetition is joined: "Newline" places each copy on its own line, "Space" joins them with a single space, "Comma" creates a comma-separated list, "None" concatenates everything without any gap, and "Custom" lets you define your own separator string such as a pipe character (|) or a dash (-). Enable the "Add line numbers" checkbox to prefix each repetition with a sequential number (1., 2., 3., etc.). The output preview and character/word counts update in real time. Click "Copy" to send the result to your clipboard.</p>
 
-        <h2>How to Use</h2>
+        <h2>How Text Repetition Works</h2>
+        <p>This tool generates the repeated output entirely in your browser using JavaScript. It creates an array with the specified number of entries, each containing your original text. If line numbering is enabled, each entry is prefixed with its index. The array is then joined using your chosen separator string. For example, entering "Hello" with a count of 3 and a comma separator produces "Hello, Hello, Hello". Entering the same text with newline separation and line numbers produces:</p>
         <ul>
-          <li>Enter or paste the text you want to repeat in the input box.</li>
-          <li>Set the number of repetitions (1 to 10,000).</li>
-          <li>Choose a separator: none, newline, space, comma, or a custom string.</li>
-          <li>Optionally enable line numbers to prefix each repetition.</li>
-          <li>Copy the result to your clipboard with one click.</li>
+          <li>1. Hello</li>
+          <li>2. Hello</li>
+          <li>3. Hello</li>
+        </ul>
+        <p>Because processing happens locally, even large repetitions (up to 10,000 copies) are generated almost instantly with no server requests.</p>
+
+        <h2>Practical Use Cases</h2>
+        <ul>
+          <li><strong>Software testing:</strong> Generate long strings to test input field character limits, database storage, or API payload sizes.</li>
+          <li><strong>Spreadsheet population:</strong> Create comma-separated repeated values to paste into Excel or Google Sheets columns for quick prototyping.</li>
+          <li><strong>Social media and messaging:</strong> Repeat emoji, phrases, or symbols for creative posts and messages.</li>
+          <li><strong>Design mockups:</strong> Fill placeholder areas with repeated labels or sample text to visualize how content wraps and flows in a layout.</li>
+          <li><strong>Code generation:</strong> Produce repeated code patterns, SQL insert rows, or configuration entries that follow a consistent structure.</li>
         </ul>
 
-        <h2>Common Uses</h2>
-        <ul>
-          <li>Generating test data and placeholder text</li>
-          <li>Creating repeated patterns for design or coding</li>
-          <li>Building bulk content for spreadsheet cells</li>
-          <li>Producing repeated strings for stress testing inputs</li>
-        </ul>
+        <h3>Is there a limit to how many times I can repeat text?</h3>
+        <p>The tool supports up to 10,000 repetitions per run. This limit ensures the browser remains responsive even with longer input text. For most practical purposes -- test data generation, content filling, or pattern creation -- 10,000 repetitions is more than sufficient.</p>
+
+        <h3>Can I use multi-line text as input?</h3>
+        <p>Yes. The input field is a full text area, so you can paste paragraphs, code blocks, or any multi-line content. Each repetition will include the entire block of text exactly as you entered it, with your chosen separator placed between each copy.</p>
+
+        <h3>What happens when I choose a custom separator?</h3>
+        <p>The custom separator option lets you type any string to place between each repetition. Common choices include pipe characters (|), dashes (-), semicolons (;), or even multi-character strings like " -- " or " | ". The separator is inserted between copies only, not before the first or after the last entry.</p>
       </section>
       <RelatedTools current="/text-repeater" />
     </div>

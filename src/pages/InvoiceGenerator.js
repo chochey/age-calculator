@@ -174,16 +174,21 @@ function InvoiceGenerator() {
       </div>
 
       <section className="info-section">
-        <h2>Free Invoice Generator</h2>
-        <p>Create professional invoices in seconds. Add your business details, line items, and tax rate, then print or save as PDF using your browser's print dialog. No account or sign-up required.</p>
+        <h2>How to Use the Invoice Generator</h2>
+        <p>Creating a professional invoice takes just a few minutes. Start by filling in the "From" section with your business name, email, and address. Then fill in the "Bill To" section with your client's details. Set the invoice number (the default is INV-001, but you can use any numbering scheme), the invoice date, and an optional due date. If you charge sales tax, enter the tax percentage in the "Tax %" field.</p>
+        <p>Next, add your line items. Each row has fields for a description, quantity, and unit price. The line total is calculated automatically as quantity multiplied by price. Click "+ Add Item" to add more rows, or remove a row with the X button. You can also include optional notes at the bottom for payment instructions, thank-you messages, or terms and conditions. The subtotal, tax amount, and grand total update in real time as you edit. When everything looks correct, click "Print / Save as PDF" to open a clean, print-ready version in a new window. From there, use your browser's print dialog to print on paper or save as a PDF file.</p>
 
-        <h2>Features</h2>
-        <ul>
-          <li>Unlimited line items with automatic totals</li>
-          <li>Optional tax percentage calculation</li>
-          <li>Print-ready layout with clean formatting</li>
-          <li>Save as PDF via browser print dialog (Ctrl+P / Cmd+P)</li>
-        </ul>
+        <h2>How the Invoice Generator Works</h2>
+        <p>The tool collects your input and calculates the subtotal by summing every line item (quantity times price). If a tax rate is provided, the tax amount is computed as the subtotal multiplied by the tax percentage divided by 100, and the grand total is the subtotal plus tax. When you click print, the tool opens a new browser window containing a professionally formatted HTML invoice with all your data, styled for clean output on paper or PDF. No data is sent to any server -- everything runs locally in your browser, keeping your financial information private.</p>
+
+        <h3>Can I save the invoice as a PDF file?</h3>
+        <p>Yes. When you click "Print / Save as PDF," a new browser window opens with the formatted invoice. In the print dialog that appears, select "Save as PDF" (or "Microsoft Print to PDF" on Windows) as the destination instead of a physical printer. Click Save, choose a filename and location, and the invoice is stored as a PDF on your computer. This works in Chrome, Firefox, Edge, Safari, and most modern browsers without any additional software.</p>
+
+        <h3>Does this tool handle multiple tax rates or discounts?</h3>
+        <p>The invoice generator applies a single tax percentage to the entire subtotal, which covers the most common invoicing scenario. If you need to apply different tax rates to individual items, you can manually adjust the unit prices to include the tax difference, or create separate invoices for items taxed at different rates. For discounts, reduce the unit price or quantity accordingly and mention the discount in the item description or the notes field.</p>
+
+        <h3>Is my invoice data stored anywhere?</h3>
+        <p>No. All data stays entirely within your browser session. Nothing is uploaded to a server, and no cookies or local storage are used to persist invoice data. If you close or refresh the page, the form resets to blank. For record-keeping, always save your invoice as a PDF before navigating away. This design ensures complete privacy for your business and client financial information.</p>
       </section>
       <RelatedTools current="/invoice-generator" />
     </div>

@@ -111,17 +111,23 @@ function CronBuilder() {
       </div>
 
       <section className="info-section">
-        <h2>Cron Expression Format</h2>
-        <p>A cron expression has 5 fields separated by spaces:</p>
-        <code className="gradient-code" style={{ display: 'block', marginBottom: '1rem' }}>minute hour day-of-month month day-of-week</code>
+        <h2>How to Use the Cron Expression Builder</h2>
+        <p>Building a cron schedule with this tool takes just a few steps. First, either type values directly into the five cron fields (minute, hour, day of month, month, and day of week) or choose one of the quick presets like "Every 5 minutes" or "Weekdays at 8am." As you adjust each field, the full cron expression updates at the top of the page along with a plain-English description of what it means. When you are satisfied with your schedule, click "Copy Expression" to copy the cron string to your clipboard, ready to paste into your crontab, CI/CD pipeline, or task scheduler configuration.</p>
 
-        <h2>Special Characters</h2>
-        <ul>
-          <li><strong>*</strong> — any value</li>
-          <li><strong>,</strong> — list separator (e.g., 1,3,5)</li>
-          <li><strong>-</strong> — range (e.g., 1-5 for Mon-Fri)</li>
-          <li><strong>/</strong> — step (e.g., */5 for every 5 minutes)</li>
-        </ul>
+        <h2>Understanding Cron Expression Syntax</h2>
+        <p>A standard cron expression consists of five space-separated fields that define when a job should run:</p>
+        <code className="gradient-code" style={{ display: 'block', marginBottom: '1rem' }}>minute(0-59) hour(0-23) day-of-month(1-31) month(1-12) day-of-week(0-6)</code>
+        <p>Each field accepts specific values, ranges, and special characters. The asterisk (<strong>*</strong>) matches any value, meaning the job runs for every possible value in that position. A comma (<strong>,</strong>) creates a list, such as <code>1,15</code> in the day-of-month field to run on the 1st and 15th. A hyphen (<strong>-</strong>) defines a range, like <code>1-5</code> in the day-of-week field for Monday through Friday. The slash (<strong>/</strong>) sets a step interval, so <code>*/10</code> in the minute field triggers every 10 minutes.</p>
+        <p>For example, <code>30 9 * * 1-5</code> means "at 9:30 AM, Monday through Friday." The expression <code>0 0 1 * *</code> runs a job at midnight on the first day of every month. These patterns are used across Linux crontabs, cloud schedulers like AWS CloudWatch Events, GitHub Actions, and Kubernetes CronJobs.</p>
+
+        <h3>What is a cron job and where are cron expressions used?</h3>
+        <p>A cron job is a time-based task scheduler found in Unix and Linux operating systems. The cron daemon reads a configuration file called the crontab, which lists commands paired with cron expressions that define their schedules. Beyond traditional Linux servers, cron expressions are now used in cloud platforms such as AWS EventBridge, Google Cloud Scheduler, and Azure Functions, as well as in CI/CD tools like GitHub Actions and Jenkins. Any system that needs to run recurring tasks on a predictable schedule typically relies on cron syntax.</p>
+
+        <h3>What does the asterisk (*) mean in a cron expression?</h3>
+        <p>The asterisk is a wildcard that matches every possible value for a given field. If you place <code>*</code> in the hour field, the job will run during every hour. Combined with specific values in other fields, the asterisk lets you control exactly which dimensions of time are constrained and which are open. For instance, <code>0 * * * *</code> runs at minute zero of every hour, every day.</p>
+
+        <h3>How do I schedule a cron job to run every 5 minutes?</h3>
+        <p>Use the step syntax in the minute field: <code>*/5 * * * *</code>. The <code>*/5</code> tells the scheduler to trigger at every fifth minute (0, 5, 10, 15, and so on). You can apply the same pattern to other fields as well. For example, <code>0 */2 * * *</code> runs at the top of every second hour, and <code>0 0 */3 * *</code> runs at midnight every three days.</p>
       </section>
       <RelatedTools current="/cron-expression-builder" />
     </div>

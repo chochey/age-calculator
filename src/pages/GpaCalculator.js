@@ -67,16 +67,33 @@ function GpaCalculator() {
       <button onClick={addCourse} className="form-btn" style={{ marginTop: '0.75rem' }}>+ Add Course</button>
 
       <section className="info-section">
-        <h2>How GPA is Calculated</h2>
-        <p>Your GPA is calculated by multiplying each course's grade points by its credit hours, summing the results, and dividing by total credit hours. This weighted calculation means courses with more credits have a bigger impact on your GPA.</p>
+        <h2>How to Use the GPA Calculator</h2>
+        <p>
+          For each course, type an optional name, select the letter grade you received from the dropdown, and enter the number of credit hours. The calculator updates your GPA in real time as you fill in the fields. Click "+ Add Course" to add more rows, or click the X button to remove a course. Your GPA, total credits, and total quality points are displayed at the top. There is no need to press a submit button -- results refresh with every change you make.
+        </p>
 
-        <h2>Grade Point Scale</h2>
-        <ul>
-          <li><strong>A / A+</strong> = 4.0 | <strong>A-</strong> = 3.7</li>
-          <li><strong>B+</strong> = 3.3 | <strong>B</strong> = 3.0 | <strong>B-</strong> = 2.7</li>
-          <li><strong>C+</strong> = 2.3 | <strong>C</strong> = 2.0 | <strong>C-</strong> = 1.7</li>
-          <li><strong>D+</strong> = 1.3 | <strong>D</strong> = 1.0 | <strong>F</strong> = 0.0</li>
-        </ul>
+        <h2>The GPA Formula with a Worked Example</h2>
+        <p>
+          GPA = Total Quality Points / Total Credit Hours, where Quality Points for a course = Grade Points x Credit Hours. The standard 4.0 scale assigns A/A+ = 4.0, A- = 3.7, B+ = 3.3, B = 3.0, B- = 2.7, C+ = 2.3, C = 2.0, C- = 1.7, D+ = 1.3, D = 1.0, D- = 0.7, and F = 0.0.
+        </p>
+        <p>
+          <strong>Worked example:</strong> Suppose you take three courses this semester: English (3 credits, grade A = 4.0), Biology (4 credits, grade B+ = 3.3), and History (3 credits, grade A- = 3.7). Quality points: English = 4.0 x 3 = 12.0, Biology = 3.3 x 4 = 13.2, History = 3.7 x 3 = 11.1. Total quality points = 36.3, total credits = 10. GPA = 36.3 / 10 = <strong>3.63</strong>.
+        </p>
+
+        <h3>What is the difference between semester GPA and cumulative GPA?</h3>
+        <p>
+          Semester GPA covers only the courses taken during a single term. Cumulative GPA covers every course from every term combined. To calculate cumulative GPA, add up all quality points from all semesters and divide by all credit hours attempted. Most schools display both on your transcript. This calculator can handle either -- just enter the courses for one semester to get a semester GPA, or enter every course across all semesters to get your cumulative figure.
+        </p>
+
+        <h3>Do plus and minus grades really matter?</h3>
+        <p>
+          Yes, on a standard 4.0 scale they make a measurable difference. An A- (3.7) in a 4-credit course contributes 1.2 fewer quality points than a straight A (4.0) in the same course. Over a full course load, several minus grades can lower your GPA by a tenth or more. Conversely, earning B+ (3.3) instead of a flat B (3.0) in multiple courses can noticeably raise your average. Schools that do not use plus/minus grading assign the same points to every variant of a letter.
+        </p>
+
+        <h3>How can I raise my GPA?</h3>
+        <p>
+          Focus on courses with more credit hours, because they carry more weight in the GPA calculation. Improving a grade in a 4-credit course affects your GPA twice as much as the same improvement in a 2-credit course. Retaking a failed or low-grade course -- if your school allows grade replacement -- is one of the most effective strategies. Beyond academics, consistent study habits, using office hours, and forming study groups all contribute to higher grades over time.
+        </p>
       </section>
       <RelatedTools current="/gpa-calculator" />
     </div>

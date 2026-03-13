@@ -99,15 +99,28 @@ function ColorPalette() {
       </div>
 
       <section className="info-section">
-        <h2>Color Scheme Types</h2>
+        <h2>How to Use the Color Palette Generator</h2>
+        <p>Creating a professional color scheme is simple. Click the color preview swatch or use the color picker to select a base color -- for instance, a brand blue like #2563EB. Next, choose a scheme type from the buttons below the picker. The generator will instantly produce a set of harmonious colors based on established color theory principles. Click any swatch in the result to copy its HEX code to your clipboard. You can then paste these values directly into your CSS, design tool, or brand guidelines document.</p>
+
+        <h2>Understanding Color Scheme Types</h2>
+        <p>Color harmony is rooted in the relationships between positions on the color wheel. Each scheme type produces a different visual effect, and choosing the right one depends on the mood and purpose of your design.</p>
         <ul>
-          <li><strong>Complementary</strong> — Two colors opposite on the color wheel. High contrast.</li>
-          <li><strong>Analogous</strong> — Three adjacent colors. Harmonious and pleasing.</li>
-          <li><strong>Triadic</strong> — Three evenly spaced colors. Vibrant and balanced.</li>
-          <li><strong>Split Complementary</strong> — A color plus two adjacent to its complement.</li>
-          <li><strong>Shades</strong> — Same hue at different lightness levels.</li>
-          <li><strong>Monochromatic</strong> — Same hue at different saturation levels.</li>
+          <li><strong>Complementary</strong> -- Two colors that sit directly opposite each other on the color wheel, such as blue (#2563EB) and orange (#EB8B25). This pairing creates maximum contrast and is ideal for call-to-action buttons or elements that need to stand out.</li>
+          <li><strong>Analogous</strong> -- Three colors that are adjacent on the wheel, like blue, blue-violet, and violet. Analogous palettes feel calm and cohesive, making them a popular choice for backgrounds and editorial layouts.</li>
+          <li><strong>Triadic</strong> -- Three colors evenly spaced at 120-degree intervals. A triadic scheme using red, blue, and yellow provides a vibrant, balanced look that works well in illustrations and playful branding.</li>
+          <li><strong>Split Complementary</strong> -- A base color paired with the two colors adjacent to its complement. This offers high contrast like complementary schemes but with more nuance and less visual tension.</li>
+          <li><strong>Shades</strong> -- Variations of a single hue at different lightness levels, ranging from near-white to near-black. Shades are essential for building depth in UI design, such as hover states, borders, and text hierarchies.</li>
+          <li><strong>Monochromatic</strong> -- A single hue at varying saturation levels. Monochromatic palettes create a sophisticated, unified appearance and are often used in minimalist designs.</li>
         </ul>
+
+        <h3>How does a color palette generator work?</h3>
+        <p>This tool converts your base color to the HSL color model, which separates hue, saturation, and lightness into independent values. It then calculates new colors by rotating the hue angle on the 360-degree color wheel according to the rules of each scheme type. For example, a complementary color is found by adding 180 degrees to the hue, while triadic colors are spaced at 120-degree intervals. The results are converted back to HEX for easy use in web projects.</p>
+
+        <h3>Which color scheme should I use for my website?</h3>
+        <p>For most websites, an analogous or monochromatic scheme provides a clean, professional look. Use complementary or split-complementary schemes when you need strong visual contrast, such as highlighting buttons or promotional banners. Triadic schemes work best for creative or playful brands. Start with your primary brand color, generate the palette, and test it against real content to see how it reads at different sizes.</p>
+
+        <h3>Can I export these colors to my design software?</h3>
+        <p>Yes. Click any swatch to copy its HEX code to your clipboard. You can paste HEX values directly into Figma, Sketch, Adobe XD, Photoshop, or any CSS file. For bulk use, copy each color in the palette and add them as a saved color set in your design tool of choice.</p>
       </section>
       <RelatedTools current="/color-palette-generator" />
     </div>

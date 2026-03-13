@@ -211,31 +211,33 @@ function FrequencyCounter() {
       )}
 
       <section className="info-section">
-        <h2>About This Tool</h2>
-        <p>The Frequency Counter analyzes any block of text and shows how often each word or character appears. Results are sorted by frequency with counts and percentages, making it easy to identify the most common elements in your text.</p>
+        <h2>How to Use the Frequency Counter</h2>
+        <p>
+          Paste or type any text into the large input area. Choose "Word Frequency" to count individual words or "Character Frequency" to count individual characters (whitespace excluded). Results appear instantly in a ranked table showing each item, its count, and its percentage of the total. The top 10 items are highlighted for quick scanning. Toggle "Case sensitive" if you want "Apple" and "apple" counted separately, or enable "Ignore common words" to filter out English stopwords such as "the," "and," and "is." Click "Export CSV to Clipboard" to copy the full results table as comma-separated values for use in spreadsheets or data analysis tools.
+        </p>
 
-        <h2>How It Works</h2>
-        <p>Paste or type your text, then choose between Word Frequency and Character Frequency mode. The tool instantly counts every occurrence, calculates percentages, and highlights the top 10 most frequent items. Toggle case sensitivity to treat uppercase and lowercase separately, or enable the stopwords filter to exclude common English words like "the", "and", "is".</p>
+        <h2>How Frequency Analysis Works</h2>
+        <p>
+          The tool tokenizes your input -- splitting on spaces and punctuation for words, or examining each non-whitespace character individually. It then builds a frequency map, counting how many times each token appears. The percentage column shows what share of the total each item represents, calculated as (item count / total count) x 100.
+        </p>
+        <p>
+          <strong>Worked example:</strong> Given the sentence "the cat sat on the mat," the word frequencies are: "the" = 2 (33.33%), "cat" = 1 (16.67%), "sat" = 1 (16.67%), "on" = 1 (16.67%), "mat" = 1 (16.67%). With the stopwords filter enabled, "the" and "on" would be removed, leaving "cat," "sat," and "mat" each at 33.33%. In character mode, the same sentence produces "t" = 5 as the most frequent character.
+        </p>
 
-        <h2>Common Uses</h2>
-        <ul>
-          <li>Analyze keyword density for SEO content writing</li>
-          <li>Identify overused words in essays and articles</li>
-          <li>Study letter frequency for cryptography and puzzles</li>
-          <li>Check vocabulary diversity in writing samples</li>
-          <li>Audit content for repeated phrases and filler words</li>
-          <li>Linguistic research and text analysis</li>
-        </ul>
+        <h3>What are stopwords and when should I filter them?</h3>
+        <p>
+          Stopwords are the most common function words in a language -- articles, prepositions, pronouns, and auxiliary verbs like "the," "of," "is," and "at." They appear frequently in every text regardless of topic, so they can drown out the meaningful content words you actually care about. Enable the stopwords filter when you want to find the key themes or keywords in a passage, such as when analyzing an essay for topic focus or auditing web content for SEO keyword density. Leave it off when you need a complete linguistic profile of the text.
+        </p>
 
-        <h2>Features</h2>
-        <ul>
-          <li><strong>Word Frequency</strong> — Count how often each word appears in your text</li>
-          <li><strong>Character Frequency</strong> — Count how often each character appears (whitespace excluded)</li>
-          <li><strong>Case Sensitivity</strong> — Choose whether "Word" and "word" count as the same item</li>
-          <li><strong>Stopwords Filter</strong> — Remove common English words to focus on meaningful content</li>
-          <li><strong>Top 10 Highlighting</strong> — The most frequent items are visually highlighted</li>
-          <li><strong>CSV Export</strong> — Copy results as CSV data to your clipboard for use in spreadsheets</li>
-        </ul>
+        <h3>How is this useful for SEO and content writing?</h3>
+        <p>
+          Search engines evaluate keyword relevance partly through word frequency and density. By running your article through this tool, you can verify that your target keyword appears often enough to signal relevance -- generally between 1 and 3 percent of total words -- without stuffing it so heavily that readability suffers. The tool also reveals overused filler words and helps you diversify your vocabulary, both of which contribute to higher-quality content that ranks better and reads more naturally.
+        </p>
+
+        <h3>Can I use this tool for languages other than English?</h3>
+        <p>
+          The word and character counting works with any language that uses space-separated words and standard Unicode characters, including Spanish, French, German, Portuguese, and many others. However, the built-in stopwords list is English-only, so the "Ignore common words" toggle will have no effect on non-English text. For languages like Chinese or Japanese that do not use spaces between words, the character frequency mode is the more appropriate choice.
+        </p>
       </section>
       <RelatedTools current="/frequency-counter" />
     </div>

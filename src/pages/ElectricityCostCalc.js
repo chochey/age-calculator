@@ -98,16 +98,29 @@ function ElectricityCostCalc() {
       </div>
 
       <section className="info-section">
-        <h2>How to Calculate Electricity Cost</h2>
-        <p>Electricity cost is calculated as: <strong>(Watts x Hours per Day / 1000) x Rate per kWh</strong>. This gives you the daily cost. The average US electricity rate is about $0.12/kWh, but rates vary by state and provider.</p>
+        <h2>How to Use This Electricity Cost Calculator</h2>
+        <p>Enter three values to estimate your electricity cost: the power consumption of your appliance in watts, the number of hours per day you use it, and your electricity rate in dollars per kilowatt-hour (kWh). If you are unsure of the wattage, click one of the common appliance buttons below the calculator to auto-fill a typical value. Your electricity rate can be found on your utility bill -- the national average in the United States is roughly $0.12 per kWh, but rates vary significantly by state and provider. The calculator updates results in real time, showing your daily, weekly, monthly, and yearly costs along with daily energy consumption in kWh.</p>
 
-        <h2>Energy Saving Tips</h2>
+        <h2>Understanding the Formula</h2>
+        <p>The electricity cost formula is: <strong>Daily Cost = (Watts x Hours per Day / 1000) x Rate per kWh</strong>. The division by 1000 converts watts to kilowatts, since electricity is billed in kilowatt-hours. For example, running a 1,500-watt space heater for 8 hours a day at $0.12/kWh costs (1500 x 8 / 1000) x 0.12 = $1.44 per day. Over a month (30 days), that totals $43.20, and over a full year it reaches $525.60. Knowing these numbers helps you make informed decisions about which appliances to use and for how long.</p>
+
+        <h2>Practical Applications</h2>
         <ul>
-          <li>Switch to LED bulbs (10W vs 60W incandescent)</li>
-          <li>Unplug devices when not in use (standby power adds up)</li>
-          <li>Use a programmable thermostat</li>
-          <li>Run washing machines and dishwashers with full loads</li>
+          <li>Comparing the running cost of an old appliance versus a newer energy-efficient model to see if the upgrade pays for itself</li>
+          <li>Estimating the cost of running a home office setup including a desktop computer, monitor, and desk lamp throughout the workday</li>
+          <li>Budgeting for seasonal costs like air conditioning in summer or space heaters in winter</li>
+          <li>Identifying the most expensive appliances in your home so you can target them for energy savings</li>
         </ul>
+
+        <h2>Frequently Asked Questions</h2>
+        <h3>How do I find the wattage of my appliance?</h3>
+        <p>Check the label on the back or bottom of the appliance, which usually lists the wattage. You can also look up the model number in the product manual or manufacturer's website. For a more precise measurement, use a plug-in electricity monitor (like a Kill-A-Watt meter) that displays real-time power draw.</p>
+
+        <h3>Why does my actual electricity bill differ from the calculator estimate?</h3>
+        <p>Your bill includes all appliances and devices in your home, not just one. It may also include fixed service charges, demand charges, taxes, and tiered pricing where the rate increases as you use more electricity. Additionally, appliances like refrigerators cycle on and off, so their average power draw is lower than the rated wattage.</p>
+
+        <h3>What uses the most electricity in a typical home?</h3>
+        <p>Heating and cooling systems are typically the largest electricity consumers, accounting for roughly 40-50% of a home's energy use. Water heaters, clothes dryers, and electric ovens are also significant. Among always-on devices, refrigerators run 24 hours a day and can cost $50-$150 per year depending on their efficiency rating and age.</p>
       </section>
       <RelatedTools current="/electricity-cost-calculator" />
     </div>

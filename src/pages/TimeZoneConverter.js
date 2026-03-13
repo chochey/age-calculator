@@ -235,30 +235,22 @@ function TimeZoneConverter() {
 
       <section className="info-section">
         <h2>How to Use the Time Zone Converter</h2>
-        <p>Select a time using the hour, minute, and AM/PM dropdowns. Choose your source time zone and the target time zone you want to convert to. Click "Convert" to see the equivalent time. Use the "Now" button to quickly set the current time in the source time zone.</p>
+        <p>Converting a time between zones takes just a few steps. First, set the hour, minute, and AM/PM using the dropdown menus. Next, choose the time zone you are converting from (for example, EST if you are on the US East Coast). Then pick the target time zone you want to convert to (for example, JST if you are scheduling a call with Tokyo). Click "Convert" to instantly see the equivalent time in both 12-hour and 24-hour formats, along with the UTC offset difference and whether the result falls on the same day, the previous day, or the next day. If you want to convert the current moment, press the "Now" button to auto-fill the time fields with the live clock in your source zone.</p>
 
-        <h2>About Time Zones</h2>
-        <p>Time zones are regions of the globe that observe a uniform standard time for legal, commercial, and social purposes. They are generally offset from Coordinated Universal Time (UTC) by a whole number of hours, though some zones have offsets of 30 or 45 minutes (such as India Standard Time at UTC+5:30).</p>
+        <h2>How the Converter Works</h2>
+        <p>Each time zone in the tool carries a fixed UTC offset measured in hours (or half-hours for zones like IST at UTC+5:30). When you click "Convert," the tool takes your input time, calculates the offset difference between the source and target zones in minutes, and shifts the time accordingly. If the shifted time goes below 0:00 or above 23:59, the tool wraps it around and flags the result as "previous day" or "next day" so you always know the correct calendar date. The converter also displays the live current time in both the source and target zones beneath the form, updated each time the page loads.</p>
 
         <h2>Daylight Saving Time</h2>
-        <p>Many regions observe daylight saving time (DST), shifting clocks forward by one hour during warmer months. This converter includes both standard and daylight saving variants (e.g., EST and EDT) so you can select the correct offset for the time of year.</p>
+        <p>Many regions observe daylight saving time (DST), shifting clocks forward by one hour during warmer months. This converter includes both standard and daylight saving variants -- for instance, EST (UTC-5) and EDT (UTC-4) -- so you can select the correct offset for the time of year. If you are unsure which variant is active, check whether your region is currently observing standard or daylight time and choose accordingly.</p>
 
-        <h2>Supported Time Zones</h2>
-        <ul>
-          <li><strong>UTC / GMT</strong> — Coordinated Universal Time / Greenwich Mean Time (UTC+0)</li>
-          <li><strong>EST / EDT</strong> — Eastern Standard/Daylight Time (UTC-5 / UTC-4)</li>
-          <li><strong>CST / CDT</strong> — Central Standard/Daylight Time (UTC-6 / UTC-5)</li>
-          <li><strong>MST / MDT</strong> — Mountain Standard/Daylight Time (UTC-7 / UTC-6)</li>
-          <li><strong>PST / PDT</strong> — Pacific Standard/Daylight Time (UTC-8 / UTC-7)</li>
-          <li><strong>HST</strong> — Hawaii Standard Time (UTC-10)</li>
-          <li><strong>AKST</strong> — Alaska Standard Time (UTC-9)</li>
-          <li><strong>CET</strong> — Central European Time (UTC+1)</li>
-          <li><strong>EET</strong> — Eastern European Time (UTC+2)</li>
-          <li><strong>IST</strong> — India Standard Time (UTC+5:30)</li>
-          <li><strong>JST</strong> — Japan Standard Time (UTC+9)</li>
-          <li><strong>AEST</strong> — Australian Eastern Standard Time (UTC+10)</li>
-          <li><strong>NZST</strong> — New Zealand Standard Time (UTC+12)</li>
-        </ul>
+        <h3>How do I convert a meeting from EST to IST?</h3>
+        <p>Set your source zone to EST and target zone to IST, then enter the meeting time. For example, a 10:00 AM EST meeting converts to 8:30 PM IST the same day, because India Standard Time is 10.5 hours ahead of Eastern Standard Time. If daylight saving is in effect on the US side, switch to EDT and the meeting would show as 7:30 PM IST instead.</p>
+
+        <h3>Why does the result sometimes say "next day" or "previous day"?</h3>
+        <p>When the offset difference pushes the converted time past midnight or before midnight, the calendar date changes. For instance, 11:00 PM in New York (EST) is 1:00 PM the next day in Auckland (NZST), because NZST is 17 hours ahead of EST. The "next day" label alerts you to schedule accordingly so you do not accidentally book a meeting on the wrong date.</p>
+
+        <h3>Does this tool handle half-hour time zone offsets?</h3>
+        <p>Yes. India Standard Time (IST) has a UTC+5:30 offset, and the converter fully supports fractional-hour offsets. The math is performed in minutes internally, so conversions involving IST and other half-hour zones are just as accurate as whole-hour conversions. The tool currently covers 18 major time zones spanning UTC-10 through UTC+12, including both standard and daylight variants for US zones.</p>
       </section>
       <RelatedTools current="/time-zone-converter" />
     </div>

@@ -111,16 +111,29 @@ function AgeCalculator() {
       )}
 
       <section className="info-section">
-        <h2>How to Use the Age Calculator</h2>
-        <p>Simply enter your date of birth and click "Calculate Age" to instantly see your exact age broken down into years, months, and days. You'll also see your age expressed in total months, weeks, days, hours, and minutes, plus how many days until your next birthday.</p>
+        <h2>How to Use This Age Calculator</h2>
+        <p>Using this calculator is straightforward. First, click the date input field and select your date of birth using the calendar picker, or type it in directly. Then click the "Calculate Age" button. The tool instantly displays your exact age in years, months, and days, along with detailed breakdowns including total months, total weeks, total days, total hours, and total minutes you have been alive. It also shows how many days remain until your next birthday, which is a fun detail for countdown planning.</p>
 
-        <h2>Why Use an Age Calculator?</h2>
+        <h2>Understanding the Calculation Method</h2>
+        <p>The calculator works by comparing your date of birth to today's date. It subtracts the birth year from the current year and then adjusts for whether you have already passed your birthday this year. For example, if you were born on July 15, 1990, and today is March 13, 2026, the calculator determines you are 35 years, 7 months, and 26 days old. The total days figure is computed by finding the difference in milliseconds between the two dates and dividing by the number of milliseconds in a day (86,400,000). Hours and minutes are derived from the total days multiplied by 24 and 1,440 respectively, with further adjustments for the current time of day.</p>
+
+        <h2>Practical Applications</h2>
         <ul>
-          <li>Determine exact age for legal documents and forms</li>
-          <li>Calculate age differences between people</li>
-          <li>Find out how many days until your next birthday</li>
-          <li>See fun statistics about your life in hours and minutes</li>
+          <li>Filling out government forms, visa applications, and legal documents that require your exact age in years and months</li>
+          <li>Verifying age eligibility for insurance policies, retirement benefits, or age-restricted activities</li>
+          <li>Calculating the precise age difference between two family members, such as siblings or twins born on different days</li>
+          <li>Planning birthday countdowns and milestone celebrations like turning 10,000 days old</li>
         </ul>
+
+        <h2>Frequently Asked Questions</h2>
+        <h3>Does the age calculator account for leap years?</h3>
+        <p>Yes. The calculator uses JavaScript's built-in Date object, which correctly handles leap years. February 29 birthdays are fully supported, and the total days count includes all leap days that have occurred between your birth date and today.</p>
+
+        <h3>Why does my age in months not exactly match years times twelve?</h3>
+        <p>Total months includes any partial month you have completed. If you are 35 years and 7 months old, your total months will be 427, which equals 35 times 12 plus 7. The remaining days within the current partial month are shown separately in the days field.</p>
+
+        <h3>Can I use this calculator to find someone else's age?</h3>
+        <p>Absolutely. Simply enter any person's date of birth and the calculator will determine their current age. This is useful for verifying ages on official paperwork, calculating a child's age for school enrollment cutoffs, or settling friendly debates about who is older.</p>
       </section>
       <RelatedTools current="/age-calculator" />
     </div>
