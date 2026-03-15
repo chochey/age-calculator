@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 const SITE_URL = 'https://quickcalcs.net';
 const SITE_NAME = 'QuickCalc';
 
-function Seo({ title, description }) {
+function Seo({ title, description, faqs }) {
   const { pathname } = useLocation();
   const fullTitle = title + ' | ' + SITE_NAME;
   const canonicalUrl = SITE_URL + pathname;
@@ -55,7 +55,29 @@ function Seo({ title, description }) {
         url: SITE_URL,
       },
     });
-  }, [title, description, fullTitle, canonicalUrl]);
+
+    // FAQ JSON-LD structured data
+    let faqScript = document.getElementById('seo-faq-jsonld');
+    if (faqs && faqs.length > 0) {
+      if (!faqScript) {
+        faqScript = document.createElement('script');
+        faqScript.id = 'seo-faq-jsonld';
+        faqScript.type = 'application/ld+json';
+        document.head.appendChild(faqScript);
+      }
+      faqScript.textContent = JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqs.map((f) => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      });
+    } else if (faqScript) {
+      faqScript.remove();
+    }
+  }, [title, description, fullTitle, canonicalUrl, faqs]);
 
   return null;
 }

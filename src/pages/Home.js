@@ -8,6 +8,7 @@ const categories = [
     label: 'Calculators',
     id: 'calculators',
     icon: '🔢',
+    hub: '/calculators',
     tools: [
       { name: 'Age Calculator', description: 'Exact age in years, months, days, hours & minutes.', path: '/age-calculator' },
       { name: 'Percentage Calculator', description: 'Percentages, increases, decreases & differences.', path: '/percentage-calculator' },
@@ -41,6 +42,7 @@ const categories = [
     label: 'Converters',
     id: 'converters',
     icon: '🔄',
+    hub: '/converters',
     tools: [
       { name: 'Unit Converter', description: 'Length, weight, temperature, volume & speed.', path: '/unit-converter' },
       { name: 'Case Converter', description: 'Uppercase, lowercase, title case, camelCase & more.', path: '/case-converter' },
@@ -61,6 +63,7 @@ const categories = [
     label: 'Generators',
     id: 'generators',
     icon: '⚡',
+    hub: '/generators',
     tools: [
       { name: 'Password Generator', description: 'Secure random passwords with strength meter.', path: '/password-generator' },
       { name: 'Random Number Generator', description: 'Random numbers in any range, with or without duplicates.', path: '/random-number-generator' },
@@ -74,6 +77,7 @@ const categories = [
     label: 'Developer Tools',
     id: 'dev-tools',
     icon: '🛠️',
+    hub: '/developer-tools',
     tools: [
       { name: 'Diff Checker', description: 'Compare two texts and see differences highlighted.', path: '/diff-checker' },
       { name: 'Hash Generator', description: 'Generate SHA-1, SHA-256, SHA-384 & SHA-512 hashes.', path: '/hash-generator' },
@@ -95,6 +99,7 @@ const categories = [
     label: 'Image Tools',
     id: 'image-tools',
     icon: '🖼️',
+    hub: '/image-tools',
     tools: [
       { name: 'Image Resizer', description: 'Resize images to custom dimensions. PNG, JPG & WebP.', path: '/image-resizer' },
       { name: 'Image Compressor', description: 'Reduce image file size with adjustable quality.', path: '/image-compressor' },
@@ -104,6 +109,7 @@ const categories = [
     label: 'Text & Data',
     id: 'text-data',
     icon: '📝',
+    hub: '/text-tools',
     tools: [
       { name: 'Word Counter', description: 'Words, characters, sentences & reading time.', path: '/word-counter' },
       { name: 'JSON Formatter', description: 'Format, validate & minify JSON with error detection.', path: '/json-formatter' },
@@ -174,7 +180,9 @@ function Home() {
       ) : (
         categories.map((cat) => (
           <section key={cat.label} id={cat.id} className="tool-category">
-            <h2 className="category-heading">{cat.icon} {cat.label}</h2>
+            <Link to={cat.hub} className="category-heading-link">
+              <h2 className="category-heading">{cat.icon} {cat.label} <span className="category-arrow">&rarr;</span></h2>
+            </Link>
             <div className="tools-grid">
               {cat.tools.map((tool) => (
                 <Link to={tool.path} key={tool.path} className="tool-card">

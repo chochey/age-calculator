@@ -30,6 +30,21 @@
   scroll-margin-top: 4.5rem;
 }
 
+.category-heading-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.category-heading-link:hover .category-heading {
+  color: #4f46e5;
+}
+
+.category-heading-link:hover .category-arrow {
+  opacity: 1;
+  transform: translateX(2px);
+}
+
 .category-heading {
   font-size: 1.2rem;
   font-weight: 700;
@@ -37,6 +52,13 @@
   margin-bottom: 0.75rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid #e2e8f0;
+  transition: color 0.2s;
+}
+
+.category-arrow {
+  font-size: 0.9rem;
+  opacity: 0;
+  transition: opacity 0.2s, transform 0.2s;
 }
 
 .tools-grid {
