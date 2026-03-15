@@ -3,7 +3,7 @@ import Seo from '../components/Seo';
 function TermsOfService() {
   return (
     <div className="legal-page">
-      <Seo title="Terms of Service – QuickCalcs" description="QuickCalcs terms of service. Read the terms and conditions for using our free online calculators and tools." />
+      <Seo title="Terms of Service" description="QuickCalcs terms of service. Read the terms and conditions for using our free online calculators and tools." />
       <h1>Terms of Service</h1>
       <p className="legal-date">Last updated: February 24, 2025</p>
 

@@ -66,7 +66,7 @@ function ProfitMarginCalc() {
   return (
     <div>
       <Seo
-        title="Profit Margin Calculator – QuickCalcs"
+        title="Profit Margin Calculator"
         description="Free profit margin calculator. Calculate profit margin, markup, revenue, and cost. Understand the difference between margin and markup."
         faqs={[{ q: 'What is the difference between profit margin and markup?', a: 'Profit margin expresses profit as a share of revenue (the selling price), while markup expresses profit as a share of cost (what you paid). They always refer to the same dollar amount of profit but yield different percentages. A 50% margin means half of your revenue is profit, while a 50% markup means you added half the cost on top. Converting between them: Margin = Markup / (1 + Markup), and Markup = Margin / (1 - Margin).' }, { q: 'What is a good profit margin for a small business?', a: 'It depends heavily on the industry. A net profit margin of 10% is generally considered healthy for most small businesses, while 20% or more is considered strong. Service-based businesses typically enjoy higher margins than product-based ones because they carry less inventory and lower cost of goods sold. The most important thing is to track your margin consistently over time and compare it to industry averages.' }, { q: 'How can I improve my profit margin?', a: 'There are two levers: increase revenue or decrease costs. On the revenue side, consider raising prices, upselling complementary products, or targeting higher-value customers. On the cost side, negotiate better supplier terms, reduce waste, streamline operations, or switch to more cost-effective materials. Even small improvements in margin compound significantly as sales volume grows.' }]}
       />

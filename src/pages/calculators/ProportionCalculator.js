@@ -157,7 +157,7 @@ function ProportionCalculator() {
   return (
     <div>
       <Seo
-        title="Proportion Calculator – QuickCalcs"
+        title="Proportion Calculator"
         description="Free proportion calculator. Solve ratios and proportions instantly. Find the missing value in a/b = c/d."
         faqs={[{ q: 'What is the difference between a ratio and a proportion?', a: 'A ratio compares two quantities, such as 3:5, and simply describes how they relate to each other. A proportion is a statement that two ratios are equal, such as 3/5 = 6/10. While every proportion contains ratios, not every pair of ratios forms a valid proportion. You can verify a proportion by cross multiplying -- if the products are equal (3 x 10 = 5 x 6 = 30), the proportion is valid.' }, { q: 'Can proportions involve decimals or fractions?', a: 'Yes. The cross-multiplication method works with any real numbers, including decimals and fractions. For instance, 0.5/1.5 = 2/6 is valid because 0.5 x 6 = 3 and 1.5 x 2 = 3. This calculator accepts any numeric input, including negative numbers and long decimals, and rounds the solved value to up to six decimal places for precision.' }, { q: 'Where are proportions used in everyday life?', a: 'Proportions appear more often than most people realize. Cooks scale recipes by setting up a proportion between servings and ingredient amounts. Travelers convert currencies using an exchange-rate proportion. Architects and engineers use scale drawings where every dimension on paper is proportional to the real structure. Pharmacists calculate drug dosages based on patient weight using proportional relationships. Even resizing a photo without distortion relies on keeping the width-to-height ratio proportional.' }]}
       />

@@ -207,7 +207,7 @@ function PomodoroTimer() {
   return (
     <div>
       <Seo
-        title="Pomodoro Timer – QuickCalcs"
+        title="Pomodoro Timer"
         description="Free online Pomodoro timer for productivity. Customizable work and break intervals. Stay focused with the Pomodoro technique."
         faqs={[{ q: 'Can I change the work and break durations?', a: 'Yes. Scroll to the "Timer Settings" section below the timer to adjust the work duration (1 to 120 minutes), short break duration, and long break duration. Changes take effect immediately when the timer is paused. For deep-focus tasks like writing or programming, many users prefer 45- or 50-minute work blocks paired with 10-minute breaks. For lighter tasks or study sessions, the classic 25/5 split works well.' }, { q: 'What happens after four work sessions?', a: 'The Pomodoro Technique recommends a longer break after every four work intervals. This timer tracks your progress with visual dots -- once all four are filled, the next break is automatically set to the long break duration (15 minutes by default). After the long break, the cycle resets and you start a new set of four. This pattern prevents the gradual decline in focus that occurs when people try to power through hours of uninterrupted work.' }, { q: 'Will the timer alert me when a session ends?', a: 'Yes. The timer plays an audio notification using your browser\'s Web Audio API when each session completes. You will hear a sequence of short beeps to get your attention. Make sure your device volume is turned up and that your browser allows audio playback. The timer also visually indicates the transition by changing the session type label and resetting the progress ring, so you will notice even if your sound is off.' }]}
       />

@@ -6,7 +6,8 @@ const SITE_NAME = 'QuickCalc';
 
 function Seo({ title, description, faqs }) {
   const { pathname } = useLocation();
-  const fullTitle = title + ' | ' + SITE_NAME;
+  const hasBrand = title.toLowerCase().includes('quickcalc');
+  const fullTitle = hasBrand ? title : title + ' | ' + SITE_NAME;
   const canonicalUrl = SITE_URL + pathname;
 
   useEffect(() => {

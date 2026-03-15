@@ -114,7 +114,7 @@ function FlashcardMaker() {
   return (
     <div>
       <Seo
-        title="Flashcard Maker – QuickCalcs"
+        title="Flashcard Maker"
         description="Free online flashcard maker. Create, study, and review flashcards in your browser. No sign-up needed."
         faqs={[{ q: 'Are my flashcards saved if I close the browser?', a: 'Cards are stored in your current browser session only. If you close the tab or refresh the page, the deck will be reset to empty. To preserve your cards, use the "Export JSON" button to copy the deck to your clipboard before leaving, then paste the JSON into a file or note for safekeeping. When you return, paste it into the import field and click "Import" to restore your full deck in seconds.' }, { q: 'Can I share my flashcard deck with someone else?', a: 'Yes. Click "Export JSON" to copy your deck as a JSON string. Send that string to a friend via email, messaging, or a shared document. They can visit this page, paste the JSON into the import field, and click "Import" to load your exact deck. This makes it easy for study groups to share vocabulary lists, exam review sets, or training material without needing any accounts or cloud storage.' }, { q: 'What keyboard shortcuts are available during study mode?', a: 'Press Space to flip the current card between question and answer. Press the Right Arrow or Down Arrow to advance to the next card, and the Left Arrow or Up Arrow to go back to the previous card. These shortcuts work as long as your cursor is not focused inside a text input or textarea, making it easy to navigate the entire deck hands-free from your keyboard.' }]}
       />

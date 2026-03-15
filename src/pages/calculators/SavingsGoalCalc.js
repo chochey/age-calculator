@@ -146,7 +146,7 @@ function SavingsGoalCalc() {
   return (
     <div>
       <Seo
-        title="Savings Goal Calculator - QuickCalcs"
+        title="Savings Goal Calculator"
         description="Free savings goal calculator. Find out how much to save each month to reach your financial goal. Factor in interest and current savings."
         faqs={[{ q: 'What interest rate should I use?', a: 'For a standard high-yield savings account, rates typically range from 4% to 5% APY. If you plan to invest in a diversified index fund, historical average returns are around 7-10% annually, though returns are not guaranteed and can fluctuate. For conservative planning, use a rate at the lower end of your expected range. If your money is in a regular checking account earning near 0%, enter 0% to see the pure savings required.' }, { q: 'Does this calculator account for taxes on interest?', a: 'This tool shows gross interest earned before taxes. Interest income from savings accounts is generally taxable as ordinary income. If you are in the 22% federal tax bracket, for instance, $500 in annual interest would net you about $390 after taxes. For tax-advantaged savings, consider using a Roth IRA or 529 plan where earnings can grow tax-free for qualifying purposes.' }, { q: 'What if I miss a monthly contribution?', a: 'Missing a payment means you will need to increase future contributions to stay on track, or extend your timeline. The sooner you make up a missed deposit, the less impact it has because you lose less compounding time. Revisit this calculator periodically to adjust your plan if your income or expenses change.' }]}
       />

@@ -166,7 +166,7 @@ function AreaCalculator() {
   return (
     <div>
       <Seo
-        title="Area Calculator \u2013 QuickCalcs"
+        title="Area Calculator"
         description="Free area calculator for rectangles, circles, triangles, trapezoids & more. Calculate area and perimeter with formulas shown."
         faqs={[{ q: 'When should I use this calculator instead of doing the math by hand?', a: 'Any time you need a quick, error-free answer. Common real-world situations include estimating flooring or tile for a room (rectangle), figuring out the coverage area of a sprinkler (circle), calculating the sail area of a triangular boat sail (triangle), or sizing a driveway apron (trapezoid). The calculator handles the arithmetic instantly and lets you switch units without manual conversion.' }, { q: 'How do I find the area of an irregular shape?', a: 'Break the irregular shape into simpler shapes whose areas you can calculate individually -- for example, a house floor plan might be split into two rectangles and a triangle. Calculate each part separately and add the results together. If curves are involved, approximate them with circles or ellipses. For very complex shapes, graph paper or digital tools that use pixel counting can provide an estimate.' }, { q: 'What is the difference between area and perimeter?', a: 'Area measures the two-dimensional space inside a shape and is expressed in square units (cm\u00B2, m\u00B2, ft\u00B2). Perimeter measures the total length of the boundary around the shape and is expressed in linear units (cm, m, ft). For example, a 5 m x 3 m rectangle has an area of 15 m\u00B2 but a perimeter of 16 m. Both measurements are essential in construction, landscaping, and design.' }]}
       />

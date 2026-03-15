@@ -191,7 +191,7 @@ function ColorBlindnessSimulator() {
   return (
     <div>
       <Seo
-        title="Color Blindness Simulator - QuickCalcs"
+        title="Color Blindness Simulator"
         description="Free color blindness simulator. See how colors appear to people with protanopia, deuteranopia, tritanopia, and achromatopsia."
         faqs={[{ q: 'What percentage of people have color blindness?', a: 'Approximately 8% of men and 0.5% of women of Northern European descent have some form of color vision deficiency. Red-green deficiencies (protanopia and deuteranopia combined) are by far the most common, accounting for about 99% of all cases. Tritanopia and achromatopsia are extremely rare.' }, { q: 'How accurate is this simulator?', a: 'The simulation uses peer-reviewed transformation matrices that closely approximate the color perception of each deficiency type. While no screen-based simulation can perfectly replicate the experience of someone with color blindness -- individual variation exists even within the same deficiency category -- these matrices are widely accepted in accessibility research and provide a reliable guide for design decisions.' }, { q: 'Which colors should I avoid using together?', a: 'Avoid pairing red with green, as this combination is indistinguishable for the most common forms of color blindness. Similarly, avoid blue paired with yellow if you need to account for tritanopia. Safe high-contrast pairings include blue with orange, and dark blue with white. Always verify your specific color choices with the simulator before finalizing a design.' }]}
       />

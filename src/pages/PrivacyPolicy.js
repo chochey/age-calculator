@@ -3,7 +3,7 @@ import Seo from '../components/Seo';
 function PrivacyPolicy() {
   return (
     <div className="legal-page">
-      <Seo title="Privacy Policy – QuickCalcs" description="QuickCalcs privacy policy. Learn how we handle your data when you use our free online calculators and tools." />
+      <Seo title="Privacy Policy" description="QuickCalcs privacy policy. Learn how we handle your data when you use our free online calculators and tools." />
       <h1>Privacy Policy</h1>
       <p className="legal-date">Last updated: February 24, 2025</p>
 

@@ -66,8 +66,8 @@ function AverageCalculator() {
   return (
     <div>
       <Seo
-        title="Average Calculator – QuickCalcs"
-        description="Free online average calculator. Calculate mean, median, mode, range, sum, and more from any set of numbers."
+        title="Average Calculator - Mean, Median, Mode & Range"
+        description="Free online average calculator. Instantly calculate mean, median, mode, range, sum, min, max, and count from any set of numbers. Paste or type your data and get results immediately."
         faqs={[{ q: 'When should I use the mean versus the median?', a: 'Use the mean when your data is roughly symmetrical and free of extreme outliers. Use the median when the data is skewed or contains outliers that pull the average in one direction. For example, in a group of salaries where most people earn around $50,000 but one person earns $5,000,000, the mean would be misleadingly high. The median would far better represent the typical salary. Reporting both values together gives the fullest picture of your data\'s center.' }, { q: 'Can a data set have more than one mode?', a: 'Yes. If two or more values tie for the highest frequency, the data set is called bimodal (two modes) or multimodal (three or more). For instance, in the set 3, 3, 7, 7, 9, both 3 and 7 appear twice, making it bimodal. If every value appears only once, there is no mode at all. This calculator handles all three scenarios and displays each mode separated by commas.' }, { q: 'What is the range and why does it matter?', a: 'The range is simply the difference between the maximum and minimum values -- it tells you how spread out the data is. A small range means values are clustered close together, while a large range indicates wide variation. While the range is easy to compute, it is sensitive to outliers; a single extreme value can inflate it dramatically. For a more robust measure of spread, statisticians often pair the range with standard deviation or interquartile range.' }]}
       />
       <h1>Average Calculator</h1>
