@@ -4,6 +4,7 @@ import './App.css';
 
 // Pages (root level)
 import Home from './pages/Home';
+import NotFound from './pages/NotFound';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 
@@ -35,6 +36,11 @@ import BodyFatCalculator from './pages/calculators/BodyFatCalculator';
 import InflationCalculator from './pages/calculators/InflationCalculator';
 import SleepCalculator from './pages/calculators/SleepCalculator';
 import UnitPriceCalculator from './pages/calculators/UnitPriceCalculator';
+import StandardDeviationCalc from './pages/calculators/StandardDeviationCalc';
+import SalesTaxCalculator from './pages/calculators/SalesTaxCalculator';
+import TdeeCalculator from './pages/calculators/TdeeCalculator';
+import DueDateCalculator from './pages/calculators/DueDateCalculator';
+import SquareFootageCalc from './pages/calculators/SquareFootageCalc';
 
 // Converters
 import ConvertersHub from './pages/converters/ConvertersHub';
@@ -51,6 +57,9 @@ import TextToBinary from './pages/converters/TextToBinary';
 import HexToRgb from './pages/converters/HexToRgb';
 import RomanNumeralConverter from './pages/converters/RomanNumeralConverter';
 import PxToRemConverter from './pages/converters/PxToRemConverter';
+import TemperatureConverter from './pages/converters/TemperatureConverter';
+import LbsToKgConverter from './pages/converters/LbsToKgConverter';
+import InchesToCmConverter from './pages/converters/InchesToCmConverter';
 
 // Generators
 import GeneratorsHub from './pages/generators/GeneratorsHub';
@@ -60,6 +69,8 @@ import LoremIpsum from './pages/generators/LoremIpsum';
 import QrGenerator from './pages/generators/QrGenerator';
 import InvoiceGenerator from './pages/generators/InvoiceGenerator';
 import ColorPalette from './pages/generators/ColorPalette';
+import UuidGenerator from './pages/generators/UuidGenerator';
+import TestDataGenerator from './pages/generators/TestDataGenerator';
 
 // Developer Tools
 import DevToolsHub from './pages/developer-tools/DevToolsHub';
@@ -77,11 +88,15 @@ import SubnetCalculator from './pages/developer-tools/SubnetCalculator';
 import MetaTagGenerator from './pages/developer-tools/MetaTagGenerator';
 import ScreenResolution from './pages/developer-tools/ScreenResolution';
 import ColorBlindnessSimulator from './pages/developer-tools/ColorBlindnessSimulator';
+import JsonValidator from './pages/developer-tools/JsonValidator';
+import HtmlFormatter from './pages/developer-tools/HtmlFormatter';
 
 // Image Tools
 import ImageToolsHub from './pages/image-tools/ImageToolsHub';
 import ImageResizer from './pages/image-tools/ImageResizer';
 import ImageCompressor from './pages/image-tools/ImageCompressor';
+import ImageCropper from './pages/image-tools/ImageCropper';
+import ImageToBase64 from './pages/image-tools/ImageToBase64';
 
 // Text & Data Tools
 import TextDataHub from './pages/text-data/TextDataHub';
@@ -105,6 +120,8 @@ import WhitespaceRemover from './pages/text-data/WhitespaceRemover';
 import FrequencyCounter from './pages/text-data/FrequencyCounter';
 import ReadabilityChecker from './pages/text-data/ReadabilityChecker';
 import DateCalculator from './pages/text-data/DateCalculator';
+import TextCompare from './pages/text-data/TextCompare';
+import EmojiPicker from './pages/text-data/EmojiPicker';
 
 function App() {
   return (
@@ -141,6 +158,11 @@ function App() {
           <Route path="inflation-calculator" element={<InflationCalculator />} />
           <Route path="sleep-calculator" element={<SleepCalculator />} />
           <Route path="unit-price-calculator" element={<UnitPriceCalculator />} />
+          <Route path="standard-deviation-calculator" element={<StandardDeviationCalc />} />
+          <Route path="sales-tax-calculator" element={<SalesTaxCalculator />} />
+          <Route path="tdee-calculator" element={<TdeeCalculator />} />
+          <Route path="due-date-calculator" element={<DueDateCalculator />} />
+          <Route path="square-footage-calculator" element={<SquareFootageCalc />} />
 
           {/* Converters */}
           <Route path="converters" element={<ConvertersHub />} />
@@ -157,6 +179,9 @@ function App() {
           <Route path="hex-to-rgb" element={<HexToRgb />} />
           <Route path="roman-numeral-converter" element={<RomanNumeralConverter />} />
           <Route path="px-to-rem" element={<PxToRemConverter />} />
+          <Route path="temperature-converter" element={<TemperatureConverter />} />
+          <Route path="lbs-to-kg" element={<LbsToKgConverter />} />
+          <Route path="inches-to-cm" element={<InchesToCmConverter />} />
 
           {/* Generators */}
           <Route path="generators" element={<GeneratorsHub />} />
@@ -166,6 +191,8 @@ function App() {
           <Route path="qr-code-generator" element={<QrGenerator />} />
           <Route path="invoice-generator" element={<InvoiceGenerator />} />
           <Route path="color-palette-generator" element={<ColorPalette />} />
+          <Route path="uuid-generator" element={<UuidGenerator />} />
+          <Route path="test-data-generator" element={<TestDataGenerator />} />
 
           {/* Developer Tools */}
           <Route path="developer-tools" element={<DevToolsHub />} />
@@ -183,11 +210,15 @@ function App() {
           <Route path="meta-tag-generator" element={<MetaTagGenerator />} />
           <Route path="screen-resolution" element={<ScreenResolution />} />
           <Route path="color-blindness-simulator" element={<ColorBlindnessSimulator />} />
+          <Route path="json-validator" element={<JsonValidator />} />
+          <Route path="html-formatter" element={<HtmlFormatter />} />
 
           {/* Image Tools */}
           <Route path="image-tools" element={<ImageToolsHub />} />
           <Route path="image-resizer" element={<ImageResizer />} />
           <Route path="image-compressor" element={<ImageCompressor />} />
+          <Route path="image-cropper" element={<ImageCropper />} />
+          <Route path="image-to-base64" element={<ImageToBase64 />} />
 
           {/* Text & Data Tools */}
           <Route path="text-tools" element={<TextDataHub />} />
@@ -211,10 +242,15 @@ function App() {
           <Route path="frequency-counter" element={<FrequencyCounter />} />
           <Route path="readability-checker" element={<ReadabilityChecker />} />
           <Route path="date-calculator" element={<DateCalculator />} />
+          <Route path="text-compare" element={<TextCompare />} />
+          <Route path="emoji-picker" element={<EmojiPicker />} />
 
           {/* Legal */}
           <Route path="privacy" element={<PrivacyPolicy />} />
           <Route path="terms" element={<TermsOfService />} />
+
+          {/* 404 */}
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -14,20 +14,23 @@ const tools = [
   { name: 'HEX to RGB Converter', description: 'Convert hex color codes to RGB & HSL.', path: '/hex-to-rgb' },
   { name: 'Roman Numeral Converter', description: 'Convert numbers to & from Roman numerals.', path: '/roman-numeral-converter' },
   { name: 'PX to REM Converter', description: 'Convert between px, rem & em CSS units.', path: '/px-to-rem' },
+  { name: 'Temperature Converter', description: 'Convert between Fahrenheit, Celsius & Kelvin.', path: '/temperature-converter' },
+  { name: 'Lbs to Kg Converter', description: 'Convert between pounds and kilograms instantly.', path: '/lbs-to-kg' },
+  { name: 'Inches to CM Converter', description: 'Convert between inches and centimeters.', path: '/inches-to-cm' },
 ];
 
 const faqs = [
   { q: 'Are these converters accurate for professional use?', a: 'Yes. Each converter uses standard formulas and widely accepted conversion factors. Unit conversions follow the International System of Units, color conversions use established mathematical models, and encoding tools comply with their respective specifications such as RFC 4648 for Base64 and RFC 3986 for URL encoding.' },
   { q: 'Do my conversions get stored or sent to a server?', a: 'No. Every conversion runs entirely in your browser using JavaScript. Your input data never leaves your device, and nothing is logged or transmitted to a remote server. You can verify this by using the tools while disconnected from the internet.' },
-  { q: 'Can I use these converters on my phone or tablet?', a: 'Absolutely. All 13 converters are fully responsive and work on any modern browser regardless of screen size. The interface adapts to smaller displays so you get the same functionality on a phone as you would on a desktop computer.' },
+  { q: 'Can I use these converters on my phone or tablet?', a: 'Absolutely. All 16 converters are fully responsive and work on any modern browser regardless of screen size. The interface adapts to smaller displays so you get the same functionality on a phone as you would on a desktop computer.' },
 ];
 
 function ConvertersHub() {
   return (
     <CategoryHub
       title="Free Online Converters - Units, Text, Colors & Data"
-      description="13 free online converters for units, text, colors, numbers, and encoding. Convert between measurement systems, color formats, number bases, and more."
-      intro="13 free converters for units, text, colors, numbers, and encoding formats."
+      description="16 free online converters for units, text, colors, numbers, and encoding. Convert between measurement systems, color formats, number bases, and more."
+      intro="16 free converters for units, text, colors, numbers, and encoding formats."
       tools={tools}
       faqs={faqs}
     >
@@ -80,7 +83,7 @@ function ConvertersHub() {
         </p>
         <h3>Can I use these converters on my phone or tablet?</h3>
         <p>
-          Absolutely. All 13 converters are fully responsive and work on any modern browser
+          Absolutely. All 16 converters are fully responsive and work on any modern browser
           regardless of screen size. The interface adapts to smaller displays so you get the
           same functionality on a phone as you would on a desktop computer.
         </p>

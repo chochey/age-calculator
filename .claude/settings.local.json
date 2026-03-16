@@ -33,7 +33,13 @@
       "Bash(git status -u)",
       "Bash(git add package.json package-lock.json src/setupTests.js src/App.test.js src/test-utils.js src/pages/pages.smoke.test.js src/pages/AgeCalculator.test.js src/pages/WordCounter.test.js src/pages/BmiCalculator.test.js src/pages/PercentageCalculator.test.js src/components/Layout.test.js src/components/Seo.test.js src/components/RelatedTools.test.js docs/plans/2026-02-26-testing-setup.md)",
       "Bash(git commit:*)",
-      "Bash(git add src/pages/BodyFatCalculator.js src/pages/InflationCalculator.js src/pages/SleepCalculator.js src/pages/ReadabilityChecker.js src/pages/UnitPriceCalculator.js src/pages/DateCalculator.js src/App.js src/pages/Home.js src/components/RelatedTools.js src/pages/pages.smoke.test.js)"
+      "Bash(git add src/pages/BodyFatCalculator.js src/pages/InflationCalculator.js src/pages/SleepCalculator.js src/pages/ReadabilityChecker.js src/pages/UnitPriceCalculator.js src/pages/DateCalculator.js src/App.js src/pages/Home.js src/components/RelatedTools.js src/pages/pages.smoke.test.js)",
+      "Bash(npm install --save-dev react-snap)",
+      "Bash(npm run build)",
+      "Bash(export NODE_OPTIONS=--openssl-legacy-provider)",
+      "Bash(npx react-scripts build)",
+      "Bash(npx react-snap)",
+      "Bash(npm install --save-dev cross-env)"
     ]
   }
 }

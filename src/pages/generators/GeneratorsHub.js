@@ -7,6 +7,8 @@ const tools = [
   { name: 'QR Code Generator', description: 'Create QR codes for URLs, text & more.', path: '/qr-code-generator' },
   { name: 'Invoice Generator', description: 'Create & print professional invoices. No sign-up.', path: '/invoice-generator' },
   { name: 'Color Palette Generator', description: 'Generate harmonious color schemes from any color.', path: '/color-palette-generator' },
+  { name: 'UUID Generator', description: 'Generate unique UUIDs (v4) with one click.', path: '/uuid-generator' },
+  { name: 'Test Data Generator', description: 'Generate realistic fake data for testing.', path: '/test-data-generator' },
 ];
 
 const faqs = [
@@ -28,8 +30,8 @@ function GeneratorsHub() {
   return (
     <CategoryHub
       title="Free Online Generators - Passwords, QR Codes, Colors & More"
-      description="6 free online generators for passwords, random numbers, QR codes, invoices, lorem ipsum text, and color palettes. No sign-up required."
-      intro="6 free generators for passwords, random numbers, QR codes, invoices, and more."
+      description="8 free online generators for passwords, random numbers, QR codes, invoices, lorem ipsum text, and color palettes. No sign-up required."
+      intro="8 free generators for passwords, random numbers, QR codes, invoices, and more."
       tools={tools}
       faqs={faqs}
     >

@@ -36,6 +36,11 @@ const categories = [
       { name: 'Inflation Calculator', description: 'See how money value changes over time with inflation.', path: '/inflation-calculator' },
       { name: 'Sleep Calculator', description: 'Find ideal bedtimes & wake times based on sleep cycles.', path: '/sleep-calculator' },
       { name: 'Unit Price Calculator', description: 'Compare product prices to find the best deal.', path: '/unit-price-calculator' },
+      { name: 'Standard Deviation Calculator', description: 'Calculate standard deviation, variance & more.', path: '/standard-deviation-calculator' },
+      { name: 'Sales Tax Calculator', description: 'Calculate sales tax and total price for any state.', path: '/sales-tax-calculator' },
+      { name: 'TDEE Calculator', description: 'Total daily energy expenditure based on activity level.', path: '/tdee-calculator' },
+      { name: 'Due Date Calculator', description: 'Estimate your pregnancy due date and milestones.', path: '/due-date-calculator' },
+      { name: 'Square Footage Calculator', description: 'Calculate area in sq ft for rooms and projects.', path: '/square-footage-calculator' },
     ],
   },
   {
@@ -57,6 +62,9 @@ const categories = [
       { name: 'HEX to RGB Converter', description: 'Convert hex color codes to RGB & HSL.', path: '/hex-to-rgb' },
       { name: 'Roman Numeral Converter', description: 'Convert numbers to & from Roman numerals.', path: '/roman-numeral-converter' },
       { name: 'PX to REM Converter', description: 'Convert between px, rem & em CSS units.', path: '/px-to-rem' },
+      { name: 'Temperature Converter', description: 'Convert between Fahrenheit, Celsius & Kelvin.', path: '/temperature-converter' },
+      { name: 'Lbs to Kg Converter', description: 'Convert between pounds and kilograms instantly.', path: '/lbs-to-kg' },
+      { name: 'Inches to CM Converter', description: 'Convert between inches and centimeters.', path: '/inches-to-cm' },
     ],
   },
   {
@@ -71,6 +79,8 @@ const categories = [
       { name: 'QR Code Generator', description: 'Create QR codes for URLs, text & more.', path: '/qr-code-generator' },
       { name: 'Invoice Generator', description: 'Create & print professional invoices. No sign-up.', path: '/invoice-generator' },
       { name: 'Color Palette Generator', description: 'Generate harmonious color schemes from any color.', path: '/color-palette-generator' },
+      { name: 'UUID Generator', description: 'Generate unique UUIDs (v4) with one click.', path: '/uuid-generator' },
+      { name: 'Test Data Generator', description: 'Generate realistic fake data for testing.', path: '/test-data-generator' },
     ],
   },
   {
@@ -93,6 +103,8 @@ const categories = [
       { name: 'Meta Tag Generator', description: 'Generate SEO meta tags with Google preview.', path: '/meta-tag-generator' },
       { name: 'Screen Resolution Checker', description: 'Live screen size, DPR & viewport info.', path: '/screen-resolution' },
       { name: 'Color Blindness Simulator', description: 'Simulate color vision deficiencies on any color.', path: '/color-blindness-simulator' },
+      { name: 'JSON Validator', description: 'Validate JSON syntax with detailed error messages.', path: '/json-validator' },
+      { name: 'HTML Formatter', description: 'Format, beautify & minify HTML code.', path: '/html-formatter' },
     ],
   },
   {
@@ -103,6 +115,8 @@ const categories = [
     tools: [
       { name: 'Image Resizer', description: 'Resize images to custom dimensions. PNG, JPG & WebP.', path: '/image-resizer' },
       { name: 'Image Compressor', description: 'Reduce image file size with adjustable quality.', path: '/image-compressor' },
+      { name: 'Image Cropper', description: 'Crop images to custom dimensions in your browser.', path: '/image-cropper' },
+      { name: 'Image to Base64', description: 'Convert images to Base64 encoded strings.', path: '/image-to-base64' },
     ],
   },
   {
@@ -131,6 +145,8 @@ const categories = [
       { name: 'Frequency Counter', description: 'Count word & character frequency with export.', path: '/frequency-counter' },
       { name: 'Readability Checker', description: 'Flesch-Kincaid & other readability scores for any text.', path: '/readability-checker' },
       { name: 'Date Calculator', description: 'Add or subtract days from any date & count business days.', path: '/date-calculator' },
+      { name: 'Text Compare', description: 'Compare two texts side by side and see differences.', path: '/text-compare' },
+      { name: 'Emoji Picker', description: 'Browse & copy emojis by category with one click.', path: '/emoji-picker' },
     ],
   },
 ];

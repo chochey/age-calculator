@@ -21,27 +21,29 @@ const tools = [
   { name: 'Frequency Counter', description: 'Count word & character frequency with export.', path: '/frequency-counter' },
   { name: 'Readability Checker', description: 'Flesch-Kincaid & other readability scores for any text.', path: '/readability-checker' },
   { name: 'Date Calculator', description: 'Add or subtract days from any date & count business days.', path: '/date-calculator' },
+  { name: 'Text Compare', description: 'Compare two texts side by side and see differences.', path: '/text-compare' },
+  { name: 'Emoji Picker', description: 'Browse & copy emojis by category with one click.', path: '/emoji-picker' },
 ];
 
 const faqs = [
   { q: 'Do these tools work offline?', a: 'Once the page has loaded, most of these tools will continue to work even if you lose your internet connection because all processing happens in your browser with JavaScript. However, you will need a connection to load the page initially.' },
   { q: 'Is my text stored or sent to a server?', a: 'No. Every tool on this page runs entirely on the client side. The text you type or paste is processed in your browser and never transmitted anywhere. When you close the tab, the data is gone unless you explicitly copy or export it.' },
-  { q: 'Can I use these tools on my phone?', a: 'Yes. All 20 tools are fully responsive and work on phones, tablets, and desktops. The interfaces adapt to smaller screens so you can count words, format JSON, test regex patterns, and run timers from any device without installing an app.' },
+  { q: 'Can I use these tools on my phone?', a: 'Yes. All 22 tools are fully responsive and work on phones, tablets, and desktops. The interfaces adapt to smaller screens so you can count words, format JSON, test regex patterns, and run timers from any device without installing an app.' },
 ];
 
 function TextDataHub() {
   return (
     <CategoryHub
       title="Free Online Text & Data Tools - Format, Analyze & Transform"
-      description="20 free text and data tools. Word counter, JSON formatter, regex tester, markdown preview, timers, and more. Format, analyze, and transform text instantly in your browser."
-      intro="20 free tools to format, analyze, count, time, and transform text and data."
+      description="22 free text and data tools. Word counter, JSON formatter, regex tester, markdown preview, timers, and more. Format, analyze, and transform text instantly in your browser."
+      intro="22 free tools to format, analyze, count, time, and transform text and data."
       tools={tools}
       faqs={faqs}
     >
       <section className="info-section">
         <h2>About Our Text & Data Tools</h2>
         <p>
-          This collection spans 20 browser-based utilities that cover a wide range of text, data, and
+          This collection spans 22 browser-based utilities that cover a wide range of text, data, and
           productivity tasks. On the text side, you will find a word counter for quick document
           statistics, a whitespace remover to clean up messy copy, a frequency counter that tallies
           every word and character, and a readability checker that scores your writing with
@@ -87,7 +89,7 @@ function TextDataHub() {
 
         <h3>Can I use these tools on my phone?</h3>
         <p>
-          Yes. All 20 tools are fully responsive and work on phones, tablets, and desktops. The
+          Yes. All 22 tools are fully responsive and work on phones, tablets, and desktops. The
           interfaces adapt to smaller screens so you can count words, format JSON, test regex patterns,
           and run timers from any device without installing an app.
         </p>

@@ -15,6 +15,8 @@ const tools = [
   { name: 'Meta Tag Generator', description: 'Generate SEO meta tags with Google preview.', path: '/meta-tag-generator' },
   { name: 'Screen Resolution Checker', description: 'Live screen size, DPR & viewport info.', path: '/screen-resolution' },
   { name: 'Color Blindness Simulator', description: 'Simulate color vision deficiencies on any color.', path: '/color-blindness-simulator' },
+  { name: 'JSON Validator', description: 'Validate JSON syntax with detailed error messages.', path: '/json-validator' },
+  { name: 'HTML Formatter', description: 'Format, beautify & minify HTML code.', path: '/html-formatter' },
 ];
 
 const faqs = [
@@ -36,7 +38,7 @@ function DevToolsHub() {
   return (
     <CategoryHub
       title="Free Online Developer Tools - JSON, SQL, Hash, JWT & More"
-      description="14 free developer tools for formatting, encoding, hashing, debugging, and web development. JSON, SQL, JWT, chmod, cron, subnet, and more -- all in your browser."
+      description="16 free developer tools for formatting, encoding, hashing, debugging, and web development. JSON, SQL, JWT, chmod, cron, subnet, and more -- all in your browser."
       intro="14 free browser-based developer tools for formatting, encoding, hashing, and debugging."
       tools={tools}
       faqs={faqs}
@@ -44,7 +46,7 @@ function DevToolsHub() {
       <section className="info-section">
         <h2>About Our Free Developer Tools</h2>
         <p>
-          This collection brings together 14 essential developer utilities that cover the most
+          This collection brings together 16 essential developer utilities that cover the most
           common tasks you encounter during day-to-day coding. Whether you need to format a messy
           SQL query, decode a JWT to inspect its claims, generate cryptographic hashes for integrity
           checks, or convert data between JSON and CSV, you will find a dedicated tool here that

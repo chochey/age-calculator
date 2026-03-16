@@ -27,6 +27,11 @@ const tools = [
   { name: 'Inflation Calculator', description: 'See how money value changes over time with inflation.', path: '/inflation-calculator' },
   { name: 'Sleep Calculator', description: 'Find ideal bedtimes & wake times based on sleep cycles.', path: '/sleep-calculator' },
   { name: 'Unit Price Calculator', description: 'Compare product prices to find the best deal.', path: '/unit-price-calculator' },
+  { name: 'Standard Deviation Calculator', description: 'Calculate standard deviation, variance & more.', path: '/standard-deviation-calculator' },
+  { name: 'Sales Tax Calculator', description: 'Calculate sales tax and total price for any state.', path: '/sales-tax-calculator' },
+  { name: 'TDEE Calculator', description: 'Total daily energy expenditure based on activity level.', path: '/tdee-calculator' },
+  { name: 'Due Date Calculator', description: 'Estimate your pregnancy due date and milestones.', path: '/due-date-calculator' },
+  { name: 'Square Footage Calculator', description: 'Calculate area in sq ft for rooms and projects.', path: '/square-footage-calculator' },
 ];
 
 const faqs = [
@@ -39,8 +44,8 @@ function CalculatorsHub() {
   return (
     <CategoryHub
       title="Free Online Calculators - Math, Finance, Health & More"
-      description="Browse 26 free online calculators for math, finance, health, and everyday tasks. Percentage, BMI, loan, mortgage, salary, and more calculators -- no sign-up required."
-      intro="26 free calculators for math, finance, health, fitness, and everyday tasks."
+      description="Browse 31 free online calculators for math, finance, health, and everyday tasks. Percentage, BMI, loan, mortgage, salary, and more calculators -- no sign-up required."
+      intro="31 free calculators for math, finance, health, fitness, and everyday tasks."
       tools={tools}
       faqs={faqs}
     >

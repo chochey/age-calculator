@@ -3,6 +3,8 @@ import CategoryHub from '../../components/CategoryHub';
 const tools = [
   { name: 'Image Resizer', description: 'Resize images to custom dimensions. PNG, JPG & WebP.', path: '/image-resizer' },
   { name: 'Image Compressor', description: 'Reduce image file size with adjustable quality.', path: '/image-compressor' },
+  { name: 'Image Cropper', description: 'Crop images to custom dimensions in your browser.', path: '/image-cropper' },
+  { name: 'Image to Base64', description: 'Convert images to Base64 encoded strings.', path: '/image-to-base64' },
 ];
 
 const faqs = [
